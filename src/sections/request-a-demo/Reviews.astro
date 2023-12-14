@@ -1,0 +1,166 @@
+---
+import photo_1 from "@/assets/photo_1.png";
+import photo_2 from "@/assets/photo_2.png";
+import photo_3 from "@/assets/photo_3.png";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import { slugify } from "@/utils";
+import { Image } from "astro:assets";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: { request_a_demo: t },
+} = await useTranslation(lang);
+
+const reviews: {
+  avatar: ImageMetadata;
+  name: string;
+  occupation: string;
+  message: string;
+  headline: string;
+}[] = [
+  {
+    avatar: photo_1,
+    ...t.reviews.birgitte,
+  },
+  {
+    avatar: photo_3,
+    ...t.reviews.ove,
+  },
+  {
+    avatar: photo_2,
+    ...t.reviews.linda,
+  },
+];
+
+// generate unique id
+const tabReviews = reviews.map((review, index) => ({
+  ...review,
+  id: slugify(review.name + "_" + (index + 1)),
+}));
+---
+
+<section class="pt-20 pb-[100px]" arial-label={t.what_our_clients_say}>
+  <div class="container">
+    <p
+      class="brand-gradient bg-clip-text text-transparent uppercase text-base font-medium text-center"
+    >
+      {t.company_relationships}
+    </p>
+    <h2
+      class="text-[2rem] font-medium leading-[1.2] capitalize tracking-[1.6px] text-neutral-30 text-center mt-2.5 mb-[90px]"
+    >
+      {t.what_our_clients_say}
+    </h2>
+
+    <div
+      id="tabs-container"
+      class="grid-cols-1 lg:grid-cols-[40%,1fr] grid gap-20"
+    >
+      <ul
+        role="tablist"
+        aria-orientation="vertical"
+        tabindex="-1"
+        class="flex flex-col gap-2 list-none"
+      >
+        {
+          tabReviews.map(({ name, occupation, avatar, id }, index) => (
+            <li role="presentation">
+              <a
+                id={`tab-${index + 1}`}
+                href={`#${id}`}
+                aria-selected="false"
+                class="w-full group/tab"
+                role="tab"
+              >
+                <div class="flex gap-3.5 py-5 px-8  group-aria-selected/tab:bg-primary-4 rounded-lg">
+                  <Image
+                    class="shrink-0 w-[54px] h-[51px]"
+                    src={avatar}
+                    alt={`${name}`}
+                  />
+
+                  <div>
+                    <p class="text-white text-xl font-semibold ">{name}</p>
+                    <p class="text-xs text-white">{occupation}</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      {
+        tabReviews.map(({ message, headline, id }, index) => (
+          <div role="tabpanel" id={`${id}`} hidden="true">
+            <div>
+              <p class="text-[25px] font-bold leading-[1.2] tracking-[1.25px] text-[#DCD7D5] mb-6">
+                {headline}
+              </p>
+              <p class="text-base leading-[1.4] text-neutral-20">{message}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  const tabsContainer = document.getElementById(
+    "tabs-container"
+  ) as HTMLDivElement;
+
+  const tabButtons = [
+    ...tabsContainer.querySelectorAll("[role=tab]"),
+  ] as HTMLAnchorElement[];
+
+  const panels = [
+    ...tabsContainer.querySelectorAll("[role=tabpanel]"),
+  ] as HTMLDivElement[];
+
+  function showPanel(panel: HTMLDivElement) {
+    panels.forEach((panel) => {
+      panel.setAttribute("hidden", "true");
+      panel.setAttribute("tabindex", "0");
+    });
+    panel.removeAttribute("hidden");
+  }
+
+  function activateTab(tab: HTMLAnchorElement) {
+    tabButtons.forEach((tab) => {
+      tab.setAttribute("aria-selected", "false");
+      tab.setAttribute("tabindex", "-1");
+    });
+    tab.setAttribute("aria-selected", "true");
+    tab.setAttribute("tabindex", "0");
+    tab.focus();
+  }
+
+  function getActivePanel(tab: HTMLAnchorElement) {
+    const panelId = tab.getAttribute("href") as string;
+    return document.querySelector(panelId) as HTMLDivElement;
+  }
+
+  tabButtons.forEach((tab, index) => {
+    if (index === 0) {
+      tab.setAttribute("aria-selected", "true");
+      const activePanel = getActivePanel(tab);
+      showPanel(activePanel);
+    } else {
+      tab.setAttribute("aria-selected", "false");
+      tab.setAttribute("tabindex", "-1");
+    }
+
+    tab.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const activePanel = getActivePanel(tab);
+
+      showPanel(activePanel);
+
+      activateTab(tab);
+    });
+  });
+</script>

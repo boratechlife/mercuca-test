@@ -1,0 +1,94 @@
+---
+import { Image } from "astro:assets";
+
+import carouselTop from "@/assets/carousel_top.svg";
+import carouselBottom from "@/assets/carousel_bottom.svg";
+
+import { cn } from "@/utils";
+interface Props {
+  alternate?: boolean;
+  label?: string;
+  photo: ImageMetadata;
+  hasBlur?: boolean;
+}
+
+const { alternate = false, label, photo, hasBlur = false } = Astro.props;
+---
+
+<section
+  class="pt-[4.25rem] pb-[4.25rem] lg:pb-[8.5rem] [--percent:30%] [--px:2rem] lg:[--px:6rem] xl:[--px:12.5rem]"
+>
+  <div
+    class={cn(
+      "container grid gap-12 md:gap-0",
+      alternate
+        ? "grid-cols-1 md:grid-cols-[47%,1fr]"
+        : "grid-cols-1 md:grid-cols-[1fr,47%]"
+    )}
+  >
+    <div
+      class={cn(
+        "flex flex-col justify-center",
+        alternate
+          ? "order-2  md:pl-[min(var(--percent),var(--px))]"
+          : "order-2 md:order-1  md:pr-[min(var(--percent),var(--px))]"
+      )}
+    >
+      <div class={cn("flex flex-col justify-center gap-12")}>
+        <h2
+          class={cn(
+            "text-neutral-30 leading-tight ",
+            alternate
+              ? "text-[1.75rem] lg:text-[2rem] font-normal"
+              : "text-[2rem] md:text-5xl font-medium"
+          )}
+        >
+          {
+            label && (
+              <>
+                <span class="text-base font-medium uppercase leading-normal brand-gradient bg-clip-text text-transparent">
+                  {label}
+                </span>
+                <br />
+              </>
+            )
+          }
+          <slot name="title" />
+        </h2>
+        <div
+          class="text-neutral-30 text-xl font-light leading-tight tracking-[.4px]"
+        >
+          <slot />
+        </div>
+      </div>
+    </div>
+    <div
+      class={cn(
+        "flex items-center",
+        alternate ? "order-1" : "order-1 md:order-2"
+      )}
+    >
+      <div
+        class={cn(
+          "relative w-full  overflow-hidden",
+          hasBlur &&
+            "p-6 lg:p-8 border bg-primary-4 bg-opacity-[11%] border-primary-5/40 rounded-2xl"
+        )}
+      >
+        {
+          hasBlur && (
+            <>
+              <div class="absolute -top-4 -z-10 right-0 lg:-right-[250px] lg:w-full">
+                <Image src={carouselTop} alt="" />
+              </div>
+              <div class="absolute -bottom-6 left-0 -z-10 w-full">
+                <Image src={carouselBottom} alt="" />
+              </div>
+            </>
+          )
+        }
+        <Image class="mx-auto" src={photo} alt="" />
+      </div>
+    </div>
+  </div>
+</section>

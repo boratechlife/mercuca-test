@@ -1,0 +1,36 @@
+---
+import ourTeam from "@/assets/our-team.png";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+import { Image } from "astro:assets";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    about: { our_team: t },
+  },
+} = await useTranslation(lang);
+---
+
+<section class="py-[4.25rem]" aria-label={t.heading}>
+  <div class="container">
+    <h2
+      class="text-[2.5rem] text-center font-medium leading-[1.2] text-white mb-4"
+    >
+      {t.heading}
+    </h2>
+    <p
+      class="text-center text-xl font-light leading-tight text-white mb-[58px]"
+    >
+      <Trans translation={t.subheading}>
+        Lorem ipsum dolor sit amet, consectetur <br
+          class="hidden md:block"
+        />adipiscing elit, sed do eiusmod tempor incididunt <br
+          class="hidden md:block"
+        />ut labore et dolore.
+      </Trans>
+    </p>
+    <Image src={ourTeam} alt={t.heading} />
+  </div>
+</section>

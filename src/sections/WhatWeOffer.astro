@@ -1,0 +1,42 @@
+---
+import NumberCard from "@/components/cards/NumberCard.astro";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import { cn } from "@/utils";
+
+interface Props {
+  offerings: { title: string; description: string }[];
+  theme?: "blue" | "gray";
+}
+
+const { offerings, theme = "blue" } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+
+const { what_we_offer: t } = await useTranslation(lang);
+---
+
+<section class="py-[4.25rem]" arial-label={t.label}>
+  <div class="container">
+    <h2 class="heading-2 text-neutral-10 mb-16 text-center">
+      {t.heading}
+    </h2>
+
+    <div
+      class={cn(
+        "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 p-6 md:p-8  border rounded-2xl",
+        theme === "gray" && "border-primary-5/[.41] bg-primary-4/[.41]",
+        theme === "blue" && "bg-primary-6  border-primary-7"
+      )}
+    >
+      {
+        offerings.map(({ title, description }, index) => (
+          <NumberCard
+            title={title}
+            description={description}
+            index={index + 1}
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>

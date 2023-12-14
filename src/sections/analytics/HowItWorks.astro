@@ -1,0 +1,82 @@
+---
+import { Image } from "astro:assets";
+
+import partnership from "@/assets/icons/partnership.svg";
+import rocket from "@/assets/icons/rocket.svg";
+import setting_2 from "@/assets/icons/setting_2.png";
+import location from "@/assets/icons/location_on.svg";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    analytics: { how_it_works: t },
+  },
+} = await useTranslation(lang);
+
+const analyticsBenefits: {
+  title: string;
+  description: string;
+  icon: ImageMetadata;
+}[] = [
+  {
+    icon: rocket,
+
+    ...t.analytics_benefits.understand_sales_trends,
+  },
+  {
+    icon: location,
+    ...t.analytics_benefits.region_specific_configurations,
+  },
+  {
+    icon: partnership,
+    ...t.analytics_benefits.pinpoint_deal_characteristics,
+  },
+  {
+    icon: setting_2,
+    ...t.analytics_benefits.optimize_portfolio_content,
+  },
+];
+---
+
+<section class="py-[4.25rem]">
+  <div class="container">
+    <h2 class="heading-2 text-center mb-10 text-neutral-10">
+      <Trans translation={t.heading}>
+        How Mercura
+        <span class="text-accent-1"> CPQ Analytics</span>
+        <br />
+         drives value
+      </Trans>
+    </h2>
+    <p class="font-light text-base lg:text-xl text-neutral-30 text-center">
+      <Trans translation={t.subtext}>
+        Mercura CPQ Analytics empowers your organization to leverage <br />
+         data-driven insights for more informed decisions, improved sales <br />
+         strategies, and enhanced customer satisfaction.
+      </Trans>
+    </p>
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 gap-10 p-4 md:p-8 bg-primary-6 border border-primary-7 rounded-2xl mt-16"
+    >
+      {
+        analyticsBenefits.map((feature) => (
+          <div class="flex flex-col p-4 lg:p-8 bg-primary-4 rounded-2xl">
+            <div class="bg-neutral-40 bg-opacity-[9%] h-[4.5rem] w-max aspect-square flex items-center justify-center rounded-lg">
+              <Image src={feature.icon} alt={feature.title} />
+            </div>
+
+            <p class="text-[22px] my-6 font-bold text-neutral-10">
+              {feature.title}
+            </p>
+
+            <p class="text-neutral-30 text-base">{feature.description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

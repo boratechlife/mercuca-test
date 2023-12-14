@@ -1,0 +1,88 @@
+---
+import "@splidejs/splide/css";
+import { Image } from "astro:assets";
+
+import carouselTop from "@/assets/carousel_top.svg";
+import carouselBottom from "@/assets/carousel_bottom.svg";
+import carousel_1 from "@/assets/carousel_1.png";
+---
+
+<div
+  class="w-full relative p-8 border bg-primary-4 bg-opacity-[11%] border-primary-5/40 rounded-2xl overflow-hidden"
+>
+  <div class="absolute -top-4 -z-10 right-0 lg:-right-[250px] lg:w-full">
+    <Image src={carouselTop} alt="" />
+  </div>
+  <div class="absolute -bottom-6 left-0 -z-10 w-full">
+    <Image src={carouselBottom} alt="" />
+  </div>
+  <section class="splide" id="image-carousel">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {
+          [1, 2, 3].map((n) => (
+            <li class="splide__slide">
+              <Image class="mx-auto" src={carousel_1} alt="" />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <div class="flex w-full justify-center items-center gap-4 mt-6">
+    <button
+      id="btnPrev"
+      class="py-2 px-4 text-neutral-10 border border-neutral-30 flex items-center justify-center gap-4 rounded-[4px]"
+      ><svg
+        width="10"
+        height="16"
+        viewBox="0 0 10 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8.07995 16L0.0799547 8L8.07996 1.39876e-06L9.49996 1.42L2.91995 8L9.49995 14.58L8.07995 16Z"
+          fill="#D2D4D9"></path>
+      </svg>
+    </button>
+    <button
+      id="btnNext"
+      class="py-2 px-4 text-neutral-10 border border-neutral-30 flex items-center justify-center gap-4 rounded-[4px]"
+    >
+      <svg
+        width="10"
+        height="16"
+        viewBox="0 0 10 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1.92005 -6.99382e-07L9.92004 8L1.92004 16L0.500044 14.58L7.08004 8L0.500045 1.42L1.92005 -6.99382e-07Z"
+          fill="#D2D4D9"></path>
+      </svg>
+    </button>
+  </div>
+
+  <script>
+    import Splide from "@splidejs/splide";
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const splide = new Splide("#image-carousel", {
+        arrows: false,
+        type: "loop",
+      }).mount();
+
+      const btnPrev = document.querySelector("#btnPrev") as HTMLButtonElement;
+      const btnNext = document.querySelector("#btnNext") as HTMLButtonElement;
+
+      btnNext.addEventListener("click", (e) => {
+        splide.go("+1");
+      });
+
+      btnPrev.addEventListener("click", (e) => {
+        splide.go("-1");
+      });
+    });
+  </script>
+</div>

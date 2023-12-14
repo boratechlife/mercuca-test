@@ -1,0 +1,93 @@
+---
+import { Image } from "astro:assets";
+import uniqa from "@/assets/logos/uniqa.png";
+import winncare from "@/assets/logos/Winncare.svg";
+import husqvarna from "@/assets/logos/Husqvarna.svg";
+import achydraulic from "@/assets/logos/AC-Hydraulic.svg";
+import aeronordic from "@/assets/logos/AeroNordic.svg";
+import bluetop from "@/assets/logos/Bluetop.svg";
+import lindab from "@/assets/logos/Lindab.svg";
+import migatronic from "@/assets/logos/Migatronic.svg";
+
+const items: { title: string; image: ImageMetadata }[] = [
+  {
+    title: "Uniqa",
+    image: uniqa,
+  },
+  {
+    title: "Winncare",
+    image: winncare,
+  },
+  {
+    title: "Husqvarna",
+    image: husqvarna,
+  },
+  {
+    title: "AC-Hydraulic",
+    image: achydraulic,
+  },
+  {
+    title: "AeroNordic",
+    image: aeronordic,
+  },
+  {
+    title: "Bluetop",
+    image: bluetop,
+  },
+  {
+    title: "Lindab",
+    image: lindab,
+  },
+  {
+    title: "Migatronic",
+    image: migatronic,
+  },
+];
+
+interface Props extends astroHTML.JSX.HTMLAttributes {}
+const { class: classes = "" } = Astro.props;
+---
+
+<section class={`scroller overflow-hidden py-6 md:py-[100px] ${classes}`}>
+  <ul
+    class="scroll-container flex items-center gap-10 justify-center md:justify-normal md:gap-32 px-4 md:w-max flex-wrap md:flex-nowrap md:animate-[scroll_60s_linear_infinite] [&>[aria-hidden='true']]:hidden md:[&>[aria-hidden='true']]:block"
+  >
+    {
+      items.map((item) => (
+        <li class="scroll-item  ">
+          <Image
+            class="max-w-[124px] max-h-9 md:max-h-12"
+            src={item.image}
+            alt={item.title}
+          />
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<script>
+  const scrollers = [
+    ...document.querySelectorAll(".scroller"),
+  ] as HTMLElement[];
+
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    addAnimation();
+  }
+
+  function addAnimation() {
+    scrollers.forEach((scroller) => {
+      scroller.setAttribute("data-animated", "true");
+
+      const scrollerInner = scroller.querySelector(".scroll-container");
+      if (!scrollerInner) return;
+      const scrollerContent = Array.from(scrollerInner.children);
+
+      scrollerContent.forEach((item) => {
+        const duplicatedItem = item.cloneNode(true) as HTMLElement;
+        duplicatedItem.setAttribute("aria-hidden", "true");
+        scrollerInner.appendChild(duplicatedItem);
+      });
+    });
+  }
+</script>

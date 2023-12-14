@@ -1,0 +1,70 @@
+---
+import settingsWeb from "@/assets/icons/setting-web.svg";
+import alertDecagram from "@/assets/icons/alert-decagram-outline.svg";
+import bookEdit from "@/assets/icons/book-edit-outline.svg";
+import rocket from "@/assets/icons/rocket-launch-outline.svg";
+import { Image } from "astro:assets";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    product_modelling: { advantages: t },
+  },
+} = await useTranslation(lang);
+const advantages: {
+  icon: ImageMetadata;
+  title: string;
+  description: string;
+}[] = [
+  {
+    icon: settingsWeb,
+    ...t.advantages.configurability,
+  },
+  {
+    icon: alertDecagram,
+    ...t.advantages.error_reduction,
+  },
+  {
+    icon: bookEdit,
+    ...t.advantages.customization,
+  },
+  {
+    icon: rocket,
+    ...t.advantages.efficiency,
+  },
+];
+---
+
+<section class="py-[4.25rem]" aria-label={t.label}>
+  <div class="container">
+    <h2 class="heading-2 text-center text-neutral-10 mb-12">
+      <Trans translation={t.heading}>
+        The advantages <br /> of effective <span class="text-accent-1"
+          >Product Modelling</span
+        >
+      </Trans>
+    </h2>
+
+    <div
+      id="pm-advantages"
+      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6"
+    >
+      {
+        advantages.map((advantage) => (
+          <div class="p-6 rounded-2xl odd:bg-primary-5 even:bg-primary-4">
+            <Image class="h-12 w-12 mx-auto mb-6" src={advantage.icon} alt="" />
+            <p class="text-neutral-10 text-center font-bold capitalize text-[22px] mb-4">
+              {advantage.title}
+            </p>
+            <p class="text-base text-neutral-30 leading-[1.4]">
+              {advantage.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

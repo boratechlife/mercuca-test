@@ -1,0 +1,80 @@
+---
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import GetInTouchForm from "@/components/contact/GetInTouchForm.astro";
+import ScrollArrow from "@/components/icons/ScrollArrow.astro";
+import JoinJourneySlider from "@/sections/quote/JoinJourneySlider.astro";
+import Layout from "@/layouts/Layout.astro";
+import OvercomeQuotingChallanges from "@/sections/quote/OvercomeQuotingChallanges.astro";
+import WhatWeOffer from "@/sections/WhatWeOffer.astro";
+import Collaboration from "@/sections/quote/Collaboration.astro";
+import Support from "@/sections/quote/Support.astro";
+
+import { locales, useTranslation, type Locale } from "@/i18n";
+
+export async function getStaticPaths() {
+  return Object.keys(locales).map((locale) => ({ params: { locale } }));
+}
+const { locale } = Astro.params;
+const {
+  common,
+  pages: { quote_and_document_generation: t },
+} = await useTranslation(locale as Locale);
+---
+
+<Layout title={t.title} theme="gray">
+  <Breadcrumb links={[common.breadcrumb.product, t.title]} />
+
+  <section class="py-[4.25rem]">
+    <div
+      class="container relative gap-6 md:gap-12 xl:gap-20 grid grid-cols-1 lg:grid-cols-2 text-neutral-10 mb-[4.25rem]"
+    >
+      <div>
+        <h1 class="text-neutral-10 heading-1">{t.hero.heading}</h1>
+      </div>
+
+      <div>
+        <p class="text-2xl lg:text-[2rem] leading-tight text-neutral-10">
+          {t.hero.subtext}
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="flex items-center gap-2.5 animate-[bounce_2s_infinite]">
+        <ScrollArrow class="h-5 w-auto" />
+        <span
+          class="text-sm text-white leading-normal tracking-[.7px] capitalize"
+          >{common.scroll_for_more}</span
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="py-[4.25rem]" aria-label={t.join_journey.label}>
+    <div class="container">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20">
+        <JoinJourneySlider />
+        <div class="flex flex-col justify-center">
+          <h2 class="heading-2 text-neutral-20 mb-10 lg:mb-16">
+            {t.join_journey.heading}
+          </h2>
+
+          <p
+            class="text-base lg:text-xl text-neutral-30 font-light lg:leading-tight tracking-[0.4px]"
+          >
+            {t.join_journey.subtext}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <OvercomeQuotingChallanges />
+
+  <WhatWeOffer theme="gray" offerings={t.what_we_offer} />
+
+  <Collaboration />
+
+  <Support />
+
+  <GetInTouchForm theme="gray" />
+</Layout>

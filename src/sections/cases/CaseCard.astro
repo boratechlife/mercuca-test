@@ -1,0 +1,89 @@
+---
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Link from "@/i18n/Link.astro";
+import { cn } from "@/utils";
+import { Image } from "astro:assets";
+interface Props extends astroHTML.JSX.HTMLAttributes {
+  alternate?: boolean;
+  link?: string;
+  photo: ImageMetadata;
+}
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: { cases: t },
+} = await useTranslation(lang);
+const { alternate = false, class: classes, link = "#", photo } = Astro.props;
+
+// you can pass [--case-card-bg:#1F2841] [--border-transparency:0.4] to change the background color and border transparency
+---
+
+<div
+  class={cn(
+    "[--case-card-bg:#1F2841] [--border-transparency:0.4] rounded-2xl",
+    classes,
+    alternate ? "case-border" : "case-border-alt"
+  )}
+>
+  <div
+    class={cn(
+      "p-6 md:p-12 xl:p-16 grid gap-12 font-poppins bg-primary-4/[.11]",
+      alternate
+        ? "grid-cols-1 lg:grid-cols-[1fr,40%]"
+        : "grid-cols-1 lg:grid-cols-[40%,1fr]"
+    )}
+  >
+    <div
+      class={cn(
+        "flex flex-col justify-center gap-6 md:gap-8",
+        alternate ? "order-2" : "order-2 lg:order-1"
+      )}
+    >
+      <h2
+        class="text-[2rem] md:text-5xl text-neutral-10 leading-tight font-medium"
+      >
+        <slot name="title" />
+      </h2>
+      <div
+        class="text-base md:text-xl font-light tracking-[.4px] text-neutral-30"
+      >
+        <slot name="description" />
+      </div>
+      <Link
+        href={link}
+        class="brand-gradient py-4 px-8 rounded-lg block text-base font-medium text-center text-white w-full md:w-max"
+      >
+        {t.read_more}
+      </Link>
+    </div>
+    <div class={cn(alternate ? "order-1" : "order-1 lg:order-2")}>
+      <Image src={photo} alt="" />
+    </div>
+  </div>
+</div>
+<style>
+  .case-border,
+  .case-border-alt {
+    border: 1px solid transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  .case-border {
+    background-image: linear-gradient(var(--case-card-bg), var(--case-card-bg)),
+      linear-gradient(
+        to left,
+        rgba(252, 148, 109, var(--border-transparency)),
+        rgb(214, 84, 91)
+      );
+  }
+  .case-border-alt {
+    background-image: linear-gradient(var(--case-card-bg), var(--case-card-bg)),
+      linear-gradient(
+        to left,
+        rgb(252, 148, 109),
+        rgba(214, 84, 91, var(--border-transparency))
+      );
+  }
+</style>

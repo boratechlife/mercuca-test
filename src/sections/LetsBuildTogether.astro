@@ -1,0 +1,56 @@
+---
+import RequestDemoLink from "@/components/RequestDemoLink.astro";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Link from "@/i18n/Link.astro";
+import Trans from "@/i18n/Trans.astro";
+import { cn } from "@/utils";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  common: { lets_build_together: t },
+} = await useTranslation(lang);
+
+interface Props {
+  theme?: "blue" | "gray";
+}
+
+const { theme = "blue" } = Astro.props;
+---
+
+<section class="py-[4.25rem]">
+  <div class="container">
+    <div
+      class={cn(
+        "flex flex-col gap-12  border border-primary-7 rounded-2xl py-20 px-4 text-center",
+        theme === "blue" ? "bg-primary-6" : "bg-primary-4/[.27]"
+      )}
+    >
+      <p
+        class="text-[2rem] md:text-[4rem] md:font-medium leading-tight text-neutral-30"
+      >
+        <Trans translation={t.lets_build_together}>
+          Let’s build <span class="brand-gradient bg-clip-text text-transparent"
+            >together.</span
+          >
+        </Trans>
+      </p>
+      <p
+        class="md:max-w-[700px] mx-auto text-base md:text-xl md:font-light tracking-[.4px] leading-[1.4] text-neutral-30"
+      >
+        {t.body}
+      </p>
+      <div
+        class="flex flex-col md:flex-row items-center md:justify-center gap-6"
+      >
+        <RequestDemoLink class="w-3/5 md:w-max" />
+        <Link
+          href="/request-a-demo"
+          class="block text-white rounded-lg px-8 py-4 before:text-center w-3/5 md:w-max font-medium border border-white"
+        >
+          {t.contact_us}
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>

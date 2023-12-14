@@ -1,0 +1,32 @@
+---
+import RequestDemoLink from "@/components/RequestDemoLink.astro";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Link from "@/i18n/Link.astro";
+import Trans from "@/i18n/Trans.astro";
+
+const lang = getLangFromUrl(Astro.url);
+
+const { call_to_action: t } = await useTranslation(lang);
+---
+
+<section class="py-[4.25rem]">
+  <div class="container">
+    <h2 class="heading-2 text-neutral-30 text-center mb-10">
+      <Trans translation={t.heading}>
+        How does this apply <br /> to
+        <span class="brand-gradient bg-clip-text text-transparent">your</span>
+         company?
+      </Trans>
+    </h2>
+
+    <div class="flex flex-col md:flex-row items-center md:justify-center gap-6">
+      <RequestDemoLink />
+      <Link
+        href="#"
+        class="block text-white rounded-lg px-8 py-4 before:text-center font-medium border border-white"
+      >
+        {t.contact_us}
+      </Link>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,105 @@
+---
+import ArrowTopRight from "@/components/icons/ArrowTopRight.astro";
+import { Image } from "astro:assets";
+
+import rocket from "@/assets/icons/rocket-20-regular.svg";
+import chart3d from "@/assets/icons/chart-3d.svg";
+import box3d from "@/assets/icons/box-3d-three-points.svg";
+import pricehistory from "@/assets/icons/price-history.svg";
+import documentoutline from "@/assets/icons/document-outline.svg";
+import graph from "@/assets/icons/graph.svg";
+
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    home: {
+      business_growth_features: { heading, features: t },
+    },
+  },
+} = await useTranslation(lang);
+
+const features: {
+  icon: ImageMetadata;
+  title: string;
+  description: string;
+  url: string;
+}[] = [
+  {
+    icon: chart3d,
+    ...t.visualization,
+    url: "visualizations",
+  },
+  {
+    icon: rocket,
+    ...t.efficient_product_modelling,
+    url: "product-modelling",
+  },
+  {
+    icon: box3d,
+    ...t.need_based,
+    url: "configuration-engine",
+  },
+  {
+    icon: pricehistory,
+    ...t.flexible_pricing_engine,
+    url: "pricing-engine",
+  },
+  {
+    icon: documentoutline,
+    ...t.document_generation,
+    url: "quote-and-document-generation",
+  },
+  {
+    icon: graph,
+    ...t.unique_analytics,
+    url: "analytics",
+  },
+];
+---
+
+<section class="py-[4.25rem]">
+  <div class="container">
+    <h2 class="heading-2 text-neutral-10 mb-16">
+      <Trans translation={heading}>
+        Features that help <br /> your
+        <span class="brand-gradient bg-clip-text text-transparent"
+          >business grow.</span
+        >
+      </Trans>
+    </h2>
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 p-6 md:p-10 bg-primary-6 border border-primary-7 rounded-2xl"
+    >
+      {
+        features.map((feature) => (
+          <a
+            href={feature.url}
+            class="flex flex-col p-6 bg-primary-4 rounded-2xl"
+          >
+            <div class="p-4 bg-neutral-20/[.09] w-max rounded-[.625rem] fill-neutral-40 text-neutral-40">
+              <Image
+                class="h-6 aspect-auto"
+                src={feature.icon}
+                alt={feature.title}
+              />
+            </div>
+            <span class="mb-6 mt-4 text-xl font-light leading-tight tracking-[.4px] text-neutral-20 flex items-end justify-between gap-2">
+              {feature.title}
+              <span class="w-24 block">
+                <ArrowTopRight class="h-3.5 md:h-3 aspect-auto text-white fill-neutral-10" />
+              </span>
+            </span>
+            <p class="text-base leading-[1.4] text-neutral-40">
+              {feature.description}
+            </p>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>

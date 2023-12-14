@@ -1,0 +1,91 @@
+---
+import "@/global.css";
+import "@fontsource/poppins/300.css";
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/700.css";
+// Supports weights 100-900
+import "@fontsource-variable/inter";
+
+import TheNavbar from "@/components/TheNavbar.astro";
+import { SEO } from "astro-seo";
+import type { Props as AstroSEOProps } from "astro-seo";
+
+import { site } from "@/constants";
+import TheFooter from "@/components/TheFooter.astro";
+import { getLangFromUrl } from "@/i18n";
+import { cn } from "@/utils";
+
+const lang = getLangFromUrl(Astro.url);
+
+interface Props extends AstroSEOProps {
+  theme?: "blue" | "gray";
+  class?: string;
+}
+const {
+  title,
+  description,
+  theme = "blue",
+  class: classes,
+  ...props
+} = Astro.props;
+
+const favicons: {
+  rel: "icon" | "apple-touch-icon";
+  type?: "image/png";
+  href: string;
+  sizes?: string;
+}[] = [
+  {
+    rel: "icon",
+    href: "/favicon.ico",
+  },
+  {
+    rel: "icon",
+    type: "image/png",
+    sizes: "16x16",
+    href: "/favicon-32x32.png",
+  },
+  {
+    rel: "icon",
+    type: "image/png",
+    sizes: "32x32",
+    href: "/favicon-32x32.png",
+  },
+  {
+    rel: "apple-touch-icon",
+    sizes: "180x180",
+    href: "/apple-touch-icon.png",
+  },
+];
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    {favicons.map((icon) => <link {...icon} />)}
+    <meta name="generator" content={Astro.generator} />
+    <SEO
+      title={title ? `${title} - ${site.title}` : site.title}
+      description={description}
+      {...props}
+    />
+  </head>
+  <body
+    class={cn(
+      "flex flex-col min-h-full font-poppins",
+      theme === "blue" ? "bg-blue-dark" : "bg-primary-1"
+    )}
+  >
+    <slot name="nav">
+      <TheNavbar theme={theme} />
+    </slot>
+    <main class={classes}>
+      <slot />
+    </main>
+    <TheFooter theme={theme} />
+  </body>
+</html>

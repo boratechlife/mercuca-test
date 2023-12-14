@@ -1,0 +1,62 @@
+---
+import Link from "@/i18n/Link.astro";
+import { cn } from "@/utils";
+
+interface Props {
+  /**
+   * the aria-label and part of title for the section
+   */
+  label: string;
+  /**
+   * if provided, will render a link at the bottom of the section
+   */
+  withLink?: { title: string; href: string };
+  /**
+   * if true, will render  a single column col-1 slot only
+   */
+  singleCol?: boolean;
+}
+
+const { label, withLink, singleCol = false } = Astro.props;
+---
+
+<section class="py-[4.25rem]" aria-label={label}>
+  <div class="container space-y-12">
+    <h2 class="heading-2 text-neutral-30">
+      <span
+        class="text-base font-medium uppercase leading-normal brand-gradient bg-clip-text text-transparent"
+        >{label}</span
+      ><br />
+      <slot name="title" />
+    </h2>
+
+    <div
+      class={cn(
+        "text-neutral-30 text-xl font-light leading-tight tracking-[.4px]",
+        !singleCol && "grid  grid-cols-1 md:grid-cols-2 gap-12 md:gap-16"
+      )}
+    >
+      <div class={cn(singleCol && "w-3/5")}>
+        <slot name="col-1" />
+      </div>
+
+      {
+        !singleCol && (
+          <div>
+            <slot name="col-2" />
+          </div>
+        )
+      }
+    </div>
+    {
+      withLink && (
+        <Link
+          href={withLink.href}
+          class="brand-gradient py-4 px-8 rounded-lg block text-base font-medium text-center text-white w-full md:w-max"
+        >
+          {withLink.title}
+        </Link>
+      )
+    }
+  </div>
+</section>

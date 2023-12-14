@@ -1,0 +1,25 @@
+---
+interface Props extends astroHTML.JSX.HTMLAttributes {
+  index: number;
+  title: string;
+  description: string;
+}
+
+const { index, title, description, class: classes = "" } = Astro.props;
+---
+
+<div
+  class={`flex flex-col p-6 bg-primary-4 rounded-2xl font-poppins ${classes}`}
+>
+  <div
+    class="py-2 px-4 bg-neutral-20/[.09] w-max rounded-lg text-[2rem] font-medium leading-normal text-white"
+  >
+    {index < 10 ? `0${index}` : index}
+  </div>
+  <p
+    class="my-6 text-xl font-semibold leading-tight tracking-[.4px] text-neutral-10 capitalize"
+  >
+    {title}
+  </p>
+  <p class="text-base text-neutral-20">{description}</p>
+</div>

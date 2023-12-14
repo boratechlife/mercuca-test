@@ -1,0 +1,18 @@
+---
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Link from "@/i18n/Link.astro";
+interface Props extends astroHTML.JSX.AnchorHTMLAttributes {}
+
+const { class: classes = "", ...props } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+
+const { common } = await useTranslation(lang);
+---
+
+<Link
+  href="/request-a-demo"
+  class={`brand-gradient block text-white rounded-lg px-8 py-4 text-center font-medium ${classes}`}
+>
+  {common.request_a_demo}
+</Link>

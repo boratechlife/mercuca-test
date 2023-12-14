@@ -1,0 +1,24 @@
+---
+import Link from "@/i18n/Link.astro";
+interface Props {
+  title: string;
+  links: { title: string; url: string }[];
+}
+
+const { title, links } = Astro.props;
+---
+
+<div class="font-poppins">
+  <p class="text-primary-5 capitalize font-semibold text-base">{title}</p>
+  <ul class="flex flex-col gap-4 mt-4">
+    {
+      links.map((link) => (
+        <li>
+          <Link href={link.url} class="text-sm capitalize text-neutral-30">
+            {link.title}
+          </Link>
+        </li>
+      ))
+    }
+  </ul>
+</div>

@@ -1,0 +1,67 @@
+---
+import circular from "@/assets/icons/circular-loop.svg";
+import customize from "@/assets/icons/customize.svg";
+import hierarchy from "@/assets/icons/hierarchy.svg";
+import visualize from "@/assets/icons/visualize.svg";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+import { Image } from "astro:assets";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    product_modelling: { features: t },
+  },
+} = await useTranslation(lang);
+
+const offerings: { title: string; description: string; icon: ImageMetadata }[] =
+  [
+    {
+      icon: hierarchy,
+      ...t.features.hierarchical_structures,
+    },
+    {
+      icon: customize,
+      ...t.features.customization,
+    },
+    {
+      icon: circular,
+      ...t.features.reuse_and_optimization,
+    },
+    {
+      icon: visualize,
+      ...t.features.visualization,
+    },
+  ];
+---
+
+<section id="pm-key-features" class="py-[4.25rem]" arial-label={t.label}>
+  <div class="container">
+    <h2 class="heading-2 text-neutral-10 mb-16 text-center">
+      <Trans translation={t.heading}>
+        Key features of Product <br /> Modeling in <span
+          class="brand-gradient bg-clip-text text-transparent">CPQ</span
+        >
+      </Trans>
+    </h2>
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 p-6 lg:p-10 bg-primary-5/10 border border-primary-7 rounded-2xl"
+    >
+      {
+        offerings.map(({ title, description, icon }, index) => (
+          <div class="flex flex-col p-8 bg-primary-4 rounded-2xl">
+            <div class="mb-10 h-[250px]">
+              <Image class="mx-auto max-h-[100%]" src={icon} alt={title} />
+            </div>
+            <p class="mb-4 text-2xl font-medium leading-tight  tracking-[.4px] text-neutral-10 flex items-end  ">
+              {title}
+            </p>
+            <p class="text-base leading-[1.4] text-neutral-40">{description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,78 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import UnleashThePotential from "@/sections/analytics/UnleashThePotential.astro";
+import HowItWorks from "@/sections/analytics/HowItWorks.astro";
+import Empower from "@/sections/analytics/Empower.astro";
+import BusinessResults from "@/sections/analytics/BusinessResults.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import laptopImg from "@/assets/laptop.png";
+
+import circles from "@/assets/circles.png";
+import { Image } from "astro:assets";
+import GetInTouchForm from "@/components/contact/GetInTouchForm.astro";
+
+import { locales, useTranslation, type Locale } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+
+export async function getStaticPaths() {
+  return Object.keys(locales).map((locale) => ({ params: { locale } }));
+}
+const { locale } = Astro.params;
+const {
+  common,
+  pages: { analytics: t },
+} = await useTranslation(locale as Locale);
+---
+
+<Layout title={t.title} class="pb-[4.25rem]">
+  <Breadcrumb links={[common.breadcrumb.product, t.title]} />
+  <section class="pt-[4.25rem] pb-[5.625rem]">
+    <div class="container">
+      <h1
+        class="brand-gradient bg-clip-text text-transparent heading-1 text-center"
+      >
+        {t.heading}
+      </h1>
+    </div>
+    <div
+      class="flex flex-wrap lg:flex-nowrap items-center justify-center lg:justify-normal mt-[58px] relative"
+    >
+      <Image
+        class="absolute right-0 xl:right-[148px] top-full -translate-y-[30%] xl:-translate-y-1/2"
+        src={circles}
+        alt=""
+      />
+      <div
+        class="w-full lg:w-1/2 flex-none flex items-center lg:items-start pr-6 md:pr-0"
+      >
+        <Image src={laptopImg} alt="" />
+      </div>
+
+      <div
+        class="w-full lg:w-1/2 flex-grow pl-6 lg:pl-0 container-right mt-12 md:mt-0"
+      >
+        <p
+          class="text-[2rem] lg:text-[3rem] lg:leading-tight font-medium mb-4 lg:mb-12 text-neutral-10"
+        >
+          <Trans translation={t.business_insignts.heading}>
+            We help you <span class="text-accent-1">unlock</span> business
+            insights.
+          </Trans>
+        </p>
+        <p class="font-light text-base lg:text-xl text-neutral-10 lg:max-w-xl">
+          {t.business_insignts.subtext}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <UnleashThePotential />
+
+  <HowItWorks />
+
+  <Empower />
+
+  <BusinessResults />
+
+  <GetInTouchForm />
+</Layout>

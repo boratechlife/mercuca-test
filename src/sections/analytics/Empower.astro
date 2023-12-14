@@ -1,0 +1,33 @@
+---
+import fullQuote from "@/assets/quote_doc.png";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import { Image } from "astro:assets";
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    analytics: { empower: t },
+  },
+} = await useTranslation(lang);
+---
+
+<section class="py-[4.25rem]">
+  <div class="container">
+    <div
+      class="w-full flex flex-wrap lg:flex-nowrap gap-4 lg:gap-10 items-center"
+    >
+      <div class="w-full lg:w-1/2">
+        <Image src={fullQuote} alt="" />
+      </div>
+      <div class="w-full lg:w-1/2 p-4 space-y-12">
+        <p class="text-[22px] lg:text-[2rem] text-neutral-30 leading-10">
+          {t.heading}
+        </p>
+
+        <p class="text-base lg:text-xl font-light text-neutral-30">
+          {t.subtext}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

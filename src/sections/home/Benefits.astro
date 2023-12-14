@@ -1,0 +1,60 @@
+---
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    home: { benefits: t },
+  },
+} = await useTranslation(lang);
+---
+
+<section class="py-[4.25rem]">
+  <div class="container">
+    <h2 class="heading-2 text-center text-neutral-10 mb-8">
+      <Trans translation={t.heading}>
+        About the benefits of <br />
+        <span class="brand-gradient bg-clip-text text-transparent"
+          >product configuration</span
+        >
+      </Trans>
+    </h2>
+
+    <div
+      class="flex flex-col lg:flex-row items-center lg:justify-around py-12 bg-primary-6 border border-primary-7 rounded-2xl"
+    >
+      <div
+        class="text-center text-white w-4/5 lg:w-[380px] border-b lg:border-b-0 lg:border-r border-primary-7 p-4 lg:p-0"
+      >
+        <p class="text-[3rem] lg:text-[4.5rem] font-medium leading-[1.4]">
+          {t.stats.conversion_rate.value}
+        </p>
+        <p class="font-light text-xl tracking-[.4px] leading-tight">
+          <Trans translation={t.stats.conversion_rate.label} />
+        </p>
+      </div>
+
+      <div class="text-center text-white w-4/5 lg:w-[380px] py-4 lg:py-0">
+        <p class="text-[3rem] lg:text-[4.5rem] font-medium leading-[1.4]">
+          {t.stats.sales_price.value}
+        </p>
+        <p class="font-light text-xl tracking-[.4px] leading-tight">
+          <Trans translation={t.stats.sales_price.label} />
+        </p>
+      </div>
+
+      <div
+        class="text-center text-white w-4/5 lg:w-[380px] border-t lg:border-t-0 lg:border-l border-primary-7 p-4 lg:p-0"
+      >
+        <p class="text-[3rem] lg:text-[4.5rem] font-medium leading-[1.4]">
+          {t.stats.online_returns.value}
+        </p>
+        <p class="font-light text-xl tracking-[.4px] leading-tight">
+          <Trans translation={t.stats.online_returns.label} />
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

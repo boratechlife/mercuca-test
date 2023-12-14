@@ -1,0 +1,169 @@
+---
+import Input from "../form/Input.astro";
+import Textarea from "../form/Textarea.astro";
+import { cn } from "@/utils";
+
+import { getLangFromUrl, useTranslation } from "@/i18n";
+const lang = getLangFromUrl(Astro.url);
+
+const { common } = await useTranslation(lang);
+
+import pill from "@/assets/pill.png";
+import mail from "@/assets/icons/mail.svg";
+
+import phone from "@/assets/icons/phone.svg";
+
+import { contact } from "@/constants";
+import { Image } from "astro:assets";
+interface Props {
+  theme?: "blue" | "gray";
+  kind?: "plain" | "full";
+}
+const { theme = "blue", kind = "plain" } = Astro.props;
+
+if (Astro.request.method === "POST") {
+  try {
+    const data = await Astro.request.formData();
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    }
+  }
+}
+
+const isBlueAndPlain = theme === "blue" && kind === "plain";
+
+const isGrayAndPlain = theme === "gray" && kind === "plain";
+---
+
+<section
+  class={cn(
+    "overflow-x-clip",
+    kind === "plain" && "py-[4.25rem]",
+    kind === "full" && "py-[4.25rem] xl:py-[100px]"
+  )}
+  aria-label="Get in touch"
+>
+  <div class="container">
+    <div
+      class={cn(
+        isBlueAndPlain && "bg-primary-6 border-primary-5/[.41]",
+        isGrayAndPlain && "bg-primary-8  border-primary-7",
+        kind === "plain" && "py-8 px-4 lg:px-16 border rounded-2xl  "
+      )}
+    >
+      <div
+        class={cn(
+          "grid grid-cols-1 lg:grid-cols-2 ",
+          kind === "full" && "gap-[8.125rem]",
+          kind === "plain" && "p-6 md:py-[4.25rem]"
+        )}
+      >
+        <div
+          class={cn(
+            "flex flex-col relative ",
+            kind === "plain" && " justify-center"
+          )}
+        >
+          <p
+            class={cn(
+              "text-[2.5rem] md:text-5xl lg:text-[4rem] xl:text-[4.5rem] font-medium tracking-[3.6px] leading-[1.2]",
+              kind === "plain" && "text-neutral-10",
+              kind === "full" && "brand-gradient bg-clip-text text-transparent"
+            )}
+          >
+            {common.contact_form.get_in_touch}
+          </p>
+
+          {
+            kind === "full" && (
+              <div class="py-[4.25rem] text-xl font-light leading-[1.5] text-white">
+                <p>{common.contact_form.learn_more.learn_more_about}:</p>
+                <ul>
+                  {common.contact_form.learn_more.learn_list.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )
+          }
+
+          {
+            kind === "full" && (
+              <>
+                <div class="flex items-center gap-2.5 mb-4">
+                  <Image src={phone} alt="" />{" "}
+                  <span class="brand-gradient bg-clip-text text-transparent font-medium text-base tracking-[.8px]">
+                    {" "}
+                    {contact.phone}
+                  </span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <Image src={mail} alt="" />{" "}
+                  <span class="brand-gradient bg-clip-text text-transparent font-medium text-base tracking-[.8px]">
+                    {" "}
+                    {contact.email}
+                  </span>
+                </div>
+              </>
+            )
+          }
+
+          {
+            kind === "full" && (
+              <Image
+                class="absolute top-full md:top-1/2 lg:top-full left-3/4 xl:left-1/2 -translate-x-1/2 -translate-y-[40%] rotate-90"
+                src={pill}
+                alt=""
+              />
+            )
+          }
+        </div>
+        <form
+          method="post"
+          class={cn(kind === "plain" && "xl:px-6 mt-10 xl:mt-0")}
+        >
+          <div class="flex flex-col gap-6 mb-10">
+            <Input
+              type="text"
+              placeholder={common.contact_form.inputs.name.placeholder}
+              name="name"
+              required
+            />
+            <Input
+              type="text"
+              placeholder={common.contact_form.inputs.company.placeholder}
+              name="company"
+            />
+            <Input
+              type="email"
+              placeholder={common.contact_form.inputs.email.placeholder}
+              name="email"
+              required
+            />
+            <Input
+              type="text"
+              placeholder={common.contact_form.inputs.phone.placeholder}
+              name="phone"
+            />
+            <Textarea
+              name="question"
+              placeholder={common.contact_form.inputs.question.placeholder}
+              rows={5}
+            />
+          </div>
+          <button
+            type="submit"
+            class={cn(
+              "w-full md:w-max bg-accent-1 text-white rounded-lg  font-medium",
+              kind === "plain" && "text-xl xl:text-base py-3.5 xl:py-2.5 px-6 ",
+              kind === "full" && "py-5 px-10 text-2xl xl:text-base"
+            )}
+          >
+            {common.contact_form.submit}</button
+          >
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

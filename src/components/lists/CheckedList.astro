@@ -1,0 +1,18 @@
+---
+import Tick from "../icons/Tick.astro";
+interface Props extends astroHTML.JSX.HTMLAttributes {
+  items: string[];
+}
+
+const { items, class: classes = "", ...props } = Astro.props;
+---
+
+<ul class={`flex flex-col gap-4 justify-center ${classes}`} {...props}>
+  {
+    items.map((item) => (
+      <li class="flex items-start gap-1 text-xl font-light leading-tight  tracking-[.4px] text-neutral-30">
+        <Tick class="h-5 aspect-auto shrink-0" /> {item}
+      </li>
+    ))
+  }
+</ul>

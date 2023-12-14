@@ -1,0 +1,150 @@
+---
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Layout from "@/layouts/Layout.astro";
+
+import Team from "@/sections/about/Team.astro";
+import OurValues from "@/sections/about/OurValues.astro";
+import { offices } from "@/constants/config";
+import { Image } from "astro:assets";
+import { locales, useTranslation, type Locale } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+
+export async function getStaticPaths() {
+  return Object.keys(locales).map((locale) => ({ params: { locale } }));
+}
+const { locale } = Astro.params;
+const {
+  pages: { about: t },
+} = await useTranslation(locale as Locale);
+
+const stats: {
+  decription: string;
+  value: number;
+  bgColor: string;
+  postFix?: string;
+}[] = [
+  {
+    bgColor: "#707EA5",
+    value: 10,
+    postFix: "M+",
+    decription: t.stats.revenue,
+  },
+  {
+    bgColor: "#FC946D",
+    value: 179,
+    decription: t.stats.satisfied_customers,
+  },
+  {
+    bgColor: "#3A4972",
+    value: 1,
+    postFix: "M+",
+    decription: t.stats.lines_of_code,
+  },
+  {
+    bgColor: "#D6545B",
+    value: 11,
+    decription: t.stats.employees,
+  },
+];
+
+const ourOffices = [offices.aarhus, offices.odense];
+---
+
+<Layout title={t.title}>
+  <Breadcrumb links={[t.title]} />
+  <section class="pt-[4.25rem] pb-[7.5rem]">
+    <div class="container">
+      <h1
+        class="heading-1 text-center brand-gradient bg-clip-text text-transparent"
+      >
+        <Trans translation={t.heading} />
+      </h1>
+      <p
+        class="max-w-[696px] mx-auto text-white text-xl font-light leading-tight text-center tracking-[.4px] mt-12 mb-16"
+      >
+        {t.subheading}
+      </p>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 xl:gap-4"
+      >
+        {
+          stats.map((stat) => (
+            <div
+              style={{ backgroundColor: stat.bgColor }}
+              class="px-6 py-[50px] rounded-2xl"
+            >
+              <p
+                data-value={stat.value}
+                data-postfix={stat.postFix || ""}
+                class="mb-4 font-inter font-medium leading-tight text-center text-neutral-10 text-[5rem] stat"
+              >
+                00
+              </p>
+              <p
+                class="text-lg font-medium  text-neutral-10 text-center"
+                set:html={stat.decription}
+              />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <OurValues />
+
+  <Team />
+
+  <section class="pt-[4.25rem] pb-[7.5rem]" aria-label={t.our_offices}>
+    <div class="container">
+      <h2
+        class="text-[2.5rem] text-center font-medium leading-[1.2] text-white mb-[58px]"
+      >
+        {t.our_offices}
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 xl:gap-16">
+        {
+          ourOffices.map((office) => (
+            <div class="p-8 rounded-2xl bg-primary-5/[.39]">
+              <Image src={office.image} alt={office.name} />
+              <p class="my-4 font-bold capitalize text-[22px] text-white">
+                {office.name}
+              </p>
+              <p class="text-white text-base">
+                {office.address.line_1}, {office.address.line_2}
+                <br />
+                {office.country}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Layout>
+<script>
+  const stats = [
+    ...document.querySelectorAll(".stat"),
+  ] as HTMLParagraphElement[];
+
+  stats.forEach((stat) => {
+    const postfix = stat.dataset.postfix || "";
+    const value = parseInt(stat.dataset.value || "0");
+    const duration = 1000;
+    const interval = 10;
+    const steps = Math.ceil(duration / interval);
+    const increment = value / steps;
+
+    let current = 0;
+    const timer = setInterval(() => {
+      current += increment;
+      stat.textContent = current.toFixed(0);
+
+      if (current >= value) {
+        clearInterval(timer);
+        stat.textContent = value.toFixed(0) + postfix;
+      }
+    }, interval);
+  });
+</script>

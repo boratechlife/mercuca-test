@@ -1,0 +1,17 @@
+---
+interface Props extends astroHTML.JSX.SVGAttributes {}
+
+const { class: classes = "h-6 aspect-auto text-white", ...props } = Astro.props;
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 25"
+  fill="none"
+  class={classes}
+  {...props}
+>
+  <path
+    d="M2.4 24.1129L0 21.7129L9.6 12.1129L0 2.51292L2.4 0.112915L12 9.71292L21.6 0.112915L24 2.51292L14.4 12.1129L24 21.7129L21.6 24.1129L12 14.5129L2.4 24.1129Z"
+    fill="#D2D4D9"></path>
+</svg>

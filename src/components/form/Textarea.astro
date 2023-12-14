@@ -1,0 +1,16 @@
+---
+interface Props extends astroHTML.JSX.TextareaHTMLAttributes {}
+
+const { class: classes = "", placeholder, ...props } = Astro.props;
+
+const newPlaceholder = !placeholder
+  ? undefined
+  : props.required
+  ? placeholder + "*"
+  : placeholder;
+---
+
+<textarea
+  class={`px-5 py-3.5 rounded-md text-[#DCD7D5] leading-[1.5] border border-neutral-10/20 w-full bg-primary-4 ${classes}`}
+  {...props}
+  placeholder={newPlaceholder}></textarea>

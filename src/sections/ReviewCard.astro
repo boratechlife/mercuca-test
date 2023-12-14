@@ -1,0 +1,36 @@
+---
+import { cn } from "@/utils";
+import { Image } from "astro:assets";
+interface Props extends astroHTML.JSX.HTMLAttributes {
+  avatar: ImageMetadata;
+  imageAlt?: string;
+}
+
+const {
+  avatar,
+  imageAlt = "",
+  class: classes = "md:max-w-[700px]  px-6",
+} = Astro.props;
+---
+
+<section class="py-[4.25rem]">
+  <div class={cn(" mx-auto", classes)}>
+    <blockquote>
+      <div
+        class="text-xl md:text-[2rem] font-light leading-tight text-neutral-10 text-center"
+      >
+        <q><slot /></q>
+      </div>
+      <div class="my-6">
+        <Image
+          class="w-20 md:w-[120px] aspect-square rounded-full mx-auto"
+          src={avatar}
+          alt={imageAlt}
+        />
+      </div>
+      <div class="text-center text-white text-base">
+        <slot name="author" />
+      </div>
+    </blockquote>
+  </div>
+</section>

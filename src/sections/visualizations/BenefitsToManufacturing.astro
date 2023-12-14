@@ -1,0 +1,92 @@
+---
+import visualization from "@/assets/realtime-visualization.png";
+import share from "@/assets/share.png";
+import augmented from "@/assets/augmented.png";
+import drag_and_drop from "@/assets/drag_and_drop.png";
+import visual_friendly from "@/assets/visual_friendly.png";
+import { Image } from "astro:assets";
+import { cn } from "@/utils";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    visualizations: { benefits_to_manufacturing: t },
+  },
+} = await useTranslation(lang);
+const benefits: {
+  icon: ImageMetadata;
+  title: string;
+  description: string;
+  highlight?: boolean;
+}[] = [
+  {
+    icon: visual_friendly,
+    ...t.benefits.visual_friendly,
+  },
+  {
+    highlight: true,
+    icon: visualization,
+    ...t.benefits.real_time_2d_and_3d_visualization,
+  },
+
+  {
+    icon: drag_and_drop,
+    ...t.benefits.drag_and_drop_configuration,
+  },
+
+  {
+    icon: augmented,
+    ...t.benefits.augmented_reality_integration,
+  },
+
+  {
+    icon: share,
+    ...t.benefits.effortless_sharing,
+  },
+];
+---
+
+<section class="py-[4.25rem]" aria-label={t.label}>
+  <div class="container">
+    <h2 class="text-center text-neutral-10 heading-2 mb-10 md:mb-16">
+      <Trans translation={t.heading}>
+        How our
+        <span class="brand-gradient bg-clip-text text-transparent"
+          >visualization</span
+        >
+         feature <br class="hidden md:block" />benefits manufacturing <br
+          class="hidden md:block"
+        />companies
+      </Trans>
+    </h2>
+    <div
+      class="flex flex-wrap [--benefit-gap:2rem] gap-[--benefit-gap] justify-center xl:items-end py-10"
+    >
+      {
+        benefits.map((benefit) => (
+          <div
+            class={cn(
+              "basis-full md:basis-[calc(calc(100%-var(--benefit-gap))/2)] lg:basis-[calc(calc(100%-2*var(--benefit-gap))/3)] p-8 bg-primary-4/[.11] border border-primary-5/[.41] rounded-2xl xl:h-max  "
+            )}
+          >
+            <Image src={benefit.icon} alt={benefit.title} />
+            <p
+              class={cn(
+                "text-xl leading-tight tracking-[.4px] font-medium text-neutral-10 text-center xl:text-left",
+                benefit.highlight ? "my-4 lg:my-6" : "my-4"
+              )}
+            >
+              {benefit.title}
+            </p>
+            <p class="text-neutral-30 text-base leading-[1.4]">
+              {benefit.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

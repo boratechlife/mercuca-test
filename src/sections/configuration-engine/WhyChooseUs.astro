@@ -1,0 +1,22 @@
+---
+import NumberedList from "@/components/lists/NumberedList.astro";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    configuration_engine: { why_choose_us: t },
+  },
+} = await useTranslation(lang);
+---
+
+<section class="py-[4.25rem]" aria-label={t.label}>
+  <div class="container">
+    <h2 class="heading-2 text-center text-neutral-10 mb-[4.25rem]">
+      {t.heading}
+    </h2>
+
+    <NumberedList centerVertical items={t.reasons} />
+  </div>
+</section>

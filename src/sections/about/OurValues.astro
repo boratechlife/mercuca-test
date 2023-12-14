@@ -1,0 +1,70 @@
+---
+import collaboration from "@/assets/collaboration.png";
+import innovation from "@/assets/innovation.png";
+import customerCentric from "@/assets/customer-centric.png";
+import { Image } from "astro:assets";
+import RequestDemoLink from "@/components/RequestDemoLink.astro";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    about: { our_values: t },
+  },
+} = await useTranslation(lang);
+
+const ourValues: { title: string; description: string; icon: ImageMetadata }[] =
+  [
+    {
+      icon: customerCentric,
+      ...t.values.customer_centricity,
+    },
+    {
+      icon: innovation,
+      ...t.values.innovation,
+    },
+    {
+      icon: collaboration,
+      ...t.values.collaboration,
+    },
+  ];
+---
+
+<section aria-label={t.heading} class="py-[4.25rem]">
+  <div class="container">
+    <h2
+      class="text-[2.5rem] text-center font-medium leading-[1.2] text-white mb-4"
+    >
+      {t.heading}
+    </h2>
+    <p class="text-center text-xl font-light leading-tight text-white">
+      <Trans translation={t.subheading}>
+        Lorem ipsum dolor sit amet, consectetur <br
+          class="hidden md:block"
+        />adipiscing elit, sed do eiusmod tempor incididunt <br
+          class="hidden md:block"
+        />ut labore et dolore.
+      </Trans>
+    </p>
+    <div
+      class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-6 xl:gap-12 my-12"
+    >
+      {
+        ourValues.map(({ title, description, icon }) => (
+          <div class="bg-white rounded-2xl text-center p-8">
+            <Image class="mx-auto" src={icon} alt={title} />
+            <p class="mb-4 mt-8 text-[22px] font-bold capitalize text-primary-2">
+              {title}
+            </p>
+            <p class="text-primary-2 text-base">{description}</p>
+          </div>
+        ))
+      }
+    </div>
+    <div class="flex justify-center">
+      <RequestDemoLink />
+    </div>
+  </div>
+</section>

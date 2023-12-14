@@ -1,0 +1,38 @@
+---
+interface Props extends astroHTML.JSX.SVGAttributes {}
+
+const { class: classes = "h-[200px] w-auto", ...props } = Astro.props;
+---
+
+<svg
+  viewBox="0 0 328 219"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class={classes}
+  {...props}
+>
+  <path
+    d="M107.327 177.665L279.886 8.80225L105.744 120.306L107.327 177.665Z"
+    fill="#051542"
+    stroke="#F1EFEE"
+    stroke-linecap="round"
+    stroke-linejoin="round"></path>
+  <path
+    d="M289.707 1.09424L200.616 175.081L105.743 120.306L289.707 1.09424Z"
+    fill="#051542"
+    stroke="#F1EFEE"
+    stroke-linecap="round"
+    stroke-linejoin="round"></path>
+  <path
+    d="M289.707 1.09424L3.085 90.2354L74.241 110.256L289.707 1.09424Z"
+    fill="#051542"
+    stroke="#F1EFEE"
+    stroke-linecap="round"
+    stroke-linejoin="round"></path>
+  <path
+    d="M74.241 110.256L107.327 177.666L105.743 120.306L289.707 1.09424L74.241 110.256Z"
+    fill="#051542"
+    stroke="#F1EFEE"
+    stroke-linecap="round"
+    stroke-linejoin="round"></path>
+</svg>

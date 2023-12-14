@@ -1,0 +1,40 @@
+---
+import NumberCard from "@/components/cards/NumberCard.astro";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    visualizations: { benefits_of_cpq: t },
+  },
+} = await useTranslation(lang);
+---
+
+<section class="py-[4.25rem]">
+  <div class="container">
+    <h2 class="heading-2 text-center text-neutral-20">
+      <Trans translation={t.heading}>
+        How Mercura
+        <span class="text-accent-1">CPQ Quote</span>
+         and <br /> document generation benefit <br /> manufacturing companies?
+      </Trans>
+    </h2>
+
+    <div
+      class="flex flex-wrap [--benefit-gap:1.5rem] gap-[--benefit-gap] justify-center mt-[45px] lg:mt-[90px]"
+    >
+      {
+        t.benefits.map(({ title, description }, index) => (
+          <NumberCard
+            class="basis-full md:basis-[calc(calc(100%-var(--benefit-gap))/2)] lg:basis-[calc(calc(100%-2*var(--benefit-gap))/3)]"
+            index={index + 1}
+            title={title}
+            description={description}
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>

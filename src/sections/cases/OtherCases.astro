@@ -1,0 +1,59 @@
+---
+import ArrowTopRight from "@/components/icons/ArrowTopRight.astro";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Link from "@/i18n/Link.astro";
+import Trans from "@/i18n/Trans.astro";
+import { Image } from "astro:assets";
+
+export type Case = {
+  photo: ImageMetadata;
+  link: { title: string; href: string };
+};
+interface Props {
+  cases: Case[];
+}
+
+const { cases } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  common: { see_other_cases },
+} = await useTranslation(lang);
+---
+
+<section class="py-[4.25rem]">
+  <div class="container">
+    <div
+      class="bg-primary-4/[.27] border border-primary-7 rounded-2xl py-20 px-6 md:px-8 lg:px-12 xl:px-16"
+    >
+      <h2
+        class="text-4xl md:text-5xl lg:text-[4rem] font-medium leading-tight text-neutral-30 text-center"
+      >
+        <Trans translation={see_other_cases}>
+          See our <span class="brand-gradient bg-clip-text text-transparent"
+            >other</span
+          > cases!
+        </Trans>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
+        {
+          cases.map(({ link, photo }) => (
+            <div class="">
+              <div class="w-full aspect-[7/8] flex justify-center items-center bg-primary-4 rounded-2xl mb-6">
+                <Image src={photo} alt={link.title} class="rounded-2xl" />
+              </div>
+              <Link
+                href={link.href}
+                class="text-xl text-neutral-20 leading-tight tracking-[.4px] flex items-center lg:items-end gap-5 lg:gap-0 font-light"
+              >
+                <span class="lg:w-3/4 xl:w-1/2">{link.title}</span>
+                <ArrowTopRight class="h-3.5 md:h-3 aspect-auto text-white fill-neutral-10 inline shrink-0" />
+              </Link>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

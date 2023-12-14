@@ -1,0 +1,34 @@
+---
+import RequestDemoLink from "@/components/RequestDemoLink.astro";
+import NumberedList from "@/components/lists/NumberedList.astro";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    integrations: { how_we_help: t },
+  },
+} = await useTranslation(lang);
+---
+
+<section class="py-[4.25rem]" aria-label={t.label}>
+  <div class="container">
+    <h2 class="heading-2 text-center text-neutral-10 mb-16">
+      <Trans translation={t.heading}>
+        How <span class="brand-gradient bg-clip-text text-transparent"
+          >we help you</span
+        >
+        <br />
+         address these challenges
+      </Trans>
+    </h2>
+
+    <NumberedList items={t.solutions} />
+
+    <div class="mt-16">
+      <RequestDemoLink class="w-max mx-auto" />
+    </div>
+  </div>
+</section>

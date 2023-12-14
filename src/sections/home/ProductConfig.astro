@@ -1,0 +1,42 @@
+---
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    home: { product_configuration: t },
+  },
+} = await useTranslation(lang);
+---
+
+<section class="py-[4.25rem]">
+  <div class="container">
+    <h2 class="heading-2 text-neutral-10 mb-16">
+      <Trans translation={t.heading}>
+        Convenient product configuration <br /> at
+        <span class="brand-gradient bg-clip-text text-transparent"
+          >your fingertips</span
+        >.
+      </Trans>
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {
+        t.steps.map((step, index) => (
+          <div class="p-8 rounded-2xl bg-primary-4/[.11] border border-primary-5 first:border-[#e18463] last:border-[#e18463]">
+            <span class="block text-neutral-10 leading-tight  text-[2rem]">
+              {index + 1 >= 10 ? index + 1 : "0" + (index + 1)}
+            </span>
+            <p class="text-neutral-10 leading-tight  text-[2rem] mb-6 mt-4">
+              {step.title}
+            </p>
+            <p class="text-neutral-30 text-base leading-[1.4]">
+              {step.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

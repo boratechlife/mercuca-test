@@ -1,0 +1,87 @@
+---
+import keys from "@/assets/carcaca.png";
+import keys480 from "@/assets/carcaca-480x8.png";
+import keys980 from "@/assets/carcaca-980x17.png";
+import { Image } from "astro:assets";
+---
+
+<section>
+  <div class="max-w-[1080px] px-6 mx-auto">
+    <div
+      class="laptop-screen w-4/5 mx-auto border-[#1a202c] border-[.625rem] border-b-[0.9375rem] rounded-[1.25rem] overflow-hidden"
+    >
+      <div>
+        <video
+          id="video"
+          controls
+          preload="auto"
+          loop
+          playsinline="true"
+          muted
+          data-setup='{"fluid": true}'
+          poster="/videos/Showreel-2022.png"
+          autoplay
+        >
+          <source type="video/mp4" src="/videos/Showreel-2022.mp4" />
+        </video>
+        <!-- <img
+          width="1050"
+          height="591"
+          src="/videos/Showreel-2022.png"
+          alt=""
+          id="loadVideoBtn"
+        />
+        <div id="videoContainer" class="video-container"></div> -->
+      </div>
+    </div>
+    <div class="laptop-keys">
+      <Image src={keys} alt="" />
+    </div>
+  </div>
+</section>
+
+<script>
+  function addAutoplay(): void {
+    const videoLocation = document.querySelector(
+      "#video"
+    ) as HTMLVideoElement | null;
+    if (videoLocation && window.innerWidth > 992) {
+      console.log(videoLocation);
+      videoLocation.setAttribute("autoplay", "true");
+    }
+  }
+
+  // window.onload = () => addAutoplay();
+  // document.addEventListener("DOMContentLoaded", () => {
+  //   const loadVideoBtn = document.getElementById(
+  //     "loadVideoBtn"
+  //   ) as HTMLButtonElement;
+
+  //   loadVideoBtn.addEventListener("click", () => {
+  //     const videoContainer = document.getElementById(
+  //       "videoContainer"
+  //     ) as HTMLDivElement; // Check if video is already loaded
+
+  //     if (videoContainer.childNodes.length === 0) {
+  //       loadVideoBtn.remove();
+  //       let video = document.createElement("video");
+  //       video.id = "videoEl";
+  //       video.classList.add("video");
+  //       video.setAttribute("controls", "");
+  //       video.setAttribute("width", "1050");
+  //       video.setAttribute("height", "591");
+
+  //       let sourceMP4 = document.createElement("source");
+  //       sourceMP4.type = "video/mp4";
+  //       sourceMP4.src = "/videos/Showreel-2022.mp4";
+  //       video.appendChild(sourceMP4);
+
+  //       videoContainer.appendChild(video); // Play the video
+
+  //       video.play().catch((error: Error) => {
+  //         console.error("Error trying to play the video:", error); // Handle the failure of autoplay here
+  //       });
+  //     }
+  //   });
+  // });
+</script>

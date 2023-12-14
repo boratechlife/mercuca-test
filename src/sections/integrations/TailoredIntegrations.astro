@@ -1,0 +1,77 @@
+---
+import dynamicsImg from "@/assets/dynamics.png";
+import salesforceImg from "@/assets/salesforce.png";
+import hubspotImg from "@/assets/hubspot.png";
+import vismaImg from "@/assets/visma.png";
+import { Image } from "astro:assets";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    integrations: { tailored: t },
+  },
+} = await useTranslation(lang);
+
+const integrations: {
+  logo: ImageMetadata;
+  title: string;
+  description: string;
+}[] = [
+  {
+    logo: dynamicsImg,
+    ...t.integrations.microsoft_dynamics_365,
+  },
+  {
+    logo: salesforceImg,
+    ...t.integrations.salesforce,
+  },
+  {
+    logo: hubspotImg,
+    ...t.integrations.hubspot,
+  },
+  {
+    logo: vismaImg,
+    ...t.integrations.visma_business,
+  },
+];
+---
+
+<section class="py-[4.25rem]">
+  <div class="container">
+    <h2 class="heading-2 text-center text-neutral-10 mb-16">
+      <Trans translation={t.heading}>
+        <span class="brand-gradient bg-clip-text text-transparent"
+          >Tailored</span
+        >
+         integrations for <br /> your CRM
+      </Trans>
+    </h2>
+
+    <div class="flex flex-col gap-12 xl:gap-8">
+      {
+        integrations.map((integration) => (
+          <div class="flex flex-col xl:flex-row xl:odd:flex-row-reverse gap-16 xl:gap-20 p-8 border border-primary-7 bg-primary-4/[.11] rounded-2xl">
+            <div class="shrink-0">
+              <Image
+                class="max-h-[250px] xl:max-h-none xl:h-full aspect-auto"
+                src={integration.logo}
+                alt={integration.title}
+              />
+            </div>
+            <div class="xl:max-w-[820px]">
+              <p class="text-[2rem] leading-tight  text-white mb-6">
+                {integration.title}
+              </p>
+              <p class="text-white text-xl font-light leading-tight  tracking-[.4px]">
+                {integration.description}
+              </p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+---
+interface Props {
+  label?: string;
+  title: string;
+  items: string[];
+}
+
+const { label, title, items } = Astro.props;
+---
+
+<section class="" aria-label={label}>
+  <h2 class="text-2xl leading-tight tracking-[.48px] text-neutral-20 mb-6">
+    {title}
+  </h2>
+  <ul class="list-disc pl-5">
+    {
+      items.map((item) => (
+        <li class="xl:w-[64%]  text-base leading-[1.4] text-neutral-30 ">
+          {item}
+        </li>
+      ))
+    }
+  </ul>
+</section>

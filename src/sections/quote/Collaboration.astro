@@ -1,0 +1,43 @@
+---
+import partnership from "@/assets/icons/partnership.svg";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+import { Image } from "astro:assets";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    quote_and_document_generation: { collaboration: t },
+  },
+} = await useTranslation(lang);
+---
+
+<section class="py-[4.25rem]">
+  <div class="container grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
+    <div>
+      <h2 class="heading-2 mb-8 text-neutral-10">
+        <Trans translation={t.heading}>
+          Streamlined
+          <span class="brand-gradient bg-clip-text text-transparent"
+            >collaboration</span
+          > and <br /> sharing
+        </Trans>
+      </h2>
+      <div class="p-8 bg-neutral-40/[.09] rounded-2xl w-max">
+        <Image class="h-20 w-20" src={partnership} alt="" />
+      </div>
+    </div>
+
+    <div>
+      <p class="text-2xl text-neutral-10 leading-tight tracking-[.48px]">
+        {t.text_1}
+      </p>
+      <p
+        class="mt-16 text-xl font-light leading-tight tracking-[.4px] text-neutral-30"
+      >
+        {t.text_2}
+      </p>
+    </div>
+  </div>
+</section>

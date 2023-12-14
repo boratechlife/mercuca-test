@@ -1,0 +1,183 @@
+---
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import { locales, type Locale, useTranslation } from "@/i18n";
+import Layout from "@/layouts/Layout.astro";
+
+import List from "@/sections/career/List.astro";
+import { cn } from "@/utils";
+
+import bi_cup from "@/assets/icons/bi_cup.svg";
+import window_icon from "@/assets/icons/window.svg";
+import bx_file from "@/assets/icons/bx_file.svg";
+import ph_heart from "@/assets/icons/ph_heart-bold.svg";
+import { Image } from "astro:assets";
+import Trans from "@/i18n/Trans.astro";
+
+export async function getStaticPaths() {
+  return Object.keys(locales).map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+
+const {
+  pages: { job_posting: t },
+} = await useTranslation(locale as Locale);
+
+const hiringSteps: {
+  icon: ImageMetadata;
+  title: string;
+  description: string;
+}[] = [
+  {
+    icon: window_icon,
+    title: "Send an application",
+    description:
+      "Thanks for your application and interest in working at Mercura. We look forward to getting to know you better.",
+  },
+  {
+    icon: bi_cup,
+    ...t.hiring.steps.send_application,
+  },
+  {
+    icon: window_icon,
+    ...t.hiring.steps.design_test,
+  },
+  {
+    icon: bx_file,
+    ...t.hiring.steps.technical_interview,
+  },
+  {
+    icon: ph_heart,
+    ...t.hiring.steps.team,
+  },
+];
+---
+
+<Layout title={t.title}>
+  <Breadcrumb links={[t.title]} />
+  <section class="pt-12">
+    <div class="container">
+      <h1
+        class="heading-1 text-center brand-gradient bg-clip-text text-transparent"
+      >
+        {t.heading}
+      </h1>
+    </div>
+  </section>
+
+  <section class="py-[4.25rem]">
+    <div class="container flex flex-col gap-16">
+      <section class="">
+        <h2
+          class="text-2xl leading-tight tracking-[.48px] text-neutral-20 mb-6"
+        >
+          {t.about_job.heading}
+        </h2>
+        <div
+          class="xl:[&>*]:w-[64%] flex flex-col gap-6 text-base leading-[1.4] text-neutral-30"
+        >
+          <p>
+            <Trans translation={t.about_job.text_1} />
+          </p>
+          <p>
+            <Trans translation={t.about_job.text_2} />
+          </p>
+        </div>
+      </section>
+
+      <List
+        title={t.responsibilities.heading}
+        items={t.responsibilities.list}
+      />
+
+      <List title={t.what_to_expect.heading} items={t.what_to_expect.list} />
+
+      <List title={t.qualifications.heading} items={t.qualifications.list} />
+
+      <section class="pt-[4.25rem]">
+        <h2
+          class="text-2xl leading-tight tracking-[.48px] text-neutral-20 mb-10 text-center"
+        >
+          {t.hiring.heading}
+        </h2>
+        <div id="timeline" class="relative pl-5 md:pl-0 isolate">
+          {
+            hiringSteps.map((step, index) => (
+              <div
+                data-id={index}
+                data-in-view="false"
+                class="[--step-space:3rem] md:[--step-space:84px] [--vertical-space:6.25rem] first:pt-[var(--vertical-space)] pb-[var(--vertical-space)]  md:w-3/4 lg:w-[calc(310px+var(--step-space))] odd:border-l-2 even:border-l-2 lg:even:border-l-0 lg:even:border-r-2 relative left-0 md:left-20 lg:left-1/2 lg:even:-translate-x-full group/step lg:even:pr-[var(--step-space)] even:pl-[var(--step-space)] lg:even:pl-0 odd:pl-[var(--step-space)] step"
+              >
+                <div
+                  class={cn(
+                    "icon group-data-[in-view='true']/step:border-accent-2 transition-colors border-4 border-transparent absolute bg-white z-[2] group-odd/step:left-0 group-odd/step:-translate-x-1/2 lg:group-even/step:left-auto   group-even/step:left-0  lg:group-even/step:right-0 group-even/step:-translate-x-1/2 lg:group-even/step:translate-x-1/2   h-[60px] aspect-square flex justify-center items-center rounded-full  text-black ",
+                    index === 0 ? "top-[var(--vertical-space)]" : "top-0"
+                  )}
+                >
+                  <Image src={step.icon} alt={step.title} class="h-7 w-auto" />
+                </div>
+                <div class="">
+                  <span class="block uppercase text-base font-medium brand-gradient bg-clip-text text-transparent ">
+                    step {index + 1}
+                  </span>
+                  <p class="text-2xl leading-tight tracking-[.48px] text-neutral-20">
+                    {step.title}
+                  </p>
+                  <p class="text-base leading-[1.4] mt-4  text-neutral-30">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ))
+          }
+          <div
+            class="circle absolute h-5 aspect-square rounded-full bg-accent-2 left-5 md:left-20 lg:left-1/2 -translate-x-1/2 z-[1]"
+            style="top:-20px"
+          >
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const ball = document.querySelector("#timeline .circle") as HTMLDivElement;
+    const stopPoints = Array.from(
+      document.querySelectorAll("#timeline .icon")
+    ) as HTMLDivElement[];
+
+    const steps = Array.from(
+      document.querySelectorAll("#timeline .step")
+    ) as HTMLDivElement[];
+
+    function isElementInViewport(el: HTMLDivElement) {
+      const rect = el.getBoundingClientRect();
+
+      const windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+
+      return (
+        rect.bottom >= 0 &&
+        rect.top <= windowHeight &&
+        rect.bottom < windowHeight
+      );
+    }
+
+    function callbackFunc() {
+      steps.forEach((step, index) => {
+        if (isElementInViewport(step)) {
+          if (step.getAttribute("data-in-view") === "false") {
+            step.setAttribute("data-in-view", "true");
+          }
+        } else {
+          step.setAttribute("data-in-view", "false");
+        }
+      });
+    }
+
+    window.addEventListener("load", callbackFunc);
+    window.addEventListener("scroll", callbackFunc);
+  });
+</script>

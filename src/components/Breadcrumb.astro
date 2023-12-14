@@ -1,0 +1,30 @@
+---
+import { getLangFromUrl, useTranslation } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  common: { breadcrumb },
+} = await useTranslation(lang);
+interface Props {
+  links: string[];
+}
+const { links } = Astro.props;
+---
+
+<div>
+  <ol
+    aria-label={breadcrumb.label}
+    class="flex items-center gap-2 text-white capitalize font-medium text-base container"
+    role="list"
+  >
+    {
+      links.map((link, index) => (
+        <li class="flex gap-2 items-center">
+          {index !== 0 && <span>&gt;</span>}
+          <span>{link}</span>
+        </li>
+      ))
+    }
+  </ol>
+</div>

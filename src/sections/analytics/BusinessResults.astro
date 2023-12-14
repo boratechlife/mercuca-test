@@ -1,0 +1,72 @@
+---
+import NumberCard from "@/components/cards/NumberCard.astro";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    analytics: { business_results: t },
+  },
+} = await useTranslation(lang);
+const results: { title: string; description: string }[] = [
+  {
+    title: "Sales Insights",
+    description:
+      "Dive deep into product options, features, and service preferences among your customers. Identify characteristics associated with successful deals.",
+  },
+
+  {
+    title: "Unique CPQ Data",
+    description:
+      " Mercura CPQ houses data not found elsewhere, including sales cycles, quote versions, and the link between customer needs and Bill of Materials (BoM).",
+  },
+  {
+    title: "Product Insights",
+    description:
+      "Uncover insights based on demand patterns, quoted vs. unquoted parts, and identify high-value products.",
+  },
+];
+---
+
+<section class="py-[4.25rem]">
+  <div class="container">
+    <div class="flex flex-col">
+      <h2 class="heading-2 text-center text-neutral-20 mb-12">
+        <Trans translation={t.heading}>
+          Business results of <span
+            class="brand-gradient bg-clip-text text-transparent">Mercura</span
+          >
+
+          <br /> CPQ Analytics
+        </Trans>
+        <p class="text-base lg:text-xl text-center font-light text-neutral-30">
+          <Trans translation={t.subtext}>
+            Mercura offers automatic margin control, ensuring that any <br />
+             configured product is quoted with a profit. Different sales reps or
+
+
+            <br /> roles can have varying automatically approved margin levels.
+            If a <br /> deal necessitates deviation from default margin levels,
+            Mercura <br /> provides multi-step escalation and approval
+            workflows.
+          </Trans>
+        </p>
+      </h2>
+
+      <div
+        class="mt-[90px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8"
+      >
+        {
+          t.results.map(({ title, description }, index) => (
+            <NumberCard
+              title={title}
+              description={description}
+              index={index + 1}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

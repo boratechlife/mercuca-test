@@ -1,0 +1,171 @@
+---
+import { locales, useTranslation, type Locale } from "@/i18n";
+import Layout from "@/layouts/Layout.astro";
+
+import { Image } from "astro:assets";
+import LabelSection from "@/sections/cases/LabelSection.astro";
+
+import hero from "@/assets/lindab_garage_hero.png";
+import laptop from "@/assets/lindab_garage_laptop.png";
+import avatar from "@/assets/avatar-1.png";
+
+import door1 from "@/assets/garage_door_1.png";
+import door2 from "@/assets/garage_door_2.png";
+
+import migatronic_sm from "@/assets/case_migatronic_sm.png";
+import lindab_garage from "@/assets/lindab_garage.png";
+import render3d from "@/assets/3d_render.png";
+
+import ReviewCard from "@/sections/ReviewCard.astro";
+import Solution from "@/sections/cases/Solution.astro";
+import LetsBuildTogether from "@/sections/LetsBuildTogether.astro";
+import OtherCases, { type Case } from "@/sections/cases/OtherCases.astro";
+
+const otherCases: Case[] = [
+  {
+    photo: migatronic_sm,
+    link: {
+      title: "Migatronic",
+      href: "/cases/migatronic-configurator",
+    },
+  },
+  {
+    photo: lindab_garage,
+    link: {
+      title: "Lindab Garage door Configurator",
+      href: "/cases/lindab-garage-door-configurator",
+    },
+  },
+  {
+    photo: render3d,
+    link: {
+      title: "3D Renderings for Multi-Living",
+      href: "/cases/3d-renderings-for-multi-living",
+    },
+  },
+];
+
+export async function getStaticPaths() {
+  return Object.keys(locales).map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+const { common } = await useTranslation(locale as Locale);
+---
+
+<Layout title="Lindab Garage Door Configurator" theme="gray">
+  <section class="py-[4.25rem]">
+    <div class="container">
+      <h1 class="heading-1 text-center text-neutral-20">
+        <span class="brand-gradient bg-clip-text text-transparent">Lindab</span>
+         Garage <br />door configurator
+      </h1>
+    </div>
+  </section>
+
+  <div>
+    <Image class="w-full" src={hero} alt="Lindab Garage door Configurator" />
+    <!-- 2xl:w-auto 2xl:mx-auto max-h-[755px] -->
+  </div>
+
+  <LabelSection
+    label="The Problem"
+    withLink={{ title: "See Solution", href: "#" }}
+  >
+    <span slot="title">Long sales cycles</span>
+    <p slot="col-1">
+      Lindab is a leading manufacturing company specializing in ventilation and
+      building products. In recent years, they have experienced strong growth,
+      resulting in a more time-consuming sales process. <br />
+      <br />As a building product manufacturer, one of the biggest challenges
+      you may face in your sales process is the lack of a configuration tool
+      that allows customers to customize their own garage doors. Without the
+      assistance of such tools, your sales team may need to invest significant
+      time and effort into designing a garage door from scratch in order to meet
+      the customers’ specific needs and preferences.
+    </p>
+    <p slot="col-2">
+      The absence of a configuration tool can make the sales process more
+      complex and time-consuming. Your sales team or dealers may need to
+      communicate back and forth with customers multiple times to gather all the
+      necessary information about the features and specifications they want in
+      their garage door. This can lead to longer sales cycles, increased costs,
+      and a higher risk of errors and misunderstandings.
+    </p>
+  </LabelSection>
+
+  <LabelSection label="The Solution">
+    <span slot="title">Beautiful visualization</span>
+    <p slot="col-1">
+      We have developed a very intuitive configurator for Lindab which helps
+      end-users and dealers visualize and concretize their solutions on garage
+      doors. The configurator includes all the garage door variations that
+      Lindab sells.
+
+      <br />
+      <br />It includes more than 10.000 variations of the products even without
+      taking the size into consideration.
+    </p>
+    <p slot="col-2">
+      We have developed a very intuitive configurator for Lindab which helps
+      end-users and dealers visualize and concretize their solutions on garage
+      doors. The configurator includes all the garage door variations that
+      Lindab sells.
+      <br /><br />
+       It includes more than 10.000 variations of the products even without
+      taking the size into consideration.
+    </p>
+  </LabelSection>
+
+  <section class="py-[4.25rem]">
+    <div class="container">
+      <Image
+        class="w-full"
+        src={laptop}
+        alt="Lindab Garage door Configurator"
+      />
+    </div>
+  </section>
+
+  <ReviewCard class="max-w-[800px]" avatar={avatar}>
+    <p class="inline text-2xl font-normal tracking-[.48px]">
+      A big recommendation to Mercura and their team. They are highly
+      professional and very good at gaining an overview of complex product
+      constraints and pricing logic. Our configurator is very good at
+      visualizing our garage doors which gives us a shorter time to market,
+      makes us more accesible for customers and has helped us optimize internal
+      sales processes, which will help us grow our business.
+    </p>
+    <p slot="author">Marketing Manager, Lindab A/S</p>
+    <p slot="author">Birgitte Kjær Hansen</p>
+  </ReviewCard>
+
+  <Solution label="The Solution" photo={door1}>
+    <span slot="title">Increase sales volume</span>
+    <p>
+      Having a configuration tool that allows dealers and end-consumers to build
+      their own garage door can offer many benefits to your business. It can
+      simplify the sales process, reduce the workload of your sales team, and
+      enable customers to create a garage doors that perfectly fits their needs
+      and preferences. This provides unique insights into the customers needs
+      which can be used for marketing and product development purposes
+    </p>
+  </Solution>
+
+  <Solution alternate photo={door2}>
+    <span slot="title"
+      >Lindab has experienced a shorter time-to-market and higher accessibility
+      towards customers.</span
+    >
+    <p>
+      In other words, Mercura helped them stand out from their competitors and
+      increase their sales volume. Studies have shown that a configuration tool
+      can increase the conversion rates by 40% on quotes and increase the
+      average sales prices with 30%.
+    </p>
+  </Solution>
+
+  <OtherCases cases={otherCases} />
+
+  <LetsBuildTogether theme="gray" />
+</Layout>

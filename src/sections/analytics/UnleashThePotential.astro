@@ -1,0 +1,40 @@
+---
+import RequestDemoLink from "@/components/RequestDemoLink.astro";
+import CheckedList from "@/components/lists/CheckedList.astro";
+
+import screenshot from "@/assets/screenshot.png";
+import { Image } from "astro:assets";
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+
+const lang = getLangFromUrl(Astro.url);
+
+const {
+  pages: {
+    analytics: { unleash_the_potential: t },
+  },
+} = await useTranslation(lang);
+---
+
+<section
+  class="flex flex-wrap lg:flex-nowrap gap-10 items-center mt-10 lg:mt-40 justify-between"
+  aria-label={t.label}
+>
+  <div
+    class="w-full lg:w-1/2 flex-grow lg:max-w-2xl container-left pr-6 md:pr-0"
+  >
+    <h2 class="mb-4 lg:mb-10 text-neutral-10 heading-2">
+      <Trans translation={t.heading}>
+        Unleash the <span class="text-accent-1">potential</span> of your data!
+      </Trans>
+    </h2>
+
+    <CheckedList items={t.leverages} />
+
+    <RequestDemoLink class="mt-12 lg:mt-10 md:w-max" />
+  </div>
+
+  <div class="w-full lg:w-1/2">
+    <Image class="ml-auto" src={screenshot} alt="" />
+  </div>
+</section>

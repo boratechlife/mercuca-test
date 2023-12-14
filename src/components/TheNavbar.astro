@@ -1,0 +1,297 @@
+---
+import DownArrow from "@/components/icons/DownArrow.astro";
+// icons
+import eyeIcon from "@/assets/icons/eye.png";
+import settingIcon from "@/assets/icons/settings.png";
+import cubesIcon from "@/assets/icons/cubes.png";
+import tagIcon from "@/assets/icons/tag.png";
+import pieIcon from "@/assets/icons/pie.png";
+import docIcon from "@/assets/icons/doc.png";
+import integrationIcon from "@/assets/icons/integration.png";
+
+import { Image } from "astro:assets";
+import Menu from "./icons/Menu.astro";
+import { contact } from "@/constants";
+import Close from "./icons/Close.astro";
+import Logo from "./icons/Logo.astro";
+
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import Link from "@/i18n/Link.astro";
+import LanguagePicker from "@/i18n/LanguagePicker.astro";
+import MobileLocales from "@/i18n/MobileLocales.astro";
+
+const locale = getLangFromUrl(Astro.url);
+
+const t = await useTranslation(locale);
+
+type Link = {
+  icon?: ImageMetadata;
+  title: string;
+  url: string;
+};
+
+const productsLinks: Record<string, Link[]> = {
+  core_features: [
+    {
+      icon: eyeIcon,
+      title: t.navbar.products_links.core_features.visualizations,
+      url: "/visualizations",
+    },
+    {
+      icon: settingIcon,
+      title: t.navbar.products_links.core_features.configuration_engine,
+      url: "/configuration-engine",
+    },
+    {
+      icon: cubesIcon,
+      title: t.navbar.products_links.core_features.product_modelling,
+      url: "/product-modelling",
+    },
+    {
+      icon: tagIcon,
+      title: t.navbar.products_links.core_features.pricing_engine,
+      url: "/pricing-engine",
+    },
+  ],
+  add_ons: [
+    {
+      icon: docIcon,
+      title: t.navbar.products_links.add_ons.quote_and_document,
+      url: "/quote-and-document-generation",
+    },
+    {
+      icon: pieIcon,
+      title: t.navbar.products_links.add_ons.analytics,
+      url: "/analytics",
+    },
+    {
+      icon: integrationIcon,
+      title: t.navbar.products_links.add_ons.integrations,
+      url: "/integrations",
+    },
+  ],
+};
+
+const aboutLinks: { title: string; url: string }[] = [
+  {
+    title: t.navbar.about_links.about,
+    url: "/about",
+  },
+  {
+    title: t.navbar.about_links.career,
+    url: "/career",
+  },
+  {
+    title: t.navbar.about_links.contact,
+    url: "/request-a-demo",
+  },
+];
+
+const casesLink: { title: string; url: string } = {
+  title: "Cases",
+  url: "/cases",
+};
+
+interface Props {
+  theme?: "blue" | "gray";
+  noGradient?: boolean;
+}
+
+const { theme = "blue", noGradient = false } = Astro.props;
+---
+
+<div
+  data-fixed="false"
+  id="nav-wrapper"
+  class={`data-[fixed='true']:fixed   sticky md:static top-0 transition-colors duration-200 data-[fixed='true']:inset-0 z-50  ${
+    theme === "blue"
+      ? "data-[fixed='true']:bg-primary-3 lg:data-[fixed='true']:bg-blue-dark bg-blue-dark"
+      : "data-[fixed='true']:bg-primary-3 lg:data-[fixed='true']:bg-primary-1  bg-primary-1"
+  }`}
+>
+  <div
+    class="container h-full min-[900px]:h-auto overflow-y-auto md:overflow-y-visible py-6 md:pb-[30px] md:pt-10 xl:pt-16"
+  >
+    <nav
+      class="flex flex-col min-[900px]:flex-row min-[900px]:justify-between relative h-full min-[900px]:h-auto"
+    >
+      <div class="min-[900px]:w-max w-full flex items-center justify-between">
+        <Link href="/">
+          <Logo />
+        </Link>
+        <button
+          id="navToggle"
+          data-nav-open="false"
+          class="cursor-pointer min-[900px]:hidden group/toggle"
+        >
+          <Menu
+            class="h-9 w-auto text-white pointer-events-none group-data-[nav-open='true']/toggle:hidden"
+          />
+          <Close
+            class="h-9 w-auto text-white pointer-events-none group-data-[nav-open='false']/toggle:hidden"
+          />
+        </button>
+      </div>
+
+      <ul
+        id="main-links"
+        data-active="false"
+        class="hidden data-[active='true']:flex min-[900px]:flex flex-col min-[900px]:flex-row mt-20 min-[900px]:mt-0 min-[900px]:items-center gap-8"
+      >
+        <li
+          data-mobile-open="false"
+          class="group/products lg:h-full font-poppins"
+        >
+          <a
+            class="text-white cursor-pointer gap-1 flex justify-between min-[900px]:justify-normal items-center font-medium text-2xl min-[900px]:text-base lg:h-full"
+            >{t.navbar.products}
+            <DownArrow
+              class="w-4 group-data-[mobile-open='true']/products:rotate-0 -rotate-90 min-[900px]:rotate-0 min-[900px]:w-3 h-auto"
+            />
+          </a>
+
+          <div
+            class="group-data-[mobile-open='true']/products:max-h-none group-data-[mobile-open='false']/products:max-h-0 group-data-[mobile-open='false']/products:overflow-hidden overflow-hidden lg:group-data-[mobile-open='false']/products:overflow-visible lg:group-data-[mobile-open='false']/products:max-h-none lg:absolute rounded-[.625rem] transition-[opacity,max-height] duration-200 lg:pointer-events-none lg:opacity-0 group-hover/products:pointer-events-auto group-hover/products:opacity-100 bg-primary-3 group-data-[mobile-open='true']/products:py-10 lg:py-10 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-[100px] inset-x-0 top-full"
+          >
+            <div class="flex flex-col gap-4">
+              <p class="text-sm uppercase text-accent-2">
+                {t.navbar.products_links.core_features.core_features}
+              </p>
+
+              <ul class="flex flex-wrap lg:grid md:grid-cols-2 gap-2 md:gap-4">
+                {
+                  productsLinks.core_features.map((link) => (
+                    <li class="p-4">
+                      <Link
+                        href={link.url}
+                        class="flex items-center gap-4 w-max capitalize text-base text-white"
+                      >
+                        {link.icon && <Image src={link.icon} alt="" />}
+                        {link.title}
+                      </Link>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+            <div class="flex flex-col gap-4">
+              <p class="text-sm uppercase text-accent-2">
+                {t.navbar.products_links.add_ons.add_ons}
+              </p>
+
+              <ul class="flex flex-wrap md:grid md:grid-cols-2 gap-2 md:gap-4">
+                {
+                  productsLinks.add_ons.map((link) => (
+                    <li class="p-4">
+                      <Link
+                        href={link.url}
+                        class="flex items-center gap-4 w-max capitalize text-base text-white"
+                      >
+                        {link.icon && <Image src={link.icon} alt="" />}
+                        {link.title}
+                      </Link>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="h-full">
+          <Link
+            href={casesLink.url}
+            class="font-poppins text-white font-medium text-2xl min-[900px]:text-base h-full flex items-center"
+          >
+            {casesLink.title}
+          </Link>
+        </li>
+        <li data-mobile-open="false" class="font-poppins group/about lg:h-full">
+          <a
+            class="text-white cursor-pointer gap-1 flex justify-between min-[900px]:justify-normal font-medium text-2xl min-[900px]:text-base lg:h-full items-center"
+            >{t.navbar.about_us}
+            <DownArrow
+              class="w-4 group-data-[mobile-open='true']/about:rotate-0 transition-transform -rotate-90 min-[900px]:rotate-0 min-[900px]:w-3 h-auto"
+            />
+          </a>
+
+          <div
+            class="group-data-[mobile-open='true']/about:max-h-none group-data-[mobile-open='false']/about:max-h-0 group-data-[mobile-open='false']/about:overflow-hidden overflow-hidden lg:group-data-[mobile-open='false']/about:overflow-visible lg:group-data-[mobile-open='false']/about:max-h-none lg:absolute rounded-[.625rem] transition-[opacity,max-height] duration-200 lg:pointer-events-none lg:opacity-0 group-focus/about:pointer-events-auto group-hover/about:pointer-events-auto group-hover/about:opacity-100 group-focus/about:opacity-100 bg-primary-3 group-data-[mobile-open='true']/about:py-6 lg:py-6 lg:px-6 top-full min-w-[300px]"
+          >
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
+              {
+                aboutLinks.map((link) => (
+                  <li>
+                    <Link href={link.url} class="text-white p-4 block">
+                      {link.title}
+                    </Link>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <div
+        id="right-nav"
+        data-active="false"
+        class="hidden data-[active='true']:flex min-[900px]:flex gap-[22px] min-[900px]:items-center flex-1 min-[900px]:flex-none min-[900px]:flex-row flex-col mt-16 min-[900px]:mt-0"
+      >
+        <Link
+          href="/request-a-demo"
+          class={` block text-white rounded-lg px-8 py-5 md:py-4 md:mx-7 text-center font-bold min-[900px]:font-medium min-[900px]:mx-0 ${
+            noGradient
+              ? "brand-gradient lg:bg-primary-3 hover:brand-gradient transition-colors duration-200"
+              : "brand-gradient"
+          }`}
+        >
+          {t.common.request_a_demo}
+        </Link>
+
+        <LanguagePicker class="min-[900px]:block hidden" />
+
+        <div
+          class="min-[900px]:hidden mt-[200px] flex flex-col md:flex-col-reverse md:gap-24 gap-8"
+        >
+          <MobileLocales />
+
+          <div
+            class="flex flex-col gap-4 text-white text-sm font-medium capitalize pb-10 md:pb-[130px]"
+          >
+            <p>T: {contact.phone}</p>
+            <p>{t.common.email}: {contact.email}</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<script>
+  const toggle = document.querySelector("#navToggle") as HTMLButtonElement;
+  const navWrapper = document.querySelector("#nav-wrapper") as HTMLDivElement;
+  const rightNav = document.querySelector("#right-nav") as HTMLDivElement;
+  const mainLinks = document.querySelector("#main-links") as HTMLUListElement;
+
+  const dropLinks = [
+    ...document.querySelectorAll("li[data-mobile-open]"),
+  ] as HTMLLIElement[];
+
+  dropLinks.forEach((li) => {
+    li.addEventListener("click", (ev) => {
+      const OPEN = li.dataset.mobileOpen === "true";
+
+      li.dataset.mobileOpen = `${!OPEN}`;
+    });
+  });
+
+  toggle.onclick = () => {
+    const IS_ACTIVE = toggle.dataset.navOpen === "true";
+
+    navWrapper.dataset.fixed = `${!IS_ACTIVE}`;
+    rightNav.dataset.active = `${!IS_ACTIVE}`;
+    mainLinks.dataset.active = `${!IS_ACTIVE}`;
+    toggle.dataset.navOpen = `${!IS_ACTIVE}`;
+  };
+</script>
