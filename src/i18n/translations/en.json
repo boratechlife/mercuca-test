@@ -130,7 +130,7 @@
         "label": "The Solution",
         "heading": "Beautiful visualization",
         "text_1": "We have developed a very intuitive configurator for Lindab which helps end-users and dealers visualize and concretize their solutions on garage doors. The configurator includes all the garage door variations that Lindab sells. <br /> <br />It includes more than 10.000 variations of the products even without taking the size into consideration.",
-        "text_2": "We have developed a very intuitive configurator for Lindab which helps end-users and dealers visualize and concretize their solutions on garage doors. The configurator includes all the garage door variations that Lindab sells. <br /><br /> It includes more than 10.000 variations of the products even without taking the size into consideration."
+        "text_2": "During the configuration process dealers and end-users can select the size, bricks, colors, windows and the surface of the garage door. The garage door configurator includes some advanced pricing logic, meaning that the price will be based on the choices you make. You can easily adjust your selections to fit your budget and preferences. In addition, the configurator is easy to use and streamlines the buying process by generating a detailed Bill of Material. This allows customers to purchase the garage door from their local builders merchant directly after having used the configurator."
       },
       "review": {
         "message": "A big recommendation to Mercura and their team. They are highly professional and very good at gaining an overview of complex product constraints and pricing logic. Our configurator is very good at visualizing our garage doors which gives us a shorter time to market, makes us more accesible for customers and has helped us optimize internal sales processes, which will help us grow our business.",
@@ -202,7 +202,6 @@
     "job_posting": {
       "title": "Job Posting",
       "heading": "Student Job: Digital Designer",
-
       "about_job": {
         "heading": "About the job",
         "text_1": "We are a dynamic and innovative software company based in Aarhus, Denmark, specializing in providing cutting-edge product configurator solutions to industrial companies. Our software enables our clients to create customized and visually stunning product configurations in        both 2D and 3D. <br /> As we continue to grow and expand our services, we are seeking a talented and motivated Student Digital Designer to join our team.",
@@ -293,42 +292,54 @@
           "title": "Software Developer",
           "type": "Full time",
           "link": "#",
-          "categories": ["Product Development"],
+          "categories": [
+            "Product Development"
+          ],
           "description": "Are you passionate about software development and do you dream of running a business with lots of responsibility? If so, then Mercura is the place for you."
         },
         {
           "title": "Backend Developer",
           "type": "Student job",
           "link": "#",
-          "categories": ["Product Development"],
+          "categories": [
+            "Product Development"
+          ],
           "description": "Are you passionate about software development and are you looking for an exciting and challenging student job with lots of responsibility and influence from the start? If so, then Mercura is the place for you."
         },
         {
           "title": "Backend Developer",
           "type": "Student job",
           "link": "#",
-          "categories": ["Product Development"],
+          "categories": [
+            "Product Development"
+          ],
           "description": "If you love working with Front-End development and are an expert in JavaScript, HTML, and CSS, then Mercura is the place for you."
         },
         {
           "title": "Business Development",
           "type": "Internship",
           "link": "#",
-          "categories": ["Business Development"],
+          "categories": [
+            "Business Development"
+          ],
           "description": "If you are studying business and are looking for an internship, then Mercura is the place for you. Become part of a growing software company where there is plenty of responsibility from day one."
         },
         {
           "title": "UI/UX Designer",
           "type": "Internship",
           "link": "#",
-          "categories": ["Design"],
+          "categories": [
+            "Design"
+          ],
           "description": "Do you love coming up with creative graphic solutions?"
         },
         {
           "title": "Digital Designer",
           "type": "Student job",
           "link": "career.digital-designer",
-          "categories": ["Design"],
+          "categories": [
+            "Design"
+          ],
           "description": "Get a student job at Mercura and gain practical experience with front-end design of our software solutions."
         }
       ]
@@ -720,7 +731,6 @@
       "challenge_of_silos": {
         "heading": "The challenge of <0/> <1>Information Silos</1>",
         "subtext_1": "Many organizations struggle with siloed and poorly governed data.",
-
         "subtext_2": "Vital information is often scattered across PLM (Product Lifecycle Management), ERP (Enterprise Resource Planning), CRM (Customer Relationship Management), PIM (Product Information Management), CPQ, and CAD (Computer-Aided Design) systems. This dispersion leads to critical business decisions based on outdated or inaccurate data, impacting both internal operations and customer experiences."
       },
       "how_we_help": {
@@ -959,7 +969,6 @@
           "occupation": "Marketing Manager, Lindab A/S"
         }
       },
-
       "benefits": {
         "heading": "About the benefits of <0/><1>product configuration</1>",
         "stats": {
