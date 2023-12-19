@@ -1,5 +1,6 @@
 ---
 title: What is CPQ?
+slug: what-is-cpq-de
 description: Streamline your sales process with our powerful CPQ (Configure, Price, Quote) software.
 tags: []
 cover: ../../../assets/articles/cpq.png

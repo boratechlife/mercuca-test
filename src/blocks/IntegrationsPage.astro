@@ -1,0 +1,88 @@
+---
+import { Image } from "astro:assets";
+
+import Layout from "@/layouts/Layout.astro";
+import GetInTouchForm from "@/components/contact/GetInTouchForm.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import processesImg from "@/assets/process.png";
+import AlertDecagram from "@/components/icons/AlertDecagram.astro";
+import HowWeHelp from "@/sections/integrations/HowWeHelp.astro";
+import TailoredIntegrations from "@/sections/integrations/TailoredIntegrations.astro";
+
+import { useTranslation, type Locale } from "@/i18n";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const {
+  common,
+  pages: { integrations: t },
+} = await useTranslation(locale);
+---
+
+<Layout title={t.title} theme="gray">
+  <Breadcrumb links={[common.breadcrumb.product, t.title]} />
+
+  <section class="py-[4.25rem]">
+    <div class="container">
+      <h1
+        class="brand-gradient bg-clip-text text-transparent heading-1 mb-16 text-center"
+      >
+        {t.hero.heading}
+      </h1>
+
+      <div class="grid grid-cols-1 lg:grid-cols-[40%,60%] gap-6">
+        <div
+          class="px-6 py-12 flex justify-center items-center bg-primary-3/40 rounded-2xl"
+        >
+          <Image src={processesImg} alt="" />
+        </div>
+        <div class="p-10 bg-primary-3/40 rounded-2xl">
+          <p
+            class="text-[2rem] md:text-[3rem] font-medium leading-tight text-neutral-20 mb-8"
+          >
+            {t.hero.subtext_1}
+          </p>
+          <p
+            class="text-xl md:text-2xl tracking-[.48px] leading-tight text-neutral-30"
+          >
+            {t.hero.subtext_2}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-[4.25rem]" aria-label="The challenge of Information Silos">
+    <div class="container grid grid-cols-1 md:grid-cols-2 gap-20">
+      <div>
+        <h2 class="heading-2 mb-8 text-neutral-10">
+          The challenge of <br />
+          <span class="text-accent-1">Information Silos</span>
+        </h2>
+        <div class="p-8 bg-neutral-40/[.09] rounded-2xl w-max">
+          <AlertDecagram class="h-20 w-20" />
+        </div>
+      </div>
+
+      <div>
+        <p class="text-2xl text-neutral-10 leading-tight tracking-[.48px]">
+          {t.challenge_of_silos.subtext_1}
+        </p>
+        <p
+          class="mt-12 md:mt-16 text-xl font-light leading-tight tracking-[.4px] text-neutral-30"
+        >
+          {t.challenge_of_silos.subtext_2}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <HowWeHelp />
+
+  <TailoredIntegrations />
+
+  <GetInTouchForm theme="gray" />
+</Layout>

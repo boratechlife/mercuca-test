@@ -5,69 +5,69 @@ import { contact, location, socials } from "@/constants";
 import Facebook from "./icons/Facebook.astro";
 import Linkedin from "./icons/Linkedin.astro";
 import Logo from "./icons/Logo.astro";
-import { getLangFromUrl, useTranslation } from "@/i18n";
+import { getLangFromUrl, useTranslatedPath, useTranslation } from "@/i18n";
 
 import Trans from "@/i18n/Trans.astro";
-import Link from "@/i18n/Link.astro";
 
 const lang = getLangFromUrl(Astro.url);
+const r = useTranslatedPath(lang);
+
 const { navbar: t, common, footer } = await useTranslation(lang);
 
 type Link = { title: string; url: string };
 
-const casesLink: Link = {
-  title: "Cases",
-  url: "/cases",
-};
+const casesLink: Link = { title: t.cases, url: r("cases") };
 
 const productFeatures: Link[] = [
   {
     title: t.products_links.core_features.product_modelling,
-    url: "/product-modelling",
+    url: r("product-modelling"),
   },
   {
     title: t.products_links.core_features.visualizations,
-    url: "/visualizations",
+    url: r("visualizations"),
   },
   {
     title: t.products_links.core_features.pricing_engine,
-    url: "/pricing-engine",
+    url: r("pricing-engine"),
   },
   {
     title: t.products_links.core_features.configuration_engine,
-    url: "/configuration-engine",
+    url: r("configuration-engine"),
   },
 ];
+
 const addOns: Link[] = [
   {
     title: t.products_links.add_ons.quote_and_document,
-    url: "/quote-and-document-generation",
+    url: r("quote-and-document-generation"),
   },
   {
     title: t.products_links.add_ons.integrations,
-    url: "/integrations",
+    url: r("integrations"),
   },
   {
     title: t.products_links.add_ons.analytics,
-    url: "/analytics",
+    url: r("analytics"),
   },
 ];
+
 const info: Link[] = [
   {
     title: t.about_links.about,
-    url: "/about",
+    url: r("about"),
   },
   {
     title: t.about_links.career,
-    url: "/career",
+    url: r("career"),
   },
   {
     title: t.about_links.contact,
-    url: "/request-a-demo",
+    url: r("request-a-demo"),
   },
   {
     title: t.about_links.articles,
-    url: "/articles",
+    url: r("articles"),
   },
 ];
 
@@ -85,19 +85,9 @@ const contactInformationMinimal = [
   `${common.email}: ${contact.email}`,
 ];
 
-const policyLinks: Link[] = [
-  {
-    title: footer.links.cookies,
-    url: "#",
-  },
-];
+const policyLinks: Link[] = [{ title: footer.links.cookies, url: "#" }];
 
-const legalLinks: Link[] = [
-  {
-    title: footer.links.cookies,
-    url: "#",
-  },
-];
+const legalLinks: Link[] = [{ title: footer.links.cookies, url: "#" }];
 
 interface Props {
   theme?: "blue" | "gray";
@@ -114,9 +104,9 @@ const { theme = "blue" } = Astro.props;
   <div class="container">
     <div class="md:flex md:gap-10 md:justify-between">
       <div class="sm:hidden md:block">
-        <Link href="/">
+        <a href={r("/")}>
           <Logo />
-        </Link>
+        </a>
       </div>
 
       <div class="font-poppins flex flex-col gap-4 sm:hidden my-8">
@@ -148,7 +138,7 @@ const { theme = "blue" } = Astro.props;
         class="sm:grid grid-cols-2 sm:grid-cols-3 lg:flex gap-14 sm:gap-10 xl:gap-[75px] hidden"
       >
         <div class="md:hidden">
-          <a href="/">
+          <a href={r("/")}>
             <Logo />
           </a>
         </div>
@@ -161,12 +151,12 @@ const { theme = "blue" } = Astro.props;
           <p class="text-primary-5 capitalize font-semibold text-base">Cases</p>
           <p class="mt-4 text-sm capitalize text-neutral-30">
             <Trans translation={footer.cases.read_our_latest_cases}>
-              Read our latest <br /> casesdsds <Link
+              Read our latest <br /> casesdsds <a
                 href={casesLink.url}
                 class="underline lowercase"
               >
                 here
-              </Link>
+              </a>
             </Trans>
           </p>
         </div>
@@ -194,18 +184,18 @@ const { theme = "blue" } = Astro.props;
         &copy; {new Date().getFullYear()}
         {contact.official_name}. All rights reserved
       </p>
-      <Link href="#" class="text-sm font-medium text-neutral-30 lg:hidden">
+      <a href="#" class="text-sm font-medium text-neutral-30 lg:hidden">
         {footer.links.cookies}
-      </Link>
+      </a>
 
       {
         policyLinks.map((link) => (
-          <Link
+          <a
             href={link.url}
             class="text-sm font-medium text-neutral-30 hidden lg:block"
           >
             {link.title}
-          </Link>
+          </a>
         ))
       }
     </div>

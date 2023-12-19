@@ -1,0 +1,9 @@
+---
+import MigatronicPage from "@/blocks/cases/MigatronicPage.astro";
+
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<MigatronicPage locale={lang} />

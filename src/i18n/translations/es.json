@@ -1,6 +1,7 @@
 {
   "common": {
-    "see_other_cases": "See our <0>other</0> cases!",
+    "see_solution": "Ver Solución",
+    "see_other_cases": "¡Vea nuestros <0>otros</0> casos!",
     "scroll_for_more": "Desplácese para más",
     "request_a_demo": "Solicitar una demostración",
     "email": "Correo electrónico",
@@ -11,7 +12,7 @@
     },
     "contact_form": {
       "get_in_touch": "Póngase en contacto con nosotros",
-      "submit": "Entregar",
+      "submit": "Enviar",
       "learn_more": {
         "learn_more_about": "Aprender más acerca de",
         "learn_list": [
@@ -39,11 +40,12 @@
       }
     },
     "lets_build_together": {
-      "lets_build_together": " Construyamos <0>juntos.</0>",
-      "body": " Capacitamos a los fabricantes para que dominen el modelado de productos, agilicen el proceso de cotización, reduzcan los errores y, en última instancia, ofrezcan las soluciones personalizadas que exigen los clientes.",
+      "lets_build_together": "Construyamos <0>juntos.</0>",
+      "body": "Capacitamos a los fabricantes para que dominen el modelado de productos, agilicen el proceso de cotización, reduzcan los errores y, en última instancia, ofrezcan las soluciones personalizadas que exigen los clientes.",
       "contact_us": "Contáctenos"
     }
   },
+
   "what_we_offer": {
     "label": "Lo que ofrecemos",
     "heading": "¿Qué ofrecemos?"
@@ -92,98 +94,189 @@
     }
   },
   "pages": {
+    "multiliving_3d_renderings": {
+      "title": "Renderizados 3D de Multi-Living",
+      "heading": "Renderizados 3D <0/><1>para Multi-Living</1>",
+      "heading_text": "Renderizados 3D para Multi-Living",
+      "visual_appeal": {
+        "label": "El Problema",
+        "heading": "Atractivo Visual",
+        "text_1": "Como fabricante de cocinas, uno de los aspectos más importantes de tu negocio es poder mostrar tus productos de una manera visualmente atractiva e informativa. Aquí es donde los renderizados 3D y un configurador de cocinas en 3D pueden desempeñar un papel vital.",
+        "text_2": "Los renderizados 3D son esenciales para mostrar el diseño y la funcionalidad de los elementos de tu cocina. Esto permite a los clientes ver cómo será el producto final y cómo se adaptará a su espacio. Un configurador de cocinas en 3D es una herramienta poderosa que permite a los clientes personalizar sus cocinas según sus necesidades y preferencias únicas. Al utilizar un configurador de cocinas en 3D, los clientes pueden elegir entre una variedad de opciones para crear su cocina ideal."
+      },
+      "beautiful_visualization": {
+        "label": "La Solución",
+        "heading": "Visualización Hermosa",
+        "text_1": "Como proyecto preliminar para un configurador de cocinas, Mercura ha entregado más de 11,000 renderizados y modelos 3D de todos los elementos de cocina de Multi-Living.",
+        "text_2": "La calidad es excelente y brinda a los consumidores de cocinas danesas una excelente experiencia de compra cuando tienen que elegir entre diferentes elementos para la cocina. Los modelos también son fantásticamente adecuados para un configurador."
+      },
+      "review": {
+        "message": "Hemos estado extremadamente felices con la colaboración con Mercura. Su profesionalismo y calidad han sido de la más alta calidad y con gusto los recomendaríamos a cualquier otra persona interesada en modelado 3D y configuradores en línea.",
+        "author": {
+          "name": "Ove Dalsgaard",
+          "occupation": "CEO, Multi-Living A/S"
+        }
+      }
+    },
+    "lindab_garage": {
+      "title": "Configurador de Puertas de Garaje Lindab",
+      "heading": "<0>Configurador de Puertas</0> Lindab <1/>",
+      "heading_text": "Configurador de Puertas de Garaje Lindab",
+      "long_sales_cycles": {
+        "label": "El Problema",
+        "heading": "Ciclos de Venta Largos",
+        "text_1": "Lindab es una empresa líder en la fabricación de productos de ventilación y construcción. En los últimos años, han experimentado un fuerte crecimiento, lo que ha resultado en un proceso de ventas más prolongado.",
+        "text_2": "Como fabricante de productos de construcción, uno de los mayores desafíos que puedes enfrentar en tu proceso de ventas es la falta de una herramienta de configuración que permita a los clientes personalizar sus propias puertas de garaje. Sin la ayuda de dichas herramientas, tu equipo de ventas puede necesitar invertir tiempo y esfuerzo significativos en diseñar una puerta de garaje desde cero para satisfacer las necesidades y preferencias específicas de los clientes."
+      },
+      "beautiful_visualization": {
+        "label": "La Solución",
+        "heading": "Visualización Hermosa",
+        "text_1": "Hemos desarrollado un configurador muy intuitivo para Lindab que ayuda a los usuarios finales y a los distribuidores a visualizar y concretar sus soluciones en puertas de garaje. El configurador incluye todas las variaciones de puertas de garaje que Lindab vende.",
+        "text_2": "Hemos desarrollado un configurador muy intuitivo para Lindab que ayuda a los usuarios finales y a los distribuidores a visualizar y concretar sus soluciones en puertas de garaje. El configurador incluye todas las variaciones de puertas de garaje que Lindab vende."
+      },
+      "review": {
+        "message": "Una gran recomendación para Mercura y su equipo. Son altamente profesionales y muy buenos para obtener una visión general de las complejidades de los productos y la lógica de precios. Nuestro configurador es muy bueno para visualizar nuestras puertas de garaje, lo que nos permite llegar al mercado más rápidamente, ser más accesibles para los clientes y nos ha ayudado a optimizar los procesos internos de ventas, lo que nos ayudará a hacer crecer nuestro negocio.",
+        "author": {
+          "name": "Birgitte Kjær Hansen",
+          "occupation": "Gerente de Marketing, Lindab A/S"
+        }
+      },
+      "increase_sales_volume": {
+        "label": "La Solución",
+        "heading": "Aumentar el Volumen de Ventas",
+        "subtext": "Tener una herramienta de configuración que permita a los distribuidores y consumidores finales construir sus propias puertas de garaje puede ofrecer muchos beneficios a tu negocio. Puede simplificar el proceso de ventas, reducir la carga de trabajo de tu equipo de ventas y permitir a los clientes crear puertas de garaje que se ajusten perfectamente a sus necesidades y preferencias. Esto proporciona información única sobre las necesidades de los clientes que se puede utilizar para fines de marketing y desarrollo de productos."
+      },
+      "lindab_experience": {
+        "heading": "Lindab ha experimentado un tiempo de comercialización más corto y una mayor accesibilidad hacia los clientes.",
+        "subtext": "En otras palabras, Mercura los ayudó a destacar entre sus competidores y aumentar el volumen de ventas. Los estudios han demostrado que una herramienta de configuración puede aumentar las tasas de conversión en un 40% en las cotizaciones y aumentar los precios promedio de venta en un 30%."
+      }
+    },
+    "migatronic_configurator": {
+      "title": "Configurador de Migatronic",
+      "heading": "<0>Configurador de</0> Migatronic <1/>",
+      "heading_text": "Configurador de Migatronic",
+      "long_sales_cycles": {
+        "label": "El Problema",
+        "heading": "Ciclos de Venta Largos",
+        "text_1": "Hemos desarrollado un configurador muy intuitivo para Lindab que ayuda a los usuarios finales y a los distribuidores a visualizar y concretar sus soluciones en puertas de garaje. El configurador incluye todas las variaciones de puertas de garaje que Lindab vende.",
+        "text_2": "Hemos desarrollado un configurador muy intuitivo para Lindab que ayuda a los usuarios finales y a los distribuidores a visualizar y concretar sus soluciones en puertas de garaje. El configurador incluye todas las variaciones de puertas de garaje que Lindab vende."
+      },
+      "beautiful_visualization": {
+        "label": "La Solución",
+        "heading": "Visualización Hermosa",
+        "text_1": "Hemos desarrollado un configurador muy intuitivo para Lindab que ayuda a los usuarios finales y a los distribuidores a visualizar y concretar sus soluciones en puertas de garaje. El configurador incluye todas las variaciones de puertas de garaje que Lindab vende.",
+        "text_2": "Hemos desarrollado un configurador muy intuitivo para Lindab que ayuda a los usuarios finales y a los distribuidores a visualizar y concretar sus soluciones en puertas de garaje. El configurador incluye todas las variaciones de puertas de garaje que Lindab vende."
+      },
+      "review": {
+        "message": "Mercura ha cumplido nuestros deseos con un nuevo configurador de productos para nuestros bolígrafos y llaveros de una manera muy noble.",
+        "author": {
+          "name": "Birgitte Kjær Hansen",
+          "occupation": "Gerente de Marketing, Lindab A/S"
+        }
+      },
+      "increase_sales_volume": {
+        "label": "La Solución",
+        "heading": "Aumentar el Volumen de Ventas",
+        "subtext": "Tener una herramienta de configuración que permita a los distribuidores y consumidores finales construir sus propias puertas de garaje puede ofrecer muchos beneficios a tu negocio. Puede simplificar el proceso de ventas, reducir la carga de trabajo de tu equipo de ventas y permitir a los clientes crear puertas de garaje que se ajusten perfectamente a sus necesidades y preferencias. Esto proporciona información única sobre las necesidades de los clientes que se puede utilizar para fines de marketing y desarrollo de productos."
+      },
+      "lindab_experience": {
+        "heading": "Lindab ha experimentado un tiempo de comercialización más corto y una mayor accesibilidad hacia los clientes.",
+        "subtext": "En otras palabras, Mercura los ayudó a destacar entre sus competidores y aumentar el volumen de ventas. Los estudios han demostrado que una herramienta de configuración puede aumentar las tasas de conversión en un 40% en las cotizaciones y aumentar los precios promedio de venta en un 30%."
+      }
+    },
     "audi_configurator": {
-      "title": "Audi Configurator",
-      "heading": "<0>Audi</0> Configurator",
-      "heading_text": "Audi Configurator",
+      "title": "Configurador de Audi",
+      "heading": "<0>Configurador de</0> Audi",
+      "heading_text": "Configurador de Audi",
       "reviews": {
-        "message": "We have been extremely happy with the collaboration with Mercura. Their professionalism and quality has been of the highest order and we would happily recommend them to anyone else interested in 3D modeling and online configurators.",
+        "message": "Hemos estado extremadamente felices con la colaboración con Mercura. Su profesionalismo y calidad han sido de la más alta calidad y con gusto los recomendaríamos a cualquier otra persona interesada en modelado 3D y configuradores en línea.",
         "author": {
           "name": "Ove Dalsgaard",
           "occupation": "CEO, Multi-Living A/S"
         }
       },
       "beautiful_visualization": {
-        "label": "The Solution",
-        "heading": "Beautiful visualization",
-        "subtext": "We have created an Audi Q3 demo project to illustrate our competences within configurators. Here you can build your own Audi Q3 both externally and internally. Choose between regular Q3 and Sportsback, two different equipment models, 20 different colors, 13 different rims, mirrors, lights, roof and switch between 6 camera angles."
+        "label": "La Solución",
+        "heading": "Visualización Hermosa",
+        "subtext": "Hemos creado un proyecto de demostración de Audi Q3 para ilustrar nuestras competencias en configuradores. Aquí puedes construir tu propio Audi Q3 tanto externa como internamente. Elige entre el Q3 regular y el Sportsback, dos modelos de equipamiento diferentes, 20 colores diferentes, 13 llantas diferentes, espejos, luces, techo y cambia entre 6 ángulos de cámara diferentes."
       }
     },
+
     "job_posting": {
-      "title": "Job Posting",
-      "heading": "Student Job: Digital Designer",
+      "title": "Oferta de Trabajo",
+      "heading": "Trabajo para Estudiantes: Diseñador Digital",
       "about_job": {
-        "heading": "About the job",
-        "text_1": "We are a dynamic and innovative software company based in Aarhus, Denmark, specializing in providing cutting-edge product configurator solutions to industrial companies. Our software enables our clients to create customized and visually stunning product configurations in        both 2D and 3D. <br /> As we continue to grow and expand our services, we are seeking a talented and motivated Student Digital Designer to join our team.",
-        "text_2": "As a Student Digital Designer specializing in UI Design, you will play a key role in shaping the visual identity and user experience of our product configurators. You will be responsible for designing customer solutions that enhance their branding and marketing efforts, as well as contribute to our overall product development. Your main tool will be Figma, and you will work closely with our development and marketing teams."
+        "heading": "Acerca del trabajo",
+        "text_1": "Somos una empresa de software dinámica e innovadora con sede en Aarhus, Dinamarca, especializada en proporcionar soluciones de configurador de productos de última generación a empresas industriales. Nuestro software permite a nuestros clientes crear configuraciones de productos personalizadas y visualmente impresionantes en 2D y 3D. <br /> A medida que continuamos creciendo y expandiendo nuestros servicios, estamos buscando a un talentoso y motivado Diseñador Digital Estudiantil para unirse a nuestro equipo.",
+        "text_2": "Como Diseñador Digital Estudiantil especializado en Diseño de Interfaz de Usuario (UI), jugarás un papel clave en la formación de la identidad visual y la experiencia del usuario de nuestros configuradores de productos. Serás responsable de diseñar soluciones para los clientes que mejoren sus esfuerzos de marca y marketing, además de contribuir a nuestro desarrollo de productos en general. Tu principal herramienta será Figma, y trabajarás en estrecha colaboración con nuestros equipos de desarrollo y marketing."
       },
       "responsibilities": {
-        "heading": "Responsibilities",
+        "heading": "Responsabilidades",
         "list": [
-          "Collaborate with cross-functional teams to gather requirements and understand design needs for customer solutions, marketing materials, branding assets, and product development.",
-          "Create visually engaging UI designs for our product configurators, ensuring intuitive user experiences and seamless navigation.",
-          "Use Figma to develop wireframes, prototypes, and high-fidelity mockups that align with our clients’ brand guidelines and design principles.",
-          "Contribute to the continuous improvement of our design processes, ensuring efficient collaboration and effective communication.",
-          "Stay up-to-date with industry trends and best practices in UI design, applying them to deliver cutting-edge and innovative design solutions.",
-          "Collaborate with the marketing team to create visually appealing graphics, infographics, and other marketing materials that effectively communicate our value proposition.",
-          "Assist in maintaining and evolving our brand identity through the creation of consistent and compelling visual assets."
+          "Colaborar con equipos interdisciplinarios para recopilar requisitos y comprender las necesidades de diseño para soluciones de clientes, materiales de marketing, activos de marca y desarrollo de productos.",
+          "Crear diseños de interfaz de usuario visualmente atractivos para nuestros configuradores de productos, garantizando experiencias de usuario intuitivas y navegación fluida.",
+          "Utilizar Figma para desarrollar wireframes, prototipos y maquetas de alta fidelidad que se ajusten a las pautas de marca y los principios de diseño de nuestros clientes.",
+          "Contribuir a la mejora continua de nuestros procesos de diseño, garantizando una colaboración eficiente y una comunicación efectiva.",
+          "Mantenerse al día con las tendencias de la industria y las mejores prácticas en diseño de interfaz de usuario, aplicándolas para ofrecer soluciones de diseño innovadoras y de vanguardia.",
+          "Colaborar con el equipo de marketing para crear gráficos, infografías y otros materiales de marketing visualmente atractivos que comuniquen eficazmente nuestra propuesta de valor.",
+          "Ayudar en el mantenimiento y la evolución de nuestra identidad de marca a través de la creación de activos visuales coherentes y atractivos."
         ]
       },
       "what_to_expect": {
-        "heading": "What you can expect from us",
+        "heading": "Lo que puedes esperar de nosotros",
         "list": [
-          "Valuable hands-on experience in the field of UI design and product development.",
-          "Opportunity to work with cutting-edge technologies and contribute to innovative software solutions in a small company with a flat organizational culture",
-          "Collaborative and inclusive work environment that values creativity and personal growth.",
-          "Flexible working hours to accommodate your academic schedule.",
-          "Competitive compensation package.",
-          "A lot of responsibility and the opportunity to see projects evolve from start to finish",
-          "Dialogue with customers where your inputs for the right solution will be heard",
-          "Opportunity to participate in professional workshops and social events"
+          "Valiosa experiencia práctica en el campo del diseño de interfaz de usuario y el desarrollo de productos.",
+          "Oportunidad de trabajar con tecnologías de vanguardia y contribuir a soluciones de software innovadoras en una empresa pequeña con una cultura organizativa plana.",
+          "Ambiente de trabajo colaborativo e inclusivo que valora la creatividad y el crecimiento personal.",
+          "Horarios de trabajo flexibles para adaptarse a tu horario académico.",
+          "Paquete de compensación competitivo.",
+          "Mucha responsabilidad y la oportunidad de ver proyectos evolucionar desde el principio hasta el final.",
+          "Diálogo con los clientes donde tus ideas para la solución adecuada serán escuchadas.",
+          "Oportunidad de participar en talleres profesionales y eventos sociales."
         ]
       },
       "qualifications": {
-        "heading": "Qualifications",
+        "heading": "Calificaciones",
         "list": [
-          "Currently enrolled as a student in a relevant field such as Digital Design, Graphic Design, Interaction Design, or a related discipline.",
-          "Proficiency in UI design tools, with a strong emphasis on Figma.",
-          "Understanding of design principles, user-centered design, and visual storytelling.",
-          "Creative mindset with a keen eye for detail and aesthetics.",
-          "Excellent communication and collaboration skills, able to effectively work within cross-functional teams.",
-          "Ability to manage multiple projects and meet deadlines in a fast-paced environment.",
-          "Strong portfolio showcasing your UI design skills and ability to create visually appealing digital experiences."
+          "Actualmente matriculado como estudiante en un campo relevante como Diseño Digital, Diseño Gráfico, Diseño de Interacción o una disciplina relacionada.",
+          "Dominio de herramientas de diseño de interfaz de usuario, con un fuerte énfasis en Figma.",
+          "Comprensión de los principios de diseño, diseño centrado en el usuario y narración visual.",
+          "Mentalidad creativa con un ojo agudo para el detalle y la estética.",
+          "Excelentes habilidades de comunicación y colaboración, capaz de trabajar eficazmente en equipos interdisciplinarios.",
+          "Habilidad para gestionar múltiples proyectos y cumplir con plazos en un entorno de ritmo rápido.",
+          "Portafolio sólido que muestre tus habilidades de diseño de interfaz de usuario y tu capacidad para crear experiencias digitales visualmente atractivas."
         ]
       },
       "hiring": {
-        "heading": "Our hiring process.",
+        "heading": "Nuestro proceso de contratación",
         "steps": {
           "send_application": {
-            "title": "Send an application",
-            "description": "Thanks for your application and interest in working at Mercura. We look forward to getting to know you better."
+            "title": "Envía una solicitud",
+            "description": "Gracias por tu solicitud e interés en trabajar en Mercura. Esperamos conocerte mejor."
           },
           "informal_conversation": {
-            "title": "Informal Conversation",
-            "description": "Your profile has captured our attention. We invite you to a conversation with our HR consultant over a cup of coffee in our office."
+            "title": "Conversación informal",
+            "description": "Tu perfil ha captado nuestra atención. Te invitamos a una conversación con nuestro consultor de recursos humanos en nuestra oficina mientras compartimos una taza de café."
           },
           "design_test": {
-            "title": "We will send you a design test",
-            "description": "You receive a design test based on a specific task. When the test is submitted, it will be reviewed by our marketing department."
+            "title": "Te enviaremos una prueba de diseño",
+            "description": "Recibirás una prueba de diseño basada en una tarea específica. Una vez que envíes la prueba, será revisada por nuestro departamento de marketing."
           },
           "technical_interview": {
-            "title": "Technical Interview",
-            "description": "After the test, we invite you to a technical interview. Here you will meet our marketing department who will go through the test with you."
+            "title": "Entrevista técnica",
+            "description": "Después de la prueba, te invitamos a una entrevista técnica. Aquí te reunirás con nuestro departamento de marketing, quienes repasarán la prueba contigo."
           },
           "team": {
-            "title": "Welcome to the Mercura team",
-            "description": "We will meet again and sign the contract. Here you also receive an onboarding program so that you are ready to become a digital designer at Mercura."
+            "title": "Bienvenido al equipo de Mercura",
+            "description": "Nos reuniremos nuevamente y firmaremos el contrato. Aquí también recibirás un programa de incorporación para que estés listo para convertirte en un diseñador digital en Mercura."
           }
         }
       }
     },
     "articles": {
-      "title": "Articles",
-      "heading": "Articles",
-      "subtext": "Here you can find a lot of useful information about product configurators, room planners, CPQ."
+      "title": "Artikel",
+      "heading": "Artikel",
+      "subtext": "Hier finden Sie viele nützliche Informationen über Produktkonfiguratoren, Raumplaner und CPQ."
     },
     "careers": {
       "title": "Carrera",
@@ -201,42 +294,42 @@
         {
           "title": "Desarrollador de software",
           "type": "Tiempo completo",
-          "link": "",
+          "link": "#",
           "categories": ["Desarrollo de productos"],
           "description": "¿Te apasiona el desarrollo de software y sueñas con dirigir un negocio con mucha responsabilidad? "
         },
         {
           "title": "Desarrollador de back-end",
           "type": "Trabajo de estudiante",
-          "link": "",
+          "link": "#",
           "categories": ["Desarrollo de productos"],
           "description": "¿Te apasiona el desarrollo de software y buscas un trabajo estudiantil emocionante y desafiante con mucha responsabilidad e influencia desde el principio? "
         },
         {
           "title": "Desarrollador de back-end",
           "type": "Trabajo de estudiante",
-          "link": "",
+          "link": "#",
           "categories": ["Desarrollo de productos"],
           "description": "Si te encanta trabajar con el desarrollo front-end y eres un experto en JavaScript, HTML y CSS, entonces Mercura es el lugar para ti."
         },
         {
           "title": "Desarrollo de negocios",
           "type": "Pasantía",
-          "link": "",
+          "link": "#",
           "categories": ["Desarrollo de negocios"],
           "description": "Si estás estudiando negocios y estás buscando una pasantía, entonces Mercura es el lugar para ti. "
         },
         {
           "title": "Diseñador UI/UX",
           "type": "Pasantía",
-          "link": "",
+          "link": "#",
           "categories": ["Diseño"],
           "description": "¿Te encanta idear soluciones gráficas creativas?"
         },
         {
           "title": "Diseñador Digital",
           "type": "Trabajo de estudiante",
-          "link": "/carrera/diseñador-digital",
+          "link": "career.digital-designer",
           "categories": ["Diseño"],
           "description": "Consiga un trabajo de estudiante en Mercura y obtenga experiencia práctica con el diseño frontal de nuestras soluciones de software."
         }
@@ -953,21 +1046,21 @@
       "reviews": {
         "birgitte": {
           "name": "Birgitte Kjær Hansen",
-          "occupation": "Marketing Manager, Lindab A/S",
-          "headline": "Mercura has fulfilled all our wishes",
-          "message": "A big recommendation to Mercura and their team. They are highly professional and very good at gaining an overview of complex product constraints and pricing logic. Our configurator is very good at visualizing our garage doors which gives us a shorter time to market, makes us more accessible for customers and has helped us optimize internal sales processes, which will help us grow our business."
+          "occupation": "Gerente de Marketing, Lindab A/S",
+          "headline": "Mercura ha cumplido todos nuestros deseos",
+          "message": "Una gran recomendación para Mercura y su equipo. Son altamente profesionales y muy buenos para obtener una visión general de las complejas restricciones de productos y la lógica de precios. Nuestro configurador es muy bueno para visualizar nuestras puertas de garaje, lo que nos permite reducir el tiempo de comercialización, nos hace más accesibles para los clientes y nos ha ayudado a optimizar los procesos internos de ventas, lo que nos ayudará a hacer crecer nuestro negocio."
         },
         "ove": {
           "name": "Ove Dalsgaard",
           "occupation": "CEO, Multi-Living A/S",
-          "headline": "Mercura is a great partner",
-          "message": "We have been extremely happy with the collaboration with Mercura. Their professionalism and quality have been of the highest order and we would happily recommend them to anyone else interested in 3D modeling and online configurators."
+          "headline": "Mercura es un gran socio",
+          "message": "Hemos estado extremadamente contentos con la colaboración con Mercura. Su profesionalismo y calidad han estado a la altura de las expectativas más altas, y los recomendaríamos con gusto a cualquiera interesado en modelado 3D y configuradores en línea."
         },
         "linda": {
           "name": "Linda Kaae Hedegaard",
-          "occupation": "Sales & Marketing assistant, SCITEQ A/S",
-          "headline": "Very satisfied with Mercura!",
-          "message": "At SCITEQ, we are very happy with our online configuration and quotation system that Mercura has developed for us. Mercura has been particularly good at meeting our ongoing needs."
+          "occupation": "Asistente de Ventas y Marketing, SCITEQ A/S",
+          "headline": "¡Muy satisfechos con Mercura!",
+          "message": "En SCITEQ, estamos muy contentos con nuestro sistema de configuración en línea y cotización que Mercura ha desarrollado para nosotros. Mercura ha sido particularmente buena en satisfacer nuestras necesidades en curso."
         }
       }
     }

@@ -1,0 +1,8 @@
+---
+import VisualizationsPage from "@/blocks/VisualizationsPage.astro";
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<VisualizationsPage locale="en" />

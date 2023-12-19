@@ -1,14 +1,14 @@
 ---
-import { getLangFromUrl, useTranslatedPath } from ".";
+import { getLangFromUrl, useTranslatedPath, type RouteKey } from ".";
 interface Props extends astroHTML.JSX.AnchorHTMLAttributes {}
 
-const { href = "", hreflang, ...props } = Astro.props;
+const { href = "#", hreflang, ...props } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
 
-const translatedPath = useTranslatedPath(lang);
+const r = useTranslatedPath(lang);
 ---
 
-<a href={translatedPath(href as string)} hreflang={lang} {...props}>
+<a href={r(href as RouteKey)} hreflang={lang} {...props}>
   <slot />
 </a>

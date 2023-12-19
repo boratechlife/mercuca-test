@@ -1,0 +1,229 @@
+---
+import { Image } from "astro:assets";
+
+import Layout from "@/layouts/Layout.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import pricingImg from "@/assets/pricing-header.png";
+import AlertDecagram from "@/components/icons/AlertDecagram.astro";
+import BenefitsOfPricingFeatures from "@/sections/pricing-engine/BenefitsOfPricingFeatures.astro";
+import LaunchRocket from "@/components/icons/LaunchRocket.astro";
+import CheckedList from "@/components/lists/CheckedList.astro";
+import Monitor from "@/components/icons/Monitor.astro";
+
+import polygon from "@/assets/polygon.png";
+import pentagon from "@/assets/pentagon.png";
+import circles from "@/assets/circles.png";
+import CallToAction from "@/sections/CallToAction.astro";
+
+import { useTranslation, type Locale } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const {
+  common,
+  pages: { pricing_engine: t },
+} = await useTranslation(locale as Locale);
+---
+
+<Layout title={t.title} theme="gray">
+  <Breadcrumb links={[common.breadcrumb.product, t.title]} />
+
+  <section class="py-[4.25rem]">
+    <div class="container">
+      <h1 class="heading-1 mb-16 text-center text-neutral-10">
+        {t.hero.heading}
+      </h1>
+
+      <div class="grid grid-cols-1 lg:grid-cols-[40%,60%] gap-6">
+        <div
+          class="flex justify-center items-center rounded-2xl overflow-hidden"
+        >
+          <Image class="h-full" src={pricingImg} alt="" />
+        </div>
+        <div class="p-10 bg-primary-3/40 rounded-2xl">
+          <p
+            class="text-[2rem] md:text-[3rem] font-medium leading-tight text-neutral-20 mb-8"
+          >
+            {t.hero.subtext_1}
+          </p>
+          <p
+            class="text-xl md:text-2xl tracking-[.48px] leading-tight text-neutral-30"
+          >
+            {t.hero.subtext_2}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="py-[4.25rem]"
+    aria-label={t.navigating_pricing_challanges.label}
+  >
+    <div class="container grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
+      <div>
+        <h2 class="heading-2 mb-8 text-neutral-10">
+          <Trans translation={t.navigating_pricing_challanges.heading}>
+            Navigating your <br />
+            <span class="brand-gradient bg-clip-text text-transparent"
+              >pricing challenges</span
+            >
+          </Trans>
+        </h2>
+        <div class="p-8 bg-neutral-40/[.09] rounded-2xl w-max">
+          <LaunchRocket class="h-20 w-20" />
+        </div>
+      </div>
+
+      <div>
+        <p class="text-2xl text-neutral-10 leading-tight tracking-[.48px]">
+          {t.navigating_pricing_challanges.subtext_1}
+        </p>
+        <p
+          class="mt-16 text-xl font-light leading-tight tracking-[.4px] text-neutral-30"
+        >
+          <Trans translation={t.navigating_pricing_challanges.subtext_2} />
+        </p>
+      </div>
+    </div>
+
+    <BenefitsOfPricingFeatures />
+
+    <section class="py-[4.25rem]" aria-label={t.migrate_margin_risks.label}>
+      <div class="container grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
+        <div>
+          <h2 class="heading-2 mb-8 text-neutral-10">
+            <Trans translation={t.migrate_margin_risks.heading}>
+              Migrate
+              <span class="brand-gradient bg-clip-text text-transparent">
+                margin risks</span
+              >
+              <br /> downstream
+            </Trans>
+          </h2>
+          <div class="p-8 bg-neutral-40/[.09] rounded-2xl w-max">
+            <AlertDecagram class="h-20 w-20" />
+          </div>
+        </div>
+        <div>
+          <p class="text-2xl text-neutral-10 leading-tight tracking-[.48px]">
+            {t.migrate_margin_risks.subtext_1}
+          </p>
+          <p
+            class="mt-16 text-xl font-light leading-tight tracking-[.4px] text-neutral-30"
+          >
+            {t.migrate_margin_risks.subtext_2}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[4.25rem]">
+      <div class="container grid grid-cols-1 lg:grid-cols-2 md:gap-5">
+        <div class="flex justify-center items-center">
+          <Monitor class="w-full" />
+        </div>
+        <div>
+          <h2 class="heading-2 mb-12 text-neutral-10">
+            {t.flexible_and_robust_price_models.heading}
+          </h2>
+          <p
+            class="text-xl font-light leading-[1.4] tracking-[.4px] text-neutral-30 mb-12"
+          >
+            {t.flexible_and_robust_price_models.subtext}
+          </p>
+          <CheckedList
+            items={t.flexible_and_robust_price_models.pricing_models}
+            class="pl-6"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      aria-label={t.instant_pricing.label}
+      class="relative overflow-x-clip"
+    >
+      <div class="container">
+        <div class="w-1/2 relative">
+          <Image
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            src={polygon}
+            alt=""
+          />
+        </div>
+        <div class="py-[100px]">
+          <h2 class="heading-2 text-center text-neutral-10">
+            <Trans translation={t.instant_pricing.heading}>
+              <span class="brand-gradient bg-clip-text text-transparent"
+                >Instant pricing</span
+              >
+              <br />
+               at your fingertips
+            </Trans>
+          </h2>
+        </div>
+        <div class="w-1/2 ml-auto relative">
+          <Image
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            src={pentagon}
+            alt=""
+          />
+        </div>
+
+        <div class="py-20 grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+          <div
+            class="p-8 bg-primary-4/[.11] rounded-2xl border border-primary-7 md:h-max"
+          >
+            <p class="text-[2rem] leading-tight text-white mb-[50px]">
+              {t.instant_pricing.continuous_data_integration.title}
+            </p>
+            <p
+              class="text-xl font-light text-white leading-tight tracking-[.4px]"
+            >
+              {t.instant_pricing.continuous_data_integration.description}
+            </p>
+          </div>
+          <div
+            class="p-8 bg-primary-4/[.11] rounded-2xl border border-primary-7 md:h-max md:self-end"
+          >
+            <p class="text-[2rem] leading-tight text-white mb-8">
+              {t.instant_pricing.mixed_price_types.title}
+            </p>
+            <p
+              class="text-xl font-light text-white leading-tight tracking-[.4px]"
+            >
+              {t.instant_pricing.mixed_price_types.description}
+            </p>
+          </div>
+
+          <div class="md:col-span-2">
+            <div
+              class="p-8 bg-primary-4/[.11] rounded-2xl border border-primary-7 md:h-max md:w-1/2 mx-auto relative"
+            >
+              <Image
+                class="absolute top-full left-full -translate-x-1/2 -translate-y-1/2"
+                src={circles}
+                alt=""
+              />
+              <p class="text-[2rem] leading-tight text-white mb-4">
+                {t.instant_pricing.automatic_margin_control.title}
+              </p>
+              <p
+                class="text-xl font-light text-white leading-tight tracking-[.4px] pr-5"
+              >
+                {t.instant_pricing.automatic_margin_control.description}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <CallToAction />
+  </section>
+</Layout>

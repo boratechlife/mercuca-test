@@ -1,0 +1,94 @@
+---
+import TheNavbar from "@/components/TheNavbar.astro";
+import Layout from "@/layouts/Layout.astro";
+import Benefits from "@/sections/home/Benefits.astro";
+import BusinessGrowthFeatures from "@/sections/home/BusinessGrowthFeatures.astro";
+import Logos from "@/components/Logos.astro";
+import ManufacturingPotential from "@/sections/home/ManufacturingPotential.astro";
+import Video from "@/sections/home/Video.astro";
+
+import pill from "@/assets/pill.png";
+import avatar from "@/assets/avatar-1.png";
+import { Image } from "astro:assets";
+import ProductConfig from "@/sections/home/ProductConfig.astro";
+import RequestDemoLink from "@/components/RequestDemoLink.astro";
+
+import { useTranslation, type Locale } from "@/i18n";
+import Link from "@/i18n/Link.astro";
+import Trans from "@/i18n/Trans.astro";
+import ReviewCard from "@/sections/ReviewCard.astro";
+import LetsBuildTogether from "@/sections/LetsBuildTogether.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const {
+  pages: { home: t },
+} = await useTranslation(locale);
+---
+
+<Layout title={t.title}>
+  <TheNavbar noGradient slot="nav" />
+
+  <section>
+    <div class="container px-6 py-16 md:px-16">
+      <h1 class="mega-heading text-neutral-10 text-center">
+        <Trans translation={t.heading}>
+          Shape the Future of Manufacturing with <span
+            class="brand-gradient bg-clip-text text-transparent"
+            >AI-Powered CPQ</span
+          >
+        </Trans>
+      </h1>
+      <p
+        class="my-8 text-white text-2xl leading-[30px] tracking-[.48px] max-w-[700px] mx-auto text-center"
+      >
+        {t.subheading}
+      </p>
+
+      <div
+        class="flex flex-col lg:flex-row items-center lg:justify-center gap-6"
+      >
+        <RequestDemoLink class="w-3/5 md:w-max" />
+        <Link
+          href="#"
+          class="block text-white rounded-lg px-8 py-4 text-center font-medium border border-white w-3/5 md:w-max"
+        >
+          {t.learn_more}
+        </Link>
+      </div>
+    </div>
+  </section>
+
+  <Logos />
+
+  <Video />
+
+  <Benefits />
+
+  <ManufacturingPotential />
+
+  <div class="relative hidden lg:block">
+    <Image
+      class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
+      src={pill}
+      alt=""
+    />
+  </div>
+
+  <BusinessGrowthFeatures />
+
+  <ProductConfig />
+
+  <ReviewCard avatar={avatar}>
+    <p class="inline">
+      {t.review.message}
+    </p>
+    <p slot="author">{t.review.author.occupation}</p>
+    <p slot="author">{t.review.author.name}</p>
+  </ReviewCard>
+
+  <LetsBuildTogether />
+</Layout>

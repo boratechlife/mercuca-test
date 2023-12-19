@@ -1,0 +1,138 @@
+---
+import { useTranslation, type Locale, useTranslatedPath } from "@/i18n";
+import Layout from "@/layouts/Layout.astro";
+
+import { Image } from "astro:assets";
+import LabelSection from "@/sections/cases/LabelSection.astro";
+
+import hero from "@/assets/migatronic_hero.png";
+import laptop from "@/assets/migatronic_laptop.png";
+import avatar from "@/assets/avatar-1.png";
+
+import solutionImg from "@/assets/carousel_1.png";
+
+import car_audi from "@/assets/car_audi.png";
+import lindab_garage from "@/assets/lindab_garage.png";
+import render3d from "@/assets/3d_render.png";
+
+import ReviewCard from "@/sections/ReviewCard.astro";
+import Solution from "@/sections/cases/Solution.astro";
+import LetsBuildTogether from "@/sections/LetsBuildTogether.astro";
+import OtherCases, { type Case } from "@/sections/cases/OtherCases.astro";
+import Trans from "@/i18n/Trans.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const r = useTranslatedPath(locale);
+
+const {
+  common,
+  pages: {
+    migatronic_configurator: t,
+    lindab_garage: { heading_text: lindab_text },
+    multiliving_3d_renderings: { heading_text: multiliving_text },
+    audi_configurator: { heading_text: audi_text },
+  },
+} = await useTranslation(locale);
+
+const otherCases: Case[] = [
+  {
+    photo: car_audi,
+    link: {
+      title: audi_text,
+      href: r("cases.audi-configurator"),
+    },
+  },
+  {
+    photo: lindab_garage,
+    link: {
+      title: lindab_text,
+      href: r("cases.lindab-garage-door-configurator"),
+    },
+  },
+  {
+    photo: render3d,
+    link: {
+      title: multiliving_text,
+      href: r("cases.3d-renderings-for-multi-living"),
+    },
+  },
+];
+---
+
+<Layout title={t.title} theme="gray">
+  <section class="py-[4.25rem]">
+    <div class="container">
+      <h1 class="heading-1 text-center text-neutral-20">
+        <Trans translation={t.heading}>
+          <span class="brand-gradient bg-clip-text text-transparent"
+            >Migatronic</span
+          > Lorem <br />ipsum configurator
+        </Trans>
+      </h1>
+    </div>
+  </section>
+
+  <div>
+    <Image class="w-full" src={hero} alt={t.title} />
+    <!-- 2xl:w-auto 2xl:mx-auto max-h-[755px] -->
+  </div>
+
+  <LabelSection
+    label={t.long_sales_cycles.label}
+    withLink={{ title: common.see_solution, href: "#" }}
+  >
+    <span slot="title">{t.long_sales_cycles.heading}</span>
+    <p slot="col-1">
+      <Trans translation={t.long_sales_cycles.text_1} />
+    </p>
+    <p slot="col-2">
+      <Trans translation={t.long_sales_cycles.text_2} />
+    </p>
+  </LabelSection>
+
+  <LabelSection label={t.beautiful_visualization.label}>
+    <span slot="title">{t.beautiful_visualization.heading}</span>
+    <p slot="col-1">
+      <Trans translation={t.beautiful_visualization.text_1} />
+    </p>
+    <p slot="col-2">
+      <Trans translation={t.beautiful_visualization.text_2} />
+    </p>
+  </LabelSection>
+
+  <section class="py-[4.25rem]">
+    <div class="container">
+      <Image class="w-full" src={laptop} alt={t.title} />
+    </div>
+  </section>
+
+  <ReviewCard avatar={avatar}>
+    <p class="inline">
+      {t.review.message}
+    </p>
+    <p slot="author">{t.review.author.occupation}</p>
+    <p slot="author">{t.review.author.name}</p>
+  </ReviewCard>
+
+  <Solution label={t.increase_sales_volume.label} photo={solutionImg} hasBlur>
+    <span slot="title">{t.increase_sales_volume.heading}</span>
+    <p>
+      {t.increase_sales_volume.subtext}
+    </p>
+  </Solution>
+
+  <Solution alternate photo={solutionImg} hasBlur>
+    <span slot="title">{t.lindab_experience.heading}</span>
+    <p>
+      {t.lindab_experience.subtext}
+    </p>
+  </Solution>
+
+  <OtherCases cases={otherCases} />
+
+  <LetsBuildTogether theme="gray" />
+</Layout>

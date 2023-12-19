@@ -1,0 +1,98 @@
+---
+import { useTranslation, type Locale, useTranslatedPath } from "@/i18n";
+import Layout from "@/layouts/Layout.astro";
+
+import { Image } from "astro:assets";
+import LabelSection from "@/sections/cases/LabelSection.astro";
+
+import hero from "@/assets/case_audi_hero.png";
+import laptop from "@/assets/multi_living_laptop.png";
+import avatar from "@/assets/photo_3.png";
+
+import migatronic_sm from "@/assets/case_migatronic_sm.png";
+import lindab_garage from "@/assets/lindab_garage.png";
+import render3d from "@/assets/3d_render.png";
+
+import ReviewCard from "@/sections/ReviewCard.astro";
+import LetsBuildTogether from "@/sections/LetsBuildTogether.astro";
+import OtherCases, { type Case } from "@/sections/cases/OtherCases.astro";
+import Trans from "@/i18n/Trans.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const r = useTranslatedPath(locale);
+
+const {
+  pages: { audi_configurator: t },
+} = await useTranslation(locale as Locale);
+
+const otherCases: Case[] = [
+  {
+    photo: migatronic_sm,
+    link: {
+      title: "Migatronic",
+      href: r("cases.migatronic-configurator"),
+    },
+  },
+  {
+    photo: lindab_garage,
+    link: {
+      title: "Lindab Garage door Configurator",
+      href: r("cases.lindab-garage-door-configurator"),
+    },
+  },
+  {
+    photo: render3d,
+    link: {
+      title: "3D Renderings for Multi-Living",
+      href: r("cases.3d-renderings-for-multi-living"),
+    },
+  },
+];
+---
+
+<Layout title={t.heading_text} theme="gray">
+  <section class="py-[4.25rem]">
+    <div class="container">
+      <h1 class="heading-1 text-center text-neutral-20">
+        <Trans translation={t.heading}>
+          <span class="brand-gradient bg-clip-text text-transparent">Audi</span>
+           Configurator
+        </Trans>
+      </h1>
+    </div>
+  </section>
+
+  <div>
+    <Image class="w-full" src={hero} alt={t.heading_text} />
+    <!-- 2xl:w-auto 2xl:mx-auto max-h-[755px] -->
+  </div>
+
+  <LabelSection label={t.beautiful_visualization.label} singleCol>
+    <span slot="title">{t.beautiful_visualization.heading}</span>
+    <p slot="col-1">
+      {t.beautiful_visualization.subtext}
+    </p>
+  </LabelSection>
+
+  <section class="py-[4.25rem]">
+    <div class="container">
+      <Image class="w-full" src={laptop} alt={t.heading_text} />
+    </div>
+  </section>
+
+  <ReviewCard class="max-w-[800px] px-6" avatar={avatar}>
+    <p class="inline text-2xl font-normal tracking-[.48px]">
+      {t.reviews.message}
+    </p>
+    <p slot="author">{t.reviews.author.occupation}</p>
+    <p slot="author">{t.reviews.author.name}</p>
+  </ReviewCard>
+
+  <OtherCases cases={otherCases} />
+
+  <LetsBuildTogether theme="gray" />
+</Layout>

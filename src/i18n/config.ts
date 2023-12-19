@@ -12,7 +12,7 @@ export const locales = {
  * Default language.
  */
 export const defaultLang: Locale = "en";
-
+export const showDefaultLang = false;
 /**
  * Translations object containing translations for different languages.
  */

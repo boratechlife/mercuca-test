@@ -1,7 +1,6 @@
 ---
 import RequestDemoLink from "@/components/RequestDemoLink.astro";
-import { getLangFromUrl, useTranslation } from "@/i18n";
-import Link from "@/i18n/Link.astro";
+import { getLangFromUrl, useTranslation, useTranslatedPath } from "@/i18n";
 import Trans from "@/i18n/Trans.astro";
 import { cn } from "@/utils";
 
@@ -11,6 +10,7 @@ const {
   common: { lets_build_together: t },
 } = await useTranslation(lang);
 
+const r = useTranslatedPath(lang);
 interface Props {
   theme?: "blue" | "gray";
 }
@@ -44,12 +44,12 @@ const { theme = "blue" } = Astro.props;
         class="flex flex-col md:flex-row items-center md:justify-center gap-6"
       >
         <RequestDemoLink class="w-3/5 md:w-max" />
-        <Link
-          href="/request-a-demo"
+        <a
+          href={r("request-a-demo")}
           class="block text-white rounded-lg px-8 py-4 before:text-center w-3/5 md:w-max font-medium border border-white"
         >
           {t.contact_us}
-        </Link>
+        </a>
       </div>
     </div>
   </div>

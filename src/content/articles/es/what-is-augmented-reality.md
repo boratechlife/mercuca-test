@@ -6,4 +6,5 @@ cover: ../../../assets/articles/ar.png
 language: es
 isDraft: false
 publishDate: 2023-12-12T11:28:19.578Z
+slug: what-is-augmented-reality-es
 ---

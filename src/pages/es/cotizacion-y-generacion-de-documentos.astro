@@ -1,0 +1,9 @@
+---
+import QuoteDocumentGenerationPage from "@/blocks/QuoteDocumentGenerationPage.astro";
+
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<QuoteDocumentGenerationPage locale={lang} />

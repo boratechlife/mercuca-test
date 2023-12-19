@@ -1,18 +1,18 @@
 ---
-import { getLangFromUrl, useTranslation } from "@/i18n";
-import Link from "@/i18n/Link.astro";
+import { getLangFromUrl, useTranslatedPath, useTranslation } from "@/i18n";
 interface Props extends astroHTML.JSX.AnchorHTMLAttributes {}
 
 const { class: classes = "", ...props } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
+const r = useTranslatedPath(lang);
 
 const { common } = await useTranslation(lang);
 ---
 
-<Link
-  href="/request-a-demo"
+<a
+  href={r("request-a-demo")}
   class={`brand-gradient block text-white rounded-lg px-8 py-4 text-center font-medium ${classes}`}
 >
   {common.request_a_demo}
-</Link>
+</a>

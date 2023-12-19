@@ -6,4 +6,5 @@ publishDate: 2023-12-12T11:43:08.701Z
 tags: []
 language: de
 isDraft: false
+slug: what-is-a-room-designer-de
 ---

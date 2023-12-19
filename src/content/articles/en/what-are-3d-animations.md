@@ -6,4 +6,5 @@ publishDate: 2023-12-12T11:48:01.638Z
 tags: []
 language: en
 isDraft: false
+slug: what-are-3d-animations
 ---

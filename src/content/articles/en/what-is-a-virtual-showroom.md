@@ -6,4 +6,5 @@ publishDate: 2023-12-12T11:44:18.008Z
 tags: []
 language: en
 isDraft: false
+slug: what-is-a-virtual-showroom
 ---

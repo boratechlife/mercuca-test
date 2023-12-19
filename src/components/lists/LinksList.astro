@@ -14,9 +14,9 @@ const { title, links } = Astro.props;
     {
       links.map((link) => (
         <li>
-          <Link href={link.url} class="text-sm capitalize text-neutral-30">
+          <a href={link.url} class="text-sm capitalize text-neutral-30">
             {link.title}
-          </Link>
+          </a>
         </li>
       ))
     }

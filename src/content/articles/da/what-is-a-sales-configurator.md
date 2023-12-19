@@ -6,4 +6,5 @@ publishDate: 2023-12-12T11:52:25.784Z
 tags: []
 language: da
 isDraft: false
+slug: what-is-a-sales-configurator-da
 ---

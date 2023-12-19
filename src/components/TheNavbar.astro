@@ -15,12 +15,14 @@ import { contact } from "@/constants";
 import Close from "./icons/Close.astro";
 import Logo from "./icons/Logo.astro";
 
-import { getLangFromUrl, useTranslation } from "@/i18n";
-import Link from "@/i18n/Link.astro";
+import { getLangFromUrl, useTranslatedPath, useTranslation } from "@/i18n";
 import LanguagePicker from "@/i18n/LanguagePicker.astro";
 import MobileLocales from "@/i18n/MobileLocales.astro";
+import type { ArticleRoutes, ViewMode } from "@/types";
 
 const locale = getLangFromUrl(Astro.url);
+
+const r = useTranslatedPath(locale);
 
 const t = await useTranslation(locale);
 
@@ -35,39 +37,39 @@ const productsLinks: Record<string, Link[]> = {
     {
       icon: eyeIcon,
       title: t.navbar.products_links.core_features.visualizations,
-      url: "/visualizations",
+      url: r("visualizations"),
     },
     {
       icon: settingIcon,
       title: t.navbar.products_links.core_features.configuration_engine,
-      url: "/configuration-engine",
+      url: r("configuration-engine"),
     },
     {
       icon: cubesIcon,
       title: t.navbar.products_links.core_features.product_modelling,
-      url: "/product-modelling",
+      url: r("product-modelling"),
     },
     {
       icon: tagIcon,
       title: t.navbar.products_links.core_features.pricing_engine,
-      url: "/pricing-engine",
+      url: r("pricing-engine"),
     },
   ],
   add_ons: [
     {
       icon: docIcon,
       title: t.navbar.products_links.add_ons.quote_and_document,
-      url: "/quote-and-document-generation",
+      url: r("quote-and-document-generation"),
     },
     {
       icon: pieIcon,
       title: t.navbar.products_links.add_ons.analytics,
-      url: "/analytics",
+      url: r("analytics"),
     },
     {
       icon: integrationIcon,
       title: t.navbar.products_links.add_ons.integrations,
-      url: "/integrations",
+      url: r("integrations"),
     },
   ],
 };
@@ -75,29 +77,36 @@ const productsLinks: Record<string, Link[]> = {
 const aboutLinks: { title: string; url: string }[] = [
   {
     title: t.navbar.about_links.about,
-    url: "/about",
+    url: r("about"),
   },
   {
     title: t.navbar.about_links.career,
-    url: "/career",
+    url: r("career"),
   },
   {
     title: t.navbar.about_links.contact,
-    url: "/request-a-demo",
+    url: r("request-a-demo"),
   },
 ];
 
 const casesLink: { title: string; url: string } = {
-  title: "Cases",
-  url: "/cases",
+  title: t.navbar.cases,
+  url: r("cases"),
 };
 
-interface Props {
+type NavProps = ViewMode & ArticleRoutes;
+
+interface Props extends NavProps {
   theme?: "blue" | "gray";
   noGradient?: boolean;
 }
 
-const { theme = "blue", noGradient = false } = Astro.props;
+const {
+  theme = "blue",
+  noGradient = false,
+  mode = "page",
+  altRoutes,
+} = Astro.props;
 ---
 
 <div
@@ -116,9 +125,9 @@ const { theme = "blue", noGradient = false } = Astro.props;
       class="flex flex-col min-[900px]:flex-row min-[900px]:justify-between relative h-full min-[900px]:h-auto"
     >
       <div class="min-[900px]:w-max w-full flex items-center justify-between">
-        <Link href="/">
+        <a href={r("/")}>
           <Logo />
-        </Link>
+        </a>
         <button
           id="navToggle"
           data-nav-open="false"
@@ -162,13 +171,13 @@ const { theme = "blue", noGradient = false } = Astro.props;
                 {
                   productsLinks.core_features.map((link) => (
                     <li class="p-4">
-                      <Link
+                      <a
                         href={link.url}
                         class="flex items-center gap-4 w-max capitalize text-base text-white"
                       >
                         {link.icon && <Image src={link.icon} alt="" />}
                         {link.title}
-                      </Link>
+                      </a>
                     </li>
                   ))
                 }
@@ -183,13 +192,13 @@ const { theme = "blue", noGradient = false } = Astro.props;
                 {
                   productsLinks.add_ons.map((link) => (
                     <li class="p-4">
-                      <Link
+                      <a
                         href={link.url}
                         class="flex items-center gap-4 w-max capitalize text-base text-white"
                       >
                         {link.icon && <Image src={link.icon} alt="" />}
                         {link.title}
-                      </Link>
+                      </a>
                     </li>
                   ))
                 }
@@ -199,12 +208,12 @@ const { theme = "blue", noGradient = false } = Astro.props;
         </li>
 
         <li class="h-full">
-          <Link
+          <a
             href={casesLink.url}
             class="font-poppins text-white font-medium text-2xl min-[900px]:text-base h-full flex items-center"
           >
             {casesLink.title}
-          </Link>
+          </a>
         </li>
         <li data-mobile-open="false" class="font-poppins group/about lg:h-full">
           <a
@@ -222,9 +231,9 @@ const { theme = "blue", noGradient = false } = Astro.props;
               {
                 aboutLinks.map((link) => (
                   <li>
-                    <Link href={link.url} class="text-white p-4 block">
+                    <a href={link.url} class="text-white p-4 block">
                       {link.title}
-                    </Link>
+                    </a>
                   </li>
                 ))
               }
@@ -238,8 +247,8 @@ const { theme = "blue", noGradient = false } = Astro.props;
         data-active="false"
         class="hidden data-[active='true']:flex min-[900px]:flex gap-[22px] min-[900px]:items-center flex-1 min-[900px]:flex-none min-[900px]:flex-row flex-col mt-16 min-[900px]:mt-0"
       >
-        <Link
-          href="/request-a-demo"
+        <a
+          href={r("request-a-demo")}
           class={` block text-white rounded-lg px-8 py-5 md:py-4 md:mx-7 text-center font-bold min-[900px]:font-medium min-[900px]:mx-0 ${
             noGradient
               ? "brand-gradient lg:bg-primary-3 hover:brand-gradient transition-colors duration-200"
@@ -247,14 +256,18 @@ const { theme = "blue", noGradient = false } = Astro.props;
           }`}
         >
           {t.common.request_a_demo}
-        </Link>
+        </a>
 
-        <LanguagePicker class="min-[900px]:block hidden" />
+        <LanguagePicker
+          class="min-[900px]:block hidden"
+          mode={mode}
+          altRoutes={altRoutes}
+        />
 
         <div
           class="min-[900px]:hidden mt-[200px] flex flex-col md:flex-col-reverse md:gap-24 gap-8"
         >
-          <MobileLocales />
+          <MobileLocales mode={mode} altRoutes={altRoutes} />
 
           <div
             class="flex flex-col gap-4 text-white text-sm font-medium capitalize pb-10 md:pb-[130px]"

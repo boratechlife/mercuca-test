@@ -6,4 +6,5 @@ publishDate: 2023-12-12T11:46:39.418Z
 tags: []
 language: en
 isDraft: false
+slug: what-are-3d-visualizations
 ---

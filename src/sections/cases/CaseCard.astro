@@ -50,12 +50,12 @@ const { alternate = false, class: classes, link = "#", photo } = Astro.props;
       >
         <slot name="description" />
       </div>
-      <Link
+      <a
         href={link}
         class="brand-gradient py-4 px-8 rounded-lg block text-base font-medium text-center text-white w-full md:w-max"
       >
         {t.read_more}
-      </Link>
+      </a>
     </div>
     <div class={cn(alternate ? "order-1" : "order-1 lg:order-2")}>
       <Image src={photo} alt="" />

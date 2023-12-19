@@ -1,0 +1,8 @@
+---
+import CPQPage from "@/blocks/CPQPage.astro";
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<CPQPage locale={lang} />

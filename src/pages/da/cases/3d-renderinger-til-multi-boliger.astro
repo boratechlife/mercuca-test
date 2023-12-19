@@ -1,0 +1,9 @@
+---
+import MultiLivingPage from "@/blocks/cases/MultiLivingPage.astro";
+
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<MultiLivingPage locale={lang} />

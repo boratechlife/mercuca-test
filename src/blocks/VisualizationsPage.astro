@@ -1,0 +1,156 @@
+---
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Layout from "@/layouts/Layout.astro";
+
+import BenefitsOfCPQ from "@/sections/visualizations/BenefitsOfCPQ.astro";
+
+import pill from "@/assets/pill.png";
+import seamless from "@/assets/seamless.png";
+import best_in_class from "@/assets/best_in_class.png";
+
+import { Image } from "astro:assets";
+import BenefitsToManufacturing from "@/sections/visualizations/BenefitsToManufacturing.astro";
+import CheckedList from "@/components/lists/CheckedList.astro";
+import RequestDemoLink from "@/components/RequestDemoLink.astro";
+import CallToAction from "@/sections/CallToAction.astro";
+
+import { useTranslation, type Locale } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+
+const {
+  common,
+  pages: { visualizations: t },
+} = await useTranslation(locale as Locale);
+---
+
+<Layout title={t.title}>
+  <Breadcrumb links={[common.breadcrumb.product, t.title]} />
+  <section class="py-[4.25rem]">
+    <h1
+      class="heading-1 brand-gradient bg-clip-text text-center text-transparent mb-12"
+    >
+      {t.heading}
+    </h1>
+
+    <div class="container relative isolate">
+      <Image
+        class="absolute top-full -translate-y-[40%] -right-12 -z-[1] hidden xl:block"
+        src={pill}
+        alt=""
+      />
+
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="flex flex-col justify-center lg:pr-16">
+          <video controls autoplay loop playsinline muted>
+            <source
+              type="video/mp4"
+              src="/videos/Demo-project-Audi-Q3-Configurator.mp4"
+            /></video
+          >
+        </div>
+        <div class="flex flex-col justify-center pt-10 lg:py-16">
+          <p
+            class="text-[26px] lg:text-[3rem] leading-tight font-medium mb-10 lg:mb-12 text-neutral-10"
+          >
+            <Trans translation={t.hero.heading}>
+              Elevate your
+              <span class="brand-gradient bg-clip-text text-transparent"
+                >product visualization</span
+              >
+               with us.
+            </Trans>
+          </p>
+          <p
+            class="font-light text-xl tracking-[.4px] leading-tight text-neutral-10"
+          >
+            {t.hero.subtext}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <BenefitsToManufacturing />
+
+  <section class="py-[4.25rem]">
+    <div class="container grid grid-cols-1 lg:grid-cols-2 gap-20">
+      <div class="">
+        <Image class="mx-auto lg:mx-0" src={seamless} alt="" />
+      </div>
+      <div class="flex flex-col justify-center">
+        <h2 class="heading-2 mb-4 lg:mb-12 text-neutral-10">
+          {t.seamless_integration.heading}
+        </h2>
+
+        <p
+          class="font-light text-base lg:text-xl tracking-[.4px] text-neutral-30 lg:max-w-xl mb-6"
+        >
+          {t.seamless_integration.subtext}
+        </p>
+
+        <CheckedList items={t.seamless_integration.gains} />
+
+        <RequestDemoLink class="w-max mt-12 md:mt-10" />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-[4.25rem]">
+    <div class="grid grid-cols-1 xl:grid-cols-[40%,1fr] gap-10 xl:gap-6">
+      <div class="order-2 xl:order-1 container-left">
+        <h2 class="heading-2 text-neutral-10">
+          <Trans translation={t.why_us.heading}>
+            Best in class and <br />
+            <span class="text-accent-2">fully integrated</span>
+          </Trans>
+        </h2>
+
+        <p
+          class="leading-tight text-2xl lg:text-[2rem] my-6 lg:my-12 text-neutral-10"
+        >
+          <Trans translation={t.why_us.subtext} />
+        </p>
+
+        <ul
+          class="text-neutral-10 list-disc ml-10 space-y-4 lg:space-y-5 text-base lg:text-xl font-light leading-tight"
+        >
+          <li>
+            <Trans translation={t.why_us.pros.line_1}>
+              <span class="inline text-accent-1">
+                custom-designed for manufacturing</span
+              >, free from distractions or irrelevant gaming features
+            </Trans>
+          </li>
+
+          <li>
+            <Trans translation={t.why_us.pros.line_2}>
+              everything you need is seamlessly integrated into <span
+                class="inline text-accent-1"
+              >
+                one streamlined solution</span
+              >
+            </Trans>
+          </li>
+
+          <li>
+            {t.why_us.pros.line_3}
+          </li>
+        </ul>
+      </div>
+
+      <div class="xl:pt-20 order-1 pl-6 xl:pl-0 xl:order-2 flex justify-end">
+        <Image src={best_in_class} alt="" />
+      </div>
+    </div>
+  </section>
+
+  <BenefitsOfCPQ />
+
+  <CallToAction />
+</Layout>

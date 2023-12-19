@@ -1,5 +1,6 @@
 {
   "common": {
+    "see_solution": "See Solution",
     "see_other_cases": "See our <0>other</0> cases!",
     "scroll_for_more": "Scroll For More",
     "request_a_demo": "Request a Demo",
@@ -88,10 +89,99 @@
     "information": "Information",
     "add_ons": "Add-ons",
     "links": {
-      "cookies": "Cookies & Privacy Policy"
+      "cookies": "Cookies"
     }
   },
   "pages": {
+    "multiliving_3d_renderings": {
+      "title": "Multi-Living 3D Renderings",
+      "heading": "3D Renderings <0/><1>for Multi-Living</1>",
+      "heading_text": "3D Renderings for Multi-Living",
+      "visual_appeal": {
+        "label": "The Problem",
+        "heading": "Visual Appeal",
+        "text_1": "As a kitchen manufacturer, one of the most important aspects of your business is being able to showcase your products in a way that is visually appealing and informative. This is where 3D renderings and a 3D kitchen configurator can play a vital role. ",
+        "text_2": "3D renderings are essential for showcasing the design and functionality of your kitchen elements. This allows customers to see what the final product will look like and how it will fit into their space. A 3D kitchen configurator is a powerful tool that allows customers to customize their kitchens to fit their unique needs and preferences. By using a 3D kitchen configurator, customers can choose from a range of options to create their dream kitchen"
+      },
+      "beautiful_visualization": {
+        "label": "The Solution",
+        "heading": "Beautiful visualization",
+        "text_1": "As a preliminary project for a kitchen configurator, Mercura has delivered more than 11,000 renderings and 3D models of all Multi-Living’s kitchen elements. <br /> <br />The quality is top notch and gives Danish kitchen consumers an excellent shopping experience when they have to choose between different elements for the kitchen. The models are also fantastically suitable for a configurator."
+      },
+      "review": {
+        "message": "We have been extremely happy with the collaboration with Mercura. Their professionalism and quality has been of the highest order and we would happily recommend them to anyone else interested in 3D modeling and online configurators.",
+        "author": {
+          "name": "Ove Dalsgaard",
+          "occupation": "CEO, Multi-Living A/S"
+        }
+      }
+    },
+    "lindab_garage": {
+      "title": "Lindab Garage Door Configurator",
+      "heading": "<0>Lindab</0> Garage <1/>door configurator",
+      "heading_text": "Lindab Garage Door Configurator",
+      "long_sales_cycles": {
+        "label": "The Problem",
+        "heading": "Long sales cycles",
+        "text_1": "Lindab is a leading manufacturing company specializing in ventilation and building products. In recent years, they have experienced strong growth, resulting in a more time-consuming sales process. <br /> <br />As a building product manufacturer, one of the biggest challenges you may face in your sales process is the lack of a configuration tool that allows customers to customize their own garage doors. Without the assistance of such tools, your sales team may need to invest significant time and effort into designing a garage door from scratch in order to meet the customers’ specific needs and preferences.",
+        "text_2": "The absence of a configuration tool can make the sales process more complex and time-consuming. Your sales team or dealers may need to communicate back and forth with customers multiple times to gather all the necessary information about the features and specifications they want in their garage door. This can lead to longer sales cycles, increased costs, and a higher risk of errors and misunderstandings."
+      },
+      "beautiful_visualization": {
+        "label": "The Solution",
+        "heading": "Beautiful visualization",
+        "text_1": "We have developed a very intuitive configurator for Lindab which helps end-users and dealers visualize and concretize their solutions on garage doors. The configurator includes all the garage door variations that Lindab sells. <br /> <br />It includes more than 10.000 variations of the products even without taking the size into consideration.",
+        "text_2": "We have developed a very intuitive configurator for Lindab which helps end-users and dealers visualize and concretize their solutions on garage doors. The configurator includes all the garage door variations that Lindab sells. <br /><br /> It includes more than 10.000 variations of the products even without taking the size into consideration."
+      },
+      "review": {
+        "message": "A big recommendation to Mercura and their team. They are highly professional and very good at gaining an overview of complex product constraints and pricing logic. Our configurator is very good at visualizing our garage doors which gives us a shorter time to market, makes us more accesible for customers and has helped us optimize internal sales processes, which will help us grow our business.",
+        "author": {
+          "name": "Birgitte Kjær Hansen",
+          "occupation": "Marketing Manager, Lindab A/S"
+        }
+      },
+      "increase_sales_volume": {
+        "label": "The Solution",
+        "heading": "Increase sales volume",
+        "subtext": "Having a configuration tool that allows dealers and end-consumers to build their own garage door can offer many benefits to your business. It can simplify the sales process, reduce the workload of your sales team, and enable customers to create a garage doors that perfectly fits their needs and preferences. This provides unique insights into the customers needs which can be used for marketing and product development purposes"
+      },
+      "lindab_experience": {
+        "heading": "Lindab has experienced a shorter time-to-market and higher accessibility towards customers.",
+        "subtext": "In other words, Mercura helped them stand out from their competitors and increase their sales volume. Studies have shown that a configuration tool can increase the conversion rates by 40% on quotes and increase the average sales prices with 30%. "
+      }
+    },
+    "migatronic_configurator": {
+      "title": "Migatronic Configurator",
+      "heading": "<0>Migatronic</0> Lorem <1/>ipsum configurator",
+      "heading_text": "Migatronic Configurator",
+      "long_sales_cycles": {
+        "label": "The Problem",
+        "heading": "Long sales cycles",
+        "text_1": "We have developed a very intuitive configurator for Lindab which helps end-users and dealers visualize and concretize their solutions on garage doors. The configurator includes all the garage door variations that Lindab sells. <br /> <br />It includes more than 10.000 variations of the products even without taking the size into consideration.",
+        "text_2": "We have developed a very intuitive configurator for Lindab which helps end-users and dealers visualize and concretize their solutions on garage doors. The configurator includes all the garage door variations that Lindab sells. <br /><br /> It includes more than 10.000 variations of the products even without taking the size into consideration."
+      },
+      "beautiful_visualization": {
+        "label": "The Solution",
+        "heading": "Beautiful visualization",
+        "text_1": "We have developed a very intuitive configurator for Lindab which helps end-users and dealers visualize and concretize their solutions on garage doors. The configurator includes all the garage door variations that Lindab sells. <br /> <br />It includes more than 10.000 variations of the products even without taking the size into consideration.",
+        "text_2": "We have developed a very intuitive configurator for Lindab which helps end-users and dealers visualize and concretize their solutions on garage doors. The configurator includes all the garage door variations that Lindab sells. <br /><br /> It includes more than 10.000 variations of the products even without taking the size into consideration."
+      },
+      "review": {
+        "message": " Mercura has fulfilled our wishes for a new product configurator for our pens and key tags in a most noble way.",
+        "author": {
+          "name": "Birgitte Kjær Hansen",
+          "occupation": "Marketing Manager, Lindab A/S"
+        }
+      },
+      "increase_sales_volume": {
+        "label": "The Solution",
+        "heading": "Increase sales volume",
+        "subtext": "Having a configuration tool that allows dealers and end-consumers to build their own garage door can offer many benefits to your business. It can simplify the sales process, reduce the workload of your sales team, and enable customers to create a garage doors that perfectly fits their needs and preferences. This provides unique insights into the customers needs which can be used for marketing and product development purposes"
+      },
+      "lindab_experience": {
+        "heading": "Lindab has experienced a shorter time-to-market and higher accessibility towards customers.",
+        "subtext": "In other words, Mercura helped them stand out from their competitors and increase their sales volume. Studies have shown that a configuration tool can increase the conversion rates by 40% on quotes and increase the average sales prices with 30%. "
+      }
+    },
     "audi_configurator": {
       "title": "Audi Configurator",
       "heading": "<0>Audi</0> Configurator",
@@ -237,7 +327,7 @@
         {
           "title": "Digital Designer",
           "type": "Student job",
-          "link": "/career/digital-designer",
+          "link": "career.digital-designer",
           "categories": ["Design"],
           "description": "Get a student job at Mercura and gain practical experience with front-end design of our software solutions."
         }

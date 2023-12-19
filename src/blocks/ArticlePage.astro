@@ -1,0 +1,76 @@
+---
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import TheNavbar from "@/components/TheNavbar.astro";
+import { useTranslation, type Locale, locales, showDefaultLang } from "@/i18n";
+import Layout from "@/layouts/Layout.astro";
+import type { CollectionEntry } from "astro:content";
+interface Props {
+  article: CollectionEntry<"articles">;
+  locale: Locale;
+}
+const { article, locale } = Astro.props;
+
+const { common } = await useTranslation(locale);
+const { Content } = await article.render();
+
+/**
+ *  defaultLink is used to generate the alternate links for the article
+ */
+let defaultLink: Partial<Record<Locale, string>> = {};
+defaultLink[locale] = article.slug;
+
+/**
+ *  AltLinks is used to generate the alternate links for the article
+ *  If the article has alternate links, we add the current locale to the list
+ *  If the article does not have alternate links, we create a new list with the current locale
+ */
+let AltLinks = article.data.alternate;
+
+if (AltLinks && !AltLinks[locale]) {
+  AltLinks[locale] = article.slug;
+}
+
+/**
+ *   generate the alternate links for the article
+ */
+const alternateLinks = Object.entries(AltLinks || {}).map(([lang, slug]) => {
+  const articlePath =
+    locale === lang && !showDefaultLang ? `/${slug}` : `/${lang}/${slug}`;
+  return {
+    hrefLang: lang,
+    href: new URL(articlePath, Astro.site || Astro.url.origin),
+  };
+});
+---
+
+<Layout
+  title={article.data.title}
+  description={article.data.description}
+  languageAlternates={alternateLinks}
+>
+  <TheNavbar slot="nav" mode="article" altRoutes={AltLinks || defaultLink} />
+  <Breadcrumb links={[common.breadcrumb.articles, article.data.title]} />
+  <section class="py-[4.25rem]">
+    <div
+      class="container relative gap-6 md:gap-12 xl:gap-20 grid grid-cols-1 lg:grid-cols-2 text-neutral-10 mb-[4.25rem]"
+    >
+      <div>
+        <h1 class="text-neutral-10 heading-1">{article.data.title}</h1>
+      </div>
+
+      <div>
+        <p class="text-2xl lg:text-[2rem] leading-tight text-neutral-10">
+          {article.data.description}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-[4.25rem]">
+    <div class="container">
+      <div class="prose text-neutral-10 prose-headings:text-neutral-10">
+        <Content />
+      </div>
+    </div>
+  </section>
+</Layout>

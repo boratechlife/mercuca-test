@@ -1,7 +1,6 @@
 ---
 import ArrowTopRight from "@/components/icons/ArrowTopRight.astro";
 import { getLangFromUrl, useTranslation } from "@/i18n";
-import Link from "@/i18n/Link.astro";
 import Trans from "@/i18n/Trans.astro";
 import { Image } from "astro:assets";
 
@@ -43,13 +42,13 @@ const {
               <div class="w-full aspect-[7/8] flex justify-center items-center bg-primary-4 rounded-2xl mb-6">
                 <Image src={photo} alt={link.title} class="rounded-2xl" />
               </div>
-              <Link
+              <a
                 href={link.href}
                 class="text-xl text-neutral-20 leading-tight tracking-[.4px] flex items-center lg:items-end gap-5 lg:gap-0 font-light"
               >
                 <span class="lg:w-3/4 xl:w-1/2">{link.title}</span>
                 <ArrowTopRight class="h-3.5 md:h-3 aspect-auto text-white fill-neutral-10 inline shrink-0" />
-              </Link>
+              </a>
             </div>
           ))
         }

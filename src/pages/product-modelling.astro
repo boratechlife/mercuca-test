@@ -1,0 +1,9 @@
+---
+import ProductModellingPage from "@/blocks/ProductModellingPage.astro";
+
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<ProductModellingPage locale={lang} />

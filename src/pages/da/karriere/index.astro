@@ -1,0 +1,9 @@
+---
+import CareerPage from "@/blocks/career/CareerPage.astro";
+
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<CareerPage locale={lang} />

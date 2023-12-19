@@ -1,5 +1,6 @@
 {
   "common": {
+    "see_solution": "Se løsning",
     "see_other_cases": "Se vores <0>andre</0> cases!",
     "scroll_for_more": "Rul ned",
     "request_a_demo": "Få en demo",
@@ -62,17 +63,17 @@
         "visualizations": "Visualiseringer",
         "configuration_engine": "Konfigurationsmotor",
         "product_modelling": "Produktmodellering",
-        "pricing_engine": "Prismotor"
+        "pricing_engine": "Prisfastsættelse motor"
       },
       "add_ons": {
-        "add_ons": "Add-ons",
+        "add_ons": "Tilføjelser",
         "quote_and_document": "Tilbud og dokumenter",
         "analytics": "Analytics",
         "integrations": "Integrationer"
       }
     },
     "about_links": {
-      "about": "Om os",
+      "about": "Om",
       "career": "Karriere",
       "contact": "Kontakt",
       "articles": "Artikler"
@@ -86,12 +87,101 @@
       "read_our_latest_cases": " Læs vores seneste <0/> Cases <1>her</1>"
     },
     "information": "Information",
-    "add_ons": "Add-ons",
+    "add_ons": "Tilføjelser",
     "links": {
-      "cookies": "Cookies"
+      "cookies": "Cookies & Privatlivspolitik"
     }
   },
   "pages": {
+    "multiliving_3d_renderings": {
+      "title": "Multi-Living 3D Rendering",
+      "heading": "3D Rendering <0/><1>for Multi-Living</1>",
+      "heading_text": "3D Rendering for Multi-Living",
+      "visual_appeal": {
+        "label": "Problemet",
+        "heading": "Visuel Appel",
+        "text_1": "Som en køkkenproducent er en af de vigtigste aspekter af din forretning at kunne vise dine produkter på en måde, der er visuelt appellerende og informativ. Dette er, hvor 3D-renderinger og en 3D-køkkenkonfigurator kan spille en afgørende rolle.",
+        "text_2": "3D-renderinger er afgørende for at vise designet og funktionaliteten af dine køkkenelementer. Dette giver kunderne mulighed for at se, hvordan det endelige produkt vil se ud, og hvordan det vil passe ind i deres rum. En 3D-køkkenkonfigurator er et kraftfuldt værktøj, der giver kunderne mulighed for at tilpasse deres køkkener efter deres unikke behov og præferencer. Ved hjælp af en 3D-køkkenkonfigurator kan kunderne vælge mellem et udvalg af muligheder for at skabe deres drømmekøkken."
+      },
+      "beautiful_visualization": {
+        "label": "Løsningen",
+        "heading": "Smuk visualisering",
+        "text_1": "Som et forberedende projekt til en køkkenkonfigurator har Mercura leveret mere end 11.000 renderinger og 3D-modeller af alle Multi-Livings køkkenelementer. <br /> <br />Kvaliteten er i top og giver danske køber en fremragende indkøbsoplevelse, når de skal vælge mellem forskellige elementer til køkkenet. Modellerne er også fantastisk velegnede til en konfigurator."
+      },
+      "review": {
+        "message": "Vi har været ekstremt glade for samarbejdet med Mercura. Deres professionalisme og kvalitet har været af højeste orden, og vi ville gerne anbefale dem til andre, der er interesserede i 3D-modellering og online konfiguratorer.",
+        "author": {
+          "name": "Ove Dalsgaard",
+          "occupation": "CEO, Multi-Living A/S"
+        }
+      }
+    },
+    "lindab_garage": {
+      "title": "Lindab Garage Door Configurator",
+      "heading": "<0>Lindab</0> Garage <1/>dørkonfigurator",
+      "heading_text": "Lindab Garage Door Configurator",
+      "long_sales_cycles": {
+        "label": "Problemet",
+        "heading": "Lange salgscykler",
+        "text_1": "Lindab er et førende produktionsfirma, der specialiserer sig i ventilation og bygningsprodukter. I de seneste år har de oplevet en kraftig vækst, hvilket har resulteret i en mere tidskrævende salgsproces. <br /> <br />Som producent af bygningsprodukter er en af de største udfordringer, du kan stå overfor i din salgsproces, manglen på et konfigurationsværktøj, der giver kunderne mulighed for at tilpasse deres egne garageporte. Uden hjælp fra sådanne værktøjer kan dit salgsteam være nødt til at investere betydelig tid og indsats i at designe en garageport fra bunden for at imødekomme kundernes specifikke behov og præferencer.",
+        "text_2": "Manglen på et konfigurationsværktøj kan gøre salgsprocessen mere kompleks og tidskrævende. Dit salgsteam eller forhandlere kan være nødt til at kommunikere frem og tilbage med kunderne flere gange for at indsamle alle nødvendige oplysninger om de funktioner og specifikationer, de ønsker i deres garageport. Dette kan føre til længere salgscykler, øgede omkostninger og en større risiko for fejl og misforståelser."
+      },
+      "beautiful_visualization": {
+        "label": "Løsningen",
+        "heading": "Smuk visualisering",
+        "text_1": "Vi har udviklet en meget intuitiv konfigurator for Lindab, som hjælper slutbrugere og forhandlere med at visualisere og konkretisere deres løsninger på garageporte. Konfiguratoren inkluderer alle variationer af garageporte, som Lindab sælger. <br /> <br />Den inkluderer mere end 10.000 variationer af produkterne, selv uden at tage størrelsen i betragtning.",
+        "text_2": "Vi har udviklet en meget intuitiv konfigurator for Lindab, som hjælper slutbrugere og forhandlere med at visualisere og konkretisere deres løsninger på garageporte. Konfiguratoren inkluderer alle variationer af garageporte, som Lindab sælger. <br /><br /> Den inkluderer mere end 10.000 variationer af produkterne, selv uden at tage størrelsen i betragtning."
+      },
+      "review": {
+        "message": "En stor anbefaling til Mercura og deres team. De er meget professionelle og meget dygtige til at skabe overblik over komplekse produktbegrænsninger og prissætningslogik. Vores konfigurator er meget god til at visualisere vores garageporte, hvilket giver os en kortere tid til markedet, gør os mere tilgængelige for kunder og har hjulpet os med at optimere interne salgsprocesser, hvilket vil hjælpe os med at vækste vores forretning.",
+        "author": {
+          "name": "Birgitte Kjær Hansen",
+          "occupation": "Marketingchef, Lindab A/S"
+        }
+      },
+      "increase_sales_volume": {
+        "label": "Løsningen",
+        "heading": "Øg salgsvolumen",
+        "subtext": "At have et konfigurationsværktøj, der giver forhandlere og slutbrugere mulighed for at bygge deres egen garageport, kan tilbyde mange fordele for din virksomhed. Det kan forenkle salgsprocessen, reducere arbejdsbyrden for dit salgsteam og gøre det muligt for kunderne at skabe garageporte, der passer perfekt til deres behov og præferencer. Dette giver unikke indsigter i kundernes behov, som kan bruges til marketing- og produktudviklingsformål."
+      },
+      "lindab_experience": {
+        "heading": "Lindab har oplevet en kortere tid til markedet og øget tilgængelighed for kunder.",
+        "subtext": "Med andre ord har Mercura hjulpet dem med at skille sig ud fra deres konkurrenter og øge deres salgsvolumen. Studier har vist, at et konfigurationsværktøj kan øge konverteringsraten med 40% på tilbud og øge de gennemsnitlige salgspriser med 30%."
+      }
+    },
+    "migatronic_configurator": {
+      "title": "Migatronic Konfigurator",
+      "heading": "<0>Migatronic</0> Lorem <1/>ipsum konfigurator",
+      "heading_text": "Migatronic Konfigurator",
+      "long_sales_cycles": {
+        "label": "Problemet",
+        "heading": "Lange salgscykler",
+        "text_1": "Vi har udviklet en meget intuitiv konfigurator for Lindab, som hjælper slutbrugere og forhandlere med at visualisere og konkretisere deres løsninger på garageporte. Konfiguratoren inkluderer alle variationer af garageporte, som Lindab sælger. <br /> <br />Den inkluderer mere end 10.000 variationer af produkterne, selv uden at tage størrelsen i betragtning.",
+        "text_2": "Vi har udviklet en meget intuitiv konfigurator for Lindab, som hjælper slutbrugere og forhandlere med at visualisere og konkretisere deres løsninger på garageporte. Konfiguratoren inkluderer alle variationer af garageporte, som Lindab sælger. <br /><br /> Den inkluderer mere end 10.000 variationer af produkterne, selv uden at tage størrelsen i betragtning."
+      },
+      "beautiful_visualization": {
+        "label": "Løsningen",
+        "heading": "Smuk visualisering",
+        "text_1": "Vi har udviklet en meget intuitiv konfigurator for Lindab, som hjælper slutbrugere og forhandlere med at visualisere og konkretisere deres løsninger på garageporte. Konfiguratoren inkluderer alle variationer af garageporte, som Lindab sælger. <br /> <br />Den inkluderer mere end 10.000 variationer af produkterne, selv uden at tage størrelsen i betragtning.",
+        "text_2": "Vi har udviklet en meget intuitiv konfigurator for Lindab, som hjælper slutbrugere og forhandlere med at visualisere og konkretisere deres løsninger på garageporte. Konfiguratoren inkluderer alle variationer af garageporte, som Lindab sælger. <br /><br /> Den inkluderer mere end 10.000 variationer af produkterne, selv uden at tage størrelsen i betragtning."
+      },
+      "review": {
+        "message": "Mercura har opfyldt vores ønsker om en ny produktkonfigurator for vores penne og nøgleringe på en yderst fornem måde.",
+        "author": {
+          "name": "Birgitte Kjær Hansen",
+          "occupation": "Marketingchef, Lindab A/S"
+        }
+      },
+      "increase_sales_volume": {
+        "label": "Løsningen",
+        "heading": "Øg salgsvolumen",
+        "subtext": "At have et konfigurationsværktøj, der giver forhandlere og slutbrugere mulighed for at bygge deres egen garageport, kan tilbyde mange fordele for din virksomhed. Det kan forenkle salgsprocessen, reducere arbejdsbyrden for dit salgsteam og gøre det muligt for kunderne at skabe garageporte, der passer perfekt til deres behov og præferencer. Dette giver unikke indsigter i kundernes behov, som kan bruges til marketing- og produktudviklingsformål."
+      },
+      "lindab_experience": {
+        "heading": "Lindab har oplevet en kortere tid til markedet og højere tilgængelighed over for kunderne.",
+        "subtext": "Med andre ord har Mercura hjulpet dem med at skille sig ud fra deres konkurrenter og øge deres salgsvolumen. Studier har vist, at et konfigurationsværktøj kan øge konverteringsraten med 40% på tilbud og øge de gennemsnitlige salgspriser med 30%."
+      }
+    },
     "audi_configurator": {
       "title": "Audi Konfigurator",
       "heading": "<0>Audi</0> Konfigurator",
@@ -105,8 +195,8 @@
       },
       "beautiful_visualization": {
         "label": "Løsningen",
-        "heading": "Flot produktvisualisering",
-        "subtext": "Vi har lavet et Audi Q3 demoprojekt for at illustrere vores kompetencer indenfor konfiguratorer. Her kan du bygge din egen Audi Q3 både udvendigt og indvendigt. Vælg mellem almindelig Q3 og Sportsback, to forskellige udstyrsmodeller, 20 forskellige farver, 13 forskellige fælge, spejle, lys, tag og skift mellem 6 kameravinkle"
+        "heading": "Smuk produktvisualisering",
+        "subtext": "Vi har lavet et Audi Q3 demoprojekt for at illustrere vores kompetencer indenfor konfiguratorer. Her kan du bygge din egen Audi Q3 både udvendigt og indvendigt. Vælg mellem almindelig Q3 og Sportsback, to forskellige udstyrsmodeller, 20 forskellige farver, 13 forskellige fælge, spejle, lys, tag og skift mellem 6 kameravinkler."
       }
     },
     "job_posting": {
@@ -114,8 +204,8 @@
       "heading": "Studiejob: Digital Designer",
       "about_job": {
         "heading": "Om jobbet",
-        "text_1": "Vi er en dynamisk og innovativ softwarevirksomhed med base i Aarhus og Odense, Danmark, med speciale i at levere banebrydende produktkonfiguratorløsninger til industrivirksomheder. Vores software gør det muligt for vores kunder at skabe tilpassede og visuelt fantastiske produktkonfigurationer i både 2D og 3D. <br /> Mens vi fortsætter med at vokse og udvide vores tjenester, søger vi en talentfuld og motiveret Student Digital Designer til at slutte sig til vores team.",
-        "text_2": "Som Student Digital Designer med speciale i UI Design vil du spille en nøglerolle i at forme den visuelle identitet og brugeroplevelse af vores produktkonfiguratorer. Du bliver ansvarlig for at designe kundeløsninger, der styrker deres branding- og marketingindsats, samt bidrager til vores samlede produktudvikling. Dit hovedværktøj bliver Figma, og du vil arbejde tæt sammen med vores udviklings- og marketingteams."
+        "text_1": "Vi er en dynamisk og innovativ softwarevirksomhed med base i Aarhus og Odense, Danmark, med speciale i at levere banebrydende produktkonfiguratorløsninger til industrivirksomheder. Vores software gør det muligt for vores kunder at skabe tilpassede og visuelt fantastiske produktkonfigurationer i både 2D og 3D. <br /> Mens vi fortsætter med at vokse og udvide vores tjenester, søger vi en talentfuld og motiveret studerende inden for digital design til at slutte sig til vores team.",
+        "text_2": "Som studerende inden for digital design med speciale i UI-design vil du spille en nøglerolle i at forme den visuelle identitet og brugeroplevelse af vores produktkonfiguratorer. Du bliver ansvarlig for at designe kundeløsninger, der styrker deres branding- og marketingindsats, samt bidrager til vores samlede produktudvikling. Dit hovedværktøj bliver Figma, og du vil arbejde tæt sammen med vores udviklings- og marketingteams."
       },
       "responsibilities": {
         "heading": "Ansvarsområder",
@@ -124,13 +214,12 @@
           "Opret visuelt engagerende UI-design til vores produktkonfiguratorer, hvilket sikrer intuitive brugeroplevelser og problemfri navigation.",
           "Brug Figma til at udvikle wireframes, prototyper og high-fidelity mockups, der stemmer overens med vores kunders brandretningslinjer og designprincipper.",
           "Bidrage til den løbende forbedring af vores designprocesser, sikre effektivt samarbejde og effektiv kommunikation.",
-          "Stay up-to-date with industry trends and best practices in UI design, applying them to deliver cutting-edge and innovative design solutions.",
           "Hold dig ajour med industritrends og bedste praksis inden for UI-design, og brug dem til at levere banebrydende og innovative designløsninger.",
           "Hjælp med at opretholde og udvikle vores brandidentitet gennem skabelsen af konsistente og overbevisende visuelle aktiver."
         ]
       },
       "what_to_expect": {
-        "heading": "What you can expect from us",
+        "heading": "Hvad du kan forvente fra os",
         "list": [
           "Værdifuld praktisk erfaring inden for UI-design og produktudvikling.",
           "Mulighed for at arbejde med banebrydende teknologier og bidrage til innovative softwareløsninger i en lille virksomhed med en flad organisationskultur",
@@ -155,7 +244,7 @@
         ]
       },
       "hiring": {
-        "heading": "Vores ansøgningsprocess",
+        "heading": "Vores ansættelsesproces",
         "steps": {
           "send_application": {
             "title": "Send en ansøgning",
@@ -174,23 +263,23 @@
             "description": "Efter testen inviterer vi dig til en teknisk samtale. Her møder du vores marketingafdeling, som vil gennemgå testen sammen med dig."
           },
           "team": {
-            "title": "Velkommen til Mercura holdet",
+            "title": "Velkommen til Mercura-teamet",
             "description": "Vi mødes igen og underskriver kontrakten. Her modtager du også et onboarding-program, så du er klar til at blive digital designer hos Mercura."
           }
         }
       }
     },
     "articles": {
-      "title": "Artijker",
+      "title": "Artikler",
       "heading": "Artikler",
-      "subtext": "Her kan du finde en masse nyttig information om produktkonfiguratorer, room planners, CPQ."
+      "subtext": "Her kan du finde en masse nyttig information om produktkonfiguratorer, rumplanlæggere og CPQ."
     },
     "careers": {
       "title": "Karriere",
       "heading": "Karriere hos Mercura",
-      "subtext": "Vi leder altid efter nye stjerner. ",
+      "subtext": "Vi leder altid efter nye stjerner.",
       "review": {
-        "message": "Hos Mercura udvikler vi ikke kun software – vi fremmer en kultur, hvor innovation og teamwork driver vores succes. ",
+        "message": "Hos Mercura udvikler vi ikke kun software – vi fremmer en kultur, hvor innovation og teamwork driver vores succes.",
         "author": {
           "name": "Martin Johansen",
           "occupation": "CEO, Mercura ApS"
@@ -201,42 +290,42 @@
         {
           "title": "Softwareudvikler",
           "type": "Fuld tid",
-          "link": "",
+          "link": "#",
           "categories": ["Produktudvikling"],
-          "description": "Brænder du for softwareudvikling og drømmer du om at drive en virksomhed med masser af ansvar? "
+          "description": "Brænder du for softwareudvikling og drømmer du om at drive en virksomhed med masser af ansvar?"
         },
         {
           "title": "Backend udvikler",
           "type": "Studiejob",
-          "link": "",
+          "link": "#",
           "categories": ["Produktudvikling"],
-          "description": "Brænder du for softwareudvikling og søger du et spændende og udfordrende studiejob med masser af ansvar og indflydelse fra start? "
+          "description": "Brænder du for softwareudvikling og søger du et spændende og udfordrende studiejob med masser af ansvar og indflydelse fra start?"
         },
         {
           "title": "Backend udvikler",
           "type": "Studiejob",
-          "link": "",
+          "link": "#",
           "categories": ["Produktudvikling"],
           "description": "Hvis du elsker at arbejde med front-end udvikling og er ekspert i JavaScript, HTML og CSS, så er Mercura stedet for dig."
         },
         {
           "title": "Forretningsudvikling",
           "type": "Praktik",
-          "link": "",
+          "link": "#",
           "categories": ["Forretningsudvikling"],
-          "description": "Hvis du læser business og leder efter en praktikplads, så er Mercura stedet for dig. "
+          "description": "Hvis du læser business og leder efter en praktikplads, så er Mercura stedet for dig."
         },
         {
           "title": "UI/UX designer",
           "type": "Praktik",
-          "link": "",
+          "link": "#",
           "categories": ["Design"],
           "description": "Elsker du at komme med kreative grafiske løsninger?"
         },
         {
           "title": "Digital designer",
           "type": "Studiejob",
-          "link": "/karriere/digital-designer",
+          "link": "karriere.digital-designer",
           "categories": ["Design"],
           "description": "Få et studiejob hos Mercura og få praktisk erfaring med frontend-design af vores softwareløsninger."
         }
@@ -244,49 +333,50 @@
     },
     "cpq": {
       "title": "CPQ",
-      "heading": "CPQ (Configure, Price, Quote)",
-      "subheading": "CPQ -  eller Configure Price Quote, software er et kraftfuldt værktøj, der hjælper virksomheder med at strømline og automatisere deres salgsproces.",
+      "heading": "CPQ (Konfigurér, Pris, Tilbud)",
+      "subheading": "CPQ - eller Konfigurér, Pris, Tilbud-software - er et kraftfuldt værktøj, der hjælper virksomheder med at strømline og automatisere deres salgsproces.",
       "automate_sales": "Automatiser salgsprocesser med dynamisk tilbudsgivning og prisfastsættelse",
       "order_handling": "Sikre fejlfri ordrehåndtering og produktion",
-      "scale_your_business": "Skaler din virksomhed til nye markeder",
+      "scale_your_business": "Skalér din virksomhed til nye markeder",
       "reduce_errors": {
         "heading": "Reducer fejl og uoverensstemmelser",
-        "text_1": "En af de vigtigste fordele ved CPQ-software er, at den kan hjælpe med at reducere fejl og uoverensstemmelser i salgsprocessen. ",
-        "text_2": "En anden fordel ved CPQ-software er, at den kan hjælpe med at effektivisere salgsprocessen. "
+        "text_1": "En af de vigtigste fordele ved CPQ-software er, at den kan hjælpe med at reducere fejl og uoverensstemmelser i salgsprocessen.",
+        "text_2": "En anden fordel ved CPQ-software er, at den kan hjælpe med at effektivisere salgsprocessen."
       },
       "cpq_software": {
-        "heading": "CPQ software",
-        "text_1": "CPQ-software kan også være med til at forbedre kundeoplevelsen.  <br />         CPQ-software kan også integreres med andre systemer, såsom CRM og ERP for at give et mere holistisk syn på salgsprocessen. ",
-        "text_2": "Et andet vigtigt aspekt ved konfiguratorer er fleksibiliteten og skalerbarheden. "
+        "heading": "CPQ-software",
+        "text_1": "CPQ-software kan også være med til at forbedre kundeoplevelsen. CPQ-software kan også integreres med andre systemer, såsom CRM og ERP for at give et mere holistisk syn på salgsprocessen.",
+        "text_2": "Et andet vigtigt aspekt ved konfiguratorer er fleksibiliteten og skalerbarheden."
       },
       "types_of_cpq_software": {
         "heading": "Typer af CPQ-software.",
-        "subtext": "Der findes flere typer CPQ-software, herunder cloud-baserede og lokale løsninger.  <br /> <br /> Når du vælger CPQ-software, er det vigtigt at overveje din virksomheds specifikke behov. "
+        "subtext": "Der findes flere typer CPQ-software, herunder cloud-baserede og lokale løsninger. Når du vælger CPQ-software, er det vigtigt at overveje din virksomheds specifikke behov."
       },
-      "overall_statement": "Samlet set er CPQ-software et kraftfuldt værktøj, der kan hjælpe virksomheder med at strømline og automatisere deres salgsproces, reducere fejl og inkonsekvenser, fremskynde salgsprocessen, forbedre kundeoplevelsen og integrere med andre systemer. "
+      "overall_statement": "Samlet set er CPQ-software et kraftfuldt værktøj, der kan hjælpe virksomheder med at strømline og automatisere deres salgsproces, reducere fejl og inkonsekvenser, fremskynde salgsprocessen, forbedre kundeoplevelsen og integrere med andre systemer."
     },
+
     "seo_1": {
       "title": "Konfigurator",
       "heading": "Konfigurator",
-      "subheading": "En konfigurator også kendt som en produktkonfigurator eller produktbygger, er et softwareværktøj, der giver kunderne mulighed for at tilpasse og tilpasse produkter til deres nøjagtige specifikationer. ",
+      "subheading": "En konfigurator, også kendt som en produktkonfigurator eller produktbygger, er et softwareværktøj, der giver kunderne mulighed for at tilpasse og tilpasse produkter til deres nøjagtige specifikationer.",
       "increase_conversion": "Forøg konverteringsrater og gennemsnitlige ordreværdier",
       "order_handling": "Sikre fejlfri ordrehåndtering og produktion",
       "insight": "Få en dybere indsigt i kundernes behov",
       "personalization": {
-        "heading": " Tilbyder personalisering",
-        "text_1": " En konfigurator, også kendt som en produktkonfigurator eller produktbygger, er et softwareværktøj, der giver kunderne mulighed for at tilpasse og tilpasse produkter til deres nøjagtige specifikationer. ",
-        "text_2": "  En anden fordel ved konfiguratorer er, at de kan hjælpe virksomheder med at reducere omkostningerne og forbedre effektiviteten. "
+        "heading": "Tilbyder personalisering",
+        "text_1": "En konfigurator, også kendt som en produktkonfigurator eller produktbygger, er et softwareværktøj, der giver kunderne mulighed for at tilpasse og tilpasse produkter til deres nøjagtige specifikationer.",
+        "text_2": "En anden fordel ved konfiguratorer er, at de kan hjælpe virksomheder med at reducere omkostningerne og forbedre effektiviteten."
       },
       "intuitive_user_interface": {
-        "heading": "Intuitiv bruger <br /> interface",
-        "text_1": "Et af de vigtigste aspekter ved konfiguratorer er brugergrænsefladen. ",
-        "text_2": "Et andet vigtigt aspekt ved konfiguratorer er fleksibiliteten og skalerbarheden. "
+        "heading": "Intuitiv brugergrænseflade",
+        "text_1": "Et af de vigtigste aspekter ved konfiguratorer er brugergrænsefladen.",
+        "text_2": "Et andet vigtigt aspekt ved konfiguratorer er fleksibiliteten og skalerbarheden."
       },
       "challanges": {
         "heading": "De udfordringer virksomheder skal tage stilling til.",
-        "subtext": "På trods af de mange fordele ved konfiguratorer, er der også nogle udfordringer, som virksomheder skal overveje, når de opretter og vedligeholder dem.  <br /> <br /> En anden udfordring er at holde konfiguratoren opdateret og relevant. "
+        "subtext": "På trods af de mange fordele ved konfiguratorer, er der også nogle udfordringer, som virksomheder skal overveje, når de opretter og vedligeholder dem. En anden udfordring er at holde konfiguratoren opdateret og relevant."
       },
-      "conclusion_statement": "Afslutningsvis er konfiguratorer kraftfulde værktøjer, der giver kunderne mulighed for at tilpasse og personalisere produkter til deres nøjagtige specifikationer. De kan hjælpe virksomheder med at øge kundetilfredsheden, reducere omkostningerne og forbedre effektiviteten. "
+      "conclusion_statement": "Afslutningsvis er konfiguratorer kraftfulde værktøjer, der giver kunderne mulighed for at tilpasse og personalisere produkter til deres nøjagtige specifikationer. De kan hjælpe virksomheder med at øge kundetilfredsheden, reducere omkostningerne og forbedre effektiviteten."
     },
     "cases": {
       "title": "Cases",
@@ -295,22 +385,22 @@
       "cases": {
         "migatronic": {
           "title": "Migatronic",
-          "description": "Vi har udviklet en avanceret konfigurator til Migatronic, som hjælper sælgere med konfigurere en CoWelder svejserobot og lave flotte tilbud. <br /> <br /> Konfiguratoren består af mere end 1.000 forskellige produktbegrænsninger, som sikrer en fejlfri salgsprocess."
+          "description": "Vi har udviklet en avanceret konfigurator til Migatronic, som hjælper sælgere med at konfigurere en CoWelder svejserobot og lave flotte tilbud. Konfiguratoren består af mere end 1.000 forskellige produktbegrænsninger, som sikrer en fejlfri salgsprocess."
         },
         "lindab_garage": {
-          "title": "<0>Lindab</0> Garageport konfigurator",
-          "description": "Vi har udviklet en meget intuitiv konfigurator til Lindab, som hjælper slutbrugere og forhandlere med at visualisere og konkretisere deres løsninger på garageporte. <br /><br /> Det omfatter mere end 10.000 varianter af produkterne, selv uden at tage størrelsen i betragtning."
+          "title": "Lindab Garageport konfigurator",
+          "description": "Vi har udviklet en meget intuitiv konfigurator til Lindab, som hjælper slutbrugere og forhandlere med at visualisere og konkretisere deres løsninger på garageporte. Det omfatter mere end 10.000 varianter af produkterne, selv uden at tage størrelsen i betragtning."
         },
         "audi_config": {
-          "title": "<0>Audi</0> Konfigurator",
-          "description": "Her kan du prøve vores seneste demoprojekt og bygge din egen Audi Q3 både udefra og indvendigt. "
+          "title": "Audi Konfigurator",
+          "description": "Her kan du prøve vores seneste demoprojekt og bygge din egen Audi Q3 både udefra og indvendigt."
         },
         "3d_renderings": {
-          "title": "3D Renderinger til <0>Multi-Living</0>",
+          "title": "3D Renderinger til Multi-Living",
           "description": "Som en indledende fase mod at levere fremragende indkøbsoplevelser til danske køkkenforbrugere har Mercura lavet mere end 11.000 renderinger og 3D-modeller til Multi-Living."
         },
         "copla_playgrounds": {
-          "title": "Produktkonfigurator til <0>Copla legepladser</0>",
+          "title": "Produktkonfigurator til Copla legepladser",
           "description": "Copla efterspurgte en online 3D-konfigurator, hvor kunder og forretningspartnere kan konfigurere en hel Copla-legeplads og få et tilbud på den."
         }
       }
@@ -319,15 +409,15 @@
       "title": "Konfigurationsmotor",
       "product_modelling_excellence": {
         "text_1": "Fremragende produktmodellering",
-        "text_2": "I vores system kan du problemfrit integrere din produktstruktur fra dit PLM-system. "
+        "text_2": "I vores system kan du problemfrit integrere din produktstruktur fra dit PLM-system."
       },
       "hero": {
-        "heading": "Banebrydende <0>produkt excellence</0> for producenter",
-        "subtext": "Når det kommer til at trives i den indviklede verden af ​​fremstilling, er præcision, effektivitet og innovation enerådende. "
+        "heading": "Banebrydende produktexcellence for producenter",
+        "subtext": "Når det kommer til at trives i den indviklede verden af ​​fremstilling, er præcision, effektivitet og innovation enerådende."
       },
       "venn": {
         "text_1": "Afslør produktionssucces!",
-        "text_2": "Slut dig til ligaen af ​​industriledere, der har taget Mercuras CPQ-løsning til sig for at mestre produktmodellering, strømline tilbudsprocesser, reducere fejl og levere skræddersyede løsninger, som kunderne efterspørger. "
+        "text_2": "Slut dig til ligaen af ​​industriledere, der har taget Mercuras CPQ-løsning til sig for at mestre produktmodellering, strømline tilbudsprocesser, reducere fejl og levere skræddersyede løsninger, som kunderne efterspørger."
       },
       "what_we_offer": [
         {
@@ -357,27 +447,27 @@
       ],
       "empowering": {
         "label": "Styrker producenter med præcision",
-        "heading": "Bemyndigelse af producenter med <0/><1>præcision</1>",
-        "text_1": "At generere nøjagtige og overbevisende tilbud er afgørende for at vinde B2B-kunder. ",
+        "heading": "Bemyndigelse af producenter med præcision",
+        "text_1": "At generere nøjagtige og overbevisende tilbud er afgørende for at vinde B2B-kunder.",
         "text_2": "Styrk dit salgsteam med en løsning, der forvandler produktvariation fra en udfordring til en mulighed ved hjælp af en brugervenlig grænseflade, der skaber en delt produktdefinition, der er i stand til problemfrit at generere millioner af levedygtige og profitable produktvarianter."
       },
       "needs_based": {
         "label": "Behovsbaseret konfiguration",
-        "heading": "<0>Behovsbaseret</0> <1/>konfiguration",
+        "heading": "Behovsbaseret konfiguration",
         "subtext": "Med Mercura får du:",
         "what_you_get": [
-          "Automatisk oversættelse af kundebehov til teknisk forsvarlige løsninger og 100 % nøjagtige salgsmateriale",
+          "Automatisk oversættelse af kundebehov til teknisk forsvarlige løsninger og 100 % nøjagtige salgsmaterialer",
           "Forbindelse mellem din produktarkitektur og kundebehov eller dimensionering.",
           "Mulighed for dit salgspersonale, partnere og endda kunder til at konfigurere komplekse produkter fejlfrit ved hjælp af forståelige spørgsmål."
         ]
       },
       "why_choose_us": {
         "label": "Hvorfor vælge os",
-        "heading": " Hvorfor vælge os:",
+        "heading": "Hvorfor vælge os:",
         "reasons": [
           {
             "title": "Skræddersyet optimering",
-            "description": "Uanset om det er at minimere vægten, maksimere miljøvenlighed eller optimere ydeevnen, sikrer Mercuras behovsbaserede komplekse produktkonfiguration den rigtige løsning til dine kunder. "
+            "description": "Uanset om det er at minimere vægten, maksimere miljøvenlighed eller optimere ydeevnen, sikrer Mercuras behovsbaserede komplekse produktkonfiguration den rigtige løsning til dine kunder."
           },
           {
             "title": "Validering for præcision",
@@ -385,15 +475,15 @@
           },
           {
             "title": "Ydeevne i kompleksitet",
-            "description": "At sælge store, sammenkoblede systemer kan være udfordrende, men Mercuras CPQ giver dig mulighed for at opdele komplekse konfigurationsudfordringer i håndterbare komponenter og undgå flaskehalse i ydeevnen. "
+            "description": "At sælge store, sammenkoblede systemer kan være udfordrende, men Mercuras CPQ giver dig mulighed for at opdele komplekse konfigurationsudfordringer i håndterbare komponenter og undgå flaskehalse i ydeevnen."
           },
           {
-            "title": "Løsning med begrænsniner på pålads",
-            "description": "Mens konfiguratoren foretager implicitte valg baseret på begrænsninger, så guider den brugeren til sin optimale løsning. "
+            "title": "Løsning med begrænsninger på plads",
+            "description": "Mens konfiguratoren foretager implicitte valg baseret på begrænsninger, så guider den brugeren til sin optimale løsning."
           },
           {
             "title": "Øjeblikkelige salgsopdateringer",
-            "description": "Nyd øjeblikkelige opdateringer af salgspipeline, priser og produktvisualisering efter hver enkelt konfiguration. "
+            "description": "Nyd øjeblikkelige opdateringer af salgspipeline, priser og produktvisualisering efter hver enkelt konfiguration."
           },
           {
             "title": "Import af masterdata",
@@ -403,17 +493,17 @@
       },
       "dive_into": {
         "label": "Dyk ned i produktkvalitet",
-        "heading": "Dyk ned i <0/><1>produkt kvalitet</1>",
+        "heading": "Dyk ned i produktkvalitet",
         "upsell_with_ease": {
           "title": "Mersalg med lethed",
-          "description": "Boost dine tilbud ved at tilføje tilbehør til det primært konfigurerede udstyr, hvilket øger tilbuddets værdi. "
+          "description": "Boost dine tilbud ved at tilføje tilbehør til det primært konfigurerede udstyr, hvilket øger tilbuddets værdi."
         },
         "visualize_for_impact": {
           "title": "Visualiser for effekt",
-          "description": "Produktvisualisering i realtid efter hvert valg af konfigurator giver salgsteams og kunder mulighed for bedre at forstå komplekse konfigurationer. "
+          "description": "Produktvisualisering i realtid efter hvert valg af konfigurator giver salgsteams og kunder mulighed for bedre at forstå komplekse konfigurationer."
         },
         "flexible_line_item_management": {
-          "title": "Fleksibel produktlinjer",
+          "title": "Fleksibel produktlinjestyring",
           "description": "Dine sælgere får magten til at opbygge tilbud med fleksibilitet, kopiere og importere vellykkede tilbud, konfigurere produkter, foreslå alternative produktlinjer og etablere hierarkier inden for tilbud, der indeholder flere produktlinjer, alt sammen gennem Mercuras motor."
         }
       }
@@ -422,18 +512,18 @@
       "title": "Generering af tilbud og dokumenter",
       "hero": {
         "heading": "Forbedring af salgseffektiviteten",
-        "subtext": "Forøg dine lukkerater og strømlin salgsprocessen med Mercuras tilbuds- og dokumentgenereringsløsning. "
+        "subtext": "Forøg dine lukkerater og strømlin salgsprocessen med Mercuras tilbuds- og dokumentgenereringsløsning."
       },
       "join_journey": {
         "label": "Tag med på rejsen",
         "heading": "Tag med på rejsen",
-        "subtext": "Forbedre salgseffektiviteten og effektiviteten med Mercuras CPQ-løsning – leverer datadrevne, detaljerede og varemærketilpassede tilbud. "
+        "subtext": "Forbedre salgseffektiviteten og effektiviteten med Mercuras CPQ-løsning – leverer datadrevne, detaljerede og varemærketilpassede tilbud."
       },
       "overcome_quoting_challenges": {
         "label": "Overvind udfordringer i tilbudsfasen",
-        "heading": "Overvind <0>udfordringer <1/> i tilbudsfasen</0> med <2/> Mercura",
-        "text_1": "Vindende B2B-kunder afhænger af evnen til hurtigt at generere præcise og overbevisende tilbud. ",
-        "text_2": "Efterhånden som dine produktudbud bliver mere individualiserede, bliver manuel tilbudsgivning langsomt, fejlbehæftet og besværligt. <br /><br /> Forlad æraen med manuel tilbudsgivning med Mercura CPQs automatiserede tilbudsløsninger."
+        "heading": "Overvind udfordringer i tilbudsfasen med Mercura",
+        "text_1": "Vindende B2B-kunder afhænger af evnen til hurtigt at generere præcise og overbevisende tilbud.",
+        "text_2": "Efterhånden som dine produktudbud bliver mere individualiserede, bliver manuel tilbudsgivning langsomt, fejlbehæftet og besværligt. Forlad æraen med manuel tilbudsgivning med Mercura CPQs automatiserede tilbudsløsninger."
       },
       "what_we_offer": [
         {
@@ -462,24 +552,24 @@
         }
       ],
       "collaboration": {
-        "heading": "Strømlinet <0>samarbejde</0> og <1/> deling",
-        "text_1": "Sig farvel til endeløse e-mail-tråde. ",
-        "text_2": "Alle tilbudsrevisioner for en aftale er centraliseret til din kundes indkøbsteam, så de kan logge på, svare, kommentere og uploade deres dokumenter som en del af handlen. "
+        "heading": "Strømlinet samarbejde og deling",
+        "text_1": "Sig farvel til endeløse e-mail-tråde.",
+        "text_2": "Alle tilbudsrevisioner for en aftale er centraliseret til din kundes indkøbsteam, så de kan logge på, svare, kommentere og uploade deres dokumenter som en del af handlen."
       },
       "support": {
         "heading": "Support på tværs af alle salgskanaler",
-        "subtext": "Maksimer tilbudsmængderne og forstærk ordretilstrømningen med Mercura CPQ-tilbuds- og dokumentgenerering, der kan tilpasses direkte salg, forhandlere og selvbetjening af kunder. ",
+        "subtext": "Maksimer tilbudsmængderne og forstærk ordretilstrømningen med Mercura CPQ-tilbuds- og dokumentgenerering, der kan tilpasses direkte salg, forhandlere og selvbetjening af kunder.",
         "constraint_resolution": {
-          "title": "Løsning med begrænsniner på pålads",
-          "description": "Mens konfiguratoren foretager implicitte valg baseret på begrænsninger, så guider den brugeren til sin optimale løsning. "
+          "title": "Løsning med begrænsninger på plads",
+          "description": "Mens konfiguratoren foretager implicitte valg baseret på begrænsninger, så guider den brugeren til sin optimale løsning."
         },
         "instant_sales_insights": {
           "title": "Øjeblikkelige salgsopdateringer",
-          "description": "Nyd øjeblikkelige opdateringer af salgspipeline, priser og produktvisualisering efter hver enkelt konfiguration. "
+          "description": "Nyd øjebliklige opdateringer af salgspipeline, priser og produktvisualisering efter hver enkelt konfiguration."
         },
         "efficient_project_sales": {
           "title": "Effektivt projektsalgssamarbejde",
-          "description": " Store handler kræver ofte en teamindsats. "
+          "description": "Store handler kræver ofte en teamindsats."
         }
       }
     },
@@ -487,12 +577,12 @@
       "title": "Produktmodellering",
       "heading": "Mestre produktmodellering <br /> som industrivirksomhed",
       "hero": {
-        "subtext_1": "I nutidens meget konkurrenceprægede produktionslandskab er effektivitet, nøjagtighed og smidighed altafgørende. ",
-        "subtext_2": "Det er her, Configure, Price, Quote (CPQ) løsninger til industrivirksomhed kommer i spil. "
+        "subtext_1": "I nutidens meget konkurrenceprægede produktionslandskab er effektivitet, nøjagtighed og smidighed altafgørende.",
+        "subtext_2": "Det er her, Configure, Price, Quote (CPQ) løsninger til industrivirksomhed kommer i spil."
       },
       "product_modelling_cpq": {
         "text_1": "Hvad er produktmodellering i CPQ?",
-        "text_2": "Produktmodellering er kunsten at definere, organisere og konfigurere dine produkter og tjenester i et CPQ-system. "
+        "text_2": "Produktmodellering er kunsten at definere, organisere og konfigurere dine produkter og tjenester i et CPQ-system."
       },
       "advantages": {
         "label": "Fordelene ved effektiv produktmodellering",
@@ -504,15 +594,15 @@
           },
           "error_reduction": {
             "title": "Fejlreduktion",
-            "description": "Ved at definere produktregler og begrænsninger i CPQ-systemet minimerer du risikoen for fejl i ordreprocessen. "
+            "description": "Ved at definere produktregler og begrænsninger i CPQ-systemet minimerer du risikoen for fejl i ordreprocessen."
           },
           "customization": {
             "title": "Tilpasning",
-            "description": "At skræddersy produkter til at opfylde individuelle kundebehov bliver ubesværet. "
+            "description": "At skræddersy produkter til at opfylde individuelle kundebehov bliver ubesværet."
           },
           "efficiency": {
             "title": "Effektivitet",
-            "description": "Med foruddefinerede produktmodeller reducerer du markant den tid, det tager at generere nøjagtige tilbud og ordrer. "
+            "description": "Med foruddefinerede produktmodeller reducerer du markant den tid, det tager at generere nøjagtige tilbud og ordrer."
           }
         }
       },
@@ -554,7 +644,7 @@
         "label": "Naviger i dine prisudfordringer",
         "heading": "Navigerer i dine <0/> <1>prisudfordringer</1>",
         "subtext_1": "Tilfredsstil værdifulde kunder hurtigere med præcise prisoverslag, og overvind udfordringerne med meget individualiserede produkttilbud, der tager lang tid.",
-        "subtext_2": "Revolutioner din salgsstrategi med Mercuras CPQ prismotor, og dermed sikre at hastigheden og nøjagtigheden af ​​prisestimater er din konkurrencefordel på et marked, hvor personlige produktvarianter og komplekse prisstrukturer bestemmer spillet. "
+        "subtext_2": "Revolutioner din salgsstrategi med Mercuras CPQ prismotor, og dermed sikre at hastigheden og nøjagtigheden af ​​prisestimater er din konkurrencefordel på et marked, hvor personlige produktvarianter og komplekse prisstrukturer bestemmer spillet."
       },
       "benefits_of_pricing_features": {
         "label": "Fordelene ved vores prismotor",
@@ -591,7 +681,7 @@
         "label": "Undgå marginsqueezes",
         "heading": "Undgå <0>marginsqueezes</0><1/>",
         "subtext_1": "Der tages en holistisk holistisk tilgang, der tager højde for forskellige aspekter fra produktdetaljer til fremstilling, forsendelse, installation og service.",
-        "subtext_2": "Vedligeholdelse af kontrol over ende-til-ende-operationer bliver problemfri, hvilket giver mulighed for nøjagtige beregninger af kundernes nettopris i tilbud. "
+        "subtext_2": "Vedligeholdelse af kontrol over ende-til-ende-operationer bliver problemfri, hvilket giver mulighed for nøjagtige beregninger af kundernes nettopris i tilbud."
       },
       "flexible_and_robust_price_models": {
         "heading": "Fleksible og robuste prismodeller",
@@ -607,15 +697,15 @@
         "heading": "<0>Øjeblikkelig prisfastsættelse</0> <1/>lige ved hånden",
         "continuous_data_integration": {
           "title": "Kontinuerlig dataintegration",
-          "description": "Effektive globale eller lokale prisrevisioner med lav vedligeholdelse er sikret af Mercura CPQ's adskillelse af prislogik og data. "
+          "description": "Effektive globale eller lokale prisrevisioner med lav vedligeholdelse er sikret af Mercura CPQ's adskillelse af prislogik og data."
         },
         "mixed_price_types": {
           "title": "Blandede pristyper",
-          "description": "For dem, der sælger abonnementsbaserede tjenester sammen med kapitaludstyr, giver Mercuras abonnementspris* dig mulighed for at definere optimale tjenester for det konfigurerede produkt, kontraktlængde, volumenudsving og rabatstrukturer. "
+          "description": "For dem, der sælger abonnementsbaserede tjenester sammen med kapitaludstyr, giver Mercuras abonnementspris* dig mulighed for at definere optimale tjenester for det konfigurerede produkt, kontraktlængde, volumenudsving og rabatstrukturer."
         },
         "automatic_margin_control": {
           "title": "Automatisk marginkontrol",
-          "description": "Automatisk marginkontrol sikrer rentable tilbud på ethvert konfigureret produkt, med Mercuras løsning, der giver mulighed for at variere automatisk godkendte marginniveauer på tværs af forskellige sælgere eller roller. "
+          "description": "Automatisk marginkontrol sikrer rentable tilbud på ethvert konfigureret produkt, med Mercuras løsning, der giver mulighed for at variere automatisk godkendte marginniveauer på tværs af forskellige sælgere eller roller."
         }
       }
     },
@@ -624,12 +714,12 @@
       "hero": {
         "heading": "Mercura integrationer",
         "subtext_1": "Revolutionerende salgsprocesser med CPQ-integrationer",
-        "subtext_2": "Når det kommer til prissætning af komplekse produktionsprodukter, er præcision, fleksibilitet og smidighed afgørende. "
+        "subtext_2": "Når det kommer til prissætning af komplekse produktionsprodukter, er præcision, fleksibilitet og smidighed afgørende."
       },
       "challenge_of_silos": {
         "heading": "Udfordringen ved <0/> <1>informationssiloer</1>",
         "subtext_1": "Mange organisationer kæmper med et svagt datagrundlag.",
-        "subtext_2": "Master data er ofte spredt på tværs af PLM (Product Lifecycle Management), ERP (Enterprise Resource Planning), CRM (Customer Relationship Management), PIM (Product Information Management), CPQ og CAD (Computer-Aided Design) systemer. "
+        "subtext_2": "Master data er ofte spredt på tværs af PLM (Product Lifecycle Management), ERP (Enterprise Resource Planning), CRM (Customer Relationship Management), PIM (Product Information Management), CPQ og CAD (Computer-Aided Design) systemer."
       },
       "how_we_help": {
         "label": "Hvordan vi hjælper dig med at tackle disse udfordringer",
@@ -666,19 +756,19 @@
         "integrations": {
           "microsoft_dynamics_365": {
             "title": "Mercura CPQ til Microsoft Dynamics 365",
-            "description": "Integrer CPQ problemfrit med Dynamics 365, dit foretrukne CRM-værktøj. "
+            "description": "Integrer CPQ problemfrit med Dynamics 365, dit foretrukne CRM-værktøj."
           },
           "salesforce": {
             "title": "Mercura CPQ for Salesforce",
-            "description": "Udnyt kraften ved CPQ i Salesforce Sales/Community Cloud. "
+            "description": "Udnyt kraften ved CPQ i Salesforce Sales/Community Cloud."
           },
           "hubspot": {
             "title": "Mercura CPQ til Hubspot",
-            "description": "Mercura CPQ integreres problemfrit med HubSpot, hvilket giver virksomhederne mulighed for at forene marketing- og salgsindsatsen. "
+            "description": "Mercura CPQ integreres problemfrit med HubSpot, hvilket giver virksomhederne mulighed for at forene marketing- og salgsindsatsen."
           },
           "visma_business": {
             "title": "Mercura CPQ for Visma Business",
-            "description": "Mercura CPQ's integration med Visma Business ERP strømliner forretningsdriften. "
+            "description": "Mercura CPQ's integration med Visma Business ERP strømliner forretningsdriften."
           }
         }
       }
@@ -688,7 +778,7 @@
       "heading": "Mercura CPQ visualiseringer",
       "hero": {
         "heading": "Bring dine produkter til live med fremragende <0>visualiserings</0> teknologi.",
-        "subtext": "Oplev en ny dimension af produktinteraktion med avanceret visualiseringsteknologi. "
+        "subtext": "Oplev en ny dimension af produktinteraktion med avanceret visualiseringsteknologi."
       },
       "benefits_to_manufacturing": {
         "label": "Hvordan vores visualiseringsfunktion gavner produktionsvirksomheder",
@@ -700,7 +790,7 @@
           },
           "real_time_2d_and_3d_visualization": {
             "title": "Real-time 2D og 3D visualisering",
-            "description": "Øjeblikkelige opdateringer forbedrer hvert valg og giver kunderne en omfattende forståelse af konfigurerbare produkter til en mere informeret købsbeslutning"
+            "description": "Øjeblikkelige opdateringer forbedrer hvert valg og giver kunderne en omfattende forståelse af konfigurerbare produkter til en mere informeret købsbeslutning."
           },
           "drag_and_drop_configuration": {
             "title": "Træk-og-slip-konfiguration",
@@ -800,7 +890,7 @@
       },
       "empower": {
         "heading": "Styrk din virksomhed med et væld af unikke data, herunder konfigurationsvalg, styklister og mere.",
-        "subtext": "Oplev problemfri overførsel af store mængder transaktions- og stamdata direkte fra Mercura CPQ til dit foretrukne Business Intelligence-værktøj. "
+        "subtext": "Oplev problemfri overførsel af store mængder transaktions- og stamdata direkte fra Mercura CPQ til dit foretrukne Business Intelligence-værktøj."
       },
       "business_results": {
         "heading": "Forretningsresultater af <0>Mercura</0> <1/> CPQ Analytics",
@@ -815,7 +905,7 @@
             "title": "Unikke CPQ-data"
           },
           {
-            "description": "Afdække indsigt baseret på efterspørgselsmønstre, tilbudte kontra ikke-noterede dele, og identificer produkter af høj værdi.",
+            "description": "Afdække indsigt baseret på efterspørgselsmønstre, citerede kontra ikke-noterede dele, og identificer produkter af høj værdi.",
             "title": "Produktindsigt"
           }
         ]
@@ -824,7 +914,7 @@
     "about": {
       "title": "Om",
       "heading": "Vi er passionerede <br /> om at udvikle din virksomhed <br /> med software.",
-      "subheading": "Vi specialiserer os i at skabe innovative CPQ (Configure, Price, Quote) løsninger skræddersyet til produktionsvirksomheder. ",
+      "subheading": "Vi specialiserer os i at skabe innovative CPQ (Konfigurér, Pris, Tilbud) løsninger skræddersyet til produktionsvirksomheder.",
       "stats": {
         "revenue": "Omsætningen steg <br/> samlet set",
         "satisfied_customers": "Tilfredse kunder <br/> og partnere",
@@ -947,13 +1037,13 @@
     },
     "request_a_demo": {
       "title": "Anmod om en demo",
-      "company_relationships": "Merkura kunder",
+      "company_relationships": "Mercura kunder",
       "mercura_clients": "Mercura kunder",
       "what_our_clients_say": "Hvad vores kunder siger om os.",
       "reviews": {
         "birgitte": {
           "name": "Birgitte Kjær Hansen",
-          "occupation": "Marketing Manager, Lindab A/S",
+          "occupation": "Marketingchef, Lindab A/S",
           "headline": "Mercura er yderst professionelle",
           "message": "En stor anbefaling til Mercura og deres team. De er yderst professionelle og meget gode til at få overblik over komplekse produktbegrænsninger og prislogik. Vores konfigurator er rigtig god til at visualisere vores garageporte, hvilket giver os en kortere time to market, gør os mere tilgængelige overfor kunderne og har hjulpet os med at optimere interne salgsprocesser, hvilket vil hjælpe os med at vækste vores forretning."
         },
@@ -965,7 +1055,7 @@
         },
         "linda": {
           "name": "Linda Kaae Hedegaard",
-          "occupation": "Sales & Marketing assistant, SCITEQ A/S",
+          "occupation": "Salgs- og marketingassistent, SCITEQ A/S",
           "headline": "Meget tilfredse med Mercura",
           "message": "Hos SCITEQ er vi meget tilfredse med vores online konfigurations- og tilbudssystem, som Mercura har udviklet for os. Mercura har været særlig god til at opfylde vores løbende behov."
         }

@@ -6,4 +6,5 @@ publishDate: 2023-12-12T11:48:51.016Z
 tags: []
 language: de
 isDraft: false
+slug: what-are-3d-renderings-de
 ---

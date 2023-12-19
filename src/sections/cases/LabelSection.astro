@@ -1,5 +1,4 @@
 ---
-import Link from "@/i18n/Link.astro";
 import { cn } from "@/utils";
 
 interface Props {
@@ -50,12 +49,12 @@ const { label, withLink, singleCol = false } = Astro.props;
     </div>
     {
       withLink && (
-        <Link
+        <a
           href={withLink.href}
           class="brand-gradient py-4 px-8 rounded-lg block text-base font-medium text-center text-white w-full md:w-max"
         >
           {withLink.title}
-        </Link>
+        </a>
       )
     }
   </div>

@@ -1,0 +1,115 @@
+---
+import GetInTouchForm from "@/components/contact/GetInTouchForm.astro";
+import { useTranslation, type Locale, useTranslatedPath } from "@/i18n";
+import Layout from "@/layouts/Layout.astro";
+import CaseCard from "@/sections/cases/CaseCard.astro";
+
+import case_migatronic from "@/assets/case_migatronic.png";
+import case_garage from "@/assets/case_garage.png";
+import case_audi from "@/assets/case_audi.png";
+import case_3d from "@/assets/case_3d.png";
+import case_playground from "@/assets/case_playground.png";
+import Trans from "@/i18n/Trans.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+
+const {
+  pages: { cases: t },
+} = await useTranslation(locale as Locale);
+
+const r = useTranslatedPath(locale);
+---
+
+<Layout title={t.title} theme="gray">
+  <section class="py-[4.25rem]">
+    <div class="container">
+      <h1
+        class="brand-gradient bg-clip-text text-transparent heading-1 text-center"
+      >
+        {t.heading}
+      </h1>
+    </div>
+  </section>
+  <section class="">
+    <div class="container flex flex-col gap-16">
+      <CaseCard
+        photo={case_migatronic}
+        link={r("cases.migatronic-configurator")}
+      >
+        <span slot="title" class="brand-gradient bg-clip-text text-transparent"
+          >{t.cases.migatronic.title}</span
+        >
+        <p slot="description">
+          <Trans translation={t.cases.migatronic.description} />
+        </p>
+      </CaseCard>
+
+      <CaseCard
+        alternate
+        photo={case_garage}
+        link={r("cases.lindab-garage-door-configurator")}
+      >
+        <span slot="title">
+          <Trans translation={t.cases.lindab_garage.title}>
+            <span class="brand-gradient bg-clip-text text-transparent"
+              >Lindab</span
+            > Garage door Configurator
+          </Trans>
+        </span>
+        <p slot="description">
+          <Trans translation={t.cases.lindab_garage.description} />
+        </p>
+      </CaseCard>
+
+      <CaseCard photo={case_audi} link={r("cases.audi-configurator")}>
+        <span slot="title">
+          <Trans translation={t.cases.audi_config.title}>
+            <span class="brand-gradient bg-clip-text text-transparent"
+              >Audi</span
+            > Configurator
+          </Trans>
+        </span>
+        <p slot="description">
+          <Trans translation={t.cases.audi_config.description} />
+        </p>
+      </CaseCard>
+
+      <CaseCard
+        alternate
+        photo={case_3d}
+        link={r("cases.3d-renderings-for-multi-living")}
+      >
+        <span slot="title">
+          <Trans translation={t.cases["3d_renderings"].title}>
+            3D Renderings for <span
+              class="brand-gradient bg-clip-text text-transparent"
+              >Multi-Living</span
+            >
+          </Trans>
+        </span>
+        <p slot="description">
+          <Trans translation={t.cases["3d_renderings"].description} />
+        </p>
+      </CaseCard>
+
+      <CaseCard photo={case_playground}>
+        <span slot="title">
+          <Trans translation={t.cases.copla_playgrounds.title}>
+            Product configurator for <span
+              class="brand-gradient bg-clip-text text-transparent"
+              >Copla Playgrounds</span
+            >
+          </Trans>
+        </span>
+        <p slot="description">
+          <Trans translation={t.cases.copla_playgrounds.description} />
+        </p>
+      </CaseCard>
+    </div>
+    <GetInTouchForm theme="gray" />
+  </section>
+</Layout>

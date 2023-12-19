@@ -1,0 +1,8 @@
+---
+import DigitalDesignerPage from "@/blocks/career/DigitalDesignerPage.astro";
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<DigitalDesignerPage locale={lang} />

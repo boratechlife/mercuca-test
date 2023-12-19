@@ -1,0 +1,8 @@
+---
+import AboutPage from "@/blocks/AboutPage.astro";
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<AboutPage locale={lang} />

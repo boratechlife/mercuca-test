@@ -1,0 +1,8 @@
+---
+import AnalyticsPage from "@/blocks/AnalyticsPage.astro";
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<AnalyticsPage locale={lang} />

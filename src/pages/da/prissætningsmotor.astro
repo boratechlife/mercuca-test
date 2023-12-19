@@ -1,0 +1,9 @@
+---
+import PricingEnginePage from "@/blocks/PricingEnginePage.astro";
+
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<PricingEnginePage locale={lang} />

@@ -1,0 +1,246 @@
+---
+import { Image } from "astro:assets";
+
+import Layout from "@/layouts/Layout.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+
+import circles from "@/assets/circles.png";
+import pentagon from "@/assets/pentagon.png";
+import pill from "@/assets/pill.png";
+
+import manufacturingVenn from "@/assets/manufactiuring_venn.png";
+import ScrollArrow from "@/components/icons/ScrollArrow.astro";
+
+import WhatWeOffer from "@/sections/WhatWeOffer.astro";
+import WhyChooseUs from "@/sections/configuration-engine/WhyChooseUs.astro";
+
+import LaunchRocket from "@/components/icons/LaunchRocket.astro";
+import CheckedList from "@/components/lists/CheckedList.astro";
+
+import ipad from "@/assets/ipad_pro_12.png";
+import GetInTouchForm from "@/components/contact/GetInTouchForm.astro";
+
+import { useTranslation, type Locale } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+import ModelSection from "@/sections/ModelSection.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+
+const {
+  common,
+  pages: { configuration_engine: t },
+} = await useTranslation(locale as Locale);
+---
+
+<Layout title={t.title} class="pb-[4.25rem]">
+  <Breadcrumb links={[common.breadcrumb.product, t.title]} />
+
+  <section class="py-[4.25rem] relative">
+    <div class="container">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 mb-[4.25rem] text-neutral-10"
+      >
+        <h1 class="heading-1">
+          <Trans translation={t.hero.heading}>
+            Pioneering <span
+              class="brand-gradient bg-clip-text text-transparent"
+              >product excellence</span
+            > for manufacturers
+          </Trans>
+        </h1>
+        <p class="text-neutral-10 text-xl md:text-[2rem] leading-tight">
+          {t.hero.subtext}
+        </p>
+      </div>
+      <div class="flex items-center gap-2.5 animate-[bounce_2s_infinite]">
+        <ScrollArrow class="h-5 w-auto" />
+        <span
+          class="text-sm text-white leading-normal tracking-[.7px] capitalize"
+          >{common.scroll_for_more}</span
+        >
+      </div>
+    </div>
+  </section>
+
+  <div class="relative">
+    <Image
+      class="absolute bottom-0 left-0 -translate-x-2/3 xl:-translate-x-[45%] translate-y-[40%]"
+      src={circles}
+      alt=""
+    />
+  </div>
+
+  <section class="py-[4.25rem]">
+    <div class="container grid grid-cols-1 lg:grid-cols-2 gap-20">
+      <div class="flex justify-center items-center rounded-2xl overflow-hidden">
+        <Image src={manufacturingVenn} alt="" />
+      </div>
+      <div>
+        <p class="mb-12 md:mb-16 text-white text-5xl font-medium leading-tight">
+          {t.venn.text_1}
+        </p>
+        <p
+          class="text-xl md:text-2xl leading-tight tracking-[.48px] text-neutral-10"
+        >
+          {t.venn.text_2}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="relative overflow-x-clip">
+    <Image
+      class="absolute top-0 right-0 translate-x-[45%] -translate-y-[40%]"
+      src={pill}
+      alt=""
+    />
+  </div>
+
+  <WhatWeOffer offerings={t.what_we_offer} />
+
+  <section class="py-[4.25rem]" aria-label={t.empowering.label}>
+    <div class="container grid grid-cols-1 lg:grid-cols-2">
+      <div class="mb-12 lg:mb-0 md:pr-20">
+        <h2 class="heading-2 mb-8 text-neutral-10">
+          <Trans translation={t.empowering.heading}>
+            Empowering manufacturers with <br />
+            <span class="brand-gradient bg-clip-text text-transparent"
+              >precision</span
+            >
+          </Trans>
+        </h2>
+        <div class="p-8 bg-neutral-40/[.09] rounded-2xl w-max">
+          <LaunchRocket class="h-20 w-20" />
+        </div>
+      </div>
+
+      <div>
+        <p class="text-2xl text-neutral-10 leading-tight tracking-[.48px]">
+          {t.empowering.text_1}
+        </p>
+        <p
+          class="mt-12 md:mt-16 text-xl font-light leading-tight tracking-[.4px] text-neutral-30"
+        >
+          {t.empowering.text_2}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-[4.25rem]" aria-label={t.needs_based.label}>
+    <div class="container grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div class="order-2 md:order-1">
+        <h2 class="heading-2 mb-12 text-neutral-10">
+          <Trans translation={t.needs_based.heading}>
+            <span class="text-accent-1">Needs-based</span>
+            <br /> Configuration
+          </Trans>
+        </h2>
+        <p
+          class="text-xl font-light leading-[1.4] tracking-[.4px] text-neutral-30 mb-12"
+        >
+          {t.needs_based.subtext}
+        </p>
+        <CheckedList items={t.needs_based.what_you_get} class="pl-6" />
+      </div>
+      <div
+        class="relative isolate flex justify-center items-center order-1 md:order-2"
+      >
+        <Image src={ipad} alt="" />
+
+        <div
+          class="absolute inset-0 z-[1] flex justify-center items-center p-3"
+        >
+          <div
+            class="bg-black w-full aspect-[670/514] flex justify-center items-center p-2"
+          >
+            <video controls autoplay loop playsinline muted>
+              <source
+                type="video/mp4"
+                src="/videos/Demo-project-Audi-Q3-Configurator.mp4"
+              /></video
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <WhyChooseUs />
+
+  <ModelSection
+    text_1={t.product_modelling_excellence.text_1}
+    text_2={t.product_modelling_excellence.text_2}
+  />
+
+  <section class="py-[4.25rem]" aria-label={t.dive_into.label}>
+    <div class="container">
+      <h2 class="heading-2 text-center text-neutral-10 md:mb-[4.25rem]">
+        <Trans translation={t.dive_into.heading}>
+          Dive into <br />
+          <span class="brand-gradient bg-clip-text text-transparent"
+            >product excellence</span
+          >
+        </Trans>
+      </h2>
+
+      <div class="py-20 grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div
+          class="p-8 bg-primary-4/[.11] rounded-2xl border border-primary-7 lg:h-max relative"
+        >
+          <Image
+            class="absolute top-0 left-full -translate-x-1/2 -translate-y-[40%] hidden md:block"
+            src={pentagon}
+            alt=""
+          />
+          <p class="text-[2rem] leading-tight text-white mb-[50px]">
+            {t.dive_into.upsell_with_ease.title}
+          </p>
+          <p
+            class="text-xl font-light text-white leading-tight tracking-[.4px]"
+          >
+            {t.dive_into.upsell_with_ease.description}
+          </p>
+        </div>
+        <div
+          class="p-8 bg-primary-4/[.11] rounded-2xl border border-primary-7 lg:h-max md:self-end"
+        >
+          <p class="text-[2rem] leading-tight text-white mb-8">
+            {t.dive_into.visualize_for_impact.title}
+          </p>
+          <p
+            class="text-xl font-light text-white leading-tight tracking-[.4px]"
+          >
+            {t.dive_into.visualize_for_impact.description}
+          </p>
+        </div>
+
+        <div class="md:col-span-2">
+          <div
+            class="p-8 bg-primary-4/[.11] rounded-2xl border border-primary-7 lg:h-max md:w-1/2 mx-auto relative"
+          >
+            <Image
+              class="absolute top-full left-full -translate-x-1/2 -translate-y-1/2 hidden md:block"
+              src={circles}
+              alt=""
+            />
+            <p class="text-[2rem] leading-tight text-white mb-4">
+              {t.dive_into.flexible_line_item_management.title}
+            </p>
+            <p
+              class="text-xl font-light text-white leading-tight tracking-[.4px] pr-5"
+            >
+              {t.dive_into.flexible_line_item_management.description}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <GetInTouchForm />
+</Layout>

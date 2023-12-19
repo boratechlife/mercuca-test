@@ -1,28 +1,58 @@
 ---
-import { getLangFromUrl, locales } from ".";
+import type { ArticleRoutes, ViewMode } from "@/types";
+import {
+  getLangFromUrl,
+  getRouteFromUrl,
+  locales,
+  useTranslatedPath,
+  type RouteKey,
+  type Locale,
+  prepareArticleRoutes,
+} from ".";
 import { cn } from "@/utils";
 
 const currentLang = getLangFromUrl(Astro.url);
 
-const [, , ...currentPath] = Astro.url.pathname.split("/");
+const routeKey = getRouteFromUrl(Astro.url) || "";
 
-interface Props extends astroHTML.JSX.HTMLAttributes {}
+const r = useTranslatedPath(currentLang);
 
-const { class: classes = "" } = Astro.props;
+type Picker = ArticleRoutes & ViewMode & astroHTML.JSX.HTMLAttributes;
+
+interface Props extends Picker {}
+
+const { class: classes = "", mode = "page", altRoutes } = Astro.props;
+
+const articleRoutes = prepareArticleRoutes(altRoutes);
 ---
 
 <div class={cn("flex gap-6", classes)}>
   {
-    Object.entries(locales).map(([lang, label]) => (
-      <a
-        href={`/${lang}/${currentPath.join("/")}`}
-        class={cn(
-          "border border-white  w-max  font-light text-xl text-center rounded px-2.5 py-2 block uppercase",
-          lang === currentLang ? "bg-white text-primary-4" : "text-white"
-        )}
-      >
-        {lang}
-      </a>
-    ))
+    mode === "page" &&
+      Object.entries(locales).map(([lang, label]) => (
+        <a
+          href={r(routeKey as RouteKey, lang as Locale)}
+          class={cn(
+            "border border-white  w-max  font-light text-xl text-center rounded px-2.5 py-2 block uppercase",
+            lang === currentLang ? "bg-white text-primary-4" : "text-white"
+          )}
+        >
+          {lang}
+        </a>
+      ))
+  }
+  {
+    mode === "article" &&
+      articleRoutes.map(({ lang, url }) => (
+        <a
+          href={url}
+          class={cn(
+            "border border-white  w-max  font-light text-xl text-center rounded px-2.5 py-2 block uppercase",
+            lang === currentLang ? "bg-white text-primary-4" : "text-white"
+          )}
+        >
+          {lang}
+        </a>
+      ))
   }
 </div>

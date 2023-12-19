@@ -1,0 +1,25 @@
+---
+import ArticlePage from "@/blocks/ArticlePage.astro";
+import { getCollection } from "astro:content";
+
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+
+export async function getStaticPaths() {
+  const articles = await getCollection("articles", ({ data, id, slug }) => {
+    // Filter out draft articles in production
+    const DRAFT_FILTER = import.meta.env.PROD ? data.isDraft !== true : true;
+
+    return DRAFT_FILTER;
+  });
+  return articles.map((article) => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+---
+
+<ArticlePage article={article} locale={lang} />

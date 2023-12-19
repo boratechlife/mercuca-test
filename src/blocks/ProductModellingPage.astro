@@ -1,0 +1,138 @@
+---
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Layout from "@/layouts/Layout.astro";
+import banner from "@/assets/banner.png";
+import { Image } from "astro:assets";
+import AdvantagesOfEffectiveModelling from "@/sections/product-modelling/AdvantagesOfEffectiveModelling.astro";
+import FeaturesOfProductModelling from "@/sections/product-modelling/FeaturesOfProductModelling.astro";
+import RequestDemoLink from "@/components/RequestDemoLink.astro";
+
+import { useTranslation, type Locale } from "@/i18n";
+import Trans from "@/i18n/Trans.astro";
+import ModelSection from "@/sections/ModelSection.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+
+const {
+  common,
+  pages: { product_modelling: t },
+} = await useTranslation(locale as Locale);
+---
+
+<Layout title={t.title}>
+  <Breadcrumb links={[common.breadcrumb.product, t.title]} />
+
+  <section class="py-[4.25rem]">
+    <div class="container">
+      <h1
+        id="pm-heading"
+        class="brand-gradient bg-clip-text text-transparent heading-1 mb-16 text-center"
+      >
+        <Trans translation={t.heading} />
+      </h1>
+
+      <div id="pm-banner" class="grid grid-cols-1 md:grid-cols-[30%,1fr] gap-6">
+        <div class="rounded-2xl overflow-hidden">
+          <Image src={banner} alt="" />
+        </div>
+        <div
+          class="p-10 flex flex-col gap-8 justify-center bg-primary-3/[.39] rounded-2xl"
+        >
+          <p class="text-[2rem] leading-tight text-neutral-10">
+            {t.hero.subtext_1}
+          </p>
+          <p class="text-xl font-light tracking-[.4px] text-neutral-30">
+            {t.hero.subtext_2}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <ModelSection
+    gapped
+    text_1={t.product_modelling_cpq.text_1}
+    text_2={t.product_modelling_cpq.text_2}
+  />
+
+  <AdvantagesOfEffectiveModelling />
+
+  <FeaturesOfProductModelling />
+
+  <section class="pt-[4.25rem] pb-[7.5rem]">
+    <div class="container">
+      <div class="text-center">
+        <p
+          class="text-[2rem] md:text-[4rem] font-medium leading-tight text-neutral-30 mb-6"
+        >
+          <Trans translation={t.call_to_action.text_1}>
+            Let us <span class="brand-gradient bg-clip-text text-transparent"
+              >help</span
+            > you!
+          </Trans>
+        </p>
+        <p
+          class="md:max-w-[768px] mx-auto text-xl font-light tracking-[.4px] leading-[1.4] text-neutral-30 mb-10"
+        >
+          {t.call_to_action.text_2}
+        </p>
+        <div class="flex justify-center">
+          <RequestDemoLink />
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  gsap.registerPlugin(ScrollTrigger);
+
+  const mm = gsap.matchMedia();
+
+  gsap.from("#pm-banner", {
+    opacity: 0,
+    duration: 2,
+  });
+
+  gsap.from("#pm-heading", {
+    y: "100px",
+    opacity: 0,
+    delay: 0.5,
+    ease: "power1.inOut",
+    duration: 1.5,
+  });
+
+  gsap.from("#pm-key-features", {
+    scrollTrigger: {
+      trigger: "#pm-advantages",
+      scrub: 1,
+      start: "top 30%",
+      end: "bottom 100%",
+    },
+    y: "100px",
+    opacity: 0,
+    delay: 0.5,
+    ease: "power1.inOut",
+    duration: 1.5,
+  });
+
+  mm.add("(min-width: 1024px)", () => {
+    gsap.from("#pm-advantages > :nth-child(even)", {
+      scrollTrigger: {
+        trigger: "#pm-advantages",
+        scrub: 1,
+        start: "top 100%",
+        end: "bottom 50%",
+      },
+      y: "+=100px",
+      ease: "power4.inOut",
+      duration: 2,
+    });
+  });
+</script>

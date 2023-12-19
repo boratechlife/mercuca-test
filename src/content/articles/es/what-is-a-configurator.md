@@ -6,4 +6,5 @@ cover: ../../../assets/articles/configurator.png
 language: es
 isDraft: false
 publishDate: 2023-12-12T11:28:31.171Z
+slug: what-is-a-configurator-es
 ---

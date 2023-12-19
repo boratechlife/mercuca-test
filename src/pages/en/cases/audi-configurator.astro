@@ -1,0 +1,9 @@
+---
+import AudiPage from "@/blocks/cases/AudiPage.astro";
+
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<AudiPage locale={lang} />

@@ -1,14 +1,32 @@
 ---
 import DownArrow from "@/components/icons/DownArrow.astro";
-import { getLangFromUrl, locales } from ".";
+import {
+  getLangFromUrl,
+  getRouteFromUrl,
+  locales,
+  useTranslatedPath,
+  type Locale,
+  type RouteKey,
+  prepareArticleRoutes,
+} from ".";
 import { cn } from "@/utils";
+import type { ArticleRoutes, ViewMode } from "@/types";
 const currentLang = getLangFromUrl(Astro.url);
 
-const [, , ...currentPath] = Astro.url.pathname.split("/");
+type Picker = ArticleRoutes & ViewMode & astroHTML.JSX.HTMLAttributes;
 
-interface Props extends astroHTML.JSX.HTMLAttributes {}
+interface Props extends Picker {}
 
-const { class: classes = "" } = Astro.props;
+const { class: classes = "", mode = "page", altRoutes } = Astro.props;
+
+let routeKey = "";
+
+if (mode === "page") {
+  routeKey = getRouteFromUrl(Astro.url) || "";
+}
+const r = useTranslatedPath(currentLang);
+
+const articleRoutes = prepareArticleRoutes(altRoutes);
 ---
 
 <div
@@ -35,37 +53,46 @@ const { class: classes = "" } = Astro.props;
     class="absolute transition-[max-height,opacity] duration-200 top-full space-y-2 mt-3 left-0 group-data-[open='false']/i18n:max-h-0 group-data-[open='true']/i18n:max-h-none overflow-hidden bg-dark-1 py-1 group-data-[open='true']/i18n:opacity-100 group-data-[open='false']/i18n:opacity-20 group-data-[open='false']/i18n:pointer-events-none pl-6"
   >
     {
-      Object.entries(locales).map(([lang, label]) => (
-        <li
-          class={cn(
-            "border-b last:border-none border-white/60",
-            lang === currentLang && "opacity-90"
-          )}
-        >
-          <a
-            href={`/${lang}/${currentPath.join("/")}`}
-            class="hover:text-brand-1 transition-colors duration-200  hover:bg-white/5 w-full "
+      mode === "page" &&
+        Object.entries(locales).map(([lang, label]) => (
+          <li
+            class={cn(
+              "border-b last:border-none border-white/60",
+              lang === currentLang && "opacity-90"
+            )}
           >
-            {lang}
-          </a>
-        </li>
-      ))
+            <a
+              href={r(routeKey as RouteKey, lang as Locale)}
+              class="hover:text-brand-1 transition-colors duration-200  hover:bg-white/5 w-full "
+            >
+              {lang}
+            </a>
+          </li>
+        ))
+    }
+    {
+      mode === "article" &&
+        articleRoutes.map(({ lang, url }) => (
+          <li
+            class={cn(
+              "border-b last:border-none border-white/60",
+              lang === currentLang && "opacity-90"
+            )}
+          >
+            <a
+              href={url}
+              class="hover:text-brand-1 transition-colors duration-200  hover:bg-white/5 w-full "
+            >
+              {lang}
+            </a>
+          </li>
+        ))
     }
   </ul>
 </div>
 
 <script define:vars={{ currentLang }}>
   const i18nPicker = document.querySelector("#i18n-language-picker");
-
-  const path = window.location.pathname;
-
-  i18nPicker.value = currentLang;
-
-  i18nPicker.onchange = (e) => {
-    const selectedLang = e.target.value;
-    const newPath = path.replace(/^\/\w{2}\b/, `/${selectedLang}`);
-    window.location.pathname = newPath;
-  };
 
   document.addEventListener("click", (e) => {
     const isToggle = e.target.matches(".i18n-toggle");

@@ -6,4 +6,5 @@ publishDate: 2023-12-12T11:50:45.282Z
 tags: []
 language: es
 isDraft: false
+slug: what-is-3d-modelling-es
 ---

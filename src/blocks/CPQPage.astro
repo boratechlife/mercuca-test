@@ -1,0 +1,185 @@
+---
+import ScrollArrow from "@/components/icons/ScrollArrow.astro";
+import Layout from "@/layouts/Layout.astro";
+
+import circles from "@/assets/circles.png";
+import pentagon from "@/assets/pentagon.png";
+
+import { useTranslation, type Locale } from "@/i18n";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import LetsBuildTogether from "@/sections/LetsBuildTogether.astro";
+import { Image } from "astro:assets";
+import AlertDecagram from "@/components/icons/AlertDecagram.astro";
+import PaperPlane from "@/components/icons/PaperPlane.astro";
+import BookEdit from "@/components/icons/BookEdit.astro";
+import Trans from "@/i18n/Trans.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+
+const {
+  common,
+  pages: { cpq: t },
+} = await useTranslation(locale as Locale);
+---
+
+<Layout>
+  <Breadcrumb links={[common.breadcrumb.articles, t.title]} />
+  <section class="py-[4.25rem]">
+    <div
+      class="container relative gap-6 md:gap-12 xl:gap-20 grid grid-cols-1 lg:grid-cols-2 text-neutral-10 mb-[4.25rem]"
+    >
+      <div>
+        <h1 class="text-neutral-10 heading-1">{t.heading}</h1>
+      </div>
+
+      <div>
+        <p class="text-2xl lg:text-[2rem] leading-tight text-neutral-10">
+          {t.subheading}
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="flex items-center gap-2.5 animate-[bounce_2s_infinite]">
+        <ScrollArrow class="h-5 w-auto" />
+        <span
+          class="text-sm text-white leading-normal tracking-[.7px] capitalize"
+          >{common.scroll_for_more}</span
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="py-[4.25rem]">
+    <div
+      class="container grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 relative"
+    >
+      <div>
+        <h2 class="heading-2 mb-8 text-neutral-10">
+          {t.reduce_errors.heading}
+        </h2>
+        <div class="p-8 bg-neutral-40/[.09] rounded-2xl w-max">
+          <AlertDecagram class="h-20 w-20" />
+        </div>
+      </div>
+
+      <div>
+        <p class="text-2xl text-neutral-10 leading-tight tracking-[.48px]">
+          {t.reduce_errors.text_1}
+        </p>
+        <p
+          class="mt-16 text-xl font-light leading-tight tracking-[.4px] text-neutral-30"
+        >
+          {t.reduce_errors.text_2}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-[4.25rem]">
+    <div class="container">
+      <div class="py-20 grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div
+          class="p-8 bg-primary-4/[.11] rounded-2xl border border-primary-7 relative"
+        >
+          <Image
+            class="absolute top-full left-full -translate-x-1/2 -translate-y-1/2 hidden md:block"
+            src={pentagon}
+            alt=""
+          />
+          <p class="text-[2rem] leading-tight text-white">
+            {t.automate_sales}
+          </p>
+        </div>
+        <div class="p-8 bg-primary-4/[.11] rounded-2xl border border-primary-7">
+          <p class="text-[2rem] leading-tight text-white">
+            {t.order_handling}
+          </p>
+        </div>
+
+        <div class="md:col-span-2">
+          <div
+            class="p-8 bg-primary-4/[.11] rounded-2xl border border-primary-7 md:w-1/2 mx-auto relative"
+          >
+            <Image
+              class="absolute top-full left-full -translate-x-1/2 -translate-y-1/2 hidden md:block"
+              src={circles}
+              alt=""
+            />
+            <p class="text-[2rem] leading-tight text-white">
+              {t.scale_your_business}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-[4.25rem]">
+    <div
+      class="container grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 relative"
+    >
+      <div>
+        <h2 class="heading-2 mb-8 text-neutral-10">
+          {t.cpq_software.heading}
+        </h2>
+        <div class="p-8 bg-neutral-40/[.09] rounded-2xl w-max">
+          <BookEdit styled class="h-20 w-20" />
+        </div>
+      </div>
+
+      <div>
+        <p class="text-2xl text-neutral-10 leading-tight tracking-[.48px]">
+          <Trans translation={t.cpq_software.text_1} />
+          <p
+            class="mt-16 text-xl font-light leading-tight tracking-[.4px] text-neutral-30"
+          >
+            <Trans translation={t.cpq_software.text_2} />
+          </p>
+        </p>
+      </div>
+    </div>
+
+    <section class="py-[4.25rem] overflow-x-clip">
+      <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20">
+          <div class="">
+            <h2 class="text-neutral-10 heading-2 mb-[25px] lg:mb-[50px]">
+              {t.types_of_cpq_software.heading}
+            </h2>
+
+            <p
+              class="text-neutral-30 font-light lg:leading-[125%] tracking-[0.4px] text-base lg:text-xl"
+            >
+              <Trans translation={t.types_of_cpq_software.subtext} />
+            </p>
+          </div>
+          <div class="flex items-center md:px-16 py-6">
+            <div
+              class="py-12 w-full border border-primary-7 rounded-2xl bg-primary-6 flex justify-center items-center order-2 lg:order-1"
+            >
+              <PaperPlane />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[4.25rem]">
+      <div class="container">
+        <div class="mx-auto max-w-[800px]">
+          <p
+            class="text-2xl leading-tight tracking-[.48px] text-neutral-10 text-center"
+          >
+            {t.overall_statement}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <LetsBuildTogether />
+  </section>
+</Layout>

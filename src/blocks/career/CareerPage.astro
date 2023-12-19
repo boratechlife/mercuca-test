@@ -1,0 +1,192 @@
+---
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import {
+  type Locale,
+  useTranslation,
+  useTranslatedPath,
+  type RouteKey,
+} from "@/i18n";
+import Layout from "@/layouts/Layout.astro";
+import ReviewCard from "@/sections/ReviewCard.astro";
+import { slugify } from "@/utils";
+
+import avatar from "@/assets/martin.png";
+import ArrowTopRight from "@/components/icons/ArrowTopRight.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+
+const {
+  pages: { careers: t },
+} = await useTranslation(locale as Locale);
+
+const r = useTranslatedPath(locale);
+
+//{
+//   title: string;
+//   type: string;
+//   link: string;
+//   categories: string[];
+//   description: string;
+// }[]
+const uniqueCategories = Array.from(
+  new Set(
+    t.jobs
+      .flatMap((career) => career.categories)
+      .filter((category) => category.trim() !== "")
+  )
+);
+
+const filterButtons = uniqueCategories.map((category) => ({
+  title: category,
+  slug: slugify(category),
+}));
+
+const filterableCareers = t.jobs.map((career) => ({
+  ...career,
+  categories: career.categories
+    .filter((category) => category.trim() !== "")
+    .map((category) => ({
+      title: category,
+      slug: slugify(category),
+    })),
+}));
+---
+
+<Layout title={t.title}>
+  <Breadcrumb links={[t.title]} />
+  <section>
+    <div class="container">
+      <h1
+        class="heading-1 text-center brand-gradient bg-clip-text text-transparent"
+      >
+        {t.heading}
+      </h1>
+      <p
+        class="mt-12 max-w-[700px] mx-auto text-xl font-light leading-tight tracking-[.4px] text-center text-white"
+      >
+        {t.subtext}
+      </p>
+    </div>
+  </section>
+
+  <section class="py-[4.25rem]">
+    <div class="container">
+      <div id="filters" class="flex items-center flex-wrap gap-5 mb-10">
+        {
+          filterButtons.map((filterBtn, index) => (
+            <button
+              type="button"
+              data-filter={filterBtn.slug}
+              id={filterBtn.slug}
+              data-active={index === 0 ? "true" : "false"}
+              class="btn-filter hover:bg-accent-1 whitespace-nowrap hover:border-accent-1 transition-colors py-2.5 px-4 text-neutral-10 text-center font-medium text-base leading-tight rounded-[1.25rem] border  border-neutral-10 data-[active='true']:pointer-events-none data-[active='true']:bg-accent-1 data-[active='true']:border-accent-1"
+            >
+              {filterBtn.title}
+            </button>
+          ))
+        }
+      </div>
+
+      <ul class="border-b border-primary-4">
+        {
+          filterableCareers.map((job) => (
+            <li
+              class="border-t border-primary-4 data-[active='false']:hidden job"
+              data-filter={job.categories.map((c) => c.slug).join(",")}
+            >
+              <article class="md:px-8 py-10 ">
+                <div class="flex justify-between text-2xl tracking-[.48px] leading-tight text-neutral-10 mb-4">
+                  <p>
+                    {job.type}: {job.title}
+                  </p>
+                  <a
+                    href={r(job.link as RouteKey)}
+                    class="hover:text-neutral-70 transition-colors duration-200 hidden md:flex items-center gap-3"
+                  >
+                    {t.read_more}{" "}
+                    <ArrowTopRight class="inline h-5 w-5 shrink-0 fill-current" />
+                  </a>
+                </div>
+                <p class="text-base leading-[1.4] text-neutral-20 max-w-[650px]">
+                  {job.description}
+                </p>
+
+                <div class="md:hidden mt-4">
+                  <a
+                    href={r(job.link as RouteKey)}
+                    class="hover:text-neutral-70 transition-colors duration-200 text-xl tracking-[.48px] leading-tight text-neutral-10 flex items-center gap-2 "
+                  >
+                    {t.read_more}{" "}
+                    <ArrowTopRight class="inline h-4 w-4 shrink-0 fill-current " />
+                  </a>
+                </div>
+              </article>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="container">
+      <ReviewCard avatar={avatar}>
+        <p class="inline">
+          {t.review.message}
+        </p>
+        <p slot="author">{t.review.author.occupation}</p>
+        <p slot="author">{t.review.author.name}</p>
+      </ReviewCard>
+    </div>
+  </section>
+</Layout>
+<script>
+  const filterButtons = Array.from(
+    document.querySelectorAll(".btn-filter")
+  ) as HTMLButtonElement[];
+
+  const jobs = Array.from(
+    document.querySelectorAll("li.job")
+  ) as HTMLLIElement[];
+
+  /**
+   * Filter jobs based on the filter string
+   */
+  function filterJobs(filter: string) {
+    jobs.forEach((job) => {
+      const jobFilters = job.dataset.filter?.split(",") || [];
+
+      if (jobFilters.includes(filter)) {
+        job.dataset.active = "true";
+      } else {
+        job.dataset.active = "false";
+      }
+    });
+  }
+
+  /**
+   * Add event listeners to filter buttons
+   */
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filterButtons.forEach((btn) => {
+        btn.dataset.active = "false";
+      });
+
+      btn.dataset.active = "true";
+
+      filterJobs(btn.dataset.filter || "");
+    });
+  });
+
+  /**
+   * Filter jobs on page load
+   */
+  document.addEventListener("DOMContentLoaded", () => {
+    filterJobs(filterButtons[0].dataset.filter || "");
+  });
+</script>

@@ -1,0 +1,8 @@
+---
+import ProductConfiguratorPage from "@/blocks/ProductConfiguratorPage.astro";
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<ProductConfiguratorPage locale={lang} />

@@ -1,0 +1,9 @@
+---
+import CasesPage from "@/blocks/cases/CasesPage.astro";
+
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<CasesPage locale={lang} />

@@ -1,9 +1,10 @@
 {
   "common": {
-    "see_other_cases": "See our <0>other</0> cases!",
+    "see_solution": "Lösung anzeigen",
+    "see_other_cases": "Sehen Sie unsere <0>anderen</0> Fälle!",
     "lets_build_together": {
-      "lets_build_together": " Lassen Sie uns <0>gemeinsam</0> bauen.",
-      "body": " Wir ermöglichen es Herstellern, die Produktmodellierung zu beherrschen, den Angebotsprozess zu optimieren, Fehler zu reduzieren und letztendlich maßgeschneiderte Lösungen zu liefern, die Kunden nachfragen.",
+      "lets_build_together": "Lassen Sie uns <0>gemeinsam</0> bauen.",
+      "body": "Wir ermöglichen es Herstellern, die Produktmodellierung zu beherrschen, den Angebotsprozess zu optimieren, Fehler zu reduzieren und letztendlich maßgeschneiderte Lösungen zu liefern, die Kunden nachfragen.",
       "contact_us": "Kontaktieren Sie uns"
     },
     "scroll_for_more": "Weiter scrollen",
@@ -11,8 +12,8 @@
     "email": "E-Mail",
     "breadcrumb": {
       "label": "Breadcrumb",
-      "articles": "Articles",
-      "product": "Product"
+      "articles": "Artikel",
+      "product": "Produkt"
     },
     "product": "Produkt",
     "contact_form": {
@@ -84,211 +85,298 @@
     "contact_us": "Kontaktieren Sie uns",
     "cases": {
       "title": "Fälle",
-      "read_our_latest_cases": " Lesen Sie unsere neuesten <0/> Fälle <1>hier</1>"
+      "read_our_latest_cases": "Lesen Sie unsere neuesten <0/> Fälle <1>hier</1>"
     },
     "information": "Information",
     "add_ons": "Add-ons",
     "links": {
-      "cookies": "Cookie- und Datenschutzrichtlinie"
+      "cookies": "Cookies"
     }
   },
   "pages": {
+    "multiliving_3d_renderings": {
+      "title": "Multi-Living 3D-Renderings",
+      "heading": "3D-Renderings <0/><1>für Multi-Living</1>",
+      "heading_text": "3D-Renderings für Multi-Living",
+      "visual_appeal": {
+        "label": "Das Problem",
+        "heading": "Visuelle Anziehungskraft",
+        "text_1": "Als Hersteller von Küchen ist eines der wichtigsten Aspekte Ihres Geschäfts die Möglichkeit, Ihre Produkte auf eine visuell ansprechende und informative Weise zu präsentieren. Hier kommen 3D-Renderings und ein 3D-Küchenkonfigurator ins Spiel.",
+        "text_2": "3D-Renderings sind entscheidend, um das Design und die Funktionalität Ihrer Küchenelemente zu präsentieren. Dies ermöglicht es Kunden, zu sehen, wie das endgültige Produkt aussehen wird und wie es in ihren Raum passt. Ein 3D-Küchenkonfigurator ist ein leistungsstolles Tool, das es Kunden ermöglicht, ihre Küchen nach ihren individuellen Bedürfnissen und Vorlieben anzupassen. Durch die Verwendung eines 3D-Küchenkonfigurators können Kunden aus einer Vielzahl von Optionen wählen, um ihre Traumküche zu gestalten."
+      },
+      "beautiful_visualization": {
+        "label": "Die Lösung",
+        "heading": "Schöne Visualisierung",
+        "text_1": "Als Vorprojekt für einen Küchenkonfigurator hat Mercura mehr als 11.000 Renderings und 3D-Modelle aller Küchenelemente von Multi-Living geliefert. Die Qualität ist erstklassig und bietet dänischen Küchenkäufern ein ausgezeichnetes Einkaufserlebnis, wenn sie zwischen verschiedenen Elementen für die Küche wählen müssen. Die Modelle eignen sich auch hervorragend für einen Konfigurator."
+      },
+      "review": {
+        "message": "Wir sind äußerst zufrieden mit der Zusammenarbeit mit Mercura. Ihre Professionalität und Qualität waren von höchster Güte, und wir würden sie gerne jedem anderen empfehlen, der an 3D-Modellierung und Online-Konfiguratoren interessiert ist.",
+        "author": {
+          "name": "Ove Dalsgaard",
+          "occupation": "CEO, Multi-Living A/S"
+        }
+      }
+    },
+    "lindab_garage": {
+      "title": "Lindab Garagentor-Konfigurator",
+      "heading": "<0>Lindab</0> Garagentor <1/>Konfigurator",
+      "heading_text": "Lindab Garagentor-Konfigurator",
+      "long_sales_cycles": {
+        "label": "Das Problem",
+        "heading": "Lange Verkaufszyklen",
+        "text_1": "Lindab ist ein führendes Fertigungsunternehmen, das auf Lüftungs- und Bauprodukte spezialisiert ist. In den letzten Jahren hat das Unternehmen starkes Wachstum verzeichnet, was zu einem zeitaufwändigeren Verkaufsprozess geführt hat.",
+        "text_2": "Als Hersteller von Bauprodukten kann eine der größten Herausforderungen im Verkaufsprozess darin bestehen, dass es kein Konfigurationstool gibt, mit dem Kunden ihre eigenen Garagentore anpassen können. Ohne solche Tools muss Ihr Verkaufsteam erhebliche Zeit und Mühe investieren, um ein Garagentor von Grund auf zu entwerfen, um die spezifischen Bedürfnisse und Vorlieben der Kunden zu erfüllen."
+      },
+      "beautiful_visualization": {
+        "label": "Die Lösung",
+        "heading": "Schöne Visualisierung",
+        "text_1": "Wir haben einen sehr intuitiven Konfigurator für Lindab entwickelt, der Endbenutzern und Händlern hilft, ihre Lösungen für Garagentore zu visualisieren und zu konkretisieren. Der Konfigurator umfasst alle Garagentorvariationen, die Lindab verkauft."
+      },
+      "review": {
+        "message": "Eine große Empfehlung für Mercura und ihr Team. Sie sind äußerst professionell und sehr gut darin, einen Überblick über komplexe Produktbeschränkungen und Preislogik zu erhalten. Unser Konfigurator ist sehr gut darin, unsere Garagentore zu visualisieren, was uns eine kürzere Markteinführungszeit ermöglicht, uns für Kunden zugänglicher macht und uns dabei geholfen hat, interne Verkaufsprozesse zu optimieren, was uns helfen wird, unser Geschäft auszubauen.",
+        "author": {
+          "name": "Birgitte Kjær Hansen",
+          "occupation": "Marketing Manager, Lindab A/S"
+        }
+      },
+      "increase_sales_volume": {
+        "label": "Die Lösung",
+        "heading": "Umsatzsteigerung",
+        "subtext": "Ein Konfigurationstool, das Händlern und Endverbrauchern ermöglicht, ihr eigenes Garagentor zu erstellen, kann Ihrem Unternehmen viele Vorteile bieten. Es kann den Verkaufsprozess vereinfachen, die Arbeitsbelastung Ihres Verkaufsteams reduzieren und Kunden ermöglichen, Garagentore zu erstellen, die perfekt ihren Bedürfnissen und Vorlieben entsprechen. Dies bietet einzigartige Einblicke in die Bedürfnisse der Kunden, die für Marketing- und Produktentwicklungszwecke genutzt werden können."
+      },
+      "lindab_experience": {
+        "heading": "Lindab hat eine kürzere Markteinführungszeit erlebt und ist kundenfreundlicher geworden.",
+        "subtext": "Mit anderen Worten, Mercura hat ihnen geholfen, sich von ihren Mitbewerbern abzuheben und ihren Umsatz zu steigern. Studien haben gezeigt, dass ein Konfigurationstool die Konversionsraten bei Angeboten um 40 % steigern und die durchschnittlichen Verkaufspreise um 30 % erhöhen kann."
+      }
+    },
+    "migatronic_configurator": {
+      "title": "Migatronic Konfigurator",
+      "heading": "<0>Migatronic</0> Lorem <1/>ipsum Konfigurator",
+      "heading_text": "Migatronic Konfigurator",
+      "long_sales_cycles": {
+        "label": "Das Problem",
+        "heading": "Lange Verkaufszyklen",
+        "text_1": "Wir haben einen sehr intuitiven Konfigurator für Lindab entwickelt, der Endbenutzern und Händlern hilft, ihre Lösungen für Garagentore zu visualisieren und zu konkretisieren. Der Konfigurator umfasst alle Garagentorvariationen, die Lindab verkauft.",
+        "text_2": "Wir haben einen sehr intuitiven Konfigurator für Lindab entwickelt, der Endbenutzern und Händlern hilft, ihre Lösungen für Garagentore zu visualisieren und zu konkretisieren. Der Konfigurator umfasst alle Garagentorvariationen, die Lindab verkauft."
+      },
+      "beautiful_visualization": {
+        "label": "Die Lösung",
+        "heading": "Schöne Visualisierung",
+        "text_1": "Wir haben einen sehr intuitiven Konfigurator für Lindab entwickelt, der Endbenutzern und Händlern hilft, ihre Lösungen für Garagentore zu visualisieren und zu konkretisieren. Der Konfigurator umfasst alle Garagentorvariationen, die Lindab verkauft.",
+        "text_2": "Wir haben einen sehr intuitiven Konfigurator für Lindab entwickelt, der Endbenutzern und Händlern hilft, ihre Lösungen für Garagentore zu visualisieren und zu konkretisieren. Der Konfigurator umfasst alle Garagentorvariationen, die Lindab verkauft."
+      },
+      "review": {
+        "message": "Mercura hat unsere Wünsche nach einem neuen Produktkonfigurator für unsere Stifte und Schlüsselanhänger auf noble Weise erfüllt.",
+        "author": {
+          "name": "Birgitte Kjær Hansen",
+          "occupation": "Marketing Manager, Lindab A/S"
+        }
+      },
+      "increase_sales_volume": {
+        "label": "Die Lösung",
+        "heading": "Umsatzsteigerung",
+        "subtext": "Ein Konfigurationstool, das Händlern und Endverbrauchern ermöglicht, ihr eigenes Garagentor zu erstellen, kann Ihrem Unternehmen viele Vorteile bieten. Es kann den Verkaufsprozess vereinfachen, die Arbeitsbelastung Ihres Verkaufsteams reduzieren und Kunden ermöglichen, Garagentore zu erstellen, die perfekt ihren Bedürfnissen und Vorlieben entsprechen. Dies bietet einzigartige Einblicke in die Bedürfnisse der Kunden, die für Marketing- und Produktentwicklungszwecke genutzt werden können."
+      },
+      "lindab_experience": {
+        "heading": "Lindab hat eine kürzere Markteinführungszeit erlebt und ist kundenfreundlicher geworden.",
+        "subtext": "Mit anderen Worten, Mercura hat ihnen geholfen, sich von ihren Mitbewerbern abzuheben und ihren Umsatz zu steigern. Studien haben gezeigt, dass ein Konfigurationstool die Konversionsraten bei Angeboten um 40 % steigern und die durchschnittlichen Verkaufspreise um 30 % erhöhen kann."
+      }
+    },
     "audi_configurator": {
-      "title": "Audi Configurator",
-      "heading": "<0>Audi</0> Configurator",
-      "heading_text": "Audi Configurator",
+      "title": "Audi Konfigurator",
+      "heading": "<0>Audi</0> Konfigurator",
+      "heading_text": "Audi Konfigurator",
       "reviews": {
-        "message": "We have been extremely happy with the collaboration with Mercura. Their professionalism and quality has been of the highest order and we would happily recommend them to anyone else interested in 3D modeling and online configurators.",
+        "message": "Wir waren äußerst zufrieden mit der Zusammenarbeit mit Mercura. Ihre Professionalität und Qualität waren von höchster Güte, und wir würden sie gerne jedem anderen empfehlen, der an 3D-Modellierung und Online-Konfiguratoren interessiert ist.",
         "author": {
           "name": "Ove Dalsgaard",
           "occupation": "CEO, Multi-Living A/S"
         }
       },
       "beautiful_visualization": {
-        "label": "The Solution",
-        "heading": "Beautiful visualization",
-        "subtext": "We have created an Audi Q3 demo project to illustrate our competences within configurators. Here you can build your own Audi Q3 both externally and internally. Choose between regular Q3 and Sportsback, two different equipment models, 20 different colors, 13 different rims, mirrors, lights, roof and switch between 6 camera angles."
+        "label": "Die Lösung",
+        "heading": "Schöne Visualisierung",
+        "subtext": "Wir haben ein Audi Q3 Demo-Projekt erstellt, um unsere Kompetenzen im Bereich Konfiguratoren zu illustrieren. Hier können Sie Ihren eigenen Audi Q3 sowohl äußerlich als auch innerlich gestalten. Wählen Sie zwischen dem regulären Q3 und dem Sportsback, zwei verschiedenen Ausstattungsmodellen, 20 verschiedenen Farben, 13 verschiedenen Felgen, Spiegeln, Lichtern, Dach und wechseln Sie zwischen 6 Kamerawinkeln."
       }
     },
     "job_posting": {
-      "title": "Job Posting",
-      "heading": "Student Job: Digital Designer",
+      "title": "Stellenausschreibung",
+      "heading": "Studentenjob: Digital Designer",
       "about_job": {
-        "heading": "About the job",
-        "text_1": "We are a dynamic and innovative software company based in Aarhus, Denmark, specializing in providing cutting-edge product configurator solutions to industrial companies. Our software enables our clients to create customized and visually stunning product configurations in        both 2D and 3D. <br /> As we continue to grow and expand our services, we are seeking a talented and motivated Student Digital Designer to join our team.",
-        "text_2": "As a Student Digital Designer specializing in UI Design, you will play a key role in shaping the visual identity and user experience of our product configurators. You will be responsible for designing customer solutions that enhance their branding and marketing efforts, as well as contribute to our overall product development. Your main tool will be Figma, and you will work closely with our development and marketing teams."
+        "heading": "Über die Stelle",
+        "text_1": "Wir sind ein dynamisches und innovatives Softwareunternehmen mit Sitz in Aarhus, Dänemark, das sich auf die Bereitstellung modernster Produktkonfiguratorlösungen für Industrieunternehmen spezialisiert hat. Unsere Software ermöglicht es unseren Kunden, maßgeschneiderte und visuell beeindruckende Produktkonfigurationen sowohl in 2D als auch in 3D zu erstellen. <br /> Da wir weiter wachsen und unsere Dienstleistungen erweitern, suchen wir einen talentierten und motivierten Studenten für Digital Design, um sich unserem Team anzuschließen.",
+        "text_2": "Als Student für Digital Design mit Schwerpunkt UI-Design spielen Sie eine wichtige Rolle bei der Gestaltung der visuellen Identität und Benutzererfahrung unserer Produktkonfiguratoren. Sie sind verantwortlich für die Gestaltung von Kundensolutions, die ihre Marken- und Marketingbemühungen verbessern, sowie für die Beitrag zur allgemeinen Produktentwicklung. Ihr Hauptwerkzeug wird Figma sein, und Sie werden eng mit unseren Entwicklungs- und Marketingteams zusammenarbeiten."
       },
       "responsibilities": {
-        "heading": "Responsibilities",
+        "heading": "Verantwortlichkeiten",
         "list": [
-          "Collaborate with cross-functional teams to gather requirements and understand design needs for customer solutions, marketing materials, branding assets, and product development.",
-          "Create visually engaging UI designs for our product configurators, ensuring intuitive user experiences and seamless navigation.",
-          "Use Figma to develop wireframes, prototypes, and high-fidelity mockups that align with our clients’ brand guidelines and design principles.",
-          "Contribute to the continuous improvement of our design processes, ensuring efficient collaboration and effective communication.",
-          "Stay up-to-date with industry trends and best practices in UI design, applying them to deliver cutting-edge and innovative design solutions.",
-          "Collaborate with the marketing team to create visually appealing graphics, infographics, and other marketing materials that effectively communicate our value proposition.",
-          "Assist in maintaining and evolving our brand identity through the creation of consistent and compelling visual assets."
+          "Zusammenarbeit mit interdisziplinären Teams, um Anforderungen zu sammeln und Designanforderungen für Kundensolutions, Marketingmaterialien, Markenvermögen und Produktentwicklung zu verstehen.",
+          "Erstellung visuell ansprechender UI-Designs für unsere Produktkonfiguratoren, um eine intuitive Benutzererfahrung und nahtlose Navigation zu gewährleisten.",
+          "Verwendung von Figma zur Entwicklung von Drahtgittern, Prototypen und hochauflösenden Mockups, die den Markenrichtlinien und Designprinzipien unserer Kunden entsprechen.",
+          "Beitrag zur kontinuierlichen Verbesserung unserer Designprozesse, um effiziente Zusammenarbeit und effektive Kommunikation sicherzustellen.",
+          "Aktualisierung mit branchenüblichen Trends und Best Practices im UI-Design und Anwendung dieser Trends zur Bereitstellung moderner und innovativer Designlösungen.",
+          "Zusammenarbeit mit dem Marketingteam zur Erstellung visuell ansprechender Grafiken, Infografiken und anderer Marketingmaterialien, um unseren Wertversprechen effektiv zu kommunizieren.",
+          "Mithilfe bei der Aufrechterhaltung und Weiterentwicklung unserer Markenidentität durch die Erstellung konsistenter und überzeugender visueller Vermögenswerte."
         ]
       },
       "what_to_expect": {
-        "heading": "What you can expect from us",
+        "heading": "Was Sie von uns erwarten können",
         "list": [
-          "Valuable hands-on experience in the field of UI design and product development.",
-          "Opportunity to work with cutting-edge technologies and contribute to innovative software solutions in a small company with a flat organizational culture",
-          "Collaborative and inclusive work environment that values creativity and personal growth.",
-          "Flexible working hours to accommodate your academic schedule.",
-          "Competitive compensation package.",
-          "A lot of responsibility and the opportunity to see projects evolve from start to finish",
-          "Dialogue with customers where your inputs for the right solution will be heard",
-          "Opportunity to participate in professional workshops and social events"
+          "Wertvolle praktische Erfahrungen im Bereich UI-Design und Produktentwicklung.",
+          "Möglichkeit, mit modernsten Technologien zu arbeiten und zu innovativen Softwarelösungen in einem kleinen Unternehmen mit flacher Organisationsstruktur beizutragen.",
+          "Kollaborative und inklusive Arbeitsumgebung, die Kreativität und persönliches Wachstum schätzt.",
+          "Flexible Arbeitszeiten, um Ihren akademischen Zeitplan zu berücksichtigen.",
+          "Wettbewerbsfähiges Vergütungspaket.",
+          "Vielfältige Verantwortlichkeiten und die Möglichkeit, Projekte von Anfang bis Ende zu begleiten.",
+          "Dialog mit Kunden, bei dem Ihre Inputs für die richtige Lösung gehört werden.",
+          "Möglichkeit zur Teilnahme an professionellen Workshops und sozialen Veranstaltungen."
         ]
       },
       "qualifications": {
-        "heading": "Qualifications",
+        "heading": "Qualifikationen",
         "list": [
-          "Currently enrolled as a student in a relevant field such as Digital Design, Graphic Design, Interaction Design, or a related discipline.",
-          "Proficiency in UI design tools, with a strong emphasis on Figma.",
-          "Understanding of design principles, user-centered design, and visual storytelling.",
-          "Creative mindset with a keen eye for detail and aesthetics.",
-          "Excellent communication and collaboration skills, able to effectively work within cross-functional teams.",
-          "Ability to manage multiple projects and meet deadlines in a fast-paced environment.",
-          "Strong portfolio showcasing your UI design skills and ability to create visually appealing digital experiences."
+          "Derzeit als Student in einem relevanten Studiengang wie Digital Design, Grafikdesign, Interaktionsdesign oder einer verwandten Disziplin eingeschrieben.",
+          "Beherrschung von UI-Design-Tools, mit einem starken Schwerpunkt auf Figma.",
+          "Verständnis von Designprinzipien, nutzerzentriertem Design und visueller Erzählung.",
+          "Kreativer Ansatz mit einem geschulten Auge für Details und Ästhetik.",
+          "Ausgezeichnete Kommunikations- und Zusammenarbeitsfähigkeiten, die eine effektive Arbeit in interdisziplinären Teams ermöglichen.",
+          "Fähigkeit, mehrere Projekte zu verwalten und Fristen in einer schnelllebigen Umgebung einzuhalten.",
+          "Starkes Portfolio, das Ihre UI-Design-Fähigkeiten und Ihre Fähigkeit zur Erstellung visuell ansprechender digitaler Erlebnisse zeigt."
         ]
       },
       "hiring": {
-        "heading": "Our hiring process.",
+        "heading": "Unser Einstellungsprozess",
         "steps": {
           "send_application": {
-            "title": "Send an application",
-            "description": "Thanks for your application and interest in working at Mercura. We look forward to getting to know you better."
+            "title": "Bewerbung senden",
+            "description": "Vielen Dank für Ihre Bewerbung und Ihr Interesse an der Arbeit bei Mercura. Wir freuen uns darauf, Sie besser kennenzulernen."
           },
           "informal_conversation": {
-            "title": "Informal Conversation",
-            "description": "Your profile has captured our attention. We invite you to a conversation with our HR consultant over a cup of coffee in our office."
+            "title": "Informelles Gespräch",
+            "description": "Ihr Profil hat unsere Aufmerksamkeit erregt. Wir laden Sie zu einem Gespräch mit unserem HR-Berater bei einer Tasse Kaffee in unserem Büro ein."
           },
           "design_test": {
-            "title": "We will send you a design test",
-            "description": "You receive a design test based on a specific task. When the test is submitted, it will be reviewed by our marketing department."
+            "title": "Wir senden Ihnen einen Design-Test",
+            "description": "Sie erhalten einen Design-Test basierend auf einer spezifischen Aufgabe. Nach Einreichung des Tests wird er von unserer Marketingabteilung überprüft."
           },
           "technical_interview": {
-            "title": "Technical Interview",
-            "description": "After the test, we invite you to a technical interview. Here you will meet our marketing department who will go through the test with you."
+            "title": "Technisches Interview",
+            "description": "Nach dem Test laden wir Sie zu einem technischen Interview ein. Hier werden Sie unsere Marketingabteilung treffen, die den Test mit Ihnen durchgehen wird."
           },
           "team": {
-            "title": "Welcome to the Mercura team",
-            "description": "We will meet again and sign the contract. Here you also receive an onboarding program so that you are ready to become a digital designer at Mercura."
+            "title": "Willkommen im Team von Mercura",
+            "description": "Wir werden uns wiedersehen und den Vertrag unterzeichnen. Hier erhalten Sie auch ein Einführungsprogramm, um als Digital Designer bei Mercura einsatzbereit zu sein."
           }
         }
       }
     },
     "articles": {
-      "title": "Articles",
-      "heading": "Articles",
-      "subtext": "Here you can find a lot of useful information about product configurators, room planners, CPQ."
+      "title": "Artikel",
+      "heading": "Artikel",
+      "subtext": "Hier finden Sie viele nützliche Informationen über Produktkonfiguratoren, Raumplaner und CPQ."
     },
     "careers": {
-      "title": "Career",
-      "heading": "Career at Mercura",
-      "subtext": "We are always looking for new stars. If you have a towering level of ambition, we would love to hear from you, regardless of whether it is an internship, a student job or a full time position.",
+      "title": "Karriere",
+      "heading": "Karriere bei Mercura",
+      "subtext": "Wir suchen immer nach neuen Talenten. Wenn Sie ein hohes Maß an Ambitionen haben, würden wir gerne von Ihnen hören, unabhängig davon, ob es sich um ein Praktikum, einen Studentenjob oder eine Vollzeitstelle handelt.",
       "review": {
-        "message": "Mercura has fulfilled our wishes for a new product configurator for our pens and key tags in a most noble way.",
+        "message": "Mercura hat unsere Wünsche nach einem neuen Produktkonfigurator für unsere Stifte und Schlüsselanhänger auf noble Weise erfüllt.",
         "author": {
           "name": "Martin Johansen",
           "occupation": "CEO, Mercura A/S"
         }
       },
-      "read_more": "Read More",
+      "read_more": "Mehr erfahren",
       "jobs": [
         {
-          "title": "Software Developer",
-          "type": "Full time",
+          "title": "Softwareentwickler",
+          "type": "Vollzeit",
           "link": "#",
-          "categories": ["Product Development"],
-          "description": "Are you passionate about software development and do you dream of running a business with lots of responsibility? If so, then Mercura is the place for you."
+          "categories": ["Produktentwicklung"],
+          "description": "Sind Sie leidenschaftlich in der Softwareentwicklung und träumen Sie von einem Unternehmen mit viel Verantwortung? Dann ist Mercura der richtige Ort für Sie."
         },
         {
-          "title": "Backend Developer",
-          "type": "Student job",
+          "title": "Backend-Entwickler",
+          "type": "Studentenjob",
           "link": "#",
-          "categories": ["Product Development"],
-          "description": "Are you passionate about software development and are you looking for an exciting and challenging student job with lots of responsibility and influence from the start? If so, then Mercura is the place for you."
+          "categories": ["Produktentwicklung"],
+          "description": "Sind Sie leidenschaftlich in der Softwareentwicklung und suchen Sie einen aufregenden und anspruchsvollen Studentenjob mit viel Verantwortung und Einfluss von Anfang an? Dann ist Mercura der richtige Ort für Sie."
         },
         {
-          "title": "Backend Developer",
-          "type": "Student job",
+          "title": "Frontend-Entwickler",
+          "type": "Studentenjob",
           "link": "#",
-          "categories": ["Product Development"],
-          "description": "If you love working with Front-End development and are an expert in JavaScript, HTML, and CSS, then Mercura is the place for you."
+          "categories": ["Produktentwicklung"],
+          "description": "Wenn Sie die Arbeit im Bereich Frontend-Entwicklung lieben und ein Experte in JavaScript, HTML und CSS sind, dann ist Mercura der richtige Ort für Sie."
         },
         {
           "title": "Business Development",
-          "type": "Internship",
+          "type": "Praktikum",
           "link": "#",
           "categories": ["Business Development"],
-          "description": "If you are studying business and are looking for an internship, then Mercura is the place for you. Become part of a growing software company where there is plenty of responsibility from day one."
+          "description": "Studieren Sie BWL und suchen Sie ein Praktikum? Dann ist Mercura der richtige Ort für Sie. Werden Sie Teil eines wachsenden Softwareunternehmens, bei dem es von Anfang an viel Verantwortung gibt."
         },
         {
-          "title": "UI/UX Designer",
-          "type": "Internship",
+          "title": "UI/UX-Designer",
+          "type": "Praktikum",
           "link": "#",
           "categories": ["Design"],
-          "description": "Do you love coming up with creative graphic solutions?"
+          "description": "Lieben Sie es, kreative grafische Lösungen zu entwickeln?"
         },
         {
           "title": "Digital Designer",
-          "type": "Student job",
-          "link": "/career/digital-designer",
+          "type": "Studentenjob",
+          "link": "Karriere-Digital-Designer",
           "categories": ["Design"],
-          "description": "Get a student job at Mercura and gain practical experience with front-end design of our software solutions."
+          "description": "Holen Sie sich einen Studentenjob bei Mercura und sammeln Sie praktische Erfahrungen in der Frontend-Gestaltung unserer Softwarelösungen."
         }
       ]
     },
     "cpq": {
-        "title": "CPQ",
-        "heading": "CPQ (Configure, Price, Quote)",
-        "subheading": "CPQ, or Configure Price Quote, software is a powerful tool that helps companies streamline and automate their sales process. It allows sales teams to easily create accurate and professional quotes and proposals for customers, as well as manage pricing and product configurations.",
-        "automate_sales": "Automate sales process with dynamic quoting and pricing",
-        "order_handling": "Ensure error free order handling and production",
-        "scale_your_business": "Scale your business into new markets",
-        "reduce_errors": {
-          "heading": "Reduce errors and inconsistencies",
-          "text_1": "One of the key advantages of CPQ software is that it can help to reduce errors and inconsistencies in the sales process. For example, it can ensure that sales reps are always using the most up-to-date pricing and product information, and that quotes and proposals always include all the necessary terms and conditions.",
-          "text_2": "Another advantage of CPQ software is that it can help to speed up the sales process. By automating the creation of quotes and proposals, sales reps can spend more time engaging with customers and closing deals. Additionally, CPQ software can also help to reduce the time and        effort required to manage pricing and product configurations, allowing sales teams to focus on more high-value activities."
-        },
-        "cpq_software": {
-          "heading": "CPQ software",
-          "text_1": "CPQ software can also help to improve the customer experience. It allows customers to easily customize products and services to meet their specific needs, and to see real-time pricing and availability information. This can help to increase customer satisfaction and loyalty. <br />         CPQ software can also be integrated with other systems, such as CRM  and ERP, to provide a more holistic view of the sales process. For example, it can automatically update customer records with the latest information from quotes and proposals, or trigger follow-up activities such as invoicing and shipping.",
-          "text_2": "Another important aspect of configurators is the flexibility and scalability. Businesses need to ensure that the configurator can be easily updated and modified as new products and options are introduced. This can include adding new colors, materials, or features, as well as updating pricing and availability. Additionally,  businesses need to consider how to ensure the configurator can handle a large number of options and combinations, especially if the configurator is used for complex products like cars or machinery."
-        },
-        "types_of_cpq_software": {
-          "heading": "Types of CPQ software.",
-          "subtext": "There are several types of CPQ software available, including cloud-based and on-premises solutions. Cloud-based CPQ software is typically easier to set up and manage, and can be accessed from any device with an internet connection. On-premises solutions, on the other hand, are typically more customizable and can be integrated more easily with other systems. <br /> <br /> When choosing a CPQ software, it is important to consider the specific needs of your business. For example, if you have complex product configurations or pricing structures, you may need a more powerful and customizable solution. On the other hand, if you have a relatively simple sales process and need a quick and easy olution, a cloud-based CPQ software may be more suitable."
-        },
-        "overall_statement": "Overall, CPQ software is a powerful tool that can help companies to streamline and automate their sales process, reduce errors and inconsistencies, speed up the sales process, improve customer experience and integrate with other systems. It allows sales teams to focus on high-value activities and close more deals with less effort. With the right CPQ solution in place, businesses can see a significant improvement in efficiency and revenue growth."
-
+      "title": "CPQ",
+      "heading": "CPQ (Konfigurieren, Preis, Angebot)",
+      "subheading": "CPQ-Software oder Konfigurieren-Preis-Angebot-Software ist ein leistungsstarkes Werkzeug, das Unternehmen dabei unterstützt, ihren Vertriebsprozess zu optimieren und zu automatisieren. Sie ermöglicht Vertriebsteams, einfach genaue und professionelle Angebote und Vorschläge für Kunden zu erstellen sowie Preise und Produktkonfigurationen zu verwalten.",
+      "automate_sales": "Automatisieren Sie den Vertriebsprozess durch dynamische Angebots- und Preisgestaltung",
+      "order_handling": "Gewährleisten Sie eine fehlerfreie Auftragsabwicklung und Produktion",
+      "scale_your_business": "Skalieren Sie Ihr Unternehmen in neue Märkte",
+      "reduce_errors": {
+        "heading": "Fehler und Inkonsistenzen reduzieren",
+        "text_1": "Einer der Hauptvorteile von CPQ-Software besteht darin, dass sie dazu beitragen kann, Fehler und Inkonsistenzen im Vertriebsprozess zu reduzieren. Beispielsweise kann sie sicherstellen, dass Vertriebsmitarbeiter immer die aktuellsten Preis- und Produktinformationen verwenden und dass Angebote und Vorschläge immer alle erforderlichen Bedingungen und Konditionen enthalten.",
+        "text_2": "Ein weiterer Vorteil von CPQ-Software besteht darin, dass sie den Vertriebsprozess beschleunigen kann. Durch die Automatisierung der Erstellung von Angeboten und Vorschlägen können Vertriebsmitarbeiter mehr Zeit damit verbringen, Kunden zu betreuen und Deals abzuschließen. Darüber hinaus kann CPQ-Software auch dazu beitragen, den Zeitaufwand und die Mühe bei der Verwaltung von Preisgestaltung und Produktkonfigurationen zu reduzieren, wodurch Vertriebsteams sich auf wertvollere Aktivitäten konzentrieren können."
+      },
+      "cpq_software": {
+        "heading": "CPQ-Software",
+        "text_1": "CPQ-Software kann auch dazu beitragen, die Kundenerfahrung zu verbessern. Sie ermöglicht es Kunden, Produkte und Dienstleistungen einfach an ihre spezifischen Bedürfnisse anzupassen und Echtzeit-Preis- und Verfügbarkeitsinformationen zu sehen. Dies kann dazu beitragen, die Kundenzufriedenheit und -loyalität zu steigern. <br /> CPQ-Software kann auch in andere Systeme wie CRM und ERP integriert werden, um einen ganzheitlichen Blick auf den Vertriebsprozess zu bieten. Beispielsweise kann sie Kundenakten automatisch mit den neuesten Informationen aus Angeboten und Vorschlägen aktualisieren oder Folgeaktivitäten wie Rechnungsstellung und Versand auslösen.",
+        "text_2": "Ein weiterer wichtiger Aspekt von Konfiguratoren ist die Flexibilität und Skalierbarkeit. Unternehmen müssen sicherstellen, dass der Konfigurator leicht aktualisiert und angepasst werden kann, wenn neue Produkte und Optionen eingeführt werden. Dies kann das Hinzufügen neuer Farben, Materialien oder Funktionen sowie die Aktualisierung von Preisen und Verfügbarkeit umfassen. Darüber hinaus müssen Unternehmen darüber nachdenken, wie sie sicherstellen können, dass der Konfigurator eine große Anzahl von Optionen und Kombinationen bewältigen kann, insbesondere wenn der Konfigurator für komplexe Produkte wie Autos oder Maschinen verwendet wird."
+      },
+      "types_of_cpq_software": {
+        "heading": "Arten von CPQ-Software.",
+        "subtext": "Es gibt verschiedene Arten von CPQ-Software, darunter cloudbasierte und On-Premises-Lösungen. Cloudbasierte CPQ-Software ist in der Regel einfacher einzurichten und zu verwalten und kann von jedem Gerät mit Internetverbindung aus abgerufen werden. On-Premises-Lösungen hingegen sind in der Regel anpassbarer und können leichter in andere Systeme integriert werden. <br /> <br /> Bei der Auswahl einer CPQ-Software ist es wichtig, die spezifischen Anforderungen Ihres Unternehmens zu berücksichtigen. Wenn Sie beispielsweise komplexe Produktkonfigurationen oder Preismodelle haben, benötigen Sie möglicherweise eine leistungsstärkere und anpassbare Lösung. Wenn Sie andererseits einen relativ einfachen Verkaufsprozess haben und eine schnelle und einfache Lösung benötigen, ist eine cloudbasierte CPQ-Software möglicherweise besser geeignet."
+      },
+      "overall_statement": "Insgesamt ist CPQ-Software ein leistungsstarkes Werkzeug, das Unternehmen dabei helfen kann, ihren Verkaufsprozess zu optimieren und zu automatisieren, Fehler und Inkonsistenzen zu reduzieren, den Verkaufsprozess zu beschleunigen, die Kundenerfahrung zu verbessern und sich in andere Systeme zu integrieren. Dies ermöglicht es Vertriebsteams, sich auf wertschöpfende Aktivitäten zu konzentrieren und mit weniger Aufwand mehr Geschäfte abzuschließen. Mit der richtigen CPQ-Lösung können Unternehmen eine signifikante Verbesserung der Effizienz und des Umsatzwachstums erzielen."
     },
     "seo_1": {
-      "title": "Configurator",
-      "heading": "Configurator",
-      "subheading": "A configurator, also known as a product configurator or product builder, is a software tool that allows customers to customize and personalize products to their exact specifications. These tools are used by a wide range of industries, including manufacturing, automotive, and furniture, and can be integrated into e-commerce platforms or standalone software.",
-      "increase_conversion": "Increase conversion rates and Average Order Values",
-      "order_handling": "Ensure error free order handling and production",
-      "insight": "Gain a deeper insight into customer needs",
+      "title": "Konfigurator",
+      "heading": "Konfigurator",
+      "subheading": "Ein Konfigurator, auch als Produktkonfigurator oder Produktkonstrukteur bekannt, ist ein Software-Tool, das es Kunden ermöglicht, Produkte nach ihren genauen Spezifikationen anzupassen und zu personalisieren. Diese Tools werden von einer Vielzahl von Branchen eingesetzt, einschließlich Fertigung, Automobil und Möbel, und können in E-Commerce-Plattformen integriert oder als eigenständige Software verwendet werden.",
+      "increase_conversion": "Steigern Sie die Konversionsraten und den durchschnittlichen Bestellwert",
+      "order_handling": "Gewährleisten Sie fehlerfreie Auftragsabwicklung und Produktion",
+      "insight": "Erhalten Sie tiefere Einblicke in die Kundenbedürfnisse",
       "personalization": {
-        "heading": " Offers personalization & reduction of costs",
-        "text_1": " A configurator, also known as a product configurator or product builder, is a software tool that allows customers to customize and personalize products to their exact specifications. These tools are used by a wide range of industries, including manufacturing, automotive, and furniture, and can be integrated into e-commerce platforms or standalone software.",
-        "text_2": "  Another benefit of configurators is that they can help businesses reduce costs and improve efficiency. By allowing customers to design and order products online, configurators can reduce the need for sales representatives and physical showrooms. Additionally, configurators can help streamline the manufacturing process by allowing customers to specify exactly what they want, reducing the need for custom orders and prototypes."
+        "heading": "Bietet Personalisierung und Kostensenkung",
+        "text_1": "Ein Konfigurator, auch als Produktkonfigurator oder Produktkonstrukteur bekannt, ist ein Software-Tool, das es Kunden ermöglicht, Produkte nach ihren genauen Spezifikationen anzupassen und zu personalisieren. Diese Tools werden von einer Vielzahl von Branchen eingesetzt, einschließlich Fertigung, Automobil und Möbel, und können in E-Commerce-Plattformen integriert oder als eigenständige Software verwendet werden.",
+        "text_2": "Ein weiterer Vorteil von Konfiguratoren besteht darin, dass sie Unternehmen dabei helfen können, Kosten zu senken und die Effizienz zu steigern. Durch die Möglichkeit für Kunden, Produkte online zu gestalten und zu bestellen, können Konfiguratoren den Bedarf an Vertriebsmitarbeitern und physischen Ausstellungsräumen reduzieren. Darüber hinaus können Konfiguratoren den Herstellungsprozess optimieren, indem sie Kunden die genaue Spezifikation dessen ermöglichen, was sie möchten, was den Bedarf an kundenspezifischen Bestellungen und Prototypen reduziert."
       },
       "intuitive_user_interface": {
-        "heading": "Intuitive user <br /> interface",
-        "text_1": "One of the most important aspect of configurators is the user interface. It needs to be intuitive, easy to use and visually appealing. Customers should be able to understand and navigate the configurator easily. This can be achieved by providing clear instructions and labels, using high-quality images and videos, and displaying real-time visualizations of the product as it’s being        configured. This will help customers to make informed decisions and increase the chances of them making a purchase.",
-        "text_2": "Another important aspect of configurators is the flexibility and scalability. Businesses need to ensure that the configurator can be easily updated and modified as new products and options are introduced. This can include adding new colors, materials, or features, as well as updating pricing and availability. Additionally, businesses need to consider how to ensure the configurator can handle a large number of options and combinations, especially if the configurator is used for complex products like cars or machinery."
+        "heading": "Intuitive Benutzeroberfläche",
+        "text_1": "Eines der wichtigsten Aspekte von Konfiguratoren ist die Benutzeroberfläche. Sie muss intuitiv, benutzerfreundlich und optisch ansprechend sein. Kunden sollten den Konfigurator leicht verstehen und bedienen können. Dies kann durch klare Anweisungen und Beschriftungen, die Verwendung hochwertiger Bilder und Videos sowie die Anzeige von Echtzeitvisualisierungen des Produkts während der Konfiguration erreicht werden. Dies hilft Kunden, informierte Entscheidungen zu treffen und die Wahrscheinlichkeit eines Kaufs zu erhöhen.",
+        "text_2": "Ein weiterer wichtiger Aspekt von Konfiguratoren ist die Flexibilität und Skalierbarkeit. Unternehmen müssen sicherstellen, dass der Konfigurator leicht aktualisiert und angepasst werden kann, wenn neue Produkte und Optionen eingeführt werden. Dies kann das Hinzufügen neuer Farben, Materialien oder Funktionen sowie die Aktualisierung von Preisen und Verfügbarkeit umfassen. Darüber hinaus müssen Unternehmen darüber nachdenken, wie der Konfigurator eine große Anzahl von Optionen und Kombinationen verarbeiten kann, insbesondere wenn der Konfigurator für komplexe Produkte wie Autos oder Maschinen verwendet wird."
       },
-      "challanges": {
-        "heading": "The challenges businesses need to consider.",
-        "subtext": "Despite the many benefits of configurators, there are also some challenges businesses need to consider when creating and maintaining them. One of the main challenges is ensuring that the configurator provides a high-quality user experience. This includes making sure that the configurator is easy to use and navigate, that it loads quickly, and that it is visually appealing. Businesses also need to        consider how to effectively showcase their products and options in a digital environment, and how to create a sense of trust and credibility with customers. <br /> <br /> Another challenge is keeping the configurator updated and relevant. As new products and options are introduced, businesses need to ensure that they are added to the configurator in a timely and accurate manner. Businesses also need to consider how to keep the configurator fresh and engaging, so that customers will continue to return and explore the products and options on offer."
+      "challenges": {
+        "heading": "Die Herausforderungen, die Unternehmen berücksichtigen müssen.",
+        "subtext": "Trotz der vielen Vorteile von Konfiguratoren gibt es auch einige Herausforderungen, die Unternehmen berücksichtigen müssen, wenn sie diese erstellen und pflegen. Eine der Hauptherausforderungen besteht darin, sicherzustellen, dass der Konfigurator ein hochwertiges Benutzererlebnis bietet. Dazu gehört, sicherzustellen, dass der Konfigurator einfach zu bedienen und zu navigieren ist, schnell lädt und optisch ansprechend ist. Unternehmen müssen auch darüber nachdenken, wie sie ihre Produkte und Optionen in einer digitalen Umgebung effektiv präsentieren können und wie sie ein Gefühl von Vertrauen und Glaubwürdigkeit bei den Kunden schaffen können. <br /> <br /> Eine weitere Herausforderung besteht darin, den Konfigurator aktualisiert und relevant zu halten. Wenn neue Produkte und Optionen eingeführt werden, müssen Unternehmen sicherstellen, dass sie zeitnah und genau zum Konfigurator hinzugefügt werden. Unternehmen müssen auch darüber nachdenken, wie sie den Konfigurator frisch und ansprechend halten können, damit Kunden weiterhin zurückkehren und die angebotenen Produkte und Optionen erkunden."
       },
-      "conclusion_statement": "In conclusion, configurators are powerful tools that allow customers to customize and personalize products to their exact specifications.They can help businesses increase customer satisfaction, reduce costs, and improve efficiency. Configurators also offer businesses the ability to"
+      "conclusion_statement": "Zusammenfassend sind Konfiguratoren leistungsstarke Tools, die es Kunden ermöglichen, Produkte nach ihren genauen Spezifikationen anzupassen und zu personalisieren. Sie können Unternehmen dabei helfen, die Kundenzufriedenheit zu steigern, Kosten zu reduzieren und die Effizienz zu verbessern. Konfiguratoren bieten Unternehmen auch die Möglichkeit,"
     },
     "cases": {
       "title": "Cases",
@@ -297,224 +385,224 @@
       "cases": {
         "migatronic": {
           "title": "Migatronic",
-          "description": "We have developed a very intuitive configurator for Lindab which helps end-users and dealers visualize and concretize their solutions on garage doors. The configurator includes all the garage door variations that Lindab sells. <br /> <br /> It includes more than 10.000 variations of the products even without taking the size into consideration."
+          "description": "Wir haben einen sehr intuitiven Konfigurator für Lindab entwickelt, der Endbenutzern und Händlern dabei hilft, ihre Lösungen für Garagentore zu visualisieren und konkretisieren. Der Konfigurator enthält alle Garagentorvarianten, die Lindab verkauft. <br /> <br /> Er umfasst mehr als 10.000 Varianten der Produkte, auch ohne Berücksichtigung der Größe."
         },
         "lindab_garage": {
-          "title": "<0>Lindab</0> Garage door Configurator",
-          "description": "We have developed a very intuitive configurator for Lindab which helps end-users and dealers visualize and concretize their solutions on garage doors. The configurator includes all the garage door variations that Lindab sells.<br /><br /> It includes more than 10.000 variations of the products even without taking the size into consideration."
+          "title": "Lindab Garagentor Konfigurator",
+          "description": "Wir haben einen sehr intuitiven Konfigurator für Lindab entwickelt, der Endbenutzern und Händlern dabei hilft, ihre Lösungen für Garagentore zu visualisieren und konkretisieren. Der Konfigurator enthält alle Garagentorvarianten, die Lindab verkauft.<br /><br /> Er umfasst mehr als 10.000 Varianten der Produkte, auch ohne Berücksichtigung der Größe."
         },
         "audi_config": {
-          "title": "<0>Audi</0> Configurator",
-          "description": "Here you can try our latest demo project and build your own Audi Q3 both from the outside and inside. Choose between regular Q3 and Sportsback, for different equipment models, 20 different colors, 13 different rims, mirrors, lights, roof and switch between 6 camera angles."
+          "title": "Audi Konfigurator",
+          "description": "Hier können Sie unser neuestes Demo-Projekt ausprobieren und Ihren eigenen Audi Q3 von außen und innen gestalten. Wählen Sie zwischen dem regulären Q3 und dem Sportsback, zwei verschiedenen Ausstattungsmodellen, 20 verschiedenen Farben, 13 verschiedenen Felgen, Spiegeln, Lichtern, Dach und wechseln Sie zwischen 6 Kamerawinkeln."
         },
         "3d_renderings": {
-          "title": "3D Renderings for <0>Multi-Living</0>",
-          "description": "As an initial phase towards delivering excellent shopping experiences to Danish kitchen consumers, Mercura has made more than 11,000 renderings and 3D models for Multi-Living."
+          "title": "3D-Renderings für Multi-Living",
+          "description": "Als erste Phase zur Bereitstellung exzellenter Einkaufserlebnisse für dänische Küchenkunden hat Mercura mehr als 11.000 Renderings und 3D-Modelle für Multi-Living erstellt."
         },
         "copla_playgrounds": {
-          "title": "Product configurator for <0>Copla Playgrounds</0>",
-          "description": "Copla requested an online 3D configurator where customers and business partners can configure an entire Copla playground and obtain an offer for it."
+          "title": "Produktkonfigurator für Copla-Spielplätze",
+          "description": "Copla hat einen Online-3D-Konfigurator angefordert, in dem Kunden und Geschäftspartner einen gesamten Copla-Spielplatz konfigurieren und ein Angebot dafür erhalten können."
         }
       }
     },
     "configuration_engine": {
-      "title": "Configuration Engine",
+      "title": "Konfigurations-Engine",
       "product_modelling_excellence": {
-        "text_1": "Product modeling excellence",
-        "text_2": "Within our system, you can seamlessly integrate your product structure from your PLM system. This includes Assemblies, Sub-assemblies, Positions, Modules, Parts, Domains, and Attributes. Imagine reusing modules and assemblies across various configurations, such as employing standardized gear components for different car models. This not only simplifies product modeling but also significantly reduces maintenance efforts for your Mercura product model. "
+        "text_1": "Exzellenz in der Produktmodellierung",
+        "text_2": "In unserem System können Sie nahtlos Ihre Produktstruktur aus Ihrem PLM-System integrieren. Dies umfasst Baugruppen, Unterbaugruppen, Positionen, Module, Teile, Domänen und Attribute. Stellen Sie sich vor, Module und Baugruppen in verschiedenen Konfigurationen wiederverwenden zu können, beispielsweise standardisierte Getriebekomponenten für verschiedene Fahrzeugmodelle einzusetzen. Dies vereinfacht nicht nur die Produktmodellierung erheblich, sondern reduziert auch signifikant den Wartungsaufwand für Ihr Mercura-Produktmodell."
       },
       "hero": {
-        "heading": "Pioneering <0>product excellence</0> for manufacturers",
-        "subtext": "When it comes to thriving in the intricate world of manufacturing,precision, efficiency, and innovation reign supreme. Mercura's Configure, Price, Quote (CPQ) solution for manufacturers is here to revolutionize how you engineer, configure, and quote your products, ensuring unwavering precision, accelerated sales cycles, and superior        customer satisfaction."
+        "heading": "Pionierarbeit für <0>Produktexzellenz</0> für Hersteller",
+        "subtext": "Wenn es darum geht, in der komplexen Welt der Fertigung zu gedeihen, stehen Präzision, Effizienz und Innovation an erster Stelle. Mercuras Lösung für Konfiguration, Preisgestaltung und Angebot (CPQ) für Hersteller ist da, um zu revolutionieren, wie Sie Ihre Produkte entwickeln, konfigurieren und kalkulieren. Damit gewährleisten wir absolute Präzision, beschleunigte Verkaufszyklen und überragende Kundenzufriedenheit."
       },
       "venn": {
-        "text_1": "Let us unveil your manufacturing success!",
-        "text_2": "Join the league of industry leaders who have embraced Mercura's CPQ solution to master product modeling, streamline quoting processes, reduce errors, and deliver tailored solutions that customers demand. Embrace Mercura CPQ, and let's redefine your manufacturing excellence."
+        "text_1": "Lassen Sie uns Ihren Erfolg in der Fertigung enthüllen!",
+        "text_2": "Schließen Sie sich der Liga der Branchenführer an, die Mercuras CPQ-Lösung angenommen haben, um die Produktmodellierung zu beherrschen, Angebotsprozesse zu optimieren, Fehler zu reduzieren und maßgeschneiderte Lösungen anzubieten, die von Kunden gefordert werden. Akzeptieren Sie Mercura CPQ, und lassen Sie uns Ihre Fertigungsexzellenz neu definieren."
       },
       "what_we_offer": [
         {
-          "title": "Increased Efficiency",
-          "description": "Streamlined processes lead to quicker quote generation and reduced errors, saving time and resources."
+          "title": "Steigerung der Effizienz",
+          "description": "Optimierte Prozesse führen zu einer schnelleren Angebotserstellung und reduzieren Fehler, was Zeit und Ressourcen spart."
         },
         {
-          "title": "Optimized Performance",
-          "description": "The system's optimization capabilities that result in better product performance and resource utilization."
+          "title": "Optimierte Leistung",
+          "description": "Die Optimierungsfähigkeiten des Systems führen zu einer besseren Produktleistung und Ressourcennutzung."
         },
         {
-          "title": "Visual Clarity",
-          "description": "Real-time visualization that aids understanding, reducing miscommunication and costly revisions."
+          "title": "Visuelle Klarheit",
+          "description": "Echtzeit-Visualisierung, die das Verständnis erleichtert und Missverständnisse sowie kostspielige Überarbeitungen reduziert."
         },
         {
-          "title": "Data-Driven Insights",
-          "description": "The system provides valuable sales data and insights for strategic decision-making."
+          "title": "Datengetriebene Erkenntnisse",
+          "description": "Das System liefert wertvolle Verkaufsdaten und Erkenntnisse für strategische Entscheidungsfindung."
         },
         {
-          "title": "Revenue Growth",
-          "description": "Upsell options and value-added accessories that boost sales revenue."
+          "title": "Umsatzwachstum",
+          "description": "Zusatzverkäufe und wertsteigernde Zubehörteile, die den Umsatz steigern."
         },
         {
-          "title": "Competitive Edge",
-          "description": "Respond faster to market demands and stay ahead of competitors."
+          "title": "Wettbewerbsvorteil",
+          "description": "Schnelles Reagieren auf Marktanforderungen und Vorsprung vor Mitbewerbern."
         }
       ],
       "empowering": {
-        "label": "Empowering manufacturers with precision",
-        "heading": "Empowering manufacturers with <0/><1>precision</1>",
-        "text_1": "Imagine a world where your customized product variants flawlessly align with your customers' needs while remaining buildable, deliverable, serviceable, and compliant—all without relying on sales engineers for every quote. We can make this a reality.",
-        "text_2": "Moreover, our solution empowers you to create a cohesive, shared product definition that effortlessly generates millions of viable and  profitable product variants. Our user-friendly interface equips your        sales team to embrace product variance instead of grappling with it."
+        "label": "Hersteller mit Präzision stärken",
+        "heading": "Hersteller mit <0/><1>Präzision</1>",
+        "text_1": "Stellen Sie sich eine Welt vor, in der Ihre individuellen Produktvarianten nahtlos auf die Bedürfnisse Ihrer Kunden abgestimmt sind und gleichzeitig herstellbar, lieferbar, wartbar und konform sind - und das alles ohne sich auf Vertriebsingenieure für jedes Angebot verlassen zu müssen. Wir können dies zur Realität machen.",
+        "text_2": "Darüber hinaus ermöglicht Ihnen unsere Lösung, eine zusammenhängende, gemeinsam genutzte Produktdefinition zu erstellen, die mühelos Millionen rentabler Produktvarianten generiert. Unsere benutzerfreundliche Oberfläche ermöglicht es Ihrem Vertriebsteam, Produktvarianten zu akzeptieren, anstatt damit zu kämpfen."
       },
       "needs_based": {
-        "label": "Needs-based configuration",
-        "heading": "<0>Needs-based</0> <1/>configuration",
-        "subtext": "With Mercura you get:",
+        "label": "Bedarfsorientierte Konfiguration",
+        "heading": "<0>Bedarfsorientierte</0> <1/>Konfiguration",
+        "subtext": "Mit Mercura erhalten Sie:",
         "what_you_get": [
-          "Automatic translation of customer needs into technically sound solutions and 100% accurate sales Bill-Of-Materials",
-          "Connection between your product architecture and customer needs or sizing.",
-          "Possibility for your sales staff, partners, and even customers to configure complex products flawlessly using understandable questions."
+          "Automatische Übersetzung der Kundenbedürfnisse in technisch solide Lösungen und eine zu 100% genaue Stückliste",
+          "Verbindung zwischen Ihrer Produktarchitektur und den Kundenanforderungen oder Abmessungen.",
+          "Möglichkeit für Ihre Vertriebsmitarbeiter, Partner und sogar Kunden, komplexe Produkte mühelos anhand verständlicher Fragen zu konfigurieren."
         ]
       },
       "why_choose_us": {
-        "label": "Why choose us",
-        "heading": " Why choose us:",
+        "label": "Warum uns wählen",
+        "heading": "Warum uns wählen:",
         "reasons": [
           {
-            "title": "Tailored Optimization",
-            "description": "Whether it's minimizing weight, maximizing eco-friendliness, or optimizing performance, Mercura's needs-based complex product configuration ensures the right solution for your customers. These configurations not only simplify product sales but also enhance the service you provide."
+            "title": "Maßgeschneiderte Optimierung",
+            "description": "Ob es darum geht, das Gewicht zu minimieren, die Umweltfreundlichkeit zu maximieren oder die Leistung zu optimieren, Mercuras bedarfsorientierte komplexe Produktkonfiguration sorgt für die richtige Lösung für Ihre Kunden. Diese Konfigurationen vereinfachen nicht nur den Verkauf von Produkten, sondern verbessern auch den Service, den Sie bieten."
           },
           {
-            "title": "Validation for Precision",
-            "description": "Before presenting it to the customer, validate, simulate, or calculate the configured product in an external system to ensure it aligns with customer expectations."
+            "title": "Validierung für Präzision",
+            "description": "Bevor es dem Kunden präsentiert wird, validieren, simulieren oder berechnen Sie das konfigurierte Produkt in einem externen System, um sicherzustellen, dass es den Kundenanforderungen entspricht."
           },
           {
-            "title": "Performance in Complexity",
-            "description": "Selling large, interconnected systems can be challenging, but Mercura's CPQ allows you to split complex configuration challenges into manageable components, avoiding performance bottlenecks. Sales reps can reorder and rearrange these components while ensuring a valid overall system configuration."
+            "title": "Leistung in der Komplexität",
+            "description": "Der Verkauf großer, vernetzter Systeme kann eine Herausforderung sein, aber Mercuras CPQ ermöglicht es Ihnen, komplexe Konfigurationsaufgaben in handhabbare Komponenten aufzuteilen, um Leistungsengpässe zu vermeiden. Vertriebsmitarbeiter können diese Komponenten neu ordnen und umgestalten, während sie eine gültige Gesamtsystemkonfiguration sicherstellen."
           },
           {
-            "title": "Constraint Resolution",
-            "description": "While the configurator makes implicit selections based on constraints, it respects explicit user choices. In cases of conflict, Mercura's CPQ configurator presents conflict resolutions and alternatives to users, eliminating errors."
+            "title": "Konfliktlösung",
+            "description": "Während der Konfigurator implizite Auswahlmöglichkeiten aufgrund von Einschränkungen trifft, respektiert er explizite Benutzerentscheidungen. Bei Konflikten präsentiert Mercuras CPQ-Konfigurator Konfliktlösungen und Alternativen für Benutzer, um Fehler zu vermeiden."
           },
           {
-            "title": "Instant Sales Insights",
-            "description": "Enjoy instant updates of the sales Bill-Of-Material, customer net prices, and product visualization after every user configuration selection. Even if your sales Bill-Of-Material is extensive, Mercura supports multi-leveled BOMs."
+            "title": "Sofortige Verkaufseinblicke",
+            "description": "Genießen Sie sofortige Updates der Stückliste, der Kunden-Nettopreise und der Produktvisualisierung nach jeder Benutzerkonfigurationsauswahl. Selbst wenn Ihre Stückliste umfangreich ist, unterstützt Mercura mehrstufige Stücklisten."
           },
           {
-            "title": "Mass Configuration Mastery",
-            "description": "For customers selling numerous configurable products within a single opportunity, Mercura's Mass Import/Export features save valuable time by handling batches of configured products collectively."
+            "title": "Beherrschung der Massenkonfiguration",
+            "description": "Für Kunden, die zahlreiche konfigurierbare Produkte innerhalb einer einzigen Gelegenheit verkaufen, sparen Mercuras Massenimport-/Exportfunktionen wertvolle Zeit, indem sie Stapel konfigurierter Produkte gemeinsam bearbeiten."
           }
         ]
       },
       "dive_into": {
-        "label": "Dive into product excellence",
-        "heading": "Dive into <0/><1>product excellence</1>",
+        "label": "Tauchen Sie ein in Produktexzellenz",
+        "heading": "Tauchen Sie ein in <0/><1>Produktexzellenz</1>",
         "upsell_with_ease": {
-          "title": "Upsell with ease",
-          "description": "Boost your offerings by adding accessories to the primary configured equipment, increasing the quote's value. Mercura ensures compatibility, and our catalog includes products from third-party suppliers, turning your CPQ into a marketplace for value-added accessories."
+          "title": "Mit Leichtigkeit zusätzlich verkaufen",
+          "description": "Steigern Sie Ihr Angebot, indem Sie Zubehör zu den primären konfigurierten Geräten hinzufügen und den Wert des Angebots erhöhen. Mercura stellt die Kompatibilität sicher, und unser Katalog enthält Produkte von Drittanbietern, sodass Ihr CPQ zu einem Marktplatz für zusätzliches Zubehör wird."
         },
         "visualize_for_impact": {
-          "title": "Visualize for impact",
-          "description": "Real-time product visualization after each configurator selection empowers sales teams and customers to better understand complex configurations. Add automatic generation of 2D and 3D drawings and CAD files for any configured product to maximize the value of your CPQ investment."
+          "title": "Visualisieren für Wirkung",
+          "description": "Die Echtzeit-Produktvisualisierung nach jeder Konfigurationsauswahl durch den Konfigurator ermöglicht es Vertriebsteams und Kunden, komplexe Konfigurationen besser zu verstehen. Fügen Sie die automatische Generierung von 2D- und 3D-Zeichnungen und CAD-Dateien für jedes konfigurierte Produkt hinzu, um den Wert Ihrer CPQ-Investition zu maximieren."
         },
         "flexible_line_item_management": {
-          "title": "Flexible line item management",
-          "description": "Mercura empowers your sales reps to build offerings flexibly, copy and import successful quotes and configured products, offer alternative line items, and create hierarchies within quotes with multiple line items."
+          "title": "Flexibles Positionen-Management",
+          "description": "Mercura ermöglicht es Ihren Vertriebsmitarbeitern, Angebote und konfigurierte Produkte flexibel zu erstellen, erfolgreiche Angebote und konfigurierte Produkte zu kopieren und zu importieren, alternative Positionen anzubieten und Hierarchien in Angeboten mit mehreren Positionen zu erstellen."
         }
       }
     },
     "quote_and_document_generation": {
-      "title": "Quote and Document Generation",
+      "title": "Angebot und Dokumentenerstellung",
       "hero": {
-        "heading": "Enhancing sales efficiency",
-        "subtext": "Mercura's CPQ Quote and Document Generation solution empowers your sales representatives to generate rich, accurate, and branded quote documents effortlessly, boosting your win rates and streamlining your sales process."
+        "heading": "Steigerung der Vertriebseffizienz",
+        "subtext": "Mercuras CPQ-Lösung für Angebot und Dokumentenerstellung ermöglicht es Ihren Vertriebsmitarbeitern, mühelos reichhaltige, präzise und gebrandete Angebotsdokumente zu erstellen, um Ihre Erfolgsraten zu steigern und Ihren Vertriebsprozess zu optimieren."
       },
       "join_journey": {
-        "label": "Join the journey",
-        "heading": "Join the journey",
-        "subtext": "Mercura's CPQ solution provides precise, data-driven quoting with rich detail and brand customization. It offers flexibility and streamlines collaboration for efficient multi-channel sales, enhancing overall sales efficiency and effectiveness."
+        "label": "Schließen Sie sich der Reise an",
+        "heading": "Schließen Sie sich der Reise an",
+        "subtext": "Mercuras CPQ-Lösung bietet präzise, datengesteuerte Angebote mit reichhaltigen Details und Markenanpassung. Sie bietet Flexibilität und optimiert die Zusammenarbeit für effiziente Mehrkanalverkäufe, was die Gesamteffizienz und Effektivität im Vertrieb steigert."
       },
       "overcome_quoting_challenges": {
-        "label": "Overcome quoting challenges",
-        "heading": "Overcome <0>Quoting <1/> Challenges</0> with <2/> Mercura",
-        "text_1": "Generating accurate and persuasive quotes is essential to winning over B2B customers. Every customer inquiry or requirement change demands swift quote revisions to prevent prospects from turning to competitors. Inaccurate or inconsistent pricing across quote revisions can erode customer trust.",
-        "text_2": "As your product offerings become more individualized, manual quoting becomes slow, error-prone, and cumbersome. How many times have your sales representatives copied old quotes to new customers, inadvertently including outdated product features and prices? How often have prospects walked away due to delays in generating solutions and cost estimates from your sales engineering department?<br /><br /> Leave behind the era of manual quoting with Mercura CPQ's automated quoting solutions."
+        "label": "Überwinden Sie Angebots-Herausforderungen",
+        "heading": "Überwinden Sie <0>Angebots<1/> Herausforderungen</0> mit <2/> Mercura",
+        "text_1": "Das Erstellen genauer und überzeugender Angebote ist entscheidend, um B2B-Kunden zu gewinnen. Jede Kundenanfrage oder Änderung der Anforderungen erfordert schnelle Angebotsüberarbeitungen, um zu verhindern, dass Interessenten zur Konkurrenz wechseln. Ungenaue oder inkonsistente Preisgestaltung bei Angebotsüberarbeitungen kann das Vertrauen der Kunden untergraben.",
+        "text_2": "Mit zunehmend individualisierten Produktangeboten wird manuelles Angebotsmanagement langsam, fehleranfällig und umständlich. Wie oft haben Ihre Vertriebsmitarbeiter alte Angebote an neue Kunden kopiert, versehentlich veraltete Produktmerkmale und Preise eingeschlossen? Wie oft sind Interessenten aufgrund von Verzögerungen bei der Erstellung von Lösungen und Kostenkalkulationen durch Ihre Vertriebsabteilung gegangen?<br /><br /> Verabschieden Sie sich von der Ära manueller Angebotserstellung mit den automatisierten Angebotslösungen von Mercura."
       },
       "what_we_offer": [
         {
-          "title": "Data-Driven Precision",
-          "description": "Mercura's solution ensures that quotes always feature the latest product options, prices, and legal terms, providing clients with accurate and trustworthy quotes from the start."
+          "title": "Datengetriebene Präzision",
+          "description": "Die Lösung von Mercura stellt sicher, dass Angebote immer die neuesten Produktoptionen, Preise und rechtlichen Bestimmungen enthalten, um den Kunden genaue und vertrauenswürdige Angebote von Anfang an zu bieten."
         },
         {
-          "title": "Effortless and Rapid Quoting",
-          "description": "Clients benefit from one-click generation of accurate quotes, enabling swift responses to inquiries or requirement changes, ultimately expediting the sales cycle and deterring competitors."
+          "title": "Mühelose und Schnelle Angebote",
+          "description": "Kunden profitieren von der ein-Klick-Generierung genauer Angebote, die schnelle Reaktionen auf Anfragen oder Änderungen der Anforderungen ermöglichen und letztendlich den Verkaufszyklus beschleunigen und Wettbewerber abschrecken."
         },
         {
-          "title": "Rich Detail Early in the Sales Process",
-          "description": "The solution provides clients with comprehensive technical solutions and detailed offerings in quotes, including price adjustments and discounts, empowering them to make informed investment decisions early in the deal."
+          "title": "Umfangreiche Details Früh im Verkaufsprozess",
+          "description": "Die Lösung bietet Kunden umfassende technische Lösungen und detaillierte Angebote, einschließlich Preisnachlässen und Rabatten, die sie befähigen, frühzeitig informierte Investitionsentscheidungen im Deal zu treffen."
         },
         {
-          "title": "Branding and Document Customization",
-          "description": "Clients can align every quote with their brand by customizing document templates in Microsoft Office programs, ensuring a consistent and professional appearance."
+          "title": "Branding und Dokumentenanpassung",
+          "description": "Kunden können jedes Angebot an ihre Marke anpassen, indem sie Dokumentenvorlagen in Microsoft Office-Programmen anpassen, um ein konsistentes und professionelles Erscheinungsbild sicherzustellen."
         },
         {
-          "title": "Versatility Beyond Quotes",
-          "description": "Clients can leverage the system for various sales-supporting document types, enhancing their ability to communicate technical specifications, contracts, pricing reports, and more to customers."
+          "title": "Vielseitigkeit über Angebote hinaus",
+          "description": "Kunden können das System für verschiedene Arten von verkaufsunterstützenden Dokumenten nutzen und damit ihre Fähigkeit verbessern, technische Spezifikationen, Verträge, Preisberichte und mehr an Kunden zu kommunizieren."
         },
         {
-          "title": "Flexibility for Sales Success",
-          "description": "Mercura CPQ offers flexibility to sales representatives, allowing them to adjust quotes based on specific situations, including the ability to include or exclude quote chapters or add their own materials"
+          "title": "Flexibilität für Vertriebserfolg",
+          "description": "Mercura CPQ bietet Vertriebsmitarbeitern Flexibilität, um Angebote basierend auf spezifischen Situationen anzupassen, einschließlich der Möglichkeit, Angebotskapitel einzubeziehen oder auszuschließen oder eigene Materialien hinzuzufügen."
         }
       ],
       "collaboration": {
-        "heading": "Streamlined <0>collaboration</0> and <1/> sharing",
-        "text_1": "Say goodbye to endless email threads. Use Mercura Proposal Collaboration to share quote revisions with customers, including 2D and 3D drawings.",
-        "text_2": "All quote revisions for a deal are centralized for your customer's procurement team, allowing them to log in, respond, comment, and upload their documents as part of the deal. Simplify the buying process and maintain a structured approach with Mercura Proposal Collaboration."
+        "heading": "Effiziente <0>Zusammenarbeit</0> und <1/> Teilen",
+        "text_1": "Sagen Sie endlosen E-Mail-Threads Lebewohl. Nutzen Sie Mercura Proposal Collaboration, um Angebotsüberarbeitungen mit Kunden zu teilen, einschließlich 2D- und 3D-Zeichnungen.",
+        "text_2": "Alle Angebotsüberarbeitungen für einen Deal werden zentralisiert für das Beschaffungsteam Ihres Kunden, sodass sie sich einloggen, antworten, kommentieren und ihre Dokumente im Rahmen des Deals hochladen können. Vereinfachen Sie den Kaufprozess und behalten Sie einen strukturierten Ansatz mit Mercura Proposal Collaboration bei."
       },
       "support": {
-        "heading": "Support across all sales channels",
-        "subtext": "Harness the power of Mercura CPQ Quote and Document Generation across all sales channels, including Direct Sales, Resellers, and Customer self-service. This expansion will significantly increase your quoting volumes and boost your order influx. If you have resellers in your CPQ, each reseller can have its unique quote structure and branding.",
+        "heading": "Unterstützung für alle Vertriebskanäle",
+        "subtext": "Nutzen Sie die Kraft von Mercura CPQ Quote and Document Generation in allen Vertriebskanälen, einschließlich Direktvertrieb, Wiederverkäufer und Kunden-Self-Service. Diese Erweiterung wird Ihre Angebotsumfänge signifikant erhöhen und Ihren Bestelleingang steigern. Wenn Sie Wiederverkäufer in Ihrem CPQ haben, kann jeder Wiederverkäufer seine einzigartige Angebotsstruktur und Branding haben.",
         "constraint_resolution": {
-          "title": "Constraint Resolution",
-          "description": "While the configurator makes implicit selections based on constraints, it respects explicit user choices. In cases of conflict, Mercura's CPQ configurator presents conflict resolutions and alternatives to users, eliminating errors."
+          "title": "Konfliktlösung",
+          "description": "Während der Konfigurator implizite Auswahl basierend auf Einschränkungen trifft, respektiert er explizite Benutzerentscheidungen. Im Falle von Konflikten präsentiert der CPQ-Konfigurator von Mercura Konfliktlösungen und Alternativen für Benutzer, um Fehler zu eliminieren."
         },
         "instant_sales_insights": {
-          "title": "Instant Sales Insights",
-          "description": "Enjoy instant updates of the sales Bill-Of-Material, customer net prices, and product visualization after every user configuration selection. Even if your sales Bill-Of-Material is extensive, Mercura supports multi-leveled BOMs."
+          "title": "Sofortige Vertriebseinblicke",
+          "description": "Genießen Sie sofortige Aktualisierungen des Verkaufs-Stücklisten, Kunden-Nettopreise und Produktvisualisierung nach jeder Konfigurationsauswahl eines Benutzers. Selbst wenn Ihre Verkaufs-Stückliste umfangreich ist, unterstützt Mercura mehrstufige Stücklisten."
         },
         "efficient_project_sales": {
-          "title": "Efficient Project Sales Collaboration",
-          "description": " Large deals often require a team effort. Mercura CPQ offers robust collaboration tools, including comments, concurrent editing, dashboards, and notifications, ensuring your sales projects run efficiently and smoothly."
+          "title": "Effiziente Projektvertriebszusammenarbeit",
+          "description": "Große Deals erfordern oft Teamarbeit. Mercura CPQ bietet robuste Zusammenarbeitstools, darunter Kommentare, gleichzeitige Bearbeitung, Dashboards und Benachrichtigungen, um sicherzustellen, dass Ihre Verkaufsprojekte effizient und reibungslos ablaufen."
         }
       }
     },
     "product_modelling": {
-      "title": "Product Modelling",
-      "heading": "Mastering Product Modeling <br /> as a manufacturer",
+      "title": "Produktmodellierung",
+      "heading": "Die Produktmodellierung als Hersteller beherrschen",
       "hero": {
-        "subtext_1": "In today's highly competitive manufacturing landscape, efficiency, accuracy, and agility are paramount. The ability to configure complex products swiftly and accurately is the key to staying ahead of the curve.",
-        "subtext_2": "That's where Configure, Price, Quote (CPQ) solutions for manufacturers come into play. One of the foundational pillars of CPQ is product modeling – a game changer for businesses striving to streamline their operations, and enhance customer satisfaction."
+        "subtext_1": "In der heutigen äußerst wettbewerbsintensiven Fertigungslandschaft sind Effizienz, Genauigkeit und Agilität von größter Bedeutung. Die Fähigkeit, komplexe Produkte schnell und präzise zu konfigurieren, ist der Schlüssel, um immer einen Schritt voraus zu bleiben.",
+        "subtext_2": "Genau hier kommen Configure, Price, Quote (CPQ)-Lösungen für Hersteller ins Spiel. Eine der grundlegenden Säulen von CPQ ist die Produktmodellierung - ein Game Changer für Unternehmen, die ihre Abläufe optimieren und die Kundenzufriedenheit steigern wollen."
       },
       "product_modelling_cpq": {
-        "text_1": "What is Product Modeling in CPQ?",
-        "text_2": "Product modeling is the art of defining, organizing, and configuring your products and services within a CPQ system. This digital foundation streamlines the entire quoting and ordering process, allowing manufacturers to manage complex product catalogs, assemble components, and create customized configurations with ease."
+        "text_1": "Was ist Produktmodellierung in CPQ?",
+        "text_2": "Produktmodellierung ist die Kunst, Ihre Produkte und Dienstleistungen innerhalb eines CPQ-Systems zu definieren, zu organisieren und zu konfigurieren. Diese digitale Grundlage optimiert den gesamten Angebots- und Bestellprozess und ermöglicht es Herstellern, komplexe Produktkataloge zu verwalten, Komponenten zusammenzubauen und maßgeschneiderte Konfigurationen mühelos zu erstellen."
       },
       "advantages": {
-        "label": "The advantages of effective Product Modelling",
-        "heading": "The advantages <0/> of effective <1>Product Modelling</1>",
+        "label": "Die Vorteile einer effektiven Produktmodellierung",
+        "heading": "Die Vorteile <0/> einer effektiven <1>Produktmodellierung</1>",
         "advantages": {
           "configurability": {
-            "title": "Configurability",
-            "description": "Product Modeling enables the easy assembly of products from various components and ensures that only valid configurations are presented to sales teams and customers."
+            "title": "Konfigurierbarkeit",
+            "description": "Die Produktmodellierung ermöglicht die einfache Montage von Produkten aus verschiedenen Komponenten und stellt sicher, dass nur gültige Konfigurationen den Verkaufsteams und Kunden präsentiert werden."
           },
           "error_reduction": {
-            "title": "Error-reduction",
-            "description": "By defining product rules, and constraints in the CPQ system, you minimize the risk of order errors. The system automatically validates configurations, eliminating costly mistakes."
+            "title": "Fehlerreduzierung",
+            "description": "Durch die Definition von Produktregeln und -einschränkungen im CPQ-System minimieren Sie das Risiko von Auftragsfehlern. Das System validiert Konfigurationen automatisch und vermeidet kostspielige Fehler."
           },
           "customization": {
-            "title": "Customization",
-            "description": "Tailoring products to meet individual customer needs becomes effortless. Product modeling allows you to create variations, add options, and adjust features according to specific requirements."
+            "title": "Anpassung",
+            "description": "Die Anpassung von Produkten an individuelle Kundenanforderungen wird mühelos. Die Produktmodellierung ermöglicht es Ihnen, Variationen zu erstellen, Optionen hinzuzufügen und Merkmale entsprechend spezifischer Anforderungen anzupassen."
           },
           "efficiency": {
-            "title": "Efficiency",
-            "description": "With predefined product models, you significantly reduce the time it takes to generate accurate quotes and orders. Your sales teams can focus on selling rather than grappling with complex configurations."
+            "title": "Effizienz",
+            "description": "Mit vordefinierten Produktmodellen reduzieren Sie erheblich die Zeit, die für die Erstellung genauer Angebote und Aufträge benötigt wird. Ihre Verkaufsteams können sich auf den Verkauf konzentrieren, anstatt sich mit komplexen Konfigurationen herumzuschlagen."
           }
         }
       },
@@ -523,101 +611,101 @@
         "heading": "Key features of Product <0/> Modeling in <1>CPQ</1>",
         "features": {
           "hierarchical_structures": {
-            "title": "Hierarchical Structures",
-            "description": "CPQ solutions enable the creation of hierarchical product structures, defining how products are assembled from various components, subassemblies, and parts."
+            "title": "Hierarchische Strukturen",
+            "description": "CPQ-Lösungen ermöglichen die Erstellung hierarchischer Produktstrukturen, die festlegen, wie Produkte aus verschiedenen Komponenten, Teilmontagen und Teilen zusammengebaut werden."
           },
           "customization": {
-            "title": "Customization",
-            "description": "Product attributes and dependencies ensure that product options and features are logically connected, preventing incompatible configurations."
+            "title": "Anpassung",
+            "description": "Produktattribute und Abhängigkeiten stellen sicher, dass Produktoptionen und -merkmale logisch miteinander verbunden sind und inkompatible Konfigurationen verhindert werden."
           },
           "reuse_and_optimization": {
-            "title": "Reuse and Optimization",
-            "description": "Our efficient CPQ system offers the ability to reuse product modules and optimizes configurations based on performance criteria, such as cost or efficiency."
+            "title": "Wiederverwendung und Optimierung",
+            "description": "Unser effizientes CPQ-System bietet die Möglichkeit, Produktmodule wiederzuverwenden und Konfigurationen auf der Grundlage von Leistungskriterien wie Kosten oder Effizienz zu optimieren."
           },
           "visualization": {
-            "title": "Visualization",
-            "description": "Some CPQ solutions offer 2D and 3D product visualization, helping both sales teams and customers better understand complex configurations."
+            "title": "Visualisierung",
+            "description": "Einige CPQ-Lösungen bieten 2D- und 3D-Produktvisualisierungen, die sowohl Verkaufsteams als auch Kunden helfen, komplexe Konfigurationen besser zu verstehen."
           }
         }
       },
       "call_to_action": {
-        "text_1": "Let us <0>help</0> you!",
-        "text_2": "Mercura CPQ, empowers manufacturers to master product modeling, streamline their quoting process, reduce errors, and ultimately deliver the tailored solutions that customers demand."
+        "text_1": "Lassen Sie uns Ihnen <0>helfen</0>!",
+        "text_2": "Mercura CPQ ermöglicht Herstellern, die Produktmodellierung zu beherrschen, ihren Angebotsprozess zu optimieren, Fehler zu reduzieren und letztendlich maßgeschneiderte Lösungen zu liefern, die von Kunden gefordert werden."
       }
     },
     "pricing_engine": {
-      "title": "Pricing Engine",
+      "title": "Preismodul",
       "hero": {
-        "heading": "Mercura CPQ Pricing",
-        "subtext_1": "Preserving Profitability in Complex Manufacturing",
-        "subtext_2": "When it comes to pricing complex manufacturing products, precision, flexibility, and agility are crucial. Mercura's CPQ Pricing solution equips manufacturers with the tools they need to serve their customers with confidence, delivering accurate, instant, and first-time-right prices for every product configuration choice."
+        "heading": "Mercura CPQ Preisgestaltung",
+        "subtext_1": "Profitabilität in der komplexen Fertigung bewahren",
+        "subtext_2": "Wenn es um die Preisgestaltung komplexer Fertigungsprodukte geht, sind Präzision, Flexibilität und Agilität entscheidend. Die CPQ-Preisgestaltungslösung von Mercura stattet Hersteller mit den Tools aus, die sie benötigen, um ihren Kunden selbstbewusst zu dienen und genaue, sofortige und von Anfang an korrekte Preise für jede Produktkonfigurationswahl zu liefern."
       },
       "navigating_pricing_challanges": {
-        "label": "Navigating your pricing challanges",
-        "heading": "Navigating your <0/> <1>pricing challenges</1>",
-        "subtext_1": "Are slow or inaccurate pricing estimates holding you back from securing valuable clients in an era of highly individualized product offerings?",
-        "subtext_2": "In today's market, the speed and accuracy of pricing estimates can make all the difference in securing valuable clients. As the product landscape becomes increasingly personalized, the challenge of pricing entirely new product variants, combined with intricate pricing structures, can be a game-changer in your success against competitors. Are you equipped to meet these challenges head-on? <br /> <br /> With Mercura's CPQ Pricing capabilities, you can confront these challenges head-on, selling with certainty and quoting with confidence."
+        "label": "Bewältigung Ihrer Preisgestaltungsherausforderungen",
+        "heading": "Bewältigung Ihrer <0/> <1>Preisgestaltungsherausforderungen</1>",
+        "subtext_1": "Bremsen Sie langsame oder ungenaue Preisangebote daran, wertvolle Kunden in einer Ära hoch individualisierter Produktangebote zu gewinnen?",
+        "subtext_2": "In der heutigen Marktsituation kann die Geschwindigkeit und Genauigkeit von Preisangeboten den entscheidenden Unterschied bei der Gewinnung wertvoller Kunden ausmachen. Da die Produktlandschaft immer stärker personalisiert wird, kann die Herausforderung, völlig neue Produktvarianten zu bewerten, in Kombination mit komplexen Preisstrukturen, ein entscheidender Faktor für Ihren Erfolg im Wettbewerb sein. Sind Sie gerüstet, um diesen Herausforderungen direkt zu begegnen? <br /> <br /> Mit den CPQ-Preisgestaltungsfunktionen von Mercura können Sie diesen Herausforderungen selbstbewusst entgegentreten und sicher zitieren."
       },
       "benefits_of_pricing_features": {
-        "label": "The benefits of our pricing features",
-        "heading": "The <0>benefits</0> of our <1/> pricing features",
-        "subtext": "Elevate your pricing strategies, protect your margins, and confidently serve your customers with Mercura's CPQ Pricing solution.",
+        "label": "Die Vorteile unserer Preisgestaltungsfunktionen",
+        "heading": "Die <0>Vorteile</0> unserer <1/> Preisgestaltungsfunktionen",
+        "subtext": "Steigern Sie Ihre Preisstrategien, schützen Sie Ihre Margen und bedienen Sie Ihre Kunden selbstbewusst mit Mercuras CPQ-Preisgestaltungslösung.",
         "benefits": [
           {
-            "title": "Precision Pricing",
-            "description": "Mercura's solution ensures that quotes always feature the latest product options, prices, and legal terms, providing clients with accurate and trustworthy quotes from the start."
+            "title": "Präzise Preisgestaltung",
+            "description": "Mercuras Lösung stellt sicher, dass Angebote immer die neuesten Produktoptionen, Preise und rechtlichen Bedingungen enthalten, um Kunden genaue und vertrauenswürdige Angebote von Anfang an zu bieten."
           },
           {
-            "title": "Flexibility in Pricing Models",
-            "description": "Clients benefit from one-click generation of accurate quotes, enabling swift responses to inquiries or requirement changes, ultimately expediting the sales cycle and deterring competitors."
+            "title": "Flexibilität bei Preismodellen",
+            "description": "Kunden profitieren von der schnellen Generierung genauer Angebote mit einem Klick, was schnelle Reaktionen auf Anfragen oder Änderungen der Anforderungen ermöglicht und letztendlich den Verkaufszyklus beschleunigt und Mitbewerber abschreckt."
           },
           {
-            "title": "Instant Price Calculation",
-            "description": "The solution provides clients with comprehensive technical solutions and detailed offerings in quotes, including price adjustments and discounts, empowering them to make informed investment decisions early in the deal."
+            "title": "Sofortige Preisberechnung",
+            "description": "Die Lösung bietet Kunden umfassende technische Lösungen und detaillierte Angebote, einschließlich Preisänderungen und Rabatten, damit sie frühzeitig informierte Investitionsentscheidungen treffen können."
           },
           {
-            "title": "Margin Control",
-            "description": "Clients can align every quote with their brand by customizing document templates in Microsoft Office programs, ensuring a consistent and professional appearance."
+            "title": "Margenkontrolle",
+            "description": "Kunden können jedes Angebot an ihre Marke anpassen, indem sie Dokumentvorlagen in Microsoft Office-Programmen anpassen und so ein konsistentes und professionelles Erscheinungsbild sicherstellen."
           },
           {
-            "title": "Versatility Beyond Quotes",
-            "description": "Clients can leverage the system for various sales-supporting document types, enhancing their ability to communicate technical specifications, contracts, pricing reports, and more to customers."
+            "title": "Vielseitigkeit über Angebote hinaus",
+            "description": "Kunden können das System für verschiedene verkaufsunterstützende Dokumenttypen nutzen und so ihre Fähigkeit zur Kommunikation technischer Spezifikationen, Verträge, Preisberichte und mehr an Kunden verbessern."
           },
           {
-            "title": "Flexibility for Sales Success",
-            "description": "Mercura CPQ offers flexibility to sales representatives, allowing them to adjust quotes based on specific situations, including the ability to include or exclude quote chapters or add their own materials."
+            "title": "Flexibilität für Vertriebserfolg",
+            "description": "Mercura CPQ bietet Vertriebsmitarbeitern die Flexibilität, Angebote basierend auf speziellen Situationen anzupassen, einschließlich der Möglichkeit, Angebotskapitel einzubeziehen oder auszuschließen oder eigene Materialien hinzuzufügen."
           }
         ]
       },
       "migrate_margin_risks": {
-        "label": "Migrate margin risks downstream",
-        "heading": "Migrate <0>margin risks</0><1/> downstream",
-        "subtext_1": "We take a holistic approach, considering various aspects from product details to manufacturing, shipping, installation, and services.",
-        "subtext_2": "This approach empowers you to maintain control over your end-to-end operations when calculating customer net prices in quotes. Price and cost calculations will anticipate downstream surprises, securing a dependable deal margin. This enables you to convey accurate and first-time-right pricing to your customers, even in the early stages of their buying journey, fostering confidence and trust."
+        "label": "Marge nach unten verlagern",
+        "heading": "Marge <0>nach unten verlagern</0><1/>",
+        "subtext_1": "Wir verfolgen einen ganzheitlichen Ansatz und berücksichtigen verschiedene Aspekte von Produktinformationen bis hin zu Fertigung, Versand, Installation und Dienstleistungen.",
+        "subtext_2": "Dieser Ansatz ermöglicht es Ihnen, die Kontrolle über Ihre End-to-End-Operationen beim Berechnen von Kunden-Nettopreisen in Angeboten zu behalten. Preis- und Kostenberechnungen werden Überraschungen im weiteren Verlauf vorwegnehmen und eine zuverlässige Geschäftsmarge sicherstellen. Dies ermöglicht es Ihnen, Ihren Kunden bereits in den frühen Phasen ihres Kaufprozesses genaue und von Anfang an korrekte Preise zu vermitteln, um Vertrauen zu fördern."
       },
       "flexible_and_robust_price_models": {
-        "heading": "Flexible and robust price models",
-        "subtext": "Mercura supports a wide range of price models and methodologies.",
+        "heading": "Flexible und robuste Preismodelle",
+        "subtext": "Mercura unterstützt eine breite Palette von Preismodellen und Methodologien.",
         "pricing_models": [
-          "The price engine factors in geographic markets, customer segmentation, sales channels, and variable cost drivers such as volatile currency rates, material costs, and shipping expenses.",
-          "We accommodate one-time, recurring, and usage-based pricing within the same configured solution.",
-          "Various price adjustment types, including order size discounts, rebates, attribute-based pricing, payment discounts, customer frame agreements, deal discounts, and more."
+          "Der Preisrechner berücksichtigt geografische Märkte, Kundensegmentierung, Vertriebskanäle und variable Kostentreiber wie volatile Währungskurse, Materialkosten und Versandkosten.",
+          "Wir bieten Einmal-, wiederkehrende und nutzungsabhängige Preisgestaltung in derselben konfigurierten Lösung.",
+          "Verschiedene Arten von Preisänderungen, einschließlich Rabatten für Bestellmengen, Rabatten, attributbasierter Preisgestaltung, Zahlungsrabatten, Kundenrahmenvereinbarungen, Angebotsrabatten und mehr."
         ]
       },
       "instant_pricing": {
-        "label": "Instant pricing at your fingertips",
-        "heading": "<0>Instant pricing</0> <1/>at your fingertips",
+        "label": "Sofortige Preisgestaltung auf einen Blick",
+        "heading": "<0>Sofortige Preisgestaltung</0> <1/>auf Ihrem Fingertipp",
         "continuous_data_integration": {
-          "title": "Continuous Data Integration",
-          "description": "Mercura CPQ separates price logic and data, making global or local price revisions efficient and low-maintenance. Import base prices with regular batch jobs, and Mercura validates them before they are released to the front-office sales tools. This approach allows you to swiftly respond to market changes and eliminates the risk of your sales team using outdated price lists in their quotes. On a global scale, you can decide whether price revisions should apply to ongoing opportunities."
+          "title": "Kontinuierliche Datenintegration",
+          "description": "Mercura CPQ trennt Preislogik und Daten, was globale oder lokale Preisüberarbeitungen effizient und wartungsarm macht. Importieren Sie Basispreise mit regelmäßigen Stapeljobs, und Mercura validiert sie, bevor sie an die Vertriebswerkzeuge im Frontoffice freigegeben werden. Dieser Ansatz ermöglicht es Ihnen, schnell auf Marktanpassungen zu reagieren und eliminiert das Risiko, dass Ihr Vertriebsteam veraltete Preislisten in ihren Angeboten verwendet. Auf globaler Ebene können Sie entscheiden, ob Preisüberarbeitungen auf laufende Chancen angewendet werden sollen."
         },
         "mixed_price_types": {
-          "title": "Mixed Price Types",
-          "description": "For those selling subscription-based services alongside capital equipment, Mercura's Subscription Pricing* enables you to define optimal services for the configured product, contract length, volume fluctuations, and discount structures. This information allows for the calculation of Annual Recurring Revenue (ARR) and Annual Contract Value (ACV), contributing to your pipeline and revenue forecasts."
+          "title": "Gemischte Preistypen",
+          "description": "Für diejenigen, die abonnementbasierte Dienstleistungen neben Investitionsgütern verkaufen, ermöglicht die Abonnement-Preisgestaltung* von Mercura die Definition optimaler Dienstleistungen für das konfigurierte Produkt, Vertragsdauer, Volumenschwankungen und Rabattstrukturen. Diese Informationen ermöglichen die Berechnung des jährlichen wiederkehrenden Umsatzes (ARR) und des jährlichen Vertragswerts (ACV), was zu Ihrer Pipeline und Umsatzprognosen beiträgt."
         },
         "automatic_margin_control": {
-          "title": "Automatic Margin Control",
-          "description": "Mercura offers automatic margin control, ensuring that any configured product is quoted with a profit. Different sales reps or roles can have varying automatically approved margin levels. If a deal necessitates deviation from default margin levels, Mercura provides multi-step escalation and approval workflows."
+          "title": "Automatische Margenkontrolle",
+          "description": "Mercura bietet automatische Margenkontrolle und gewährleistet, dass jedes konfigurierte Produkt mit Gewinn angeboten wird. Unterschiedliche Vertriebsmitarbeiter oder Rollen können unterschiedliche automatisch genehmigte Margenstufen haben. Wenn ein Geschäft von den Standardmargenstufen abweicht, bietet Mercura mehrstufige Eskalations- und Genehmigungsworkflows."
         }
       }
     },
@@ -687,290 +775,276 @@
       }
     },
     "visualizations": {
-      "title": "Visualizations",
-      "heading": "Mercura CPQ Visualizations",
+      "title": "Visualisierungen",
+      "heading": "Mercura CPQ Visualisierungen",
       "hero": {
-        "heading": "Elevate your <0>product visualization</0> with us.",
-        "subtext": "In the era of data-driven decision-making, Mercura CPQ Analytics empowers your organization to extract critical revenue and product insights, revolutionizing how you do business."
+        "heading": "Heben Sie Ihre <0>Produktvisualisierung</0> mit uns auf ein neues Niveau.",
+        "subtext": "In der Ära datengetriebener Entscheidungsfindung ermöglicht Mercura CPQ Analytics Ihrem Unternehmen, wichtige Umsatz- und Produktkenntnisse zu extrahieren und Ihr Geschäft revolutionär zu gestalten."
       },
       "benefits_to_manufacturing": {
-        "label": "How our visualization feature benefits manufacturing companies",
-        "heading": " How our <0>visualization</0> feature <1/>benefits manufacturing <2/>companies",
+        "label": "Wie unser Visualisierungsfeature Fertigungsunternehmen zugute kommt",
+        "heading": "Wie unser <0>Visualisierungs</0>-Feature <1/>Fertigungsunternehmen <2/> zugute kommt",
         "benefits": {
           "visual_friendly": {
-            "title": "Hyper-Realistic Visual Fidelity",
-            "description": "The interactive tools allow clients to explore products in great detail, creating an immersive experience and the ability to tailor the product's context for different applications and customer segments."
+            "title": "Hyperrealistische visuelle Treue",
+            "description": "Die interaktiven Tools ermöglichen es Kunden, Produkte bis ins kleinste Detail zu erkunden und ein immersives Erlebnis zu schaffen sowie die Möglichkeit, den Kontext des Produkts für verschiedene Anwendungen und Kundensegmente anzupassen."
           },
           "real_time_2d_and_3d_visualization": {
-            "title": "Real-time 2D and 3D Visualization",
-            "description": "Clients benefit from instant updates with every selection, providing a comprehensive understanding of configurable products and enabling more informed purchasing decisions."
+            "title": "Echtzeit-2D- und 3D-Visualisierung",
+            "description": "Kunden profitieren von sofortigen Aktualisierungen bei jeder Auswahl, die ein umfassendes Verständnis von konfigurierbaren Produkten ermöglichen und informierte Kaufentscheidungen erleichtern."
           },
           "drag_and_drop_configuration": {
-            "title": "Drag-and-Drop Configuration",
-            "description": "Clients can effortlessly configure products through drag-and-drop interactions while maintaining product integrity, simplifying the visual configuration process."
+            "title": "Konfiguration per Drag & Drop",
+            "description": "Kunden können Produkte mühelos durch Drag & Drop-Interaktionen konfigurieren, während die Integrität des Produkts erhalten bleibt und der visuelle Konfigurationsprozess vereinfacht wird."
           },
           "augmented_reality_integration": {
-            "title": "Augmented Reality Integration",
-            "description": "Clients can use iOS tablets or mobile devices to place visualized products in real-world contexts, experiencing how the configured product fits and functions within its surroundings."
+            "title": "Integration von Augmented Reality",
+            "description": "Kunden können iOS-Tablets oder Mobilgeräte verwenden, um visualisierte Produkte in realen Kontexten zu platzieren und zu erleben, wie das konfigurierte Produkt in seine Umgebung passt und funktioniert."
           },
           "effortless_sharing": {
-            "title": "Effortless Sharing",
-            "description": "Clients can easily share configured product visualizations through direct links or QR codes, simplifying the sharing process across various platforms and browsers."
+            "title": "Müheloses Teilen",
+            "description": "Kunden können konfigurierte Produktvisualisierungen ganz einfach über direkte Links oder QR-Codes teilen und den Freigabeprozess auf verschiedenen Plattformen und Browsern vereinfachen."
           }
         }
       },
       "seamless_integration": {
-        "heading": "Seamless Integration into proposals",
-        "subtext": "Mercura CPQ Visualizations empowers your organization to",
+        "heading": "Nahtlose Integration in Angebote",
+        "subtext": "Mercura CPQ Visualisierungen ermöglicht es Ihrem Unternehmen",
         "gains": [
-          "Effortlessly embed configurator software screenshots",
-          "Showcase the product from multiple angles and zoom levels",
-          "Reflect the exact individualized product the customer has requested, down to the smallest detail."
+          "Konfigurator-Software-Screenshots mühelos einzubetten",
+          "Das Produkt aus verschiedenen Blickwinkeln und Zoomstufen zu präsentieren",
+          "Das genaue individualisierte Produkt widerzuspiegeln, das der Kunde angefordert hat, bis ins kleinste Detail."
         ]
       },
       "why_us": {
-        "heading": "Best in class and <0/> <1>fully integrated</1>",
-        "subtext": "What sets Mercura apart as <br />the best visual configuration <br/>software for your <br /> organization?",
+        "heading": "Best in Class und <0/> <1>vollständig integriert</1>",
+        "subtext": "Was zeichnet Mercura aus als <br />die beste visuelle Konfigurations <br/>Software für Ihr <br />Unternehmen?",
         "pros": {
-          "line_1": "<0>custom-designed for manufacturing</0>, free from distractions or irrelevant gaming features",
-          "line_2": "everything you need is seamlessly integrated into <0>one streamlined solution</0>",
-          "line_3": "we ensure smooth operation across new product releases."
+          "line_1": "<0>speziell für die Fertigung entworfen</0>, frei von Ablenkungen oder irrelevanten Gaming-Funktionen",
+          "line_2": "alles, was Sie benötigen, ist nahtlos in <0>einer einzigen integrierten Lösung</0> integriert",
+          "line_3": "wir stellen einen reibungslosen Betrieb über neue Produktveröffentlichungen hinweg sicher."
         }
       },
       "benefits_of_cpq": {
-        "heading": "How Mercura <0>CPQ Quote</0> and <1/> document generation benefit <2/> manufacturing companies?",
+        "heading": "Wie Mercura <0>CPQ Angebot</0> und <1/> Dokumenterstellung <2/> Fertigungsunternehmen zugute kommen?",
         "benefits": [
           {
-            "title": "Increased Conversion",
-            "description": "Our 3D configurator simplifies communication of your full product potential, fostering trust across all channels by making the sales process more transparent and building credibility."
+            "title": "Steigerung der Konversion",
+            "description": "Unser 3D-Konfigurator vereinfacht die Kommunikation des vollen Produkt-Potenzials, fördert das Vertrauen auf allen Kanälen, indem er den Verkaufsprozess transparenter macht und Glaubwürdigkeit aufbaut."
           },
           {
-            "title": "Accelerated Sales Velocity",
-            "description": "Visual product configuration tools facilitate communication of your product's full potential to various members of a procurement team, expediting the sales cycle."
+            "title": "Beschleunigte Verkaufsgeschwindigkeit",
+            "description": "Visuelle Produktkonfigurationstools erleichtern die Kommunikation des vollen Potenzials Ihres Produkts an verschiedene Mitglieder eines Beschaffungsteams und beschleunigen den Verkaufszyklus."
           },
           {
-            "title": "Reduced Errors and Risk",
-            "description": "Visual Configuration establishes mutual understanding between you and your valued customers, reducing order errors, rework, and warranty claims."
+            "title": "Reduzierte Fehler und Risiken",
+            "description": "Die visuelle Konfiguration schafft gegenseitiges Verständnis zwischen Ihnen und Ihren geschätzten Kunden, reduziert Bestellfehler, Nacharbeiten und Garantieansprüche."
           },
           {
-            "title": "Lead Generation",
-            "description": "Create an awe-inspiring and engaging entry point into your portfolio of individualized products, attracting prospects before they reach out to your sales department."
+            "title": "Lead-Generierung",
+            "description": "Schaffen Sie einen beeindruckenden und ansprechenden Einstiegspunkt in Ihr Portfolio an individualisierten Produkten, um Interessenten anzuziehen, bevor sie sich an Ihre Vertriebsabteilung wenden."
           },
           {
-            "title": "Enhanced Remote Selling",
-            "description": "Share a configured product with prospects and allow them to experience it online or through Augmented Reality on-site, boosting sales of complex industrial equipment."
+            "title": "Verbessertes Remote-Verkaufen",
+            "description": "Teilen Sie ein konfiguriertes Produkt mit Interessenten und ermöglichen Sie ihnen, es online oder vor Ort in Augmented Reality zu erleben, um den Verkauf von komplexen Industrieanlagen zu steigern."
           }
         ]
       }
     },
     "analytics": {
-      "title": "Analytics",
+      "title": "Analytik",
       "heading": "Mercura Analytics",
       "business_insignts": {
-        "heading": "We help you <0>unlock</0> business        insights.",
-        "subtext": "In the era of data-driven decision-making, Mercura CPQ Analytics empowers your organization to extract critical revenue and product insights, revolutionizing how you do business."
+        "heading": "Wir helfen Ihnen, <0>Geschäftseinblicke</0> freizuschalten.",
+        "subtext": "In der Ära datengetriebener Entscheidungsfindung ermöglicht Mercura CPQ Analytics Ihrem Unternehmen, wichtige Umsatz- und Produktkenntnisse zu extrahieren und Ihr Geschäft zu revolutionieren."
       },
       "unleash_the_potential": {
-        "label": "Unleash the potential of your data!",
-        "heading": "Unleash the <0>potential</0> of your data!",
+        "label": "Entfesseln Sie das Potenzial Ihrer Daten!",
+        "heading": "Entfesseln Sie das <0>Potenzial</0> Ihrer Daten!",
         "leverages": [
-          "Data-driven insights for more informed decisions",
-          "Improved sales strategies",
-          "Enhanced customer satisfaction"
+          "Datengetriebene Erkenntnisse für informiertere Entscheidungen",
+          "Verbesserte Verkaufsstrategien",
+          "Gesteigerte Kundenzufriedenheit"
         ]
       },
       "how_it_works": {
-        "heading": " How Mercura <0>CPQ Analytics</0> <1/> drives value",
-        "subtext": "Mercura CPQ Analytics empowers your organization to leverage <0/>data-driven insights for more informed decisions, improved sales <1/>strategies, and enhanced customer satisfaction.",
+        "heading": " Wie Mercura <0>CPQ Analytics</0> <1/> Mehrwert schafft",
+        "subtext": "Mercura CPQ Analytics ermöglicht Ihrem Unternehmen, <0/>datengetriebene Erkenntnisse für informiertere Entscheidungen, verbesserte Verkaufsstrategien und gesteigerte Kundenzufriedenheit zu nutzen.",
         "analytics_benefits": {
           "understand_sales_trends": {
-            "description": "Mercura CPQ Analytics empowers your organization to leverage data-driven insights for more informed decisions, improved sales strategies, and enhanced customer satisfaction.",
-            "title": "Understand Sales Trends"
+            "description": "Mercura CPQ Analytics ermöglicht Ihrem Unternehmen, datengetriebene Erkenntnisse für informiertere Entscheidungen, verbesserte Verkaufsstrategien und gesteigerte Kundenzufriedenheit zu nutzen.",
+            "title": "Verständnis der Verkaufstrends"
           },
           "region_specific_configurations": {
-            "description": "Tailor product configurations to specific regions, markets, and customer preferences, accelerating the sales process.",
-            "title": "Region-Specific Configurations"
+            "description": "Passen Sie Produktkonfigurationen an spezifische Regionen, Märkte und Kundenpräferenzen an und beschleunigen Sie den Verkaufsprozess.",
+            "title": "Regionsspezifische Konfigurationen"
           },
           "pinpoint_deal_characteristics": {
-            "description": "Analyze deal characteristics linked to both wins and losses, providing actionable insights to enhance your sales strategy.",
-            "title": "Pinpoint Deal Characteristics"
+            "description": "Analysieren Sie Deal-Merkmale, die mit Erfolgen und Verlusten verbunden sind, und gewinnen Sie handlungsrelevante Erkenntnisse zur Verbesserung Ihrer Verkaufsstrategie.",
+            "title": "Deal-Merkmale ermitteln"
           },
           "optimize_portfolio_content": {
-            "description": "Eliminate unnecessary portfolio components, simplifying your sales team's experience and guiding them to faster and more accurate configurations.",
-            "title": "Optimize Portfolio Content"
+            "description": "Eliminieren Sie unnötige Portfoliokomponenten, vereinfachen Sie die Erfahrung Ihres Verkaufsteams und führen Sie sie zu schnelleren und genaueren Konfigurationen.",
+            "title": "Optimieren des Portfolioinhalts"
           }
         }
       },
       "empower": {
-        "heading": "We empower your business with a wealth of unique data, including configuration selections, sales Bill of Materials (BoMs), and more.",
-        "subtext": "Our Analytics API efficiently extracts large volumes of transactional and master data from Mercura CPQ, enabling seamless transfer to your preferred Business Intelligence tool or data layer. Whether you use Qlik, Microsoft BI, Tableau, or any other tool, we offer templates for data import and refinement to ensure a smooth integration with tools like Qlik Sense."
+        "heading": "Wir statten Ihr Unternehmen mit einer Fülle von einzigartigen Daten aus, darunter Konfigurationsauswahlen, Verkaufsstücklisten (BoMs) und mehr.",
+        "subtext": "Unsere Analytics API extrahiert effizient große Mengen an Transaktions- und Stammdaten aus Mercura CPQ und ermöglicht deren nahtlose Übertragung in Ihr bevorzugtes Business-Intelligence-Tool oder Ihre Datenschicht. Ob Sie Qlik, Microsoft BI, Tableau oder ein anderes Tool verwenden, wir bieten Vorlagen für den Datenimport und die Verfeinerung, um eine reibungslose Integration mit Tools wie Qlik Sense sicherzustellen."
       },
       "business_results": {
-        "heading": "Business results of <0>Mercura</0> <1/> CPQ Analytics",
-        "subtext": "Mercura offers automatic margin control, ensuring that any <0/>configured product is quoted with a profit. Different sales reps or <1/> roles can have varying automatically approved margin levels. If a <2/> deal necessitates deviation from default margin levels, Mercura <3/> provides multi-step escalation and approval workflows.",
-        "results": [
-          {
-            "description": "Dive deep into product options, features, and service preferences among your customers. Identify characteristics associated with successful deals.",
-            "title": "Sales Insights"
-          },
-          {
-            "description": "Mercura CPQ houses data not found elsewhere, including sales cycles, quote versions, and the link between customer needs and Bill of Materials (BoM).",
-            "title": "Unique CPQ Data"
-          },
-          {
-            "description": "Uncover insights based on demand patterns, quoted vs. unquoted parts, and identify high-value products.",
-            "title": "Product Insights"
-          }
-        ]
+        "heading": "Geschäftsergebnisse von <0>Mercura</0> <1/> CPQ Analytics",
+        "subtext": "Mercura bietet automatische Margenkontrolle, um sicherzustellen, dass jedes <0/>konfigurierte Produkt mit Gewinn angeboten wird. Verschiedene Vertriebsmitarbeiter oder <1/>Rollen können unterschiedliche automatisch genehmigte Margenstufen haben. Wenn ein <2/>Deal von den Standardmargen abweicht, bietet Mercura <3/> mehrstufige Eskalations- und Genehmigungsworkflows."
       }
     },
     "about": {
-      "title": "About",
-      "heading": "We are passionate <br /> about growing your business <br /> with software.",
-      "subheading": "Mercura is a SaaS company that develops and maintains a core of software products which are customized to the individual company’s wishes.",
+      "title": "Über uns",
+      "heading": "Wir sind leidenschaftlich <br /> daran interessiert, Ihr Unternehmen <br /> mit Software zu entwickeln.",
+      "subheading": "Mercura ist ein SaaS-Unternehmen, das einen Kern von Softwareprodukten entwickelt und pflegt, die an die individuellen Wünsche des Unternehmens angepasst sind.",
       "stats": {
-        "revenue": "Revenue increased <br/> overall",
-        "satisfied_customers": "Satisfied customers <br/> and partners",
-        "lines_of_code": "Lines of <br/> code written",
-        "employees": "Employees working <br/> in Mercura"
+        "revenue": "Umsatz insgesamt <br/> gesteigert",
+        "satisfied_customers": "Zufriedene Kunden <br/> und Partner",
+        "lines_of_code": "Zeilen <br/> geschriebener Code",
+        "employees": "Mitarbeiter <br/> bei Mercura"
       },
-      "our_offices": "Our Offices",
+      "our_offices": "Unsere Büros",
       "our_team": {
-        "heading": "Mercura team",
+        "heading": "Mercura-Team",
         "subheading": "Lorem ipsum dolor sit amet, consectetur <0/> adipiscing elit, sed do eiusmod tempor incididunt <1/> ut labore et dolore."
       },
       "our_values": {
-        "heading": "Our Values",
+        "heading": "Unsere Werte",
         "subheading": "Lorem ipsum dolor sit amet, consectetur <0/>adipiscing elit, sed do eiusmod tempor incididunt <1/>ut labore et dolore.",
         "values": {
           "customer_centricity": {
-            "title": "Customer-Centricity",
-            "description": "We place our customers at the heart of everything we do. Their success is our success. We actively listen to their needs, challenges, and aspirations, and we tailor our solutions to provide maximum value."
+            "title": "Kundenorientierung",
+            "description": "Wir stellen unsere Kunden in den Mittelpunkt all unserer Aktivitäten. Ihr Erfolg ist unser Erfolg. Wir hören aktiv auf ihre Bedürfnisse, Herausforderungen und Ziele und passen unsere Lösungen an, um maximalen Mehrwert zu bieten."
           },
           "innovation": {
             "title": "Innovation",
-            "description": "We continuously strive to push the boundaries of what's possible, fostering a culture of creativity and exploration. Our commitment to innovation drives the development of cutting-edge software solutions."
+            "description": "Wir streben kontinuierlich danach, die Grenzen des Möglichen zu erweitern und fördern eine Kultur der Kreativität und Erkundung. Unser Engagement für Innovation treibt die Entwicklung modernster Softwarelösungen voran."
           },
           "collaboration": {
-            "title": "Collaboration",
-            "description": "Collaboration is ingrained in our DNA. We believe in the power of teamwork, both internally and with our clients. Our collaborative spirit promotes open communication, shared expertise, and a collective commitment."
+            "title": "Zusammenarbeit",
+            "description": "Zusammenarbeit ist in unserer DNA verankert. Wir glauben an die Kraft des Teamworks, sowohl intern als auch mit unseren Kunden. Unser gemeinschaftlicher Geist fördert offene Kommunikation, geteiltes Fachwissen und ein kollektives Engagement."
           }
         }
       }
     },
     "home": {
-      "title": "Frontpage",
-      "heading": "Shape the Future of Manufacturing with <0>AI-Powered CPQ</0>",
-      "subheading": " We are a highly specialized configurator SaaS company offering remarkable product visualization and pricing tools in 2D and 3D for a variety of industries.",
-      "learn_more": "Learn More",
+      "title": "Startseite",
+      "heading": "Gestalten Sie die Zukunft der Fertigung mit <0>KI-gesteuertem CPQ</0>",
+      "subheading": "Wir sind ein hochspezialisiertes SaaS-Unternehmen für Konfiguratoren und bieten bemerkenswerte Produktvisualisierungs- und Preisgestaltungstools in 2D und 3D für verschiedene Branchen.",
+      "learn_more": "Erfahren Sie mehr",
       "review": {
-        "message": "Mercura has fulfilled our wishes for a new product configurator for our pens and key tags in a most noble way.",
+        "message": "Mercura hat unsere Wünsche nach einem neuen Produktkonfigurator für unsere Stifte und Schlüsselanhänger auf noble Weise erfüllt.",
         "author": {
           "name": "Birgitte Kjær Hansen",
           "occupation": "Marketing Manager, Lindab A/S"
         }
       },
       "benefits": {
-        "heading": "About the benefits of <0/><1>product configuration</1>",
+        "heading": "Über die Vorteile der <0/><1>Produktkonfiguration</1>",
         "stats": {
           "conversion_rate": {
             "value": "40%",
-            "label": "improvement in <br /> average sales price"
+            "label": "Verbesserung des <br /> durchschnittlichen Verkaufspreises"
           },
           "sales_price": {
             "value": "30%",
-            "label": "improvement in <br /> average sales price"
+            "label": "Verbesserung des <br /> durchschnittlichen Verkaufspreises"
           },
           "online_returns": {
             "value": "80%",
-            "label": "improvement in <br /> average sales price"
+            "label": "Verbesserung des <br /> durchschnittlichen Verkaufspreises"
           }
         }
       },
       "manufacturing_potential": {
-        "heading": "Maximise your manufacturing <0/> potential with a <1>product configurator.</1>",
+        "heading": "Maximieren Sie Ihr Fertigungspotenzial mit einem <1>Produktkonfigurator.</1>",
         "how_to_maximise": [
-          "Ensure error free order handling and production",
-          "Gain a deeper insight into customer needs",
-          "Automate sales process with dynamic quoting and pricing",
-          "Scale your business into new markets"
+          "Stellen Sie sicher, dass Bestellabwicklung und Produktion fehlerfrei sind",
+          "Erhalten Sie tiefere Einblicke in die Bedürfnisse der Kunden",
+          "Automatisieren Sie den Verkaufsprozess mit dynamischer Angebotserstellung und Preisgestaltung",
+          "Skalieren Sie Ihr Unternehmen in neue Märkte"
         ]
       },
       "business_growth_features": {
-        "heading": "Features that help <0/> your <1>business grow.</1>",
+        "heading": "Merkmale, die <0/> Ihrem <1>Unternehmen helfen zu wachsen.</1>",
         "features": {
           "visualization": {
             "type": "chart3d",
-            "title": "Hyper realistic product visualization",
-            "description": "Let your customers access pixel perfect quality. Besides offering AR integrations, Mercura helps you explore the products in detail and create an immersive experience."
+            "title": "Hyperrealistische Produktvisualisierung",
+            "description": "Lassen Sie Ihre Kunden pixelgenaue Qualität erleben. Neben AR-Integrationen ermöglicht Mercura Ihnen, die Produkte im Detail zu erkunden und ein immersives Erlebnis zu schaffen."
           },
           "efficient_product_modelling": {
-            "title": "Efficient product modeling",
-            "description": "Create variations, add options, use predefined product models, and define product rules or constraints. All of this is possible with Mercura."
+            "title": "Effiziente Produktmodellierung",
+            "description": "Erstellen Sie Variationen, fügen Sie Optionen hinzu, verwenden Sie vordefinierte Produktmodelle und definieren Sie Produktregeln oder Einschränkungen. All dies ist mit Mercura möglich."
           },
           "need_based": {
-            "title": "Needs-based configuration engine",
-            "description": "Monitor your sales and adapt the configurator by checking out the system’s data and insights. Generate an accurate bill of materials with Mercura for smoother communication."
+            "title": "Bedarfsbasierte Konfigurations-Engine",
+            "description": "Überwachen Sie Ihre Verkäufe und passen Sie den Konfigurator an, indem Sie das Systemdaten und Erkenntnisse prüfen. Generieren Sie eine genaue Stückliste mit Mercura, um die Kommunikation zu vereinfachen."
           },
           "flexible_pricing_engine": {
-            "title": "Flexible pricing engine",
-            "description": "Mercura supports a wide range of price models and methodologies. You can use price factors such as geographic markets, customer segmentation and more."
+            "title": "Flexible Preisgestaltungs-Engine",
+            "description": "Mercura unterstützt eine breite Palette von Preismodellen und -methoden. Sie können Preisfaktoren wie geografische Märkte, Kundensegmentierung und mehr verwenden."
           },
           "document_generation": {
-            "title": "Quote and document generation",
-            "description": "We can generate accurate and persuasive quotes for you, preventing inaccurate or inconsistent pricing or eroding customer trust."
+            "title": "Angebots- und Dokumentenerstellung",
+            "description": "Wir können genaue und überzeugende Angebote für Sie generieren und so ungenaue oder inkonsistente Preisgestaltung verhindern oder das Vertrauen der Kunden nicht untergraben."
           },
           "unique_analytics": {
-            "title": "Unique analytics",
-            "description": "Gain insights into demand patterns, and determine which products deliver the most value. You also have access to region-specific configurations, markets and customer preferences."
+            "title": "Einzigartige Analysen",
+            "description": "Erhalten Sie Einblicke in Nachfragemuster und ermitteln Sie, welche Produkte den höchsten Wert liefern. Sie haben auch Zugriff auf regionsspezifische Konfigurationen, Märkte und Kundenpräferenzen."
           }
         }
       },
       "product_configuration": {
-        "heading": "Convenient product configuration <0/> at <1>your fingertips</1>.",
+        "heading": "Bequeme Produktkonfiguration <0/> <1>in Ihren Händen</1>.",
         "steps": [
           {
-            "title": "Connect",
-            "description": "Start your journey with Mercura by scheduling a personalized demo. Our team will understand your unique manufacturing needs and showcase how our AI-driven product configuration can elevate your business."
+            "title": "Verbinden",
+            "description": "Starten Sie Ihre Reise mit Mercura, indem Sie eine personalisierte Demo planen. Unser Team wird Ihre einzigartigen Fertigungsbedürfnisse verstehen und Ihnen zeigen, wie unsere KI-gesteuerte Produktkonfiguration Ihr Unternehmen auf das nächste Level heben kann."
           },
           {
-            "title": "Customize & Configure",
-            "description": "Our experts collaborate with you to tailor Mercura's solutions to your processes. We fine-tune every detail, ensuring our SaaS platform integrates seamlessly with your workflow."
+            "title": "Anpassen & Konfigurieren",
+            "description": "Unsere Experten arbeiten mit Ihnen zusammen, um Mercuras Lösungen an Ihre Prozesse anzupassen. Wir feilen an jedem Detail, um sicherzustellen, dass unsere SaaS-Plattform nahtlos in Ihren Workflow integriert ist."
           },
           {
-            "title": "Optimize",
-            "description": "Witness the transformation as Mercura's solutions streamline your operations. Harness the power of data to optimize your configurations, speed up your quote-to-production cycle, and drive your business forward."
+            "title": "Optimieren",
+            "description": "Erleben Sie die Transformation, wenn Mercuras Lösungen Ihre Abläufe optimieren. Nutzen Sie die Kraft der Daten, um Ihre Konfigurationen zu optimieren, den Angebot-zu-Produktion-Zyklus zu beschleunigen und Ihr Unternehmen voranzutreiben."
           },
           {
-            "title": "Thrive",
-            "description": "Our commitment doesn't end with deployment. We provide continuous updates and insights, ensuring you're always at the forefront of product."
+            "title": "Gedeihen",
+            "description": "Unser Engagement endet nicht mit der Implementierung. Wir bieten kontinuierliche Updates und Erkenntnisse, um sicherzustellen, dass Sie immer an vorderster Front sind."
           }
         ]
       }
     },
     "request_a_demo": {
-      "title": "Request a Demo",
-      "company_relationships": "Company Relationships",
-      "mercura_clients": "Mercura Clients",
-      "what_our_clients_say": "What our clients say about us.",
+      "title": "Demo anfragen",
+      "company_relationships": "Unternehmensbeziehungen",
+      "mercura_clients": "Mercura Kunden",
+      "what_our_clients_say": "Was unsere Kunden über uns sagen.",
       "reviews": {
         "birgitte": {
           "name": "Birgitte Kjær Hansen",
           "occupation": "Marketing Manager, Lindab A/S",
-          "headline": "Mercura has fulfilled all our wishes",
-          "message": "A big recommendation to Mercura and their team. They are highly professional and very good at gaining an overview of complex product constraints and pricing logic. Our configurator is very good at visualizing our garage doors which gives us a shorter time to market, makes us more accessible for customers and has helped us optimize internal sales processes, which will help us grow our business."
+          "headline": "Mercura hat all unsere Wünsche erfüllt",
+          "message": "Eine große Empfehlung für Mercura und ihr Team. Sie sind äußerst professionell und sehr gut darin, einen Überblick über komplexe Produktbeschränkungen und Preislogik zu gewinnen. Unser Konfigurator visualisiert unsere Garagentore sehr gut, was uns eine kürzere Time-to-Market verschafft, uns für Kunden zugänglicher macht und uns geholfen hat, interne Vertriebsprozesse zu optimieren, was uns beim Wachstum unseres Geschäfts helfen wird."
         },
         "ove": {
           "name": "Ove Dalsgaard",
           "occupation": "CEO, Multi-Living A/S",
-          "headline": "Mercura is a great partner",
-          "message": "We have been extremely happy with the collaboration with Mercura. Their professionalism and quality have been of the highest order and we would happily recommend them to anyone else interested in 3D modeling and online configurators."
+          "headline": "Mercura ist ein großartiger Partner",
+          "message": "Wir sind äußerst zufrieden mit der Zusammenarbeit mit Mercura. Ihre Professionalität und Qualität waren von höchstem Standard, und wir würden sie gerne jedem empfehlen, der an 3D-Modellierung und Online-Konfiguratoren interessiert ist."
         },
         "linda": {
           "name": "Linda Kaae Hedegaard",
-          "occupation": "Sales & Marketing assistant, SCITEQ A/S",
-          "headline": "Very satisfied with Mercura!",
-          "message": "At SCITEQ, we are very happy with our online configuration and quotation system that Mercura has developed for us. Mercura has been particularly good at meeting our ongoing needs."
+          "occupation": "Sales & Marketing Assistant, SCITEQ A/S",
+          "headline": "Sehr zufrieden mit Mercura!",
+          "message": "Bei SCITEQ sind wir sehr zufrieden mit unserem Online-Konfigurations- und Angebotsystem, das Mercura für uns entwickelt hat. Mercura hat sich besonders gut darin erwiesen, auf unsere laufenden Anforderungen einzugehen."
         }
       }
     }

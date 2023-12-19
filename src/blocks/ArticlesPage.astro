@@ -1,0 +1,88 @@
+---
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import {
+  type Locale,
+  useTranslation,
+  showDefaultLang,
+  defaultLang,
+} from "@/i18n";
+import Layout from "@/layouts/Layout.astro";
+
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+
+const articles = (
+  await getCollection(
+    "articles",
+    ({ data }) => data.isDraft !== true && data.language === locale
+  )
+).sort((a, b) => {
+  /**
+   * Sort articles by publish date in descending order
+   */
+  const aDate = new Date(a.data.publishDate);
+  const bDate = new Date(b.data.publishDate);
+
+  return bDate.getTime() - aDate.getTime();
+});
+
+const {
+  pages: { articles: t },
+} = await useTranslation(locale as Locale);
+
+function getArticlePath(slug: string) {
+  if (!showDefaultLang && locale === defaultLang) {
+    return `/${slug}`;
+  }
+
+  return `/${locale}/${slug}`;
+}
+---
+
+<Layout title={t.title}>
+  <Breadcrumb links={[t.title]} />
+  <section>
+    <div class="container">
+      <h1
+        class="heading-1 text-center brand-gradient bg-clip-text text-transparent"
+      >
+        {t.heading}
+      </h1>
+      <p
+        class="mt-12 max-w-[700px] mx-auto text-xl font-light leading-tight tracking-[.4px] text-center text-white"
+      >
+        {t.subtext}
+      </p>
+    </div>
+  </section>
+
+  <section class="py-[4.25rem]">
+    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        articles.map((article) => (
+          <a href={getArticlePath(article.slug)} class="block">
+            <article class="p-8 rounded-2xl bg-primary-4/[.11] border border-primary-5/[.41]">
+              <Image
+                class="w-full"
+                src={article.data.cover}
+                alt={article.data.title}
+              />
+              <p class="mb-4 mt-6 text-xl font-medium leading-tight tracking-[.4px] text-neutral-10">
+                {article.data.title}
+              </p>
+              <p class="text-base leading-[1.4] text-neutral-30">
+                {article.data.description}
+              </p>
+            </article>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</Layout>

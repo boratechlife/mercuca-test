@@ -14,7 +14,16 @@ import type { Props as AstroSEOProps } from "astro-seo";
 
 import { site } from "@/constants";
 import TheFooter from "@/components/TheFooter.astro";
-import { getLangFromUrl } from "@/i18n";
+import {
+  getLangFromUrl,
+  getRouteFromUrl,
+  useTranslatedPath,
+  type RouteKey,
+  locales,
+  defaultLang,
+  showDefaultLang,
+  type Locale,
+} from "@/i18n";
 import { cn } from "@/utils";
 
 const lang = getLangFromUrl(Astro.url);
@@ -28,6 +37,7 @@ const {
   description,
   theme = "blue",
   class: classes,
+  languageAlternates,
   ...props
 } = Astro.props;
 
@@ -59,6 +69,26 @@ const favicons: {
     href: "/apple-touch-icon.png",
   },
 ];
+
+const routeKey = getRouteFromUrl(Astro.url) || "";
+
+const r = useTranslatedPath(lang);
+
+function generateAlternateLinks() {
+  return Object.keys(locales)
+    .filter((l) => l != lang)
+    .map((l) => {
+      return {
+        hrefLang: l,
+        href: new URL(
+          r(routeKey as RouteKey, l as Locale),
+          Astro.site || Astro.url.origin
+        ),
+      };
+    });
+}
+
+const alternateLinks = languageAlternates || generateAlternateLinks();
 ---
 
 <!doctype html>
@@ -69,9 +99,12 @@ const favicons: {
     {favicons.map((icon) => <link {...icon} />)}
     <meta name="generator" content={Astro.generator} />
     <SEO
-      title={title ? `${title} - ${site.title}` : site.title}
+      title={title}
+      titleDefault={site.title}
+      titleTemplate={`%s - ${site.title}`}
       description={description}
       {...props}
+      languageAlternates={alternateLinks}
     />
   </head>
   <body

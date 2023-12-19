@@ -1,0 +1,9 @@
+---
+import LindabPage from "@/blocks/cases/LindabPage.astro";
+
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<LindabPage locale={lang} />
