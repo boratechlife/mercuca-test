@@ -6,7 +6,7 @@ publishDate: 2023-12-12T11:51:29.894Z
 tags: []
 language: es
 isDraft: false
-slug: que-es-cpq-visual-es
+slug: que-es-cpq-visual
 ---
 
 # ¿Qué es CPQ visual?
