@@ -414,6 +414,52 @@
       },
       "conclusion_statement": "Zusammenfassend sind Produktkonfiguratoren wesentliche Werkzeuge, die sowohl Kunden als auch Unternehmen einen Mehrwert bieten, indem sie maßgeschneiderte Lösungen und eine verbesserte Einkaufserfahrung bieten."
     },
+    "salesconfigurator": {
+      "title": "Verkaufskonfigurator",
+      "heading": "Verkaufskonfigurator",
+      "subheading": "Ein Verkaufskonfigurator ist ein innovatives Software-Tool, das Kunden ermöglicht, Produkte entsprechend ihren spezifischen Bedürfnissen und Wünschen anzupassen.",
+      "increase_conversion": "Steigern Sie Konversionsraten und den durchschnittlichen Bestellwert mit individuell zugeschnittenen Lösungen",
+      "order_handling": "Garantieren Sie eine fehlerfreie Auftragsabwicklung und Produktion durch präzise und maßgeschneiderte Produktkonfigurationen",
+      "insight": "Gewinnen Sie tiefergehende Einblicke in Kundenpräferenzen und Markttrends durch Anpassungsmöglichkeiten",
+      "personalization": {
+        "heading": "Personalisierungsoptionen",
+        "text_1": "Verkaufskonfiguratoren ermöglichen es Kunden, Produkte nach ihren eigenen Vorstellungen zu gestalten, was eine persönliche und interaktive Erfahrung schafft.",
+        "text_2": "Diese Werkzeuge sind entscheidend für die Steigerung der Kundenzufriedenheit und die Vertiefung der Kundenbeziehung zu Ihrer Marke."
+      },
+      "intuitive_user_interface": {
+        "heading": "Benutzerfreundliche Schnittstelle",
+        "text_1": "Verkaufskonfiguratoren sind mit einer intuitiven Benutzeroberfläche ausgestattet, die es Kunden leicht macht, ihre Produkte anzupassen.",
+        "text_2": "Sie bieten ein visuelles und interaktives Erlebnis, das die Kundenerfahrung bereichert."
+      },
+      "challenges": {
+        "heading": "Herausforderungen bei der Implementierung",
+        "subtext": "Die Einführung von Verkaufskonfiguratoren kann technische und betriebliche Herausforderungen mit sich bringen, wie die Integration in bestehende Systeme und die Sicherstellung der Konfigurationsgenauigkeit."
+      },
+      "conclusion_statement": "Verkaufskonfiguratoren sind wesentliche Werkzeuge, die sowohl Kunden als auch Unternehmen einen Mehrwert bieten, indem sie maßgeschneiderte Lösungen und eine optimierte Einkaufserfahrung ermöglichen."
+    },
+    "visualcpq": {
+      "title": "Visuelles CPQ",
+      "heading": "Visuelles CPQ",
+      "subheading": "Visuelles CPQ (Configure, Price, Quote) ist eine fortschrittliche Softwarelösung, die es Kunden ermöglicht, Produkte in Echtzeit zu visualisieren und anzupassen, während sie konfiguriert, bepreist und angeboten werden.",
+      "increase_conversion": "Erhöhen Sie Konversionsraten und den durchschnittlichen Bestellwert durch lebendige und maßgeschneiderte Produktpräsentationen",
+      "order_handling": "Gewährleisten Sie eine effiziente Auftragsabwicklung und Produktion mit genauen visuellen Produktkonfigurationen",
+      "insight": "Erzielen Sie tiefere Einblicke in das Kundenverhalten und -präferenzen durch interaktive und visuelle Anpassungswerkzeuge",
+      "personalization": {
+        "heading": "Visuelle Personalisierung",
+        "text_1": "Mit Visuellem CPQ können Kunden nicht nur Produkte anpassen, sondern auch visuell erleben, was eine umfassende und einbeziehende Kauferfahrung schafft.",
+        "text_2": "Dieses Werkzeug ist entscheidend für die Verbesserung der Kundenzufriedenheit und für die Etablierung einer stärkeren Bindung zwischen dem Kunden und Ihrer Marke durch eine interaktive und immersive Erfahrung."
+      },
+      "intuitive_user_interface": {
+        "heading": "Benutzerfreundliche Oberfläche",
+        "text_1": "Visuelles CPQ ist mit einer intuitiven Oberfläche ausgestattet, die es Kunden ermöglicht, während des Konfigurationsprozesses einfach und informiert Entscheidungen zu treffen.",
+        "text_2": "Die visuelle und interaktive Natur dieser Werkzeuge verbessert die Kundenerfahrung und unterstützt den Entscheidungsprozess."
+      },
+      "challenges": {
+        "heading": "Herausforderungen bei der Implementierung",
+        "subtext": "Die Einführung von Visuellem CPQ kann Herausforderungen wie die Integration in bestehende Vertriebs- und CRM-Systeme sowie die Gewährleistung der technischen und visuellen Genauigkeit in den Konfigurationen mit sich bringen."
+      },
+      "conclusion_statement": "Visuelles CPQ ist eine vitale Technologie, die sowohl für Unternehmen als auch für ihre Kunden wertvolle Vorteile bietet, indem sie Anpassung, Preisgestaltung und Angebotserstellung in einer visuellen Erfahrung vereint."
+    },
     "cases": {
       "title": "Cases",
       "heading": "Mercura Cases",

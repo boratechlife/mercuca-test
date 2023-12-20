@@ -1,0 +1,180 @@
+---
+import ScrollArrow from "@/components/icons/ScrollArrow.astro";
+import Layout from "@/layouts/Layout.astro";
+
+import circles from "@/assets/circles.png";
+import pentagon from "@/assets/pentagon.png";
+
+import support from "@/assets/support-integrated.svg";
+
+import { locales, useTranslation, type Locale } from "@/i18n";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import LaunchRocket from "@/components/icons/LaunchRocket.astro";
+import LetsBuildTogether from "@/sections/LetsBuildTogether.astro";
+import { Image } from "astro:assets";
+import User from "@/components/icons/User.astro";
+import Trans from "@/i18n/Trans.astro";
+
+export async function getStaticPaths() {
+  return Object.keys(locales).map((locale) => ({ params: { locale } }));
+}
+const { locale } = Astro.params;
+const {
+  common,
+  pages: { visualcpq: t },
+} = await useTranslation(locale as Locale);
+---
+
+<Layout theme="gray">
+  <Breadcrumb links={[common.breadcrumb.articles, t.title]} />
+  <section class="py-[4.25rem]">
+    <div
+      class="container relative gap-6 md:gap-12 xl:gap-20 grid grid-cols-1 lg:grid-cols-2 text-neutral-10 mb-[4.25rem]"
+    >
+      <div>
+        <h1 class="text-neutral-10 heading-1">{t.heading}</h1>
+      </div>
+
+      <div>
+        <p class="text-2xl lg:text-[2rem] leading-tight text-neutral-10">
+          {t.subheading}
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="flex items-center gap-2.5 animate-[bounce_2s_infinite]">
+        <ScrollArrow class="h-5 w-auto" />
+        <span
+          class="text-sm text-white leading-normal tracking-[.7px] capitalize"
+          >{common.scroll_for_more}</span
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="py-[4.25rem]">
+    <div
+      class="container grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 relative"
+    >
+      <div>
+        <h2 class="heading-2 mb-8 text-neutral-10">
+          {t.personalization.heading}
+        </h2>
+        <div class="p-8 bg-neutral-40/[.09] rounded-2xl w-max">
+          <LaunchRocket class="h-20 w-20" />
+        </div>
+      </div>
+
+      <div>
+        <p class="text-2xl text-neutral-10 leading-tight tracking-[.48px]">
+          {t.personalization.text_1}
+        </p>
+        <p
+          class="mt-16 text-xl font-light leading-tight tracking-[.4px] text-neutral-30"
+        >
+          {t.personalization.text_2}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-[4.25rem]">
+    <div class="container">
+      <div class="py-20 grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div
+          class="p-8 bg-primary-4/[.11] rounded-2xl border border-primary-7 relative"
+        >
+          <Image
+            class="absolute top-full left-full -translate-x-1/2 -translate-y-1/2 hidden md:block"
+            src={pentagon}
+            alt=""
+          />
+          <p class="text-[2rem] leading-tight text-white">
+            {t.increase_conversion}
+          </p>
+        </div>
+        <div class="p-8 bg-primary-4/[.11] rounded-2xl border border-primary-7">
+          <p class="text-[2rem] leading-tight text-white">
+            {t.order_handling}
+          </p>
+        </div>
+
+        <div class="md:col-span-2">
+          <div
+            class="p-8 bg-primary-4/[.11] rounded-2xl border border-primary-7 md:w-1/2 mx-auto relative"
+          >
+            <Image
+              class="absolute top-full left-full -translate-x-1/2 -translate-y-1/2 hidden md:block"
+              src={circles}
+              alt=""
+            />
+            <p class="text-[2rem] leading-tight text-white">
+              {t.insight}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-[4.25rem]">
+    <div
+      class="container grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 relative"
+    >
+      <div>
+        <h2 class="heading-2 mb-8 text-neutral-10">
+          <Trans translation={t.intuitive_user_interface.heading} />
+        </h2>
+        <div class="p-8 bg-neutral-40/[.09] rounded-2xl w-max">
+          <User class="h-20 w-20" />
+        </div>
+      </div>
+
+      <div>
+        <p class="text-2xl text-neutral-10 leading-tight tracking-[.48px]">
+          {t.intuitive_user_interface.text_1}
+        </p>
+        <p
+          class="mt-16 text-xl font-light leading-tight tracking-[.4px] text-neutral-30"
+        >
+          {t.intuitive_user_interface.text_2}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-[4.25rem] overflow-x-clip">
+    <div class="container">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20">
+        <div class="">
+          <h2 class="text-neutral-10 heading-2 mb-[25px] lg:mb-[50px]">
+            {t.challenges.heading}
+          </h2>
+
+          <p
+            class="text-neutral-30 font-light lg:leading-[125%] tracking-[0.4px] text-base lg:text-[20px]"
+          >
+            <Trans translation={t.challenges.subtext} />
+          </p>
+        </div>
+        <div class="flex items-center">
+          <Image class="mx-auto" src={support} alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-[4.25rem]">
+    <div class="container">
+      <div class="mx-auto max-w-[800px]">
+        <p
+          class="text-2xl leading-tight tracking-[.48px] text-neutral-10 text-center"
+        >
+          {t.conclusion_statement}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <LetsBuildTogether theme="gray" />
+</Layout>

@@ -1,0 +1,8 @@
+---
+import VisualCPQPage from "@/blocks/VisualCPQPage.astro";
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<VisualCPQPage locale={lang} />

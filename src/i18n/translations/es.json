@@ -414,6 +414,52 @@
       },
       "conclusion_statement": "En resumen, los configuradores de productos son herramientas esenciales que aportan valor tanto a los clientes como a las empresas al ofrecer soluciones personalizadas y una experiencia de compra mejorada."
     },
+    "salesconfigurator": {
+      "title": "Configurador de Ventas",
+      "heading": "Configurador de Ventas",
+      "subheading": "Un configurador de ventas es una herramienta de software avanzada que facilita la personalización de productos para satisfacer las necesidades y preferencias específicas de los clientes.",
+      "increase_conversion": "Mejore las tasas de conversión y los valores promedio de los pedidos con soluciones a medida",
+      "order_handling": "Garantice un manejo de pedidos y producción eficiente y sin errores mediante configuraciones precisas",
+      "insight": "Obtenga conocimientos valiosos sobre las preferencias y tendencias de los clientes a través de opciones de personalización",
+      "personalization": {
+        "heading": "Funciones de Personalización",
+        "text_1": "Los configuradores de ventas permiten a los clientes adaptar los productos a sus especificaciones, proporcionando una experiencia de compra única y personalizada.",
+        "text_2": "Estas herramientas son fundamentales para mejorar la satisfacción del cliente y fomentar una conexión más sólida con su marca."
+      },
+      "intuitive_user_interface": {
+        "heading": "Interfaz Intuitiva",
+        "text_1": "Los configuradores de ventas están diseñados con interfaces de usuario amigables, facilitando a los clientes la personalización de productos.",
+        "text_2": "Proporcionan una experiencia visual e interactiva que mejora la experiencia del cliente."
+      },
+      "challenges": {
+        "heading": "Desafíos de Implementación",
+        "subtext": "La integración de configuradores de ventas puede presentar desafíos técnicos y operativos, incluyendo la necesidad de alinearse con sistemas existentes y mantener la precisión de las configuraciones."
+      },
+      "conclusion_statement": "En conclusión, los configuradores de ventas son herramientas vitales que agregan un valor significativo tanto a los clientes como a las empresas al ofrecer soluciones a medida y enriquecer la experiencia de compra."
+    },
+    "visualcpq": {
+      "title": "Visual CPQ",
+      "heading": "Visual CPQ",
+      "subheading": "Visual CPQ (Configurar, Precio, Cotización) es una solución de software avanzada que permite la visualización y personalización en tiempo real de productos durante el proceso de configuración, precio y cotización.",
+      "increase_conversion": "Aumente las tasas de conversión y los valores promedio de pedidos mediante presentaciones de productos vívidas y personalizadas",
+      "order_handling": "Asegure un procesamiento eficiente de pedidos y producción con configuraciones de producto visuales precisas",
+      "insight": "Logre una comprensión más profunda del comportamiento y preferencias del cliente a través de herramientas de personalización interactivas y visuales",
+      "personalization": {
+        "heading": "Personalización Visual",
+        "text_1": "Visual CPQ no solo permite la personalización de productos, sino que también permite a los clientes experimentarlos visualmente, creando una experiencia de compra completa y atractiva.",
+        "text_2": "Esta herramienta es clave para mejorar la satisfacción del cliente y establecer un vínculo más fuerte entre el cliente y su marca a través de una experiencia interactiva e inmersiva."
+      },
+      "intuitive_user_interface": {
+        "heading": "Interfaz Intuitiva",
+        "text_1": "Visual CPQ viene con una interfaz intuitiva, permitiendo a los clientes tomar decisiones informadas fácilmente durante el proceso de configuración.",
+        "text_2": "La naturaleza visual e interactiva de estas herramientas mejora la experiencia del cliente y apoya el proceso de toma de decisiones."
+      },
+      "challenges": {
+        "heading": "Desafíos de Implementación",
+        "subtext": "La implementación de Visual CPQ puede implicar desafíos como integrarse en sistemas de ventas y CRM existentes y garantizar la precisión técnica y visual en las configuraciones."
+      },
+      "conclusion_statement": "En resumen, Visual CPQ es una tecnología vital que ofrece beneficios valiosos tanto para las empresas como para sus clientes al combinar la personalización, precios y cotizaciones en una experiencia visual."
+    },
     "cases": {
       "title": "Casos",
       "heading": "Casos Mercura",

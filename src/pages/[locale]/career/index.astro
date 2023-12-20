@@ -97,26 +97,26 @@ const filterableCareers = t.jobs.map((career) => ({
                   <p>
                     {job.type}: {job.title}
                   </p>
-                  <Link
-                    href={job.link}
+                  <a
+                    href="mailto:mj@mercura.io"
                     class="hover:text-neutral-70 transition-colors duration-200 hidden md:flex items-center gap-3"
                   >
                     {t.read_more}{" "}
                     <ArrowTopRight class="inline h-5 w-5 shrink-0 fill-current" />
-                  </Link>
+                  </a>
                 </div>
                 <p class="text-base leading-[1.4] text-neutral-20 max-w-[650px]">
                   {job.description}
                 </p>
 
                 <div class="md:hidden mt-4">
-                  <Link
-                    href={job.link}
+                  <a
+                    href="mailto:mj@mercura.io"
                     class="hover:text-neutral-70 transition-colors duration-200 text-xl tracking-[.48px] leading-tight text-neutral-10 flex items-center gap-2 "
                   >
                     {t.read_more}{" "}
                     <ArrowTopRight class="inline h-4 w-4 shrink-0 fill-current " />
-                  </Link>
+                  </a>
                 </div>
               </article>
             </li>
