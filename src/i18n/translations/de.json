@@ -84,7 +84,7 @@
     "product_features": "Produktmerkmale",
     "contact_us": "Kontaktieren Sie uns",
     "cases": {
-      "title": "Fälle",
+      "title": "Cases",
       "read_our_latest_cases": "Lesen Sie unsere neuesten <0/> Fälle <1>hier</1>"
     },
     "information": "Information",
@@ -393,7 +393,7 @@
     "cases": {
       "title": "Cases",
       "heading": "Mercura Cases",
-      "read_more": "Read More",
+      "read_more": "Weiterlesen",
       "cases": {
         "migatronic": {
           "title": "Migatronic",
@@ -923,157 +923,155 @@
         ]
       }
     },
-  }
-},
-"about": {
-  "title": "Über uns",
-  "heading": "Wir sind leidenschaftlich <br /> daran interessiert, Ihr Unternehmen <br /> mit Software zu entwickeln.",
-  "subheading": "Mercura ist ein SaaS-Unternehmen, das einen Kern von Softwareprodukten entwickelt und pflegt, die an die individuellen Wünsche des Unternehmens angepasst sind.",
-  "stats": {
-    "revenue": "Umsatz insgesamt <br/> gesteigert",
-    "satisfied_customers": "Zufriedene Kunden <br/> und Partner",
-    "lines_of_code": "Zeilen <br/> geschriebener Code",
-    "employees": "Mitarbeiter <br/> bei Mercura"
-  },
-  "our_offices": "Unsere Büros",
-  "our_team": {
-    "heading": "Mercura-Team",
-    "subheading": "Lorem ipsum dolor sit amet, consectetur <0/> adipiscing elit, sed do eiusmod tempor incididunt <1/> ut labore et dolore."
-  },
-  "our_values": {
-    "heading": "Unsere Werte",
-    "subheading": "Lorem ipsum dolor sit amet, consectetur <0/>adipiscing elit, sed do eiusmod tempor incididunt <1/>ut labore et dolore.",
-    "values": {
-      "customer_centricity": {
-        "title": "Kundenorientierung",
-        "description": "Wir stellen unsere Kunden in den Mittelpunkt all unserer Aktivitäten. Ihr Erfolg ist unser Erfolg. Wir hören aktiv auf ihre Bedürfnisse, Herausforderungen und Ziele und passen unsere Lösungen an, um maximalen Mehrwert zu bieten."
+    "about": {
+      "title": "Über uns",
+      "heading": "Wir sind leidenschaftlich <br /> daran interessiert, Ihr Unternehmen <br /> mit Software zu entwickeln.",
+      "subheading": "Mercura ist ein SaaS-Unternehmen, das einen Kern von Softwareprodukten entwickelt und pflegt, die an die individuellen Wünsche des Unternehmens angepasst sind.",
+      "stats": {
+        "revenue": "Umsatz insgesamt <br/> gesteigert",
+        "satisfied_customers": "Zufriedene Kunden <br/> und Partner",
+        "lines_of_code": "Zeilen <br/> geschriebener Code",
+        "employees": "Mitarbeiter <br/> bei Mercura"
       },
-      "innovation": {
-        "title": "Innovation",
-        "description": "Wir streben kontinuierlich danach, die Grenzen des Möglichen zu erweitern und fördern eine Kultur der Kreativität und Erkundung. Unser Engagement für Innovation treibt die Entwicklung modernster Softwarelösungen voran."
+      "our_offices": "Unsere Büros",
+      "our_team": {
+        "heading": "Mercura-Team",
+        "subheading": "Lorem ipsum dolor sit amet, consectetur <0/> adipiscing elit, sed do eiusmod tempor incididunt <1/> ut labore et dolore."
       },
-      "collaboration": {
-        "title": "Zusammenarbeit",
-        "description": "Zusammenarbeit ist in unserer DNA verankert. Wir glauben an die Kraft des Teamworks, sowohl intern als auch mit unseren Kunden. Unser gemeinschaftlicher Geist fördert offene Kommunikation, geteiltes Fachwissen und ein kollektives Engagement."
+      "our_values": {
+        "heading": "Unsere Werte",
+        "subheading": "Lorem ipsum dolor sit amet, consectetur <0/>adipiscing elit, sed do eiusmod tempor incididunt <1/>ut labore et dolore.",
+        "values": {
+          "customer_centricity": {
+            "title": "Kundenorientierung",
+            "description": "Wir stellen unsere Kunden in den Mittelpunkt all unserer Aktivitäten. Ihr Erfolg ist unser Erfolg. Wir hören aktiv auf ihre Bedürfnisse, Herausforderungen und Ziele und passen unsere Lösungen an, um maximalen Mehrwert zu bieten."
+          },
+          "innovation": {
+            "title": "Innovation",
+            "description": "Wir streben kontinuierlich danach, die Grenzen des Möglichen zu erweitern und fördern eine Kultur der Kreativität und Erkundung. Unser Engagement für Innovation treibt die Entwicklung modernster Softwarelösungen voran."
+          },
+          "collaboration": {
+            "title": "Zusammenarbeit",
+            "description": "Zusammenarbeit ist in unserer DNA verankert. Wir glauben an die Kraft des Teamworks, sowohl intern als auch mit unseren Kunden. Unser gemeinschaftlicher Geist fördert offene Kommunikation, geteiltes Fachwissen und ein kollektives Engagement."
+          }
+        }
       }
-    }
-  }
-},
-"home": {
-  "title": "Startseite",
-  "heading": "Gestalten Sie die Zukunft der Fertigung mit <0>KI-gesteuertem CPQ</0>",
-  "subheading": "Wir sind ein hochspezialisiertes SaaS-Unternehmen für Konfiguratoren und bieten bemerkenswerte Produktvisualisierungs- und Preisgestaltungstools in 2D und 3D für verschiedene Branchen.",
-  "learn_more": "Erfahren Sie mehr",
-  "review": {
-    "message": "Mercura hat unsere Wünsche nach einem neuen Produktkonfigurator für unsere Stifte und Schlüsselanhänger auf noble Weise erfüllt.",
-    "author": {
-      "name": "Birgitte Kjær Hansen",
-      "occupation": "Marketing Manager, Lindab A/S"
-    }
-  },
-  "benefits": {
-    "heading": "Über die Vorteile der <0/><1>Produktkonfiguration</1>",
-    "stats": {
-      "conversion_rate": {
-        "value": "40%",
-        "label": "Verbesserung des <br /> durchschnittlichen Verkaufspreises"
-      },
-      "sales_price": {
-        "value": "30%",
-        "label": "Verbesserung des <br /> durchschnittlichen Verkaufspreises"
-      },
-      "online_returns": {
-        "value": "80%",
-        "label": "Verbesserung des <br /> durchschnittlichen Verkaufspreises"
-      }
-    }
-  },
-  "manufacturing_potential": {
-    "heading": "Maximieren Sie Ihr Fertigungspotenzial mit einem <1>Produktkonfigurator.</1>",
-    "how_to_maximise": [
-      "Stellen Sie sicher, dass Bestellabwicklung und Produktion fehlerfrei sind",
-      "Erhalten Sie tiefere Einblicke in die Bedürfnisse der Kunden",
-      "Automatisieren Sie den Verkaufsprozess mit dynamischer Angebotserstellung und Preisgestaltung",
-      "Skalieren Sie Ihr Unternehmen in neue Märkte"
-    ]
-  },
-  "business_growth_features": {
-    "heading": "Merkmale, die <0/> Ihrem <1>Unternehmen helfen zu wachsen.</1>",
-    "features": {
-      "visualization": {
-        "type": "chart3d",
-        "title": "Hyperrealistische Produktvisualisierung",
-        "description": "Lassen Sie Ihre Kunden pixelgenaue Qualität erleben. Neben AR-Integrationen ermöglicht Mercura Ihnen, die Produkte im Detail zu erkunden und ein immersives Erlebnis zu schaffen."
-      },
-      "efficient_product_modelling": {
-        "title": "Effiziente Produktmodellierung",
-        "description": "Erstellen Sie Variationen, fügen Sie Optionen hinzu, verwenden Sie vordefinierte Produktmodelle und definieren Sie Produktregeln oder Einschränkungen. All dies ist mit Mercura möglich."
-      },
-      "need_based": {
-        "title": "Bedarfsbasierte Konfigurations-Engine",
-        "description": "Überwachen Sie Ihre Verkäufe und passen Sie den Konfigurator an, indem Sie das Systemdaten und Erkenntnisse prüfen. Generieren Sie eine genaue Stückliste mit Mercura, um die Kommunikation zu vereinfachen."
-      },
-      "flexible_pricing_engine": {
-        "title": "Flexible Preisgestaltungs-Engine",
-        "description": "Mercura unterstützt eine breite Palette von Preismodellen und -methoden. Sie können Preisfaktoren wie geografische Märkte, Kundensegmentierung und mehr verwenden."
-      },
-      "document_generation": {
-        "title": "Angebots- und Dokumentenerstellung",
-        "description": "Wir können genaue und überzeugende Angebote für Sie generieren und so ungenaue oder inkonsistente Preisgestaltung verhindern oder das Vertrauen der Kunden nicht untergraben."
-      },
-      "unique_analytics": {
-        "title": "Einzigartige Analysen",
-        "description": "Erhalten Sie Einblicke in Nachfragemuster und ermitteln Sie, welche Produkte den höchsten Wert liefern. Sie haben auch Zugriff auf regionsspezifische Konfigurationen, Märkte und Kundenpräferenzen."
-      }
-    }
-  },
-  "product_configuration": {
-    "heading": "Bequeme Produktkonfiguration <0/> <1>in Ihren Händen</1>.",
-    "steps": [
-      {
-        "title": "Verbinden",
-        "description": "Starten Sie Ihre Reise mit Mercura, indem Sie eine personalisierte Demo planen. Unser Team wird Ihre einzigartigen Fertigungsbedürfnisse verstehen und Ihnen zeigen, wie unsere KI-gesteuerte Produktkonfiguration Ihr Unternehmen auf das nächste Level heben kann."
-      },
-      {
-        "title": "Anpassen & Konfigurieren",
-        "description": "Unsere Experten arbeiten mit Ihnen zusammen, um Mercuras Lösungen an Ihre Prozesse anzupassen. Wir feilen an jedem Detail, um sicherzustellen, dass unsere SaaS-Plattform nahtlos in Ihren Workflow integriert ist."
-      },
-      {
-        "title": "Optimieren",
-        "description": "Erleben Sie die Transformation, wenn Mercuras Lösungen Ihre Abläufe optimieren. Nutzen Sie die Kraft der Daten, um Ihre Konfigurationen zu optimieren, den Angebot-zu-Produktion-Zyklus zu beschleunigen und Ihr Unternehmen voranzutreiben."
-      },
-      {
-        "title": "Gedeihen",
-        "description": "Unser Engagement endet nicht mit der Implementierung. Wir bieten kontinuierliche Updates und Erkenntnisse, um sicherzustellen, dass Sie immer an vorderster Front sind."
-      }
-    ]
-  }
-},
-"request_a_demo": {
-  "title": "Demo anfragen",
-  "company_relationships": "Unternehmensbeziehungen",
-  "mercura_clients": "Mercura Kunden",
-  "what_our_clients_say": "Was unsere Kunden über uns sagen.",
-  "reviews": {
-    "birgitte": {
-      "name": "Birgitte Kjær Hansen",
-      "occupation": "Marketing Manager, Lindab A/S",
-      "headline": "Mercura hat all unsere Wünsche erfüllt",
-      "message": "Eine große Empfehlung für Mercura und ihr Team. Sie sind äußerst professionell und sehr gut darin, einen Überblick über komplexe Produktbeschränkungen und Preislogik zu gewinnen. Unser Konfigurator visualisiert unsere Garagentore sehr gut, was uns eine kürzere Time-to-Market verschafft, uns für Kunden zugänglicher macht und uns geholfen hat, interne Vertriebsprozesse zu optimieren, was uns beim Wachstum unseres Geschäfts helfen wird."
     },
-    "ove": {
-      "name": "Ove Dalsgaard",
-      "occupation": "CEO, Multi-Living A/S",
-      "headline": "Mercura ist ein großartiger Partner",
-      "message": "Wir sind äußerst zufrieden mit der Zusammenarbeit mit Mercura. Ihre Professionalität und Qualität waren von höchstem Standard, und wir würden sie gerne jedem empfehlen, der an 3D-Modellierung und Online-Konfiguratoren interessiert ist."
+    "home": {
+      "title": "Startseite",
+      "heading": "Gestalten Sie die Zukunft der Fertigung mit <0>KI-gesteuertem CPQ</0>",
+      "subheading": "Wir sind ein hochspezialisiertes SaaS-Unternehmen für Konfiguratoren und bieten bemerkenswerte Produktvisualisierungs- und Preisgestaltungstools in 2D und 3D für verschiedene Branchen.",
+      "learn_more": "Erfahren Sie mehr",
+      "review": {
+        "message": "Mercura hat unsere Wünsche nach einem neuen Produktkonfigurator für unsere Stifte und Schlüsselanhänger auf noble Weise erfüllt.",
+        "author": {
+          "name": "Birgitte Kjær Hansen",
+          "occupation": "Marketing Manager, Lindab A/S"
+        }
+      },
+      "benefits": {
+        "heading": "Über die Vorteile der <0/><1>Produktkonfiguration</1>",
+        "stats": {
+          "conversion_rate": {
+            "value": "40%",
+            "label": "Verbesserung des <br /> durchschnittlichen Verkaufspreises"
+          },
+          "sales_price": {
+            "value": "30%",
+            "label": "Verbesserung des <br /> durchschnittlichen Verkaufspreises"
+          },
+          "online_returns": {
+            "value": "80%",
+            "label": "Verbesserung des <br /> durchschnittlichen Verkaufspreises"
+          }
+        }
+      },
+      "manufacturing_potential": {
+        "heading": "Maximieren Sie Ihr Fertigungspotenzial mit einem <1>Produktkonfigurator.</1>",
+        "how_to_maximise": [
+          "Stellen Sie sicher, dass Bestellabwicklung und Produktion fehlerfrei sind",
+          "Erhalten Sie tiefere Einblicke in die Bedürfnisse der Kunden",
+          "Automatisieren Sie den Verkaufsprozess mit dynamischer Angebotserstellung und Preisgestaltung",
+          "Skalieren Sie Ihr Unternehmen in neue Märkte"
+        ]
+      },
+      "business_growth_features": {
+        "heading": "Merkmale, die <0/> Ihrem <1>Unternehmen helfen zu wachsen.</1>",
+        "features": {
+          "visualization": {
+            "type": "chart3d",
+            "title": "Hyperrealistische Produktvisualisierung",
+            "description": "Lassen Sie Ihre Kunden pixelgenaue Qualität erleben. Neben AR-Integrationen ermöglicht Mercura Ihnen, die Produkte im Detail zu erkunden und ein immersives Erlebnis zu schaffen."
+          },
+          "efficient_product_modelling": {
+            "title": "Effiziente Produktmodellierung",
+            "description": "Erstellen Sie Variationen, fügen Sie Optionen hinzu, verwenden Sie vordefinierte Produktmodelle und definieren Sie Produktregeln oder Einschränkungen. All dies ist mit Mercura möglich."
+          },
+          "need_based": {
+            "title": "Bedarfsbasierte Konfigurations-Engine",
+            "description": "Überwachen Sie Ihre Verkäufe und passen Sie den Konfigurator an, indem Sie das Systemdaten und Erkenntnisse prüfen. Generieren Sie eine genaue Stückliste mit Mercura, um die Kommunikation zu vereinfachen."
+          },
+          "flexible_pricing_engine": {
+            "title": "Flexible Preisgestaltungs-Engine",
+            "description": "Mercura unterstützt eine breite Palette von Preismodellen und -methoden. Sie können Preisfaktoren wie geografische Märkte, Kundensegmentierung und mehr verwenden."
+          },
+          "document_generation": {
+            "title": "Angebots- und Dokumentenerstellung",
+            "description": "Wir können genaue und überzeugende Angebote für Sie generieren und so ungenaue oder inkonsistente Preisgestaltung verhindern oder das Vertrauen der Kunden nicht untergraben."
+          },
+          "unique_analytics": {
+            "title": "Einzigartige Analysen",
+            "description": "Erhalten Sie Einblicke in Nachfragemuster und ermitteln Sie, welche Produkte den höchsten Wert liefern. Sie haben auch Zugriff auf regionsspezifische Konfigurationen, Märkte und Kundenpräferenzen."
+          }
+        }
+      },
+      "product_configuration": {
+        "heading": "Bequeme Produktkonfiguration <0/> <1>in Ihren Händen</1>.",
+        "steps": [
+          {
+            "title": "Verbinden",
+            "description": "Starten Sie Ihre Reise mit Mercura, indem Sie eine personalisierte Demo planen. Unser Team wird Ihre einzigartigen Fertigungsbedürfnisse verstehen und Ihnen zeigen, wie unsere KI-gesteuerte Produktkonfiguration Ihr Unternehmen auf das nächste Level heben kann."
+          },
+          {
+            "title": "Anpassen & Konfigurieren",
+            "description": "Unsere Experten arbeiten mit Ihnen zusammen, um Mercuras Lösungen an Ihre Prozesse anzupassen. Wir feilen an jedem Detail, um sicherzustellen, dass unsere SaaS-Plattform nahtlos in Ihren Workflow integriert ist."
+          },
+          {
+            "title": "Optimieren",
+            "description": "Erleben Sie die Transformation, wenn Mercuras Lösungen Ihre Abläufe optimieren. Nutzen Sie die Kraft der Daten, um Ihre Konfigurationen zu optimieren, den Angebot-zu-Produktion-Zyklus zu beschleunigen und Ihr Unternehmen voranzutreiben."
+          },
+          {
+            "title": "Gedeihen",
+            "description": "Unser Engagement endet nicht mit der Implementierung. Wir bieten kontinuierliche Updates und Erkenntnisse, um sicherzustellen, dass Sie immer an vorderster Front sind."
+          }
+        ]
+      }
     },
-    "linda": {
-      "name": "Linda Kaae Hedegaard",
-      "occupation": "Sales & Marketing Assistant, SCITEQ A/S",
-      "headline": "Sehr zufrieden mit Mercura!",
-      "message": "Bei SCITEQ sind wir sehr zufrieden mit unserem Online-Konfigurations- und Angebotsystem, das Mercura für uns entwickelt hat. Mercura hat sich besonders gut darin erwiesen, auf unsere laufenden Anforderungen einzugehen."
+    "request_a_demo": {
+      "title": "Demo anfragen",
+      "company_relationships": "Unternehmensbeziehungen",
+      "mercura_clients": "Mercura Kunden",
+      "what_our_clients_say": "Was unsere Kunden über uns sagen.",
+      "reviews": {
+        "birgitte": {
+          "name": "Birgitte Kjær Hansen",
+          "occupation": "Marketing Manager, Lindab A/S",
+          "headline": "Mercura hat all unsere Wünsche erfüllt",
+          "message": "Eine große Empfehlung für Mercura und ihr Team. Sie sind äußerst professionell und sehr gut darin, einen Überblick über komplexe Produktbeschränkungen und Preislogik zu gewinnen. Unser Konfigurator visualisiert unsere Garagentore sehr gut, was uns eine kürzere Time-to-Market verschafft, uns für Kunden zugänglicher macht und uns geholfen hat, interne Vertriebsprozesse zu optimieren, was uns beim Wachstum unseres Geschäfts helfen wird."
+        },
+        "ove": {
+          "name": "Ove Dalsgaard",
+          "occupation": "CEO, Multi-Living A/S",
+          "headline": "Mercura ist ein großartiger Partner",
+          "message": "Wir sind äußerst zufrieden mit der Zusammenarbeit mit Mercura. Ihre Professionalität und Qualität waren von höchstem Standard, und wir würden sie gerne jedem empfehlen, der an 3D-Modellierung und Online-Konfiguratoren interessiert ist."
+        },
+        "linda": {
+          "name": "Linda Kaae Hedegaard",
+          "occupation": "Sales & Marketing Assistant, SCITEQ A/S",
+          "headline": "Sehr zufrieden mit Mercura!",
+          "message": "Bei SCITEQ sind wir sehr zufrieden mit unserem Online-Konfigurations- und Angebotsystem, das Mercura für uns entwickelt hat. Mercura hat sich besonders gut darin erwiesen, auf unsere laufenden Anforderungen einzugehen."
+        }
+      }
     }
   }
-}
-}
 }
