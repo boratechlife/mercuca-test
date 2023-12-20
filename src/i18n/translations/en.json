@@ -367,7 +367,7 @@
       },
       "overall_statement": "Overall, CPQ software is a powerful tool that can help companies to streamline and automate their sales process, reduce errors and inconsistencies, speed up the sales process, improve customer experience and integrate with other systems. It allows sales teams to focus on high-value activities and close more deals with less effort. With the right CPQ solution in place, businesses can see a significant improvement in efficiency and revenue growth."
     },
-    "seo_1": {
+    "configurator": {
       "title": "Configurator",
       "heading": "Configurator",
       "subheading": "A configurator, also known as a product configurator or product builder, is a software tool that allows customers to customize and personalize products to their exact specifications. These tools are used by a wide range of industries, including manufacturing, automotive, and furniture, and can be integrated into e-commerce platforms or standalone software.",
@@ -389,6 +389,29 @@
         "subtext": "Despite the many benefits of configurators, there are also some challenges businesses need to consider when creating and maintaining them. One of the main challenges is ensuring that the configurator provides a high-quality user experience. This includes making sure that the configurator is easy to use and navigate, that it loads quickly, and that it is visually appealing. Businesses also need to        consider how to effectively showcase their products and options in a digital environment, and how to create a sense of trust and credibility with customers. <br /> <br /> Another challenge is keeping the configurator updated and relevant. As new products and options are introduced, businesses need to ensure that they are added to the configurator in a timely and accurate manner. Businesses also need to consider how to keep the configurator fresh and engaging, so that customers will continue to return and explore the products and options on offer."
       },
       "conclusion_statement": "In conclusion, configurators are powerful tools that allow customers to customize and personalize products to their exact specifications.They can help businesses increase customer satisfaction, reduce costs, and improve efficiency. Configurators also offer businesses the ability to"
+    },
+    "productconfigurator": {
+      "title": "Product Configurator",
+      "heading": "Product Configurator",
+      "subheading": "A product configurator is an advanced software tool that enables customers to customize and personalize products according to their exact requirements and preferences.",
+      "increase_conversion": "Boost conversion rates and average order values with tailored solutions",
+      "order_handling": "Ensure flawless order handling and production through precise configuration",
+      "insight": "Gain detailed insights into customer preferences and trends through customization",
+      "personalization": {
+        "heading": "Personalization Capabilities",
+        "text_1": "Product configurators allow customers to design products from scratch, offering a unique and personal experience.",
+        "text_2": "These tools contribute to increasing customer satisfaction and strengthening brand loyalty."
+      },
+      "intuitive_user_interface": {
+        "heading": "User-Friendly Interface",
+        "text_1": "Product configurators come with an intuitive user interface, making product customization easy and accessible for all customers.",
+        "text_2": "They offer a visual and interactive experience that enhances the customer journey."
+      },
+      "challenges": {
+        "heading": "Implementation Challenges",
+        "subtext": "Implementing product configurators involves technical and operational challenges, such as integration into existing systems and ensuring configuration accuracy."
+      },
+      "conclusion_statement": "In summary, product configurators are essential tools that provide value to both customers and businesses by offering customized solutions and an enhanced shopping experience."
     },
     "cases": {
       "title": "Cases",
