@@ -21,7 +21,7 @@ export async function getStaticPaths() {
 const { locale } = Astro.params;
 const {
   common,
-  pages: { seo_1: t },
+  pages: { productconfigurator: t },
 } = await useTranslation(locale as Locale);
 ---
 
