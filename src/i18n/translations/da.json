@@ -285,7 +285,7 @@
           "occupation": "CEO, Mercura ApS"
         }
       },
-      "read_more": "Læs mere",
+      "read_more": "Ansøg",
       "jobs": [
         {
           "title": "Softwareudvikler",
@@ -411,6 +411,52 @@
         "subtext": "Implementering af produktkonfiguratorer indebærer tekniske og operationelle udfordringer, såsom integration med eksisterende systemer og sikring af konfigurationsnøjagtighed."
       },
       "conclusion_statement": "Produktkonfiguratorer essentielle værktøjer, der tilfører værdi til både kunder og virksomheder ved at tilbyde tilpassede løsninger og en forbedret købsoplevelse."
+    },
+    "salesconfigurator": {
+      "title": "Salgskonfigurator",
+      "heading": "Salgskonfigurator",
+      "subheading": "En salgskonfigurator er et innovativt softwareværktøj, der gør det muligt for kunder at tilpasse produkter efter deres specifikke behov og ønsker.",
+      "increase_conversion": "Forhøj konverteringsrater og gennemsnitlige ordreværdier med skræddersyede løsninger",
+      "order_handling": "Opnå fejlfri ordrehåndtering og produktion ved at bruge præcise og tilpassede produktkonfigurationer",
+      "insight": "Opnå dybere forståelse for kundepreferencer og markedstendenser gennem tilpasningsmuligheder",
+      "personalization": {
+        "heading": "Muligheder for Personalisering",
+        "text_1": "Salgskonfiguratorer giver kunderne frihed til at designe og tilpasse produkter efter deres egne præferencer, hvilket skaber en personlig og engagerende oplevelse.",
+        "text_2": "Disse værktøjer er centrale for at øge kundetilfredsheden og styrke relationen mellem kunden og dit brand."
+      },
+      "intuitive_user_interface": {
+        "heading": "Intuitivt Brugerinterface",
+        "text_1": "Salgskonfiguratorer er udviklet med et brugervenligt interface, hvilket gør det let og tilgængeligt for kunderne at tilpasse deres produkter.",
+        "text_2": "De giver en visuel og interaktiv oplevelse, der beriger kundeoplevelsen."
+      },
+      "challenges": {
+        "heading": "Udfordringer ved Implementering",
+        "subtext": "Implementering af salgskonfiguratorer kan indebære tekniske og driftsmæssige udfordringer, såsom integration med eksisterende systemer og at sikre præcision i konfigurationerne."
+      },
+      "conclusion_statement": "Salgskonfiguratorer er essentielle værktøjer, der tilfører merværdi til både kunder og virksomheder ved at tilbyde skræddersyede løsninger og en optimeret købsoplevelse."
+    },
+    "visualcpq": {
+      "title": "Visuel CPQ",
+      "heading": "Visuel CPQ",
+      "subheading": "Visuel CPQ (Configure, Price, Quote) er en avanceret softwareløsning, der gør det muligt for kunderne at visualisere og tilpasse produkter i realtid, alt imens de konfigurerer, prissætter og udarbejder tilbud.",
+      "increase_conversion": "Øg konverteringsrater og den gennemsnitlige ordreværdi ved at præsentere kunderne for levende og tilpassede produktmuligheder",
+      "order_handling": "Sikr en effektiv ordrehåndtering og produktion med nøjagtige visuelle produktkonfigurationer",
+      "insight": "Opnå indsigt i kundeadfærd og præferencer gennem interaktive og visuelle tilpasningsværktøjer",
+      "personalization": {
+        "heading": "Visuel Personalisering",
+        "text_1": "Med Visuel CPQ kan kunderne ikke alene tilpasse, men også visuelt opleve deres produktvalg, hvilket skaber en mere dybdegående og engagerende købsoplevelse.",
+        "text_2": "Dette værktøj er afgørende for at forbedre kundetilfredshed og for at etablere en stærkere forbindelse mellem kunden og dit brand gennem en interaktiv og indlevende oplevelse."
+      },
+      "intuitive_user_interface": {
+        "heading": "Brugervenlig Grænseflade",
+        "text_1": "Visuel CPQ er designet med en intuitiv grænseflade, der gør det nemt for kunderne at navigere og træffe informerede beslutninger under konfigurationsprocessen.",
+        "text_2": "Den visuelle og interaktive natur af disse værktøjer forbedrer kundeoplevelsen og understøtter beslutningsprocessen."
+      },
+      "challenges": {
+        "heading": "Implementeringsudfordringer",
+        "subtext": "Implementering af Visuel CPQ kan indebære udfordringer såsom integration med eksisterende salgs- og CRM-systemer, samt sikring af teknisk og visuel nøjagtighed i konfigurationerne."
+      },
+      "conclusion_statement": "Visuel CPQ er en vital teknologi, der tilbyder værdifulde fordele for både virksomheder og deres kunder, ved at kombinere tilpasning, prisfastsættelse og tilbudsudarbejdelse i en samlet visuel oplevelse."
     },
     "cases": {
       "title": "Cases",

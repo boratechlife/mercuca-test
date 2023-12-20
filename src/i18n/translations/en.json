@@ -286,7 +286,7 @@
           "occupation": "CEO, Mercura ApS"
         }
       },
-      "read_more": "Read More",
+      "read_more": "Apply",
       "jobs": [
         {
           "title": "Software Developer",
@@ -412,6 +412,52 @@
         "subtext": "Implementing product configurators involves technical and operational challenges, such as integration into existing systems and ensuring configuration accuracy."
       },
       "conclusion_statement": "In summary, product configurators are essential tools that provide value to both customers and businesses by offering customized solutions and an enhanced shopping experience."
+    },
+    "salesconfigurator": {
+      "title": "Sales Configurator",
+      "heading": "Sales Configurator",
+      "subheading": "A sales configurator is a sophisticated software tool that enables customization of products to meet specific customer needs and preferences.",
+      "increase_conversion": "Enhance conversion rates and average order values with customized solutions",
+      "order_handling": "Guarantee seamless order processing and production with accurate product configurations",
+      "insight": "Obtain valuable insights into customer preferences and market trends through customization options",
+      "personalization": {
+        "heading": "Customization Features",
+        "text_1": "Sales configurators allow customers to tailor products to their specifications, providing a unique and personalized shopping experience.",
+        "text_2": "These tools are instrumental in improving customer satisfaction and fostering a stronger connection with your brand."
+      },
+      "intuitive_user_interface": {
+        "heading": "Intuitive Interface",
+        "text_1": "Sales configurators are designed with user-friendly interfaces, making it straightforward for customers to customize products.",
+        "text_2": "They provide a visual and interactive experience that enhances the overall customer experience."
+      },
+      "challenges": {
+        "heading": "Implementation Challenges",
+        "subtext": "Integrating sales configurators can present technical and operational challenges, including the need to align with existing systems and maintain configuration accuracy."
+      },
+      "conclusion_statement": "In conclusion, sales configurators are vital tools that add significant value to both customers and companies by offering tailored solutions and enriching the buying experience."
+    },
+    "visualcpq": {
+      "title": "Visual CPQ",
+      "heading": "Visual CPQ",
+      "subheading": "Visual CPQ (Configure, Price, Quote) is a cutting-edge software solution that enables real-time visualization and customization of products during the configuration, pricing, and quoting process.",
+      "increase_conversion": "Boost conversion rates and average order values through vivid, tailored product presentations",
+      "order_handling": "Ensure efficient order processing and production with accurate visual product configurations",
+      "insight": "Achieve deeper insights into customer behavior and preferences through interactive and visual customization tools",
+      "personalization": {
+        "heading": "Visual Customization",
+        "text_1": "Visual CPQ allows not just customization of products but also enables customers to visually experience them, creating a comprehensive and engaging buying experience.",
+        "text_2": "This tool is key to enhancing customer satisfaction and establishing a stronger bond between the customer and your brand through an interactive and immersive experience."
+      },
+      "intuitive_user_interface": {
+        "heading": "User-Friendly Interface",
+        "text_1": "Visual CPQ comes with an intuitive interface, allowing customers to make informed decisions easily during the configuration process.",
+        "text_2": "The visual and interactive nature of these tools improves the customer experience and supports the decision-making process."
+      },
+      "challenges": {
+        "heading": "Implementation Challenges",
+        "subtext": "Implementing Visual CPQ can involve challenges such as integrating into existing sales and CRM systems and ensuring technical and visual accuracy in configurations."
+      },
+      "conclusion_statement": "Visual CPQ is a vital technology that offers valuable benefits to both businesses and their customers by combining customization, pricing, and quoting in a visual experience."
     },
     "cases": {
       "title": "Cases",

@@ -20,7 +20,9 @@
     "contact": "contact",
     "cpq": "cpq",
     "configurator": "configurator",
-    "product-configurator": "product-configurator"
+    "product-configurator": "product-configurator",
+    "sales-configurator": "sales-configurator",
+    "visual-cpq": "visual-cpq"
   },
   "da": {
     "about": "om-os",
@@ -43,7 +45,9 @@
     "contact": "kontakt",
     "cpq": "cpq",
     "configurator": "konfigurator",
-    "product-configurator": "produktkonfigurator"
+    "product-configurator": "produktkonfigurator",
+    "sales-configurator": "salgskonfigurator",
+    "visual-cpq": "visuel-cpq"
   },
   "de": {
     "about": "ueber-uns",
@@ -66,7 +70,9 @@
     "contact": "kontakt",
     "cpq": "cpq",
     "configurator": "konfigurator",
-    "product-configurator": "produkt-konfigurator"
+    "product-configurator": "produkt-konfigurator",
+    "sales-configurator": "verkaufs-konfigurator",
+    "visual-cpq": "visuelles-cpq"
   },
   "es": {
     "about": "acerca-de",
@@ -89,6 +95,8 @@
     "contact": "contacto",
     "cpq": "cpq",
     "configurator": "configurador",
-    "product-configurator": "configurador-de-productos"
+    "product-configurator": "configurador-de-productos",
+    "sales-configurator": "configurador-de-vendas",
+    "visual-cpq": "visual-cpq"
   }
 }
