@@ -106,6 +106,51 @@ const alternateLinks = languageAlternates || generateAlternateLinks();
       {...props}
       languageAlternates={alternateLinks}
     />
+    <!-- Snitcher analytics code -->
+    <script>
+      !(function (s, n, i, t, c, h) {
+        s.SnitchObject = i;
+        s[i] ||
+          (s[i] = function () {
+            (s[i].q = s[i].q || []).push(arguments);
+          });
+        s[i].l = +new Date();
+        c = n.createElement(t);
+        h = n.getElementsByTagName(t)[0];
+        c.src = "//snid.snitcher.com/8419669.js";
+        h.parentNode.insertBefore(c, h);
+      })(window, document, "snid", "script");
+
+      snid("verify", "8419669");
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0XCHKTSNRR"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0XCHKTSNRR");
+    </script>
+
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "fizpt102h0");
+    </script>
   </head>
   <body
     class={cn(
