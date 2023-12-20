@@ -151,22 +151,22 @@
     },
     "migatronic_configurator": {
       "title": "Migatronic Konfigurator",
-      "heading": "<0>Migatronic</0> Lorem <1/>ipsum konfigurator",
+      "heading": "<0>Migatronic</0> Cowelder <1/> Konfigurator",
       "heading_text": "Migatronic Konfigurator",
       "long_sales_cycles": {
         "label": "Problemet",
         "heading": "Lange salgscykler",
-        "text_1": "Vi har udviklet en meget intuitiv konfigurator for Lindab, som hjælper slutbrugere og forhandlere med at visualisere og konkretisere deres løsninger på garageporte. Konfiguratoren inkluderer alle variationer af garageporte, som Lindab sælger. <br /> <br />Den inkluderer mere end 10.000 variationer af produkterne, selv uden at tage størrelsen i betragtning.",
-        "text_2": "Vi har udviklet en meget intuitiv konfigurator for Lindab, som hjælper slutbrugere og forhandlere med at visualisere og konkretisere deres løsninger på garageporte. Konfiguratoren inkluderer alle variationer af garageporte, som Lindab sælger. <br /><br /> Den inkluderer mere end 10.000 variationer af produkterne, selv uden at tage størrelsen i betragtning."
+        "text_1": "Migatronic, en førende virksomhed inden for svejseindustrien, har oplevet udfordringer med at håndtere komplekse konfigurationer af deres CoWelder, en samarbejdende svejserobot. Denne udfordring blev forstærket af kundernes forskelligartede behov og den tekniske kompleksitet af produktet, hvilket resulterede i lange salgsprocesser. Uden et effektivt konfigurationsværktøj måtte Migatronics salgsteam investere betydelig tid og indsats i manuelt at tilpasse hvert tilbud til de specifikke krav og præferencer hos hver enkelt kunde.",
+        "text_2": "Fraværet af et konfigurationsværktøj gjorde salgsprocessen mere kompliceret og tidskrævende. Salgsteamet eller forhandlerne måtte ofte udveksle mange beskeder frem og tilbage med kunderne for at samle al den nødvendige information om de funktioner og specifikationer, de ønskede i deres CoWelder. Dette førte til længere salgsprocesser, øgede omkostninger og en højere risiko for fejl og misforståelser."
       },
       "beautiful_visualization": {
         "label": "Løsningen",
         "heading": "Smuk visualisering",
-        "text_1": "Vi har udviklet en meget intuitiv konfigurator for Lindab, som hjælper slutbrugere og forhandlere med at visualisere og konkretisere deres løsninger på garageporte. Konfiguratoren inkluderer alle variationer af garageporte, som Lindab sælger. <br /> <br />Den inkluderer mere end 10.000 variationer af produkterne, selv uden at tage størrelsen i betragtning.",
-        "text_2": "Vi har udviklet en meget intuitiv konfigurator for Lindab, som hjælper slutbrugere og forhandlere med at visualisere og konkretisere deres løsninger på garageporte. Konfiguratoren inkluderer alle variationer af garageporte, som Lindab sælger. <br /><br /> Den inkluderer mere end 10.000 variationer af produkterne, selv uden at tage størrelsen i betragtning."
+        "text_1": "Vi har udviklet en avanceret konfigurator for Migatronic, der hjælper både slutbrugere og forhandlere med at visualisere og konkretisere deres CoWelder-løsninger. Konfiguratoren indeholder mere end 150 begrænsninger for at sikre, at hver konfiguration opfylder de nøjagtige krav og standarder. Det muliggør også generering af visuelt tiltalende og detaljerede tilbud, som betydeligt hjælper salgsteamet med at præsentere klare og præcise muligheder for potentielle kunder.",
+        "text_2": "I konfigurationsprocessen kan forhandlere og slutbrugere vælge blandt forskellige svejsefunktioner, -tilbehør og -indstillinger. CoWelder-konfiguratoren indeholder avanceret prislogik, således at prisen afspejler de valg, der foretages. Dette tillader kunderne nemt at justere deres valg for at passe til deres budget og præferencer. Desuden er konfiguratoren brugervenlig og effektiviserer købsprocessen ved at generere en detaljeret materialeliste. Dette gør det muligt for kunderne at bestille deres tilpassede CoWelder direkte efter brug af konfiguratoren."
       },
       "review": {
-        "message": "Mercura har opfyldt vores ønsker om en ny produktkonfigurator for vores penne og nøgleringe på en yderst fornem måde.",
+        "message": "En stor anbefaling til Mercura og deres team. De er meget professionelle og meget dygtige til at skabe overblik over komplekse produktbegrænsninger og prissætningslogik. Vores konfigurator er meget god til at visualisere vores garageporte, hvilket giver os en kortere tid til markedet, gør os mere tilgængelige for kunder og har hjulpet os med at optimere interne salgsprocesser, hvilket vil hjælpe os med at vækste vores forretning.",
         "author": {
           "name": "Birgitte Kjær Hansen",
           "occupation": "Marketingchef, Lindab A/S"
@@ -175,11 +175,11 @@
       "increase_sales_volume": {
         "label": "Løsningen",
         "heading": "Øg salgsvolumen",
-        "subtext": "At have et konfigurationsværktøj, der giver forhandlere og slutbrugere mulighed for at bygge deres egen garageport, kan tilbyde mange fordele for din virksomhed. Det kan forenkle salgsprocessen, reducere arbejdsbyrden for dit salgsteam og gøre det muligt for kunderne at skabe garageporte, der passer perfekt til deres behov og præferencer. Dette giver unikke indsigter i kundernes behov, som kan bruges til marketing- og produktudviklingsformål."
+        "subtext": "Ved at introducere et konfigurationsværktøj til Migatronics CoWelder, får både forhandlere og slutbrugere mulighed for at skræddersy deres svejseløsninger. Dette værktøj forenkler salgsprocessen, reducerer arbejdsbyrden for salgsteamet og giver kunderne mulighed for at designe en svejsesætning, der opfylder deres nøjagtige behov. De indsigter, der opnås gennem kundernes interaktion med konfiguratoren, er uvurderlige for målrettede markedsføringsstrategier og produktudvikling, hvilket fører til forbedret kundeforståelse og forretningsvækst."
       },
       "lindab_experience": {
-        "heading": "Lindab har oplevet en kortere tid til markedet og højere tilgængelighed over for kunderne.",
-        "subtext": "Med andre ord har Mercura hjulpet dem med at skille sig ud fra deres konkurrenter og øge deres salgsvolumen. Studier har vist, at et konfigurationsværktøj kan øge konverteringsraten med 40% på tilbud og øge de gennemsnitlige salgspriser med 30%."
+        "heading": "Migatronics Forbedrede Markedsposition",
+        "subtext": "Med implementeringen af CoWelder-konfiguratoren, udviklet af Mercura, har Migatronic oplevet en reduceret tid til markedet og øget tilgængelighed over for kunderne. Dette strategiske værktøj skiller Migatronic ud fra konkurrenterne og bidrager til en øgning af salgsvolumen. Studier viser, at konfiguratorer kan øge konverteringsraterne betydeligt, op til 40% på tilbud og øge den gennemsnitlige salgspris med 30%, hvilket forbedrer både kundeengagement og rentabilitet."
       }
     },
     "audi_configurator": {
