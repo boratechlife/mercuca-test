@@ -151,7 +151,7 @@
     },
     "migatronic_configurator": {
       "title": "Migatronic Configurator",
-      "heading": "<0>Migatronic</0> Lorem <1/>ipsum configurator",
+      "heading": "<0>Migatronic</0> Cowelder <1/> Configurator",
       "heading_text": "Migatronic Configurator",
       "long_sales_cycles": {
         "label": "The Problem",
@@ -397,7 +397,7 @@
       "cases": {
         "migatronic": {
           "title": "Migatronic",
-          "description": "We have developed a very intuitive configurator for Lindab which helps end-users and dealers visualize and concretize their solutions on garage doors. The configurator includes all the garage door variations that Lindab sells. <br /> <br /> It includes more than 10.000 variations of the products even without taking the size into consideration."
+          "description": "Mercura is proud to present our latest accomplishment: the development of an advanced CoWelder configurator for Migatronic. <br><br> Our configurator stands out due to its complexity and sophistication, featuring over 1000 constraints to ensure that every configuration meets the precise requirements and standards. Furthermore the configurator generates visually appealing and detailed quotes, significantly aiding the sales team in presenting clear and concise options to potential clients."
         },
         "lindab_garage": {
           "title": "<0>Lindab</0> Garage door Configurator",
