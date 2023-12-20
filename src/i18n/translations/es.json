@@ -157,17 +157,17 @@
       "long_sales_cycles": {
         "label": "El Problema",
         "heading": "Ciclos de Venta Largos",
-        "text_1": "Hemos desarrollado un configurador muy intuitivo para Lindab que ayuda a los usuarios finales y a los distribuidores a visualizar y concretar sus soluciones en puertas de garaje. El configurador incluye todas las variaciones de puertas de garaje que Lindab vende.",
-        "text_2": "Hemos desarrollado un configurador muy intuitivo para Lindab que ayuda a los usuarios finales y a los distribuidores a visualizar y concretar sus soluciones en puertas de garaje. El configurador incluye todas las variaciones de puertas de garaje que Lindab vende."
+        "text_1": "Migatronic, líder en tecnología de soldadura, enfrentaba desafíos al mostrar la versatilidad y opciones de personalización de su CoWelder, un robot de soldadura colaborativo. Con un producto capaz de numerosas personalizaciones, crear una estrategia de ventas efectiva sin una herramienta de configuración sofisticada era desalentador. <br /> <br /> La naturaleza compleja del CoWelder, que satisface diversas necesidades y especificaciones de soldadura, requería un enfoque comprensible y fácil de usar para ayudar a los clientes a seleccionar las configuraciones óptimas. Sin esto, el ciclo de ventas se prolongaba debido a la complejidad de explicar y seleccionar configuraciones adecuadas para diversos requerimientos de los clientes.",
+        "text_2": "La falta de un configurador significaba depender de procesos manuales, aumentando el potencial de errores y malentendidos. Los representantes de ventas encontraban desafiante transmitir la miríada de posibilidades que ofrece el CoWelder, resultando en un proceso de ventas menos eficiente y posible insatisfacción del cliente debido a la incapacidad de visualizar y entender completamente las capacidades del producto."
       },
       "beautiful_visualization": {
         "label": "La Solución",
         "heading": "Visualización Hermosa",
-        "text_1": "Hemos desarrollado un configurador muy intuitivo para Lindab que ayuda a los usuarios finales y a los distribuidores a visualizar y concretar sus soluciones en puertas de garaje. El configurador incluye todas las variaciones de puertas de garaje que Lindab vende.",
-        "text_2": "Hemos desarrollado un configurador muy intuitivo para Lindab que ayuda a los usuarios finales y a los distribuidores a visualizar y concretar sus soluciones en puertas de garaje. El configurador incluye todas las variaciones de puertas de garaje que Lindab vende."
+        "text_1": "Mercura desarrolló un avanzado configurador de CoWelder para Migatronic que muestra las diversas capacidades del CoWelder. Con más de 1000 restricciones, el configurador asegura que cada configuración cumpla con los estándares técnicos y requisitos del cliente. <br /> <br /> Esta herramienta permite a los equipos de ventas demostrar la gama completa de opciones de personalización disponibles, desde diferentes tipos de soldadura hasta movimientos del brazo robótico, de manera intuitiva e interactiva. El configurador simplifica el complejo proceso de selección, facilitando a los clientes la comprensión y elección de la configuración adecuada para sus necesidades específicas de soldadura.",
+        "text_2": "Además, el configurador genera cotizaciones visualmente atractivas y detalladas, mejorando la presentación del equipo de ventas y la comunicación con los clientes. Esta representación visual ayuda a cerrar la brecha entre las especificaciones técnicas y la comprensión del cliente, acortando así el ciclo de ventas y reduciendo la probabilidad de errores. Las capacidades avanzadas del configurador no solo empoderan al equipo de ventas, sino que también proporcionan a los clientes una comprensión más clara y completa de lo que el CoWelder puede lograr, adaptado a sus requisitos únicos."
       },
       "review": {
-        "message": "Mercura ha cumplido nuestros deseos con un nuevo configurador de productos para nuestros bolígrafos y llaveros de una manera muy noble.",
+        "message": "Una gran recomendación para Mercura y su equipo. Son altamente profesionales y muy buenos para obtener una visión general de las complejidades de los productos y la lógica de precios. Nuestro configurador es muy bueno para visualizar nuestras puertas de garaje, lo que nos permite llegar al mercado más rápidamente, ser más accesibles para los clientes y nos ha ayudado a optimizar los procesos internos de ventas, lo que nos ayudará a hacer crecer nuestro negocio.",
         "author": {
           "name": "Birgitte Kjær Hansen",
           "occupation": "Gerente de Marketing, Lindab A/S"
@@ -176,11 +176,11 @@
       "increase_sales_volume": {
         "label": "La Solución",
         "heading": "Aumentar el Volumen de Ventas",
-        "subtext": "Tener una herramienta de configuración que permita a los distribuidores y consumidores finales construir sus propias puertas de garaje puede ofrecer muchos beneficios a tu negocio. Puede simplificar el proceso de ventas, reducir la carga de trabajo de tu equipo de ventas y permitir a los clientes crear puertas de garaje que se ajusten perfectamente a sus necesidades y preferencias. Esto proporciona información única sobre las necesidades de los clientes que se puede utilizar para fines de marketing y desarrollo de productos."
+        "subtext": "La introducción de una herramienta de configuración para el CoWelder de Migatronic ofrece a los distribuidores y a los usuarios finales la posibilidad de personalizar sus soluciones de soldadura. Esta herramienta simplifica el proceso de ventas, reduce la carga de trabajo del equipo de ventas y permite a los clientes diseñar un equipo de soldadura que cumpla exactamente con sus necesidades. Las percepciones obtenidas a través de la interacción de los clientes con el configurador son invaluables para estrategias de marketing dirigidas y desarrollo de productos, lo que conduce a una mejor comprensión del cliente y al crecimiento del negocio."
       },
       "lindab_experience": {
-        "heading": "Lindab ha experimentado un tiempo de comercialización más corto y una mayor accesibilidad hacia los clientes.",
-        "subtext": "En otras palabras, Mercura los ayudó a destacar entre sus competidores y aumentar el volumen de ventas. Los estudios han demostrado que una herramienta de configuración puede aumentar las tasas de conversión en un 40% en las cotizaciones y aumentar los precios promedio de venta en un 30%."
+        "heading": "Mejora en el Posicionamiento de Mercado de Migatronic",
+        "subtext": "Con la implementación del configurador CoWelder desarrollado por Mercura, Migatronic ha experimentado una reducción en el tiempo de llegada al mercado y una mayor accesibilidad para los clientes. Esta herramienta estratégica distingue a Migatronic de sus competidores y contribuye a un aumento en el volumen de ventas. Estudios demuestran que los configuradores pueden aumentar significativamente las tasas de conversión, hasta en un 40% en cotizaciones, y elevar el precio de venta promedio en un 30%, mejorando tanto el compromiso del cliente como la rentabilidad."
       }
     },
     "audi_configurator": {

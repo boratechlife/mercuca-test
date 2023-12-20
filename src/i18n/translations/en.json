@@ -156,14 +156,14 @@
       "long_sales_cycles": {
         "label": "The Problem",
         "heading": "Long sales cycles",
-        "text_1": "We have developed a very intuitive configurator for Lindab which helps end-users and dealers visualize and concretize their solutions on garage doors. The configurator includes all the garage door variations that Lindab sells. <br /> <br />It includes more than 10.000 variations of the products even without taking the size into consideration.",
-        "text_2": "We have developed a very intuitive configurator for Lindab which helps end-users and dealers visualize and concretize their solutions on garage doors. The configurator includes all the garage door variations that Lindab sells. <br /><br /> It includes more than 10.000 variations of the products even without taking the size into consideration."
+        "text_1": "Migatronic, a leader in welding technology, faced challenges in showcasing the versatility and customization options of their CoWelder, a collaborative welding robot. With a product capable of numerous customizations, creating an effective sales strategy without a sophisticated configuration tool was daunting. <br /> <br /> The intricate nature of CoWelder, catering to various welding needs and specifications, demanded a comprehensive yet user-friendly approach to assist customers in selecting the optimal configurations. Without this, the sales cycle was prolonged due to the complexity of explaining and selecting suitable configurations for diverse customer requirements.",
+        "text_2": "The lack of a configurator meant reliance on manual processes, increasing the potential for errors and miscommunications. Sales representatives found it challenging to convey the myriad of possibilities CoWelder offers, resulting in a less efficient sales process and potential customer dissatisfaction due to the inability to fully visualize and understand the product's capabilities."
       },
       "beautiful_visualization": {
         "label": "The Solution",
         "heading": "Beautiful visualization",
-        "text_1": "We have developed a very intuitive configurator for Lindab which helps end-users and dealers visualize and concretize their solutions on garage doors. The configurator includes all the garage door variations that Lindab sells. <br /> <br />It includes more than 10.000 variations of the products even without taking the size into consideration.",
-        "text_2": "We have developed a very intuitive configurator for Lindab which helps end-users and dealers visualize and concretize their solutions on garage doors. The configurator includes all the garage door variations that Lindab sells. <br /><br /> It includes more than 10.000 variations of the products even without taking the size into consideration."
+        "text_1": "Mercura developed an advanced CoWelder configurator for Migatronic that showcases the diverse capabilities of the CoWelder. With over 1000 constraints, the configurator ensures every configuration adheres to technical standards and customer requirements. <br /> <br /> This tool allows sales teams to demonstrate the full range of customization options available, from different welding types to robotic arm movements, in an intuitive and interactive manner. The configurator simplifies the complex selection process, making it easier for customers to understand and choose the appropriate configuration for their specific welding needs.",
+        "text_2": "Moreover, the configurator generates visually appealing and detailed quotes, enhancing the sales team's presentation and communication with clients. This visual representation helps in bridging the gap between technical specifications and customer understanding, thereby shortening the sales cycle and reducing the likelihood of errors. The configurator's advanced capabilities not only empower the sales team but also provide customers with a clearer and more comprehensive understanding of what the CoWelder can achieve, tailored to their unique requirements."
       },
       "review": {
         "message": " Mercura has fulfilled our wishes for a new product configurator for our pens and key tags in a most noble way.",
@@ -175,11 +175,11 @@
       "increase_sales_volume": {
         "label": "The Solution",
         "heading": "Increase sales volume",
-        "subtext": "Having a configuration tool that allows dealers and end-consumers to build their own garage door can offer many benefits to your business. It can simplify the sales process, reduce the workload of your sales team, and enable customers to create a garage doors that perfectly fits their needs and preferences. This provides unique insights into the customers needs which can be used for marketing and product development purposes"
+        "subtext": "The introduction of a configurator tool for Migatronic's CoWelder allows both dealers and end-users to custom-build their welding solutions. This tool simplifies the sales process, alleviates the workload on sales teams, and empowers customers to design a welding setup that meets their exact requirements. The insights gained from customer interactions with the configurator are invaluable for targeted marketing strategies and product development, leading to improved customer understanding and business growth."
       },
       "lindab_experience": {
-        "heading": "Lindab has experienced a shorter time-to-market and higher accessibility towards customers.",
-        "subtext": "In other words, Mercura helped them stand out from their competitors and increase their sales volume. Studies have shown that a configuration tool can increase the conversion rates by 40% on quotes and increase the average sales prices with 30%. "
+        "heading": "Migatronic's Enhanced Market Presence",
+        "subtext": "Through the implementation of the CoWelder configurator developed by Mercura, Migatronic has seen a reduction in time-to-market and an increase in customer accessibility. This strategic tool not only sets Migatronic apart from its competitors but also contributes to an increase in sales volume. Studies show that configurators can significantly boost conversion rates by up to 40% on quotes and increase average sales prices by 30%, thereby enhancing both customer engagement and profitability."
       }
     },
     "audi_configurator": {
