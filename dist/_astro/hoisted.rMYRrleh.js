@@ -1,1 +1,0 @@
-import"./hoisted.7lSlPBTo.js";const l=[...document.querySelectorAll(".stat")];l.forEach(t=>{const s=t.dataset.postfix||"",e=parseInt(t.dataset.value||"0"),c=1e3,o=10,r=Math.ceil(c/o),a=e/r;let n=0;const i=setInterval(()=>{n+=a,t.textContent=n.toFixed(0),n>=e&&(clearInterval(i),t.textContent=e.toFixed(0)+s)},o)});
