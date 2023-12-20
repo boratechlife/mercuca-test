@@ -1,1 +1,0 @@
-const o=[...document.querySelectorAll(".scroller")];window.matchMedia("(prefers-reduced-motion: reduce)").matches||c();function c(){o.forEach(r=>{r.setAttribute("data-animated","true");const e=r.querySelector(".scroll-container");if(!e)return;Array.from(e.children).forEach(n=>{const t=n.cloneNode(!0);t.setAttribute("aria-hidden","true"),e.appendChild(t)})})}
