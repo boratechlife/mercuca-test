@@ -7,7 +7,7 @@ import pentagon from "@/assets/pentagon.png";
 
 import support from "@/assets/support-integrated.svg";
 
-import { useTranslation, type Locale } from "@/i18n";
+import { locales, useTranslation, type Locale } from "@/i18n";
 import Breadcrumb from "@/components/Breadcrumb.astro";
 import LaunchRocket from "@/components/icons/LaunchRocket.astro";
 import LetsBuildTogether from "@/sections/LetsBuildTogether.astro";
@@ -15,15 +15,13 @@ import { Image } from "astro:assets";
 import User from "@/components/icons/User.astro";
 import Trans from "@/i18n/Trans.astro";
 
-interface Props {
-  locale: Locale;
+export async function getStaticPaths() {
+  return Object.keys(locales).map((locale) => ({ params: { locale } }));
 }
-
-const { locale } = Astro.props;
-
+const { locale } = Astro.params;
 const {
   common,
-  pages: { productconfigurator: t },
+  pages: { configurator: t },
 } = await useTranslation(locale as Locale);
 ---
 

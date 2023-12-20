@@ -366,7 +366,7 @@
       },
       "overall_statement": "Samlet set er CPQ-software et kraftfuldt værktøj, der kan hjælpe virksomheder med at strømline og automatisere deres salgsproces, reducere fejl og inkonsekvenser, fremskynde salgsprocessen, forbedre kundeoplevelsen og integrere med andre systemer."
     },
-    "seo_1": {
+    "configurator": {
       "title": "Konfigurator",
       "heading": "Konfigurator",
       "subheading": "En konfigurator, også kendt som en produktkonfigurator eller produktbygger, er et softwareværktøj, der giver kunderne mulighed for at tilpasse og tilpasse produkter til deres nøjagtige specifikationer.",
@@ -388,6 +388,29 @@
         "subtext": "På trods af de mange fordele ved konfiguratorer, er der også nogle udfordringer, som virksomheder skal overveje, når de opretter og vedligeholder dem. En anden udfordring er at holde konfiguratoren opdateret og relevant."
       },
       "conclusion_statement": "Afslutningsvis er konfiguratorer kraftfulde værktøjer, der giver kunderne mulighed for at tilpasse og personalisere produkter til deres nøjagtige specifikationer. De kan hjælpe virksomheder med at øge kundetilfredsheden, reducere omkostningerne og forbedre effektiviteten."
+    },
+    "productconfigurator": {
+      "title": "Produktkonfigurator",
+      "heading": "Produktkonfigurator",
+      "subheading": "En produktkonfigurator er et avanceret softwareværktøj, der muliggør tilpasning af produkter til præcise kundebehov og specifikationer.",
+      "increase_conversion": "Forøg konverteringsrater og gennemsnitlige ordreværdier med skræddersyede løsninger",
+      "order_handling": "Sikre fejlfri ordrehåndtering og produktion gennem præcise konfigurationer",
+      "insight": "Få indblik i kundepreferencer og tendenser gennem tilpasning",
+      "personalization": {
+        "heading": "Personaliseringsmuligheder",
+        "text_1": "Produktkonfiguratorer gør det muligt for kunder at skræddersy produkter fra bunden, hvilket giver en unik og personlig oplevelse.",
+        "text_2": "Disse værktøjer hjælper med at forbedre kundetilfredsheden og styrker kundernes engagement med dit brand."
+      },
+      "intuitive_user_interface": {
+        "heading": "Brugervenligt Interface",
+        "text_1": "Produktkonfiguratorer er designet med en intuitiv brugergrænseflade, der gør produkttilpasning nem og tilgængelig for alle kunder.",
+        "text_2": "De tilbyder en visuel og interaktiv oplevelse, som forbedrer kundeoplevelsen."
+      },
+      "challenges": {
+        "heading": "Udfordringer i implementering",
+        "subtext": "Implementering af produktkonfiguratorer indebærer tekniske og operationelle udfordringer, såsom integration med eksisterende systemer og sikring af konfigurationsnøjagtighed."
+      },
+      "conclusion_statement": "Produktkonfiguratorer essentielle værktøjer, der tilfører værdi til både kunder og virksomheder ved at tilbyde tilpassede løsninger og en forbedret købsoplevelse."
     },
     "cases": {
       "title": "Cases",

@@ -25,6 +25,7 @@ import {
   type Locale,
 } from "@/i18n";
 import { cn } from "@/utils";
+import SnitcherScript from "@/components/SnitcherScript.astro";
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -95,6 +96,7 @@ const alternateLinks = languageAlternates || generateAlternateLinks();
 <html lang={lang}>
   <head>
     <meta charset="UTF-8" />
+    <SnitcherScript />
     <meta name="viewport" content="width=device-width" />
     {favicons.map((icon) => <link {...icon} />)}
     <meta name="generator" content={Astro.generator} />
@@ -106,8 +108,7 @@ const alternateLinks = languageAlternates || generateAlternateLinks();
       {...props}
       languageAlternates={alternateLinks}
     />
-  </head>
-  <body
+  </head><body
     class={cn(
       "flex flex-col min-h-full font-poppins",
       theme === "blue" ? "bg-blue-dark" : "bg-primary-1"

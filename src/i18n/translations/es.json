@@ -368,7 +368,7 @@
       },
       "overall_statement": "En general, el software CPQ es una herramienta poderosa que puede ayudar a las empresas a optimizar y automatizar su proceso de ventas, reducir errores e inconsistencias, acelerar el proceso de ventas, mejorar la experiencia del cliente e integrarse con otros sistemas. "
     },
-    "seo_1": {
+    "configurator": {
       "title": "Configurador",
       "heading": "Configurador",
       "subheading": "Un configurador, también conocido como configurador de productos o creador de productos, es una herramienta de software que permite a los clientes personalizar y personalizar productos según sus especificaciones exactas. ",
@@ -390,6 +390,29 @@
         "subtext": "A pesar de los numerosos beneficios de los configuradores, también existen algunos desafíos que las empresas deben considerar al crearlos y mantenerlos.  <br /> <br /> Otro desafío es mantener el configurador actualizado y relevante. "
       },
       "conclusion_statement": "En conclusión, los configuradores son herramientas poderosas que permiten a los clientes personalizar y personalizar productos según sus especificaciones exactas. Pueden ayudar a las empresas a aumentar la satisfacción del cliente, reducir costos y mejorar la eficiencia. "
+    },
+    "productconfigurator": {
+      "title": "Configurador de Productos",
+      "heading": "Configurador de Productos",
+      "subheading": "Un configurador de productos es una herramienta de software avanzada que permite a los clientes personalizar y adaptar productos a sus necesidades y preferencias exactas.",
+      "increase_conversion": "Aumente las tasas de conversión y los valores promedio de pedido con soluciones personalizadas",
+      "order_handling": "Asegure una gestión de pedidos y producción sin errores mediante una configuración precisa",
+      "insight": "Obtenga una visión más profunda de las preferencias y tendencias de los clientes a través de la personalización",
+      "personalization": {
+        "heading": "Capacidades de Personalización",
+        "text_1": "Los configuradores de productos permiten a los clientes diseñar productos desde cero, ofreciendo una experiencia única y personal.",
+        "text_2": "Estas herramientas contribuyen a aumentar la satisfacción del cliente y a fortalecer la lealtad a la marca."
+      },
+      "intuitive_user_interface": {
+        "heading": "Interfaz Fácil de Usar",
+        "text_1": "Los configuradores de productos cuentan con una interfaz de usuario intuitiva, facilitando la personalización del producto para todos los clientes.",
+        "text_2": "Ofrecen una experiencia visual e interactiva que mejora el viaje del cliente."
+      },
+      "challenges": {
+        "heading": "Desafíos de Implementación",
+        "subtext": "La implementación de configuradores de productos implica desafíos técnicos y operativos, como la integración en sistemas existentes y asegurar la precisión de la configuración."
+      },
+      "conclusion_statement": "En resumen, los configuradores de productos son herramientas esenciales que aportan valor tanto a los clientes como a las empresas al ofrecer soluciones personalizadas y una experiencia de compra mejorada."
     },
     "cases": {
       "title": "Casos",

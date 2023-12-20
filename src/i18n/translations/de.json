@@ -368,7 +368,7 @@
       },
       "overall_statement": "Insgesamt ist CPQ-Software ein leistungsstarkes Werkzeug, das Unternehmen dabei helfen kann, ihren Verkaufsprozess zu optimieren und zu automatisieren, Fehler und Inkonsistenzen zu reduzieren, den Verkaufsprozess zu beschleunigen, die Kundenerfahrung zu verbessern und sich in andere Systeme zu integrieren. Dies ermöglicht es Vertriebsteams, sich auf wertschöpfende Aktivitäten zu konzentrieren und mit weniger Aufwand mehr Geschäfte abzuschließen. Mit der richtigen CPQ-Lösung können Unternehmen eine signifikante Verbesserung der Effizienz und des Umsatzwachstums erzielen."
     },
-    "seo_1": {
+    "configurator": {
       "title": "Konfigurator",
       "heading": "Konfigurator",
       "subheading": "Ein Konfigurator, auch als Produktkonfigurator oder Produktkonstrukteur bekannt, ist ein Software-Tool, das es Kunden ermöglicht, Produkte nach ihren genauen Spezifikationen anzupassen und zu personalisieren. Diese Tools werden von einer Vielzahl von Branchen eingesetzt, einschließlich Fertigung, Automobil und Möbel, und können in E-Commerce-Plattformen integriert oder als eigenständige Software verwendet werden.",
@@ -390,6 +390,29 @@
         "subtext": "Trotz der vielen Vorteile von Konfiguratoren gibt es auch einige Herausforderungen, die Unternehmen berücksichtigen müssen, wenn sie diese erstellen und pflegen. Eine der Hauptherausforderungen besteht darin, sicherzustellen, dass der Konfigurator ein hochwertiges Benutzererlebnis bietet. Dazu gehört, sicherzustellen, dass der Konfigurator einfach zu bedienen und zu navigieren ist, schnell lädt und optisch ansprechend ist. Unternehmen müssen auch darüber nachdenken, wie sie ihre Produkte und Optionen in einer digitalen Umgebung effektiv präsentieren können und wie sie ein Gefühl von Vertrauen und Glaubwürdigkeit bei den Kunden schaffen können. <br /> <br /> Eine weitere Herausforderung besteht darin, den Konfigurator aktualisiert und relevant zu halten. Wenn neue Produkte und Optionen eingeführt werden, müssen Unternehmen sicherstellen, dass sie zeitnah und genau zum Konfigurator hinzugefügt werden. Unternehmen müssen auch darüber nachdenken, wie sie den Konfigurator frisch und ansprechend halten können, damit Kunden weiterhin zurückkehren und die angebotenen Produkte und Optionen erkunden."
       },
       "conclusion_statement": "Zusammenfassend sind Konfiguratoren leistungsstarke Tools, die es Kunden ermöglichen, Produkte nach ihren genauen Spezifikationen anzupassen und zu personalisieren. Sie können Unternehmen dabei helfen, die Kundenzufriedenheit zu steigern, Kosten zu reduzieren und die Effizienz zu verbessern. Konfiguratoren bieten Unternehmen auch die Möglichkeit,"
+    },
+    "productconfigurator": {
+      "title": "Produktkonfigurator",
+      "heading": "Produktkonfigurator",
+      "subheading": "Ein Produktkonfigurator ist ein fortschrittliches Software-Tool, das es Kunden ermöglicht, Produkte gemäß ihren genauen Anforderungen und Vorlieben anzupassen.",
+      "increase_conversion": "Steigern Sie Konversionsraten und den durchschnittlichen Bestellwert mit maßgeschneiderten Lösungen",
+      "order_handling": "Sicherstellung einer fehlerfreien Auftragsabwicklung und Produktion durch genaue Konfiguration",
+      "insight": "Erhalten Sie detaillierte Einblicke in Kundenpräferenzen und Trends durch Anpassung",
+      "personalization": {
+        "heading": "Personalisierungsmöglichkeiten",
+        "text_1": "Produktkonfiguratoren ermöglichen es Kunden, Produkte von Grund auf neu zu gestalten, was eine einzigartige und persönliche Erfahrung bietet.",
+        "text_2": "Diese Werkzeuge tragen dazu bei, die Kundenzufriedenheit zu erhöhen und die Kundenbindung an Ihre Marke zu stärken."
+      },
+      "intuitive_user_interface": {
+        "heading": "Benutzerfreundliche Oberfläche",
+        "text_1": "Produktkonfiguratoren sind mit einer intuitiven Benutzeroberfläche ausgestattet, die Produktanpassung einfach und für alle Kunden zugänglich macht.",
+        "text_2": "Sie bieten ein visuelles und interaktives Erlebnis, das die Kundenerfahrung verbessert."
+      },
+      "challenges": {
+        "heading": "Herausforderungen bei der Implementierung",
+        "subtext": "Die Implementierung von Produktkonfiguratoren beinhaltet technische und betriebliche Herausforderungen, wie die Integration in bestehende Systeme und die Gewährleistung der Konfigurationsgenauigkeit."
+      },
+      "conclusion_statement": "Zusammenfassend sind Produktkonfiguratoren wesentliche Werkzeuge, die sowohl Kunden als auch Unternehmen einen Mehrwert bieten, indem sie maßgeschneiderte Lösungen und eine verbesserte Einkaufserfahrung bieten."
     },
     "cases": {
       "title": "Cases",

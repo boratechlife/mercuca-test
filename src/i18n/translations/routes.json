@@ -17,7 +17,10 @@
     "cases.migatronic-configurator": "cases/migatronic-configurator",
     "career.digital-designer": "career/digital-designer",
     "career": "career",
-    "contact": "contact"
+    "contact": "contact",
+    "cpq": "cpq",
+    "configurator": "configurator",
+    "product-configurator": "product-configurator"
   },
   "da": {
     "about": "om-os",
@@ -37,7 +40,10 @@
     "cases.migatronic-configurator": "cases/migatronic-konfigurator",
     "career.digital-designer": "karriere/digital-designer",
     "career": "karriere",
-    "contact": "kontakt"
+    "contact": "kontakt",
+    "cpq": "cpq",
+    "configurator": "konfigurator",
+    "product-configurator": "produktkonfigurator"
   },
   "de": {
     "about": "ueber-uns",
@@ -57,7 +63,10 @@
     "cases.migatronic-configurator": "cases/migatronic-konfigurator",
     "career.digital-designer": "karriere/digital-designer",
     "career": "karriere",
-    "contact": "kontakt"
+    "contact": "kontakt",
+    "cpq": "cpq",
+    "configurator": "konfigurator",
+    "product-configurator": "produkt-konfigurator"
   },
   "es": {
     "about": "acerca-de",
@@ -77,6 +86,9 @@
     "cases.migatronic-configurator": "casos/configurador-de-migatronic",
     "career.digital-designer": "carrera/digital-designer",
     "career": "carrera",
-    "contact": "contacto"
+    "contact": "contacto",
+    "cpq": "cpq",
+    "configurator": "configurador",
+    "product-configurator": "configurador-de-productos"
   }
 }
