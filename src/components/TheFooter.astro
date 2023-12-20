@@ -52,6 +52,13 @@ const addOns: Link[] = [
   },
 ];
 
+const cases = [
+  { title: "Migatronic", url: r("cases.migatronic-configurator") },
+  { title: "Lindab", url: r("cases.lindab-garage-door-configurator") },
+  { title: "Audi", url: r("cases.audi-configurator") },
+  { title: "Multi-Living", url: r("cases.3d-renderings-for-multi-living") },
+];
+
 const info: Link[] = [
   {
     title: t.about_links.about,
@@ -147,19 +154,7 @@ const { theme = "blue" } = Astro.props;
 
         <LinksList title="Add-Ons" links={addOns} />
 
-        <div class="font-poppins">
-          <p class="text-primary-5 capitalize font-semibold text-base">Cases</p>
-          <p class="mt-4 text-sm capitalize text-neutral-30">
-            <Trans translation={footer.cases.read_our_latest_cases}>
-              Read our latest <br /> casesdsds <a
-                href={casesLink.url}
-                class="underline lowercase"
-              >
-                here
-              </a>
-            </Trans>
-          </p>
-        </div>
+        <LinksList title="Cases" links={cases} />
 
         <LinksList title="Information" links={info} />
 
