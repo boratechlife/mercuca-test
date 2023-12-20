@@ -291,42 +291,54 @@
           "title": "Softwareudvikler",
           "type": "Fuld tid",
           "link": "#",
-          "categories": ["Produktudvikling"],
+          "categories": [
+            "Produktudvikling"
+          ],
           "description": "Brænder du for softwareudvikling og drømmer du om at drive en virksomhed med masser af ansvar?"
         },
         {
           "title": "Backend udvikler",
           "type": "Studiejob",
           "link": "#",
-          "categories": ["Produktudvikling"],
+          "categories": [
+            "Produktudvikling"
+          ],
           "description": "Brænder du for softwareudvikling og søger du et spændende og udfordrende studiejob med masser af ansvar og indflydelse fra start?"
         },
         {
           "title": "Backend udvikler",
           "type": "Studiejob",
           "link": "#",
-          "categories": ["Produktudvikling"],
+          "categories": [
+            "Produktudvikling"
+          ],
           "description": "Hvis du elsker at arbejde med front-end udvikling og er ekspert i JavaScript, HTML og CSS, så er Mercura stedet for dig."
         },
         {
           "title": "Forretningsudvikling",
           "type": "Praktik",
           "link": "#",
-          "categories": ["Forretningsudvikling"],
+          "categories": [
+            "Forretningsudvikling"
+          ],
           "description": "Hvis du læser business og leder efter en praktikplads, så er Mercura stedet for dig."
         },
         {
           "title": "UI/UX designer",
           "type": "Praktik",
           "link": "#",
-          "categories": ["Design"],
+          "categories": [
+            "Design"
+          ],
           "description": "Elsker du at komme med kreative grafiske løsninger?"
         },
         {
           "title": "Digital designer",
           "type": "Studiejob",
           "link": "karriere.digital-designer",
-          "categories": ["Design"],
+          "categories": [
+            "Design"
+          ],
           "description": "Få et studiejob hos Mercura og få praktisk erfaring med frontend-design af vores softwareløsninger."
         }
       ]
@@ -354,7 +366,6 @@
       },
       "overall_statement": "Samlet set er CPQ-software et kraftfuldt værktøj, der kan hjælpe virksomheder med at strømline og automatisere deres salgsproces, reducere fejl og inkonsekvenser, fremskynde salgsprocessen, forbedre kundeoplevelsen og integrere med andre systemer."
     },
-
     "seo_1": {
       "title": "Konfigurator",
       "heading": "Konfigurator",
@@ -372,7 +383,7 @@
         "text_1": "Et af de vigtigste aspekter ved konfiguratorer er brugergrænsefladen.",
         "text_2": "Et andet vigtigt aspekt ved konfiguratorer er fleksibiliteten og skalerbarheden."
       },
-      "challanges": {
+      "challenges": {
         "heading": "De udfordringer virksomheder skal tage stilling til.",
         "subtext": "På trods af de mange fordele ved konfiguratorer, er der også nogle udfordringer, som virksomheder skal overveje, når de opretter og vedligeholder dem. En anden udfordring er at holde konfiguratoren opdateret og relevant."
       },

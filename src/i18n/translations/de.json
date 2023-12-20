@@ -292,42 +292,54 @@
           "title": "Softwareentwickler",
           "type": "Vollzeit",
           "link": "#",
-          "categories": ["Produktentwicklung"],
+          "categories": [
+            "Produktentwicklung"
+          ],
           "description": "Sind Sie leidenschaftlich in der Softwareentwicklung und träumen Sie von einem Unternehmen mit viel Verantwortung? Dann ist Mercura der richtige Ort für Sie."
         },
         {
           "title": "Backend-Entwickler",
           "type": "Studentenjob",
           "link": "#",
-          "categories": ["Produktentwicklung"],
+          "categories": [
+            "Produktentwicklung"
+          ],
           "description": "Sind Sie leidenschaftlich in der Softwareentwicklung und suchen Sie einen aufregenden und anspruchsvollen Studentenjob mit viel Verantwortung und Einfluss von Anfang an? Dann ist Mercura der richtige Ort für Sie."
         },
         {
           "title": "Frontend-Entwickler",
           "type": "Studentenjob",
           "link": "#",
-          "categories": ["Produktentwicklung"],
+          "categories": [
+            "Produktentwicklung"
+          ],
           "description": "Wenn Sie die Arbeit im Bereich Frontend-Entwicklung lieben und ein Experte in JavaScript, HTML und CSS sind, dann ist Mercura der richtige Ort für Sie."
         },
         {
           "title": "Business Development",
           "type": "Praktikum",
           "link": "#",
-          "categories": ["Business Development"],
+          "categories": [
+            "Business Development"
+          ],
           "description": "Studieren Sie BWL und suchen Sie ein Praktikum? Dann ist Mercura der richtige Ort für Sie. Werden Sie Teil eines wachsenden Softwareunternehmens, bei dem es von Anfang an viel Verantwortung gibt."
         },
         {
           "title": "UI/UX-Designer",
           "type": "Praktikum",
           "link": "#",
-          "categories": ["Design"],
+          "categories": [
+            "Design"
+          ],
           "description": "Lieben Sie es, kreative grafische Lösungen zu entwickeln?"
         },
         {
           "title": "Digital Designer",
           "type": "Studentenjob",
           "link": "Karriere-Digital-Designer",
-          "categories": ["Design"],
+          "categories": [
+            "Design"
+          ],
           "description": "Holen Sie sich einen Studentenjob bei Mercura und sammeln Sie praktische Erfahrungen in der Frontend-Gestaltung unserer Softwarelösungen."
         }
       ]
@@ -719,7 +731,6 @@
       "challenge_of_silos": {
         "heading": "The challenge of <0/> <1>Information Silos</1>",
         "subtext_1": "Many organizations struggle with siloed and poorly governed data.",
-
         "subtext_2": "Vital information is often scattered across PLM (Product Lifecycle Management), ERP (Enterprise Resource Planning), CRM (Customer Relationship Management), PIM (Product Information Management), CPQ, and CAD (Computer-Aided Design) systems. This dispersion leads to critical business decisions based on outdated or inaccurate data, impacting both internal operations and customer experiences."
       },
       "how_we_help": {

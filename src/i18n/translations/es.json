@@ -45,7 +45,6 @@
       "contact_us": "Contáctenos"
     }
   },
-
   "what_we_offer": {
     "label": "Lo que ofrecemos",
     "heading": "¿Qué ofrecemos?"
@@ -201,7 +200,6 @@
         "subtext": "Hemos creado un proyecto de demostración de Audi Q3 para ilustrar nuestras competencias en configuradores. Aquí puedes construir tu propio Audi Q3 tanto externa como internamente. Elige entre el Q3 regular y el Sportsback, dos modelos de equipamiento diferentes, 20 colores diferentes, 13 llantas diferentes, espejos, luces, techo y cambia entre 6 ángulos de cámara diferentes."
       }
     },
-
     "job_posting": {
       "title": "Oferta de Trabajo",
       "heading": "Trabajo para Estudiantes: Diseñador Digital",
@@ -295,42 +293,54 @@
           "title": "Desarrollador de software",
           "type": "Tiempo completo",
           "link": "#",
-          "categories": ["Desarrollo de productos"],
+          "categories": [
+            "Desarrollo de productos"
+          ],
           "description": "¿Te apasiona el desarrollo de software y sueñas con dirigir un negocio con mucha responsabilidad? "
         },
         {
           "title": "Desarrollador de back-end",
           "type": "Trabajo de estudiante",
           "link": "#",
-          "categories": ["Desarrollo de productos"],
+          "categories": [
+            "Desarrollo de productos"
+          ],
           "description": "¿Te apasiona el desarrollo de software y buscas un trabajo estudiantil emocionante y desafiante con mucha responsabilidad e influencia desde el principio? "
         },
         {
           "title": "Desarrollador de back-end",
           "type": "Trabajo de estudiante",
           "link": "#",
-          "categories": ["Desarrollo de productos"],
+          "categories": [
+            "Desarrollo de productos"
+          ],
           "description": "Si te encanta trabajar con el desarrollo front-end y eres un experto en JavaScript, HTML y CSS, entonces Mercura es el lugar para ti."
         },
         {
           "title": "Desarrollo de negocios",
           "type": "Pasantía",
           "link": "#",
-          "categories": ["Desarrollo de negocios"],
+          "categories": [
+            "Desarrollo de negocios"
+          ],
           "description": "Si estás estudiando negocios y estás buscando una pasantía, entonces Mercura es el lugar para ti. "
         },
         {
           "title": "Diseñador UI/UX",
           "type": "Pasantía",
           "link": "#",
-          "categories": ["Diseño"],
+          "categories": [
+            "Diseño"
+          ],
           "description": "¿Te encanta idear soluciones gráficas creativas?"
         },
         {
           "title": "Diseñador Digital",
           "type": "Trabajo de estudiante",
           "link": "career.digital-designer",
-          "categories": ["Diseño"],
+          "categories": [
+            "Diseño"
+          ],
           "description": "Consiga un trabajo de estudiante en Mercura y obtenga experiencia práctica con el diseño frontal de nuestras soluciones de software."
         }
       ]
@@ -375,7 +385,7 @@
         "text_1": "Uno de los aspectos más importantes de los configuradores es la interfaz de usuario. ",
         "text_2": "Otro aspecto importante de los configuradores es la flexibilidad y escalabilidad. "
       },
-      "challanges": {
+      "challenges": {
         "heading": "Los desafíos que las empresas deben considerar.",
         "subtext": "A pesar de los numerosos beneficios de los configuradores, también existen algunos desafíos que las empresas deben considerar al crearlos y mantenerlos.  <br /> <br /> Otro desafío es mantener el configurador actualizado y relevante. "
       },
