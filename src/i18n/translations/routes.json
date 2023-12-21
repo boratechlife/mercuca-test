@@ -1,5 +1,6 @@
 {
   "en": {
+    "en": "/",
     "about": "about",
     "analytics": "analytics",
     "articles": "articles",
@@ -25,6 +26,7 @@
     "visual-cpq": "visual-cpq"
   },
   "da": {
+    "da": "/da",
     "about": "om-os",
     "analytics": "analyse",
     "articles": "artikler",
@@ -50,6 +52,7 @@
     "visual-cpq": "visuel-cpq"
   },
   "de": {
+    "de": "/de",
     "about": "ueber-uns",
     "analytics": "analytik",
     "articles": "artikel",
@@ -75,6 +78,7 @@
     "visual-cpq": "visuelles-cpq"
   },
   "es": {
+    "es": "/es",
     "about": "acerca-de",
     "analytics": "analitica",
     "articles": "articulos",
