@@ -490,27 +490,6 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".md"] };
-"en/what-is-mercura.md": {
-	id: "en/what-is-mercura.md";
-  slug: "en/what-is-mercura";
-  body: string;
-  collection: "articles";
-  data: InferEntrySchema<"articles">
-} & { render(): Render[".md"] };
-"en/what-is-merkura.md": {
-	id: "en/what-is-merkura.md";
-  slug: "what-is-merkura";
-  body: string;
-  collection: "articles";
-  data: InferEntrySchema<"articles">
-} & { render(): Render[".md"] };
-"en/what-is-visual-cpq copy 2.md": {
-	id: "en/what-is-visual-cpq copy 2.md";
-  slug: "en/what-is-visual-cpq-copy-2";
-  body: string;
-  collection: "articles";
-  data: InferEntrySchema<"articles">
-} & { render(): Render[".md"] };
 "en/what-is-visual-cpq.md": {
 	id: "en/what-is-visual-cpq.md";
   slug: "what-is-visual-cpq";

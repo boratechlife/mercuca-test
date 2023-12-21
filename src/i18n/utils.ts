@@ -39,7 +39,7 @@ export function getLangFromUrl(url: URL) {
 /**
  * Loads json translations
  * */
-export const useTranslation = async (lang: Locale) => translations[lang]();
+export const useTranslation = async (lang: Locale) => await translations[lang]();
 
 /**
  *  returns a path tranlation function

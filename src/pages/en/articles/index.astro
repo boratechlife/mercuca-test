@@ -11,6 +11,9 @@ import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 
 const { locale } = Astro.params;
+import { getLangFromUrl } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
 
 const articles = await getCollection(
   "articles",
@@ -19,7 +22,7 @@ const articles = await getCollection(
 
 const {
   pages: { articles: t },
-} = await useTranslation(locale as Locale);
+} = await useTranslation(lang);
 ---
 
 <Layout title={t.title}>
