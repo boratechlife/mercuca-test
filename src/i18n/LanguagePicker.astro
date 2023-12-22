@@ -1,107 +1,159 @@
 ---
-import DownArrow from "@/components/icons/DownArrow.astro";
-import {
-  getLangFromUrl,
-  getRouteFromUrl,
-  locales,
-  useTranslatedPath,
-  type Locale,
-  type RouteKey,
-  prepareArticleRoutes,
-} from ".";
-import { cn } from "@/utils";
-import type { ArticleRoutes, ViewMode } from "@/types";
-const currentLang = getLangFromUrl(Astro.url);
+import routes from "@/i18n/translations/routes.json";
+const languageData = {
+  en: {
+    about: "about",
+    analytics: "analytics",
+    articles: "articles",
+    // Add more translations here...
+  },
+  da: {
+    about: "om-os",
+    analytics: "analyse",
+    articles: "artikler",
+    // Add more translations here...
+  },
+  de: {
+    about: "ueber-uns",
+    analytics: "analytik",
+    articles: "artikel",
+    // Add more translations here...
+  },
+  es: {
+    about: "acerca-de",
+    analytics: "analitica",
+    articles: "articulos",
+    // Add more translations here...
+  },
+};
 
-type Picker = ArticleRoutes & ViewMode & astroHTML.JSX.HTMLAttributes;
-
-interface Props extends Picker {}
-
-const { class: classes = "", mode = "page", altRoutes } = Astro.props;
-
-let routeKey = "";
-
-if (mode === "page") {
-  routeKey = getRouteFromUrl(Astro.url) || "";
-}
-const r = useTranslatedPath(currentLang);
-
-const articleRoutes = prepareArticleRoutes(altRoutes);
+let currentLang = "en"; // Default language
 ---
 
-<div
-  id="i18n-language-picker"
-  aria-label="Language picker"
-  data-open="false"
-  class={cn(
-    "border-l border-white py-1.5 pl-6 uppercase font-poppins text-base leading-[22px] relative isolate bg-dark-1 px-1 focus-within:bg-brand-1 group/i18n text-white",
-    classes
-  )}
->
-  <button
-    type="button"
-    class="flex items-center gap-1 i18n-toggle [&>*]:pointer-events-none w-max"
-  >
-    <span class="underline underline-offset-8 uppercase">{currentLang}</span>
+<div class="astro-language-picker">
+  <label>
+    <select id="lang">
+      <option value="en">English</option>
+      <option value="da">Danish</option>
+      <option value="de">German</option>
+      <option value="es">Spanish</option>
+    </select>
+  </label>
 
-    <DownArrow
-      class="w-3.5 h-auto inline-block ml-1.5 group-data-[open='true']/i18n:rotate-180 transition-transform duration-200"
-    />
-  </button>
+  {
+    Object.keys(languageData[currentLang]).map((section) => (
+      <span>{languageData[currentLang][section]}</span>
+    ))
+  }
 
-  <ul
-    class="absolute transition-[max-height,opacity] duration-200 top-full space-y-2 mt-3 left-0 group-data-[open='false']/i18n:max-h-0 group-data-[open='true']/i18n:max-h-none overflow-hidden bg-dark-1 py-1 group-data-[open='true']/i18n:opacity-100 group-data-[open='false']/i18n:opacity-20 group-data-[open='false']/i18n:pointer-events-none pl-6"
-  >
-    {
-      mode === "page" &&
-        Object.entries(locales).map(([lang, label]) => (
-          <li
-            class={cn(
-              "border-b last:border-none border-white/60",
-              lang === currentLang && "opacity-90"
-            )}
-          >
-            <a
-              href={r(routeKey as RouteKey, lang as Locale)}
-              class="hover:text-brand-1 transition-colors duration-200  hover:bg-white/5 w-full "
-            >
-              {lang}
-            </a>
-          </li>
-        ))
+  <script define:vars={{ routes }}>
+    let currentLang = "en"; // Default language
+    const currentPath = window.location.pathname;
+
+    if (currentPath.split("/").length > 1) {
+      currentLang = currentPath.split("/")[1];
     }
-    {
-      mode === "article" &&
-        articleRoutes.map(({ lang, url }) => (
-          <li
-            class={cn(
-              "border-b last:border-none border-white/60",
-              lang === currentLang && "opacity-90"
-            )}
-          >
-            <a
-              href={url}
-              class="hover:text-brand-1 transition-colors duration-200  hover:bg-white/5 w-full "
-            >
-              {lang}
-            </a>
-          </li>
-        ))
+    function handleChange(e) {
+      const currentPath = window.location.pathname;
+
+      if (e.target.value == currentLang) {
+        return;
+      }
+      currentLang = e.target.value;
+
+      let newPath = `/${e.target.value}`;
+      console.log("Current path", currentPath.split("/"));
+      function removeLeadingSlash(path) {
+        if (path.startsWith("/")) {
+          return path.slice(1);
+        }
+        return path;
+      }
+
+      if (currentPath.split("/").length == 2) {
+        const pathWithoutLeadingSlash = removeLeadingSlash(currentPath);
+
+        const nextroute = "/" + routes[currentLang][pathWithoutLeadingSlash];
+
+        if (currentPath !== "/") {
+          newPath += nextroute;
+        }
+        location.href = newPath;
+        console.log("newApath", newPath);
+        console.log("Slected lang", currentLang);
+      }
+
+      if (currentPath.split("/").length == 3) {
+        const currentPath = window.location.pathname;
+        const prevLang = currentPath.split("/")[1];
+        const searchKey = currentPath.split("/").slice(2).join("/");
+
+        if (prevLang == currentLang) {
+          return;
+        }
+        function findKeyInObject(obj, searchKey) {
+          for (const key in obj) {
+            if (obj[key].toLowerCase() == searchKey.toLowerCase()) {
+              return key;
+            }
+          }
+          return null; // Key not found
+        }
+        const path = findKeyInObject(routes[prevLang], searchKey);
+        const nextroute = "/" + routes[currentLang][path];
+
+        if (currentPath !== "/") {
+          newPath += nextroute;
+        }
+
+        location.href = newPath;
+
+        // console.log("3-newApath", path, searchKey, currentPath);
+        console.log(
+          "3-Selected lang",
+          currentPath.split("/")[1],
+          currentLang,
+          newPath
+        );
+      }
+
+      if (currentPath.split("/").length == 4) {
+        const currentPath = window.location.pathname;
+        const prevLang = currentPath.split("/")[1];
+        const searchKey = currentPath.split("/").slice(2).join("/");
+
+        if (prevLang == currentLang) {
+          return;
+        }
+        function findKeyInObject(obj, searchKey) {
+          for (const key in obj) {
+            if (obj[key].toLowerCase() == searchKey.toLowerCase()) {
+              return key;
+            }
+          }
+          return null; // Key not found
+        }
+        const path = findKeyInObject(routes[prevLang], searchKey);
+        const nextroute = "/" + routes[currentLang][path];
+
+        if (currentPath !== "/") {
+          newPath += nextroute;
+        }
+
+        location.href = newPath;
+
+        // console.log("3-newApath", path, searchKey, currentPath);
+        console.log(
+          "3-Selected lang",
+          currentPath.split("/")[1],
+          currentLang,
+          newPath
+        );
+      }
+
+      // window.location.href = newPath;
     }
-  </ul>
+
+    document.getElementById("lang").addEventListener("click", handleChange);
+  </script>
 </div>
-
-<script define:vars={{ currentLang }}>
-  const i18nPicker = document.querySelector("#i18n-language-picker");
-
-  document.addEventListener("click", (e) => {
-    const isToggle = e.target.matches(".i18n-toggle");
-
-    if (isToggle) {
-      const isOpen = i18nPicker.dataset.open === "true";
-      i18nPicker.dataset.open = `${!isOpen}`;
-    } else {
-      i18nPicker.dataset.open = "false";
-    }
-  });
-</script>
