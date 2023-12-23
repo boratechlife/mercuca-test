@@ -1,5 +1,6 @@
 ---
 import routes from "@/i18n/translations/routes.json";
+import { getLangFromUrl } from "./utils";
 const languageData = {
   en: {
     about: "about",
@@ -27,26 +28,59 @@ const languageData = {
   },
 };
 
-let currentLang = "en"; // Default language
+const currentLang = getLangFromUrl(Astro.url);
 ---
 
-<div class="astro-language-picker">
-  <label>
-    <select id="lang">
-      <option value="en">English</option>
-      <option value="da">Danish</option>
-      <option value="de">German</option>
-      <option value="es">Spanish</option>
-    </select>
-  </label>
+<div class="astro-language-picker ">
+  <div class="relative inline-block text-left group">
+    <div>
+      <button type="button" class="inline-flex text-white w-full justify-center gap-x-1.5 rounded-md bg-primary-2 px-3 py-2 text-sm font-semibold  shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-primary-1" id="menu-button" aria-expanded="true" aria-haspopup="true">
+        {currentLang}
+        <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
+  
+    <!--
+      Dropdown menu, show/hide based on menu state.
+  
+      Entering: "transition ease-out duration-100"
+        From: "transform opacity-0 scale-95"
+        To: "transform opacity-100 scale-100"
+      Leaving: "transition ease-in duration-75"
+        From: "transform opacity-100 scale-100"
+        To: "transform opacity-0 scale-95"
+    -->
+    <div class="absolute hidden group-hover:block left-0 z-10  w-full origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+      <div class="py-1" role="none">
+        <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+        {Object.keys(routes).map(item => {
+          return  <a href="#"  key={item} class={`${currentLang.toLowerCase()==item.toLowerCase() ? 'text-accent-1' :'text-gray-200'}text-gray-700 block px-4 py-2 hover:text-primary-1 text-sm lang-select`} role="menuitem" tabindex="-1" id="menu-item-0">{item}</a>
+        })}
+       
+      </div>
+    </div>
+  </div>
 
-  {
-    Object.keys(languageData[currentLang]).map((section) => (
-      <span>{languageData[currentLang][section]}</span>
-    ))
-  }
+
 
   <script define:vars={{ routes }}>
+
+  // Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    // Select all elements with the class 'lang-select'
+    var elements = document.querySelectorAll('.lang-select');
+
+    // Function to handle the click event
+    function handleClick(event) {
+        // Prevent the default action
+        event.preventDefault();
+        // Add more actions here if needed
+        console.log("Clicked on:", event.target);
+    }
+
+    
     let currentLang = "en"; // Default language
     const currentPath = window.location.pathname;
 
@@ -54,14 +88,16 @@ let currentLang = "en"; // Default language
       currentLang = currentPath.split("/")[1];
     }
     function handleChange(e) {
+    e.preventDefault()
+      const targetValue = e.target.innerText.toLowerCase()
       const currentPath = window.location.pathname;
 
-      if (e.target.value == currentLang) {
+      if (targetValue == currentLang) {
         return;
       }
-      currentLang = e.target.value;
+      currentLang = targetValue;
 
-      let newPath = `/${e.target.value}`;
+      let newPath = `/${targetValue}`;
       console.log("Current path", currentPath.split("/"));
       function removeLeadingSlash(path) {
         if (path.startsWith("/")) {
@@ -71,16 +107,43 @@ let currentLang = "en"; // Default language
       }
 
       if (currentPath.split("/").length == 2) {
-        const pathWithoutLeadingSlash = removeLeadingSlash(currentPath);
+        const currentPath = window.location.pathname;
+        const prevLang = currentPath.split("/")[1];
+        const searchKey = currentPath.split("/").slice(1).join("/");
 
-        const nextroute = "/" + routes[currentLang][pathWithoutLeadingSlash];
-
-        if (currentPath !== "/") {
-          newPath += nextroute;
+        if (prevLang == currentLang) {
+          return;
         }
+        function findKeyInObject(obj, searchKey) {
+          for (const key in obj) {
+            if (obj[key].toLowerCase() == searchKey.toLowerCase()) {
+              return key;
+            }
+          }
+          return null; // Key not found
+        }
+        let path = findKeyInObject(routes[prevLang], searchKey) ?? findKeyInObject(routes['en'], searchKey)
+        const nextroute = "/" + routes[currentLang][path];
+        
+        if (currentPath !== "/") {
+          newPath+=nextroute ;
+        }
+
+         if(Object.keys(routes).includes(prevLang)) {
+          newPath = `/${targetValue}`;
+
+         }
         location.href = newPath;
-        console.log("newApath", newPath);
-        console.log("Slected lang", currentLang);
+
+        // console.log("3-newApath", path, searchKey, currentPath);
+        console.log(
+          "2-Selected",
+          
+      
+          newPath
+          
+      
+        );
       }
 
       if (currentPath.split("/").length == 3) {
@@ -154,6 +217,16 @@ let currentLang = "en"; // Default language
       // window.location.href = newPath;
     }
 
-    document.getElementById("lang").addEventListener("click", handleChange);
+    // document.getElementById("lang").addEventListener("click", handleChange);
+
+
+    // Loop through all selected elements and add the event listener
+    elements.forEach(function(element) {
+        element.addEventListener('click', handleChange);
+    });
+});
+
+
+
   </script>
 </div>
