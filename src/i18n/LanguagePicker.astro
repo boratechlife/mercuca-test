@@ -29,39 +29,84 @@ const languageData = {
 };
 
 const currentLang = getLangFromUrl(Astro.url);
+
+import DownArrow from "@/components/icons/DownArrow.astro";
+import {
+  getRouteFromUrl,
+  locales,
+  useTranslatedPath,
+  type Locale,
+  type RouteKey,
+  prepareArticleRoutes,
+} from ".";
+import { cn } from "@/utils";
+import type { ArticleRoutes, ViewMode } from "@/types";
+
+
+type Picker = ArticleRoutes & ViewMode & astroHTML.JSX.HTMLAttributes;
+
+interface Props extends Picker {}
+
+const { class: classes = "", mode = "page", altRoutes } = Astro.props;
+
+let routeKey = "";
+
+if (mode === "page") {
+  routeKey = getRouteFromUrl(Astro.url) || "";
+}
+const r = useTranslatedPath(currentLang);
+
+const articleRoutes = prepareArticleRoutes(altRoutes);
+
 ---
 
 <div class="astro-language-picker ">
-  <div class="relative inline-block text-left group">
-    <div>
-      <button type="button" class="inline-flex text-white w-full justify-center gap-x-1.5 rounded-md bg-primary-2 px-3 py-2 text-sm font-semibold  shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-primary-1" id="menu-button" aria-expanded="true" aria-haspopup="true">
-        {currentLang}
-        <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-        </svg>
-      </button>
-    </div>
-  
-    <!--
-      Dropdown menu, show/hide based on menu state.
-  
-      Entering: "transition ease-out duration-100"
-        From: "transform opacity-0 scale-95"
-        To: "transform opacity-100 scale-100"
-      Leaving: "transition ease-in duration-75"
-        From: "transform opacity-100 scale-100"
-        To: "transform opacity-0 scale-95"
-    -->
-    <div class="absolute hidden group-hover:block left-0 z-10  w-full origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-      <div class="py-1" role="none">
-        <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-        {Object.keys(routes).map(item => {
-          return  <a href="#"  class={`${currentLang.toLowerCase()==item.toLowerCase() ? 'text-accent-1' :'text-gray-200'}text-gray-700 block px-4 py-2 hover:text-primary-1 text-sm lang-select`} role="menuitem" tabindex="-1" id="menu-item-0">{item}</a>
-        })}
-       
-      </div>
-    </div>
-  </div>
+
+<div
+  id="i18n-language-picker"
+  aria-label="Language picker"
+  data-open="false"
+  class={cn(
+    "border-l border-white group py-1.5 pl-6 uppercase font-poppins text-base leading-[22px] relative isolate bg-dark-1 px-1 focus-within:bg-brand-1 group/i18n text-white",
+    classes
+  )}
+>
+  <button
+    type="button"
+    class="flex items-center gap-1  i18n-toggle [&>*]:pointer-events-none w-max"
+  >
+    <span class="underline underline-offset-8 uppercase">{currentLang}</span>
+
+    <DownArrow
+      class="w-3.5 h-auto inline-block ml-1.5 group-data-[open='true']/i18n:rotate-180 transition-transform duration-200"
+    />
+  </button>
+
+  <ul
+    class="absolute  transition-[max-height,opacity] duration-200 top-full space-y-2  overflow-hidden bg-dark-1 py-1 group-hover:opacity-100  pl-6"
+  >
+    {
+        Object.entries(locales).map(([lang, label]) => (
+          <li
+            class={cn(
+              "border-b last:border-none border-white/60",
+              lang === currentLang && "opacity-90"
+            )}
+          >
+            <a
+              href="#"
+              class="hover:text-brand-1 lang-select transition-colors duration-200  hover:bg-white/5 w-full "
+            >
+              {lang}
+            </a>
+          </li>
+        ))
+    }
+
+  </ul>
+</div>
+
+
 
 
 
