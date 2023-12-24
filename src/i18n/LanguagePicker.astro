@@ -83,7 +83,7 @@ const articleRoutes = prepareArticleRoutes(altRoutes);
   </button>
 
   <ul
-    class="absolute  transition-[max-height,opacity] duration-200 top-full space-y-2  overflow-hidden bg-dark-1 py-1 group-hover:opacity-100  pl-6"
+    class="absolute transition-[max-height,opacity] duration-200 top-full space-y-2 mt-3 left-0 group-data-[open='false']/i18n:max-h-0 group-data-[open='true']/i18n:max-h-none overflow-hidden bg-dark-1 py-1 group-data-[open='true']/i18n:opacity-100 group-data-[open='false']/i18n:opacity-20 group-data-[open='false']/i18n:pointer-events-none pl-6"
   >
     {
         Object.entries(locales).map(([lang, label]) => (
@@ -114,6 +114,20 @@ const articleRoutes = prepareArticleRoutes(altRoutes);
 
   // Wait for the DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function() {
+
+  const i18nPicker = document.querySelector("#i18n-language-picker");
+
+document.addEventListener("click", (e) => {
+  const isToggle = e.target.matches(".i18n-toggle");
+
+  if (isToggle) {
+    const isOpen = i18nPicker.dataset.open === "true";
+    i18nPicker.dataset.open = `${!isOpen}`;
+  } else {
+    i18nPicker.dataset.open = "false";
+  }
+});
+
     // Select all elements with the class 'lang-select'
     var elements = document.querySelectorAll('.lang-select');
 
