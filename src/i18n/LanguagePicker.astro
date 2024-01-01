@@ -1,5 +1,6 @@
 ---
 import routes from "@/i18n/translations/routes.json";
+
 import { getLangFromUrl } from "./utils";
 const languageData = {
   en: {
@@ -110,8 +111,110 @@ const articleRoutes = prepareArticleRoutes(altRoutes);
 
 
 
-  <script define:vars={{ routes }}>
+  <script  is:inline>
 
+const routes  =JSON.parse({
+  "en": {
+    "about": "about",
+    "analytics": "analytics",
+    "articles": "articles",
+    "configuration-engine": "configuration-engine",
+    "integrations": "integrations",
+    "pricing-engine": "pricing-engine",
+    "product-modelling": "product-modelling",
+    "quote-and-document-generation": "quote-and-document-generation",
+    "request-a-demo": "request-a-demo",
+    "visualizations": "visualizations",
+    "cases.3d-renderings-for-multi-living": "cases/3d-renderings-for-multi-living",
+    "cases.audi-configurator": "cases/audi-configurator",
+    "cases": "cases",
+    "cases.lindab-garage-door-configurator": "cases/lindab-garage-door-configurator",
+    "cases.migatronic-configurator": "cases/migatronic-configurator",
+    "career.digital-designer": "career/digital-designer",
+    "career": "career",
+    "contact": "contact",
+    "cpq": "cpq",
+    "configurator": "configurator",
+    "product-configurator": "product-configurator",
+    "sales-configurator": "sales-configurator",
+    "visual-cpq": "visual-cpq"
+  },
+  "da": {
+    "about": "om-os",
+    "analytics": "analyse",
+    "articles": "artikler",
+    "configuration-engine": "konfigurationsmotor",
+    "integrations": "integrationer",
+    "pricing-engine": "prissætningsmotor",
+    "product-modelling": "produktmodellering",
+    "quote-and-document-generation": "tilbud-og-dokumentgenerering",
+    "request-a-demo": "anmod-om-en-demo",
+    "visualizations": "visualiseringer",
+    "cases.3d-renderings-for-multi-living": "cases/3d-renderinger-til-multi-boliger",
+    "cases.audi-configurator": "cases/audi-konfigurator",
+    "cases": "cases",
+    "cases.lindab-garage-door-configurator": "cases/lindab-garageport-konfigurator",
+    "cases.migatronic-configurator": "cases/migatronic-konfigurator",
+    "career.digital-designer": "karriere/digital-designer",
+    "career": "karriere",
+    "contact": "kontakt",
+    "cpq": "cpq",
+    "configurator": "konfigurator",
+    "product-configurator": "produktkonfigurator",
+    "sales-configurator": "salgskonfigurator",
+    "visual-cpq": "visuel-cpq"
+  },
+  "de": {
+    "about": "ueber-uns",
+    "analytics": "analytik",
+    "articles": "artikel",
+    "configuration-engine": "konfigurations-engine",
+    "integrations": "integrationen",
+    "pricing-engine": "preisgestaltungs-engine",
+    "product-modelling": "produktmodellierung",
+    "quote-and-document-generation": "angebot-und-dokumentenerstellung",
+    "request-a-demo": "demo-anfordern",
+    "visualizations": "visualisierungen",
+    "cases.3d-renderings-for-multi-living": "cases/3d-renderings-fuer-mehrfamilienwohnhäuser",
+    "cases.audi-configurator": "cases/audi-konfigurator",
+    "cases": "cases",
+    "cases.lindab-garage-door-configurator": "cases/lindab-garagentorkonfigurator",
+    "cases.migatronic-configurator": "cases/migatronic-konfigurator",
+    "career.digital-designer": "karriere/digital-designer",
+    "career": "karriere",
+    "contact": "kontakt",
+    "cpq": "cpq",
+    "configurator": "konfigurator",
+    "product-configurator": "produkt-konfigurator",
+    "sales-configurator": "verkaufs-konfigurator",
+    "visual-cpq": "visuelles-cpq"
+  },
+  "es": {
+    "about": "acerca-de",
+    "analytics": "analitica",
+    "articles": "articulos",
+    "configuration-engine": "motor-de-configuracion",
+    "integrations": "integraciones",
+    "pricing-engine": "motor-de-precios",
+    "product-modelling": "modelado-de-productos",
+    "quote-and-document-generation": "cotizacion-y-generacion-de-documentos",
+    "request-a-demo": "solicitar-una-demostracion",
+    "visualizations": "visualizaciones",
+    "cases.3d-renderings-for-multi-living": "casos/renderizaciones-3d-para-viviendas-multifamiliares",
+    "cases.audi-configurator": "casos/configurador-de-audi",
+    "cases": "casos",
+    "cases.lindab-garage-door-configurator": "casos/configurador-de-puertas-de-garaje-lindab",
+    "cases.migatronic-configurator": "casos/configurador-de-migatronic",
+    "career.digital-designer": "carrera/digital-designer",
+    "career": "carrera",
+    "contact": "contacto",
+    "cpq": "cpq",
+    "configurator": "configurador",
+    "product-configurator": "configurador-de-productos",
+    "sales-configurator": "configurador-de-vendas",
+    "visual-cpq": "visual-cpq"
+  }
+})
   // Wait for the DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function() {
 
