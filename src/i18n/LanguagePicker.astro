@@ -141,7 +141,8 @@ document.addEventListener("click", (e) => {
 
     
     let currentLang = "en"; // Default language
-    const currentPath = window.location.pathname;
+    let currentPath = window.location.pathname;
+    currentPath = currentPath.endsWith('/') ? currentPath.slice(0, -1) : currentPath;
 
     if (currentPath.split("/").length > 1) {
       currentLang = currentPath.split("/")[1];
@@ -149,7 +150,8 @@ document.addEventListener("click", (e) => {
     function handleChange(e) {
     e.preventDefault()
       const targetValue = e.target.innerText.toLowerCase()
-      const currentPath = window.location.pathname;
+      let currentPath = window.location.pathname;
+       currentPath = currentPath.endsWith('/') ? currentPath.slice(0, -1) : currentPath;
 
       if (targetValue == currentLang) {
         return;
@@ -166,7 +168,8 @@ document.addEventListener("click", (e) => {
       }
 
       if (currentPath.split("/").length == 2) {
-        const currentPath = window.location.pathname;
+        let currentPath = window.location.pathname;
+        currentPath = currentPath.endsWith('/') ? currentPath.slice(0, -1) : currentPath;
         const prevLang = currentPath.split("/")[1];
         const searchKey = currentPath.split("/").slice(1).join("/");
 
@@ -192,9 +195,9 @@ document.addEventListener("click", (e) => {
           newPath = `/${targetValue}`;
 
          }
-       // location.href = newPath;
+        location.href = newPath;
 
-         console.log("3-newApath", path, searchKey, currentPath);
+        // console.log("3-newApath", path, searchKey, currentPath);
         console.log(
           "2-Selected",
           
@@ -206,7 +209,8 @@ document.addEventListener("click", (e) => {
       }
 
       if (currentPath.split("/").length == 3) {
-        const currentPath = window.location.pathname;
+        let currentPath = window.location.pathname;
+        currentPath = currentPath.endsWith('/') ? currentPath.slice(0, -1) : currentPath;
         const prevLang = currentPath.split("/")[1];
         const searchKey = currentPath.split("/").slice(2).join("/");
 
@@ -228,7 +232,7 @@ document.addEventListener("click", (e) => {
           newPath += nextroute;
         }
 
-    //    location.href = newPath;
+        location.href = newPath;
 
         // console.log("3-newApath", path, searchKey, currentPath);
         console.log(
@@ -240,7 +244,8 @@ document.addEventListener("click", (e) => {
       }
 
       if (currentPath.split("/").length == 4) {
-        const currentPath = window.location.pathname;
+        let currentPath = window.location.pathname;
+        currentPath = currentPath.endsWith('/') ? currentPath.slice(0, -1) : currentPath;
         const prevLang = currentPath.split("/")[1];
         const searchKey = currentPath.split("/").slice(2).join("/");
 
@@ -262,7 +267,7 @@ document.addEventListener("click", (e) => {
           newPath += nextroute;
         }
 
-     //   location.href = newPath;
+        location.href = newPath;
 
         // console.log("3-newApath", path, searchKey, currentPath);
         console.log(
