@@ -24,30 +24,52 @@ interface Props extends Picker {}
 const { class: classes = "", mode = "page", altRoutes } = Astro.props;
 
 const articleRoutes = prepareArticleRoutes(altRoutes);
+import routes from "@/i18n/translations/routes.json";
+const languageData = {
+  en: {
+    about: "about",
+    analytics: "analytics",
+    articles: "articles",
+    // Add more translations here...
+  },
+  da: {
+    about: "om-os",
+    analytics: "analyse",
+    articles: "artikler",
+    // Add more translations here...
+  },
+  de: {
+    about: "ueber-uns",
+    analytics: "analytik",
+    articles: "artikel",
+    // Add more translations here...
+  },
+  es: {
+    about: "acerca-de",
+    analytics: "analitica",
+    articles: "articulos",
+    // Add more translations here...
+  },
+};
+
+
+
+import DownArrow from "@/components/icons/DownArrow.astro";
+
+interface Props extends Picker {}
+
 ---
 
+
 <div class={cn("flex gap-6", classes)}>
+
   {
-    mode === "page" &&
+   
       Object.entries(locales).map(([lang, label]) => (
         <a
           href={r(routeKey as RouteKey, lang as Locale)}
           class={cn(
-            "border border-white  w-max  font-light text-xl text-center rounded px-2.5 py-2 block uppercase",
-            lang === currentLang ? "bg-white text-primary-4" : "text-white"
-          )}
-        >
-          {lang}
-        </a>
-      ))
-  }
-  {
-    mode === "article" &&
-      articleRoutes.map(({ lang, url }) => (
-        <a
-          href={url}
-          class={cn(
-            "border border-white  w-max  font-light text-xl text-center rounded px-2.5 py-2 block uppercase",
+            "border border-white lang-select w-max  font-light text-xl text-center rounded px-2.5 py-2 block uppercase",
             lang === currentLang ? "bg-white text-primary-4" : "text-white"
           )}
         >
@@ -56,3 +78,6 @@ const articleRoutes = prepareArticleRoutes(altRoutes);
       ))
   }
 </div>
+
+
+
